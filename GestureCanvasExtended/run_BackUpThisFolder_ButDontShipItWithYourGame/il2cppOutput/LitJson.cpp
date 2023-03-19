@@ -11246,7 +11246,7 @@ IL_0176:
 		Type_t* L_77 = V_1;
 		NullCheck(L_77);
 		bool L_78;
-		L_78 = VirtualFuncInvoker0< bool >::Invoke(67 /* System.Boolean System.Type::get_IsEnum() */, L_77);
+		L_78 = VirtualFuncInvoker0< bool >::Invoke(68 /* System.Boolean System.Type::get_IsEnum() */, L_77);
 		V_15 = L_78;
 		bool L_79 = V_15;
 		if (!L_79)
