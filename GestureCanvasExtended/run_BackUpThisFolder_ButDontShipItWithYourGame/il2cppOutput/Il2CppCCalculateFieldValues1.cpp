@@ -20,8 +20,6 @@ struct Action_1_tE8693FF0E67CDBA52BAFB211BFF1844D076ABAFB;
 struct Action_1_t0B96885211322977EE19013FB96FC0D3AE49AE9D;
 // System.Action`1<System.Boolean>
 struct Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C;
-// System.Action`1<OculusSampleFramework.ColliderZoneArgs>
-struct Action_1_tCFBE340FD442BC4B5557FD1B5ECC8237D9ADD49F;
 // System.Action`1<UnityEngine.CustomRenderTexture>
 struct Action_1_tDF52F11383ED01DB581C39D18E0D29B0956E7681;
 // System.Action`1<System.IAsyncResult>
@@ -92,6 +90,8 @@ struct CollisionInteractionRegistry_2_tC55E244A28802A49F4D384589ED9E61CC48CD403;
 struct CollisionInteractionRegistry_2_t3D4A569998A2C68ACE15A065E19706DFBAFAD82A;
 // Oculus.Interaction.CollisionInteractionRegistry`2<Oculus.Interaction.SnapInteractor,Oculus.Interaction.SnapInteractable>
 struct CollisionInteractionRegistry_2_tDEE9A06D0B3BE58034F985A016D188AB7B2A1D1E;
+// System.Comparison`1<Clip>
+struct Comparison_1_t6259CC7B2F8EF3EDD790B209774FEA4E80AC19FC;
 // System.Comparison`1<UnityEngine.UI.Graphic>
 struct Comparison_1_t236C83451572505C1D483C9DFB0550F3470A17B8;
 // System.Comparison`1<UnityEngine.UI.ICanvasElement>
@@ -172,10 +172,6 @@ struct Dictionary_2_tA56A4440970F8919E006B441E69B79820CA38498;
 struct Dictionary_2_t071EB424ADCE42FBA1EDD59A1B2EE3EB35E33AC2;
 // System.Collections.Generic.Dictionary`2<System.Int64,TMPro.TMP_MaterialManager/FallbackMaterial>
 struct Dictionary_2_tA56BE02D40F1DBAC22A481335E08C4D99F1639C3;
-// System.Collections.Generic.Dictionary`2<OculusSampleFramework.InteractableTool,OculusSampleFramework.InteractableState>
-struct Dictionary_2_t6DB59BF621375F7C5B905DE434C895D071F4FA2E;
-// System.Collections.Generic.Dictionary`2<OVRGrabbable,System.Int32>
-struct Dictionary_2_t749E8D446C2E8EE6FF423979EE55DB04E3E91EBD;
 // System.Collections.Generic.Dictionary`2<Oculus.Interaction.PokeInteractable,UnityEngine.Pose>
 struct Dictionary_2_t3536B0CC8B709B72A4EE40C79209B70ECCAB6D27;
 // System.Collections.Generic.Dictionary`2<UnityEngine.Rigidbody,System.Boolean>
@@ -356,8 +352,6 @@ struct Func_3_tEE76E26E27B51A2B1789AD486E2805EC0B413C04;
 struct Func_3_tDB0D71FB87B6E95F2ECDD5B529C90C300D8303E8;
 // System.Func`4<System.Net.IPEndPoint,System.AsyncCallback,System.Object,System.IAsyncResult>
 struct Func_4_t6562D6B76CC691963D586D62821064575BA2F6CF;
-// System.Collections.Generic.HashSet`1<OculusSampleFramework.ColliderZone>
-struct HashSet_1_t8D90B5E7B806F749B7205357916DDB46CA01D418;
 // System.Collections.Generic.HashSet`1<Oculus.Interaction.DistanceGrabInteractor>
 struct HashSet_1_tE1D73163527A264840A1CDA8EC3FF47EEA1A9D8F;
 // System.Collections.Generic.HashSet`1<Oculus.Interaction.HandGrab.DistanceHandGrabInteractor>
@@ -488,10 +482,12 @@ struct List_1_t2CDCA768E7F493F5EDEBC75AEB200FD621354E35;
 struct List_1_tDFF1AD57E5A0B8203685E9DA6CD40B6253A2AC16;
 // System.Collections.Generic.List`1<Oculus.Platform.Models.ChallengeEntry>
 struct List_1_t040736E602A6B94DA01702AF6AC89A8B9440C618;
+// System.Collections.Generic.List`1<Clip>
+struct List_1_tC02BA8CF691FB27A7C69FFD24FA4C4D68ED59053;
+// System.Collections.Generic.List`1<ClipButton>
+struct List_1_tABCCF73C9199CC14D282074676DB0895F0274198;
 // System.Collections.Generic.List`1<UnityEngine.Collider>
 struct List_1_t58F89DEDCD7DABB0CFB009AAD9C0CFE061592252;
-// System.Collections.Generic.List`1<OculusSampleFramework.ColliderZone>
-struct List_1_t07B14CCF1106E99ABF3545A416720B7DEDAB974F;
 // System.Collections.Generic.List`1<UnityEngine.Color>
 struct List_1_t242CDEAEC9C92000DA96982CDB9D592DDE2AADAF;
 // System.Collections.Generic.List`1<UnityEngine.Color32>
@@ -882,8 +878,6 @@ struct IPAddressU5BU5D_t3AEDF3B94746C9023A4549F878AA47F702C9CD0D;
 struct Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C;
 // System.IntPtr[]
 struct IntPtrU5BU5D_tFD177F8C806A6921AD7150264CCC62FA00CAD832;
-// OculusSampleFramework.InteractableToolTags[]
-struct InteractableToolTagsU5BU5D_t9691CC6F71F873F7CCADD2EFE97DC96C689B7DBA;
 // Oculus.Interaction.Input.JointFreedom[]
 struct JointFreedomU5BU5D_t0633B95A74A839E476B718AF5883237BE60543E4;
 // UnityEngine.Material[]
@@ -894,14 +888,8 @@ struct MaterialReferenceU5BU5D_t7491D335AB3E3E13CE9C0F5E931F396F6A02E1F2;
 struct MeshRendererU5BU5D_tDF429EF168050A5CE085D0B51909A6AE2067E446;
 // OVRHand[]
 struct OVRHandU5BU5D_tF90935AD4A2EDB5D90711E5FEA8D5DD77029C839;
-// OVRMesh[]
-struct OVRMeshU5BU5D_t377D5C6C4996BA927ACB17EE21925C9443854301;
-// OVRMeshRenderer[]
-struct OVRMeshRendererU5BU5D_tFF55780FAB1E5521FA63751229939BEEA0B9D471;
 // OVRSkeleton[]
 struct OVRSkeletonU5BU5D_t8571A9F94528C9F3D576BA4834AED2D551212F89;
-// OVRSkeletonRenderer[]
-struct OVRSkeletonRendererU5BU5D_tA05C9B59A89C88B8B7A4245774D8A7401C64F6BB;
 // System.Object[]
 struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
 // UnityEngine.Plane[]
@@ -1006,8 +994,6 @@ struct WordWrapStateU5BU5D_t473D59C9DBCC949CE72EF1EB471CBA152A6CEAC9;
 struct X509ChainStatusU5BU5D_tA4CB502E13E6D62B9C824B15F3193FE7EC889299;
 // UnityEngine.jvalue[]
 struct jvalueU5BU5D_t2232DC04C2D2643358141038962889D92D3B5E6F;
-// OculusSampleFramework.ButtonController/ContactTest[]
-struct ContactTestU5BU5D_t75A498A776B0A042C8885B8D28F9A1BB0F0D23C6;
 // System.Net.CommandStream/PipelineEntry[]
 struct PipelineEntryU5BU5D_tF96DE809CEDE1A15F1D069F027582F92EEE04CE4;
 // System.Net.CookieTokenizer/RecognizedAttribute[]
@@ -1170,14 +1156,20 @@ struct CaptureCollection_t38405272BD6A6DA77CD51487FD39624C6E95CC93;
 struct ChainValidationHelper_t5BAFD168AF916EAD45963A656515931724328755;
 // UnityEngine.CharacterController
 struct CharacterController_t847C1A2719F60547D7D6077B648D6CE2D1EF3A6A;
+// Clip
+struct Clip_t5B493D4729396BB82DD0E7ED754916E180EC23BD;
+// ClipButton
+struct ClipButton_t87136662AD56ABC2D225D8DEBF1368A8C2226F98;
+// ClipButtonHandler
+struct ClipButtonHandler_t3FBDE6AE475092D41C0DDFA11642AAC5821C97E0;
+// ClipHandler
+struct ClipHandler_t53A2898CB5FBDC9DB2D5262A9EECD44D237B8EC8;
 // Oculus.Platform.Models.CloudStorageMetadata
 struct CloudStorageMetadata_t1173E046051ED0472F4199703DE1447D9467B973;
 // UnityEngine.Collider
 struct Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76;
 // Oculus.Interaction.ColliderGroup
 struct ColliderGroup_t35279DA03B907007D9EF2A410E7FD0FBEFA99E09;
-// OculusSampleFramework.ColliderZone
-struct ColliderZone_tA9DAAD7F9B3FDEC5B607DB97A934B1081CCF7E19;
 // System.Net.CommandStream
 struct CommandStream_tE12108C15BBCC8F52FB53DC1EE3EDB2537E4F123;
 // System.Net.Comparer
@@ -1226,8 +1218,6 @@ struct Destination_tE541D5C08D84E0FA6451C8822F3771B141D528BE;
 struct DigestHeaderParser_t215963C14BE82EA87A8F2E83F7EA55CD9570D6B7;
 // Oculus.Interaction.DistanceGrabInteractable
 struct DistanceGrabInteractable_tA39E2C93ADCB13E34821AD2FA62DEEA141B4E2B4;
-// OculusSampleFramework.DistanceGrabbable
-struct DistanceGrabbable_tACCCB0048BA604AD31B49237D057C5DF38DB07BB;
 // Oculus.Interaction.HandGrab.DistanceHandGrabInteractable
 struct DistanceHandGrabInteractable_tD846EDB4B3992FE87777DAF624569765E2D177CF;
 // Oculus.Interaction.HandGrab.DistanceHandGrabInteractor
@@ -1320,6 +1310,8 @@ struct Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931;
 struct Group_t26371E9136D6F43782C487B63C67C5FC4F472881;
 // System.Text.RegularExpressions.GroupCollection
 struct GroupCollection_tFFA1789730DD9EA122FBE77DC03BFEDCC3F2945E;
+// HMDObject
+struct HMDObject_t2FD76A1C2AA6A66C605C8E80DD80956993024757;
 // HMDRecorder
 struct HMDRecorder_tEE7A8A55E30DE35A3581204CD31E91770495CD60;
 // Oculus.Interaction.Input.Hand
@@ -1354,6 +1346,8 @@ struct HandJointCache_t8BDBDA97A57F7D39288F80C40A225C050A05116B;
 struct HandMeshMask_tDF86653DF15ECBDF0A5C99B65525229497E0D825;
 // HandMotionRecorder
 struct HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A;
+// HandObject
+struct HandObject_t3A9581D70D096243B393856C243A540351D989AA;
 // Oculus.Interaction.HandGrab.HandPose
 struct HandPose_t0B0F57FC79F74C9D20E54C6999A45D59FDDAC733;
 // HandPoseRecorder
@@ -1372,8 +1366,6 @@ struct HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A;
 struct HandVisual_tB703F06CCD9890A6EB230074CF28EB7D7325DA80;
 // HandsActiveChecker
 struct HandsActiveChecker_t6A81E0F5764685D2323A37325349986B1BC3283A;
-// OculusSampleFramework.HandsManager
-struct HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7;
 // System.Security.Cryptography.HashAlgorithm
 struct HashAlgorithm_t299ECE61BBF4582B1F75734D43A96DDEC9B2004D;
 // System.Collections.Hashtable
@@ -1528,10 +1520,6 @@ struct Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E;
 struct InputField_tABEA115F23FBD374EBE80D4FAC1D15BD6E37A140;
 // System.Int32
 struct Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C;
-// OculusSampleFramework.Interactable
-struct Interactable_tC2DBF86B740EB02367138A8BCF634242CA3B93D2;
-// OculusSampleFramework.InteractableTool
-struct InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED;
 // Oculus.Interaction.InteractionOVRCameraRig
 struct InteractionOVRCameraRig_tEC482F72A133A8F27331DCA51D8F6760E4835ACF;
 // UnityEngine.Events.InvokableCallList
@@ -1662,8 +1650,6 @@ struct OVRCameraRig_t7FC2BB0D30DED2B7F0C8914AF2B66E9F4CF891A9;
 struct OVRCursor_tC9427BFBD60354F4A80BD9129257DE67BE597E9A;
 // OVRGazePointer
 struct OVRGazePointer_t3D6087809DD512FF79D2003C9DCF27C897CF9DC9;
-// OVRGrabbable
-struct OVRGrabbable_t322F6468B588212B888E9397723397A16E7614B5;
 // OVRGrabber
 struct OVRGrabber_tC16FABB1A90FB635BDE98E18F032A793D7033FCC;
 // OVRHand
@@ -1710,6 +1696,14 @@ struct PersistentCallGroup_tB826EDF15DC80F71BCBCD8E410FD959A04C33F25;
 struct PhysicsGrabbable_tD148E9FA4004FE544C31B83B6435EDAE852C61BF;
 // UnityEngine.Plane
 struct Plane_tB7D8CC6F7AACF5F3AA483AF005C1102A8577BC0C;
+// Playback
+struct Playback_t5E538A64E9969718C803D112CCC63C35A0756C90;
+// PlaybackObjectHandler
+struct PlaybackObjectHandler_t24E6FE8D9D39CA06311DFFC65AE17C616C4D47F1;
+// PlaybackSlider
+struct PlaybackSlider_t7605D76A2AE864327F20ABF3D355D39DBC96488E;
+// PlaybackStateHandler
+struct PlaybackStateHandler_t271BAC0632A0164F2337FE0864AE6E11094D9F37;
 // Oculus.Platform.Samples.VrHoops.Player
 struct Player_tCCA93288D258E225DD8C604DCC59E755FAE79044;
 // UnityEngine.Networking.PlayerConnection.PlayerEditorConnectionEvents
@@ -2104,6 +2098,8 @@ struct _GetControllerStateWithPosePacked_tAC9426083F4C63A8CB9F2BA5EE06B82373A48A
 struct _PollNextEventPacked_tD404A3D2E335A83BEB8533DC6F777A1F1A7E3FB6;
 // UnityEngine.Camera/CameraCallback
 struct CameraCallback_t844E527BFE37BC0495E7F67993E43C07642DA9DD;
+// ClipButtonHandler/<>c__DisplayClass10_0
+struct U3CU3Ec__DisplayClass10_0_t913EF55A57532E9D4973FAB984D7502BA0E23D4B;
 // TMPro.ColorTween/ColorTweenCallback
 struct ColorTweenCallback_tA3F6E0BB4EBAA1CFB97539807CE8C9BB7C851F53;
 // UnityEngine.UI.CoroutineTween.ColorTween/ColorTweenCallback
@@ -2792,8 +2788,6 @@ struct OnChangeEvent_tE4829F88300B0E0E0D1B78B453AF25FC1AA55E2F;
 struct OnValidateInput_t48916A4E9C9FD6204401FF0808C2B7A93D73418B;
 // UnityEngine.UI.InputField/SubmitEvent
 struct SubmitEvent_t1E0F5A2AB28D0DB55AE18E8DA99147D86492DD5D;
-// OculusSampleFramework.Interactable/InteractableStateArgsEvent
-struct InteractableStateArgsEvent_tAE90140049B5BEA21987B055A652C8CBA4D67D41;
 // Oculus.Interaction.InteractableColorVisual/ColorState
 struct ColorState_t9CB80C9011357A22FEFDEB8F630B8267193BA76B;
 // Unity.Jobs.LowLevel.Unsafe.JobsUtility/PanicFunction_
@@ -3657,6 +3651,30 @@ struct ChainValidationHelper_t5BAFD168AF916EAD45963A656515931724328755  : public
 	MonoTlsStream_t1CE91597F244093A040334DE449975971E4BD206* ___tlsStream_5;
 	// System.Net.HttpWebRequest Mono.Net.Security.ChainValidationHelper::request
 	HttpWebRequest_tDE1EF6EAE715BE99DB1645ED937A6A2AB930E7C9* ___request_6;
+};
+
+// Clip
+struct Clip_t5B493D4729396BB82DD0E7ED754916E180EC23BD  : public RuntimeObject
+{
+	// System.Int32 Clip::Id
+	int32_t ___Id_0;
+	// System.Int32 Clip::startIndex
+	int32_t ___startIndex_1;
+	// System.Int32 Clip::endIndex
+	int32_t ___endIndex_2;
+};
+
+// ClipButton
+struct ClipButton_t87136662AD56ABC2D225D8DEBF1368A8C2226F98  : public RuntimeObject
+{
+	// Clip ClipButton::clip
+	Clip_t5B493D4729396BB82DD0E7ED754916E180EC23BD* ___clip_0;
+	// System.Single ClipButton::StartPosition
+	float ___StartPosition_1;
+	// System.Single ClipButton::EndPosition
+	float ___EndPosition_2;
+	// System.Boolean ClipButton::isToggleOn
+	bool ___isToggleOn_3;
 };
 
 // UnityEngine.UI.ClipperRegistry
@@ -8077,6 +8095,37 @@ struct U3CU3Ec__DisplayClass11_0_tAA6FF214AE681D87C566414EF7C30A3CEA0C9211  : pu
 	MonoTlsSettings_tD79AF4AE5C2CD533A3D7A08FED479B1EC1A031B0* ___settings_0;
 };
 
+// ClipButtonHandler/<>c__DisplayClass10_0
+struct U3CU3Ec__DisplayClass10_0_t913EF55A57532E9D4973FAB984D7502BA0E23D4B  : public RuntimeObject
+{
+	// ClipButton ClipButtonHandler/<>c__DisplayClass10_0::clipButton
+	ClipButton_t87136662AD56ABC2D225D8DEBF1368A8C2226F98* ___clipButton_0;
+	// ClipButtonHandler ClipButtonHandler/<>c__DisplayClass10_0::<>4__this
+	ClipButtonHandler_t3FBDE6AE475092D41C0DDFA11642AAC5821C97E0* ___U3CU3E4__this_1;
+};
+
+// ClipButtonHandler/<>c__DisplayClass10_1
+struct U3CU3Ec__DisplayClass10_1_t21D65AF0D3C7D10FCB0723580E6A0A5164CBD5A6  : public RuntimeObject
+{
+	// UnityEngine.UI.Toggle ClipButtonHandler/<>c__DisplayClass10_1::buttonToggle
+	Toggle_tBF13F3EBA485E06826FD8A38F4B4C1380DF21A1F* ___buttonToggle_0;
+	// ClipButtonHandler/<>c__DisplayClass10_0 ClipButtonHandler/<>c__DisplayClass10_1::CS$<>8__locals1
+	U3CU3Ec__DisplayClass10_0_t913EF55A57532E9D4973FAB984D7502BA0E23D4B* ___CSU24U3CU3E8__locals1_1;
+};
+
+// ClipHandler/<>c
+struct U3CU3Ec_tCE4340198325CF80EBD6717B59E8765F728943DB  : public RuntimeObject
+{
+};
+
+struct U3CU3Ec_tCE4340198325CF80EBD6717B59E8765F728943DB_StaticFields
+{
+	// ClipHandler/<>c ClipHandler/<>c::<>9
+	U3CU3Ec_tCE4340198325CF80EBD6717B59E8765F728943DB* ___U3CU3E9_0;
+	// System.Comparison`1<Clip> ClipHandler/<>c::<>9__18_0
+	Comparison_1_t6259CC7B2F8EF3EDD790B209774FEA4E80AC19FC* ___U3CU3E9__18_0_1;
+};
+
 // System.Net.CommandStream/PipelineEntry
 struct PipelineEntry_t3169094ED57F0D943BF1EC06C99B977532DA7463  : public RuntimeObject
 {
@@ -8521,21 +8570,6 @@ struct U3CGetCenterEyeU3Ed__6_t5D42F9E14297CC2DD35CD51B030FE7D7D8899FEF  : publi
 	RuntimeObject* ___U3CU3E2__current_1;
 	// HandsActiveChecker HandsActiveChecker/<GetCenterEye>d__6::<>4__this
 	HandsActiveChecker_t6A81E0F5764685D2323A37325349986B1BC3283A* ___U3CU3E4__this_2;
-};
-
-// OculusSampleFramework.HandsManager/<FindSkeletonVisualGameObjects>d__52
-struct U3CFindSkeletonVisualGameObjectsU3Ed__52_tAEE38F2607C43B4EC514A9C784FC4E9A2135DF16  : public RuntimeObject
-{
-	// System.Int32 OculusSampleFramework.HandsManager/<FindSkeletonVisualGameObjects>d__52::<>1__state
-	int32_t ___U3CU3E1__state_0;
-	// System.Object OculusSampleFramework.HandsManager/<FindSkeletonVisualGameObjects>d__52::<>2__current
-	RuntimeObject* ___U3CU3E2__current_1;
-	// OculusSampleFramework.HandsManager OculusSampleFramework.HandsManager/<FindSkeletonVisualGameObjects>d__52::<>4__this
-	HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7* ___U3CU3E4__this_2;
-	// UnityEngine.Transform OculusSampleFramework.HandsManager/<FindSkeletonVisualGameObjects>d__52::<leftSkeletonVisualTransform>5__1
-	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___U3CleftSkeletonVisualTransformU3E5__1_3;
-	// UnityEngine.Transform OculusSampleFramework.HandsManager/<FindSkeletonVisualGameObjects>d__52::<rightSkeletonVisualTransform>5__2
-	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___U3CrightSkeletonVisualTransformU3E5__2_4;
 };
 
 // Oculus.Interaction.Input.Hmd/<>c
@@ -10734,19 +10768,6 @@ struct ChallengeList_tEB0908E91CBC195488F727807D614B718FD52C17  : public Deseria
 {
 	// System.UInt64 Oculus.Platform.Models.ChallengeList::TotalCount
 	uint64_t ___TotalCount_3;
-};
-
-// OculusSampleFramework.ColliderZoneArgs
-struct ColliderZoneArgs_tC7431174FDF0C6002A554118B81A5E6096D41087  : public EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377
-{
-	// OculusSampleFramework.ColliderZone OculusSampleFramework.ColliderZoneArgs::Collider
-	RuntimeObject* ___Collider_1;
-	// System.Single OculusSampleFramework.ColliderZoneArgs::FrameTime
-	float ___FrameTime_2;
-	// OculusSampleFramework.InteractableTool OculusSampleFramework.ColliderZoneArgs::CollidingTool
-	InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* ___CollidingTool_3;
-	// OculusSampleFramework.InteractionType OculusSampleFramework.ColliderZoneArgs::InteractionT
-	int32_t ___InteractionT_4;
 };
 
 // UnityEngine.Color
@@ -27427,17 +27448,6 @@ struct BoardPosition_tAD8E0D34E62016BF68E013EA70EE23830EF4EFB7  : public MonoBeh
 	int32_t ___y_5;
 };
 
-// OculusSampleFramework.BoneCapsuleTriggerLogic
-struct BoneCapsuleTriggerLogic_tD4D51F420091F829BEE215AB6FD960BF83FBB2D4  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
-{
-	// OculusSampleFramework.InteractableToolTags OculusSampleFramework.BoneCapsuleTriggerLogic::ToolTags
-	int32_t ___ToolTags_4;
-	// System.Collections.Generic.HashSet`1<OculusSampleFramework.ColliderZone> OculusSampleFramework.BoneCapsuleTriggerLogic::CollidersTouchingUs
-	HashSet_1_t8D90B5E7B806F749B7205357916DDB46CA01D418* ___CollidersTouchingUs_5;
-	// System.Collections.Generic.List`1<OculusSampleFramework.ColliderZone> OculusSampleFramework.BoneCapsuleTriggerLogic::_elementsToCleanUp
-	List_1_t07B14CCF1106E99ABF3545A416720B7DEDAB974F* ____elementsToCleanUp_6;
-};
-
 // BouncingBallLogic
 struct BouncingBallLogic_t3B3D7BF7B8F2671679188A3C887E558795C563F1  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -27520,17 +27530,6 @@ struct ButtonDownListener_t2225AB168EECB48C0A3845DDA710F3F091DD4A4E  : public Mo
 {
 	// System.Action ButtonDownListener::onButtonDown
 	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___onButtonDown_4;
-};
-
-// OculusSampleFramework.ButtonTriggerZone
-struct ButtonTriggerZone_t804E2DD4406B082D050C64D7403494F07F068721  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
-{
-	// UnityEngine.GameObject OculusSampleFramework.ButtonTriggerZone::_parentInteractableObj
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ____parentInteractableObj_4;
-	// UnityEngine.Collider OculusSampleFramework.ButtonTriggerZone::<Collider>k__BackingField
-	Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* ___U3CColliderU3Ek__BackingField_5;
-	// OculusSampleFramework.Interactable OculusSampleFramework.ButtonTriggerZone::<ParentInteractable>k__BackingField
-	Interactable_tC2DBF86B740EB02367138A8BCF634242CA3B93D2* ___U3CParentInteractableU3Ek__BackingField_6;
 };
 
 // Oculus.Platform.CallbackRunner
@@ -27635,6 +27634,50 @@ struct CircleProximityField_tC444FD0F8D3FE30170FB24D4D82BFB8F0FD2A52C  : public 
 	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ____transform_4;
 	// System.Single Oculus.Interaction.CircleProximityField::_radius
 	float ____radius_5;
+};
+
+// ClipButtonHandler
+struct ClipButtonHandler_t3FBDE6AE475092D41C0DDFA11642AAC5821C97E0  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// UnityEngine.GameObject ClipButtonHandler::clipPrefab
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___clipPrefab_4;
+	// UnityEngine.Transform ClipButtonHandler::clipPanel
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___clipPanel_5;
+	// ClipHandler ClipButtonHandler::clipHandler
+	ClipHandler_t53A2898CB5FBDC9DB2D5262A9EECD44D237B8EC8* ___clipHandler_6;
+	// System.Collections.Generic.List`1<UnityEngine.GameObject> ClipButtonHandler::ClipButtonObjects
+	List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* ___ClipButtonObjects_8;
+};
+
+struct ClipButtonHandler_t3FBDE6AE475092D41C0DDFA11642AAC5821C97E0_StaticFields
+{
+	// System.Collections.Generic.List`1<ClipButton> ClipButtonHandler::<ClipButtonList>k__BackingField
+	List_1_tABCCF73C9199CC14D282074676DB0895F0274198* ___U3CClipButtonListU3Ek__BackingField_7;
+};
+
+// ClipHandler
+struct ClipHandler_t53A2898CB5FBDC9DB2D5262A9EECD44D237B8EC8  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// UnityEngine.UI.Slider ClipHandler::slider
+	Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* ___slider_4;
+	// UnityEngine.GameObject ClipHandler::sliderHandle
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___sliderHandle_5;
+	// ClipButtonHandler ClipHandler::clipButtonHandler
+	ClipButtonHandler_t3FBDE6AE475092D41C0DDFA11642AAC5821C97E0* ___clipButtonHandler_6;
+	// Playback ClipHandler::playback
+	Playback_t5E538A64E9969718C803D112CCC63C35A0756C90* ___playback_7;
+	// PlaybackSlider ClipHandler::playbackSlider
+	PlaybackSlider_t7605D76A2AE864327F20ABF3D355D39DBC96488E* ___playbackSlider_8;
+	// PlaybackStateHandler ClipHandler::playbackStateHandler
+	PlaybackStateHandler_t271BAC0632A0164F2337FE0864AE6E11094D9F37* ___playbackStateHandler_9;
+};
+
+struct ClipHandler_t53A2898CB5FBDC9DB2D5262A9EECD44D237B8EC8_StaticFields
+{
+	// System.Collections.Generic.List`1<Clip> ClipHandler::<ClipList>k__BackingField
+	List_1_tC02BA8CF691FB27A7C69FFD24FA4C4D68ED59053* ___U3CClipListU3Ek__BackingField_10;
+	// System.Int32 ClipHandler::<clipId>k__BackingField
+	int32_t ___U3CclipIdU3Ek__BackingField_11;
 };
 
 // Oculus.Interaction.PoseDetection.ColliderContainsHandJointActiveState
@@ -28335,19 +28378,6 @@ struct GoalMover_tC3DAA2D53256BA0445CDA141F60422563915D324  : public MonoBehavio
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_nextMoveDirection_9;
 };
 
-// OculusSampleFramework.GrabManager
-struct GrabManager_tFDD6F5108DC387CBC460080257A754833896B753  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
-{
-	// UnityEngine.Collider OculusSampleFramework.GrabManager::m_grabVolume
-	Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* ___m_grabVolume_4;
-	// UnityEngine.Color OculusSampleFramework.GrabManager::OutlineColorInRange
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___OutlineColorInRange_5;
-	// UnityEngine.Color OculusSampleFramework.GrabManager::OutlineColorHighlighted
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___OutlineColorHighlighted_6;
-	// UnityEngine.Color OculusSampleFramework.GrabManager::OutlineColorOutOfRange
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___OutlineColorOutOfRange_7;
-};
-
 // GrabObject
 struct GrabObject_t130848A98FEF2A2803328956DEE21A3DD4AF4E9A  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -28400,19 +28430,6 @@ struct GrabStrengthIndicator_tD7D1E5C3E569EB0C0DD454357E500EFD4302164C  : public
 	bool ____started_16;
 };
 
-// OculusSampleFramework.GrabbableCrosshair
-struct GrabbableCrosshair_tD64497CB725FFAC3BADD88AA55713B55DEDD28B2  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
-{
-	// OculusSampleFramework.GrabbableCrosshair/CrosshairState OculusSampleFramework.GrabbableCrosshair::m_state
-	int32_t ___m_state_4;
-	// UnityEngine.Transform OculusSampleFramework.GrabbableCrosshair::m_centerEyeAnchor
-	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___m_centerEyeAnchor_5;
-	// UnityEngine.GameObject OculusSampleFramework.GrabbableCrosshair::m_targetedCrosshair
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___m_targetedCrosshair_6;
-	// UnityEngine.GameObject OculusSampleFramework.GrabbableCrosshair::m_enabledCrosshair
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___m_enabledCrosshair_7;
-};
-
 // GroupPresenceSample
 struct GroupPresenceSample_t06A815E78E40218B88AD1D61A08813F61E611D7D  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -28436,6 +28453,13 @@ struct GroupPresenceSample_t06A815E78E40218B88AD1D61A08813F61E611D7D  : public M
 	int32_t ___DestinationIndex_12;
 	// System.Boolean GroupPresenceSample::OnlyPushUpOnce
 	bool ___OnlyPushUpOnce_13;
+};
+
+// HMDObject
+struct HMDObject_t2FD76A1C2AA6A66C605C8E80DD80956993024757  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// UnityEngine.GameObject HMDObject::HMD
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___HMD_4;
 };
 
 // Oculus.Interaction.HandActiveState
@@ -28684,6 +28708,51 @@ struct HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A  : public Mo
 	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Pinky2Rotation_42;
 	// UnityEngine.Quaternion HandMotionRecorder::Pinky3Rotation
 	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Pinky3Rotation_43;
+};
+
+// HandObject
+struct HandObject_t3A9581D70D096243B393856C243A540351D989AA  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// UnityEngine.GameObject HandObject::HandModel
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___HandModel_4;
+	// UnityEngine.GameObject HandObject::Index1
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Index1_5;
+	// UnityEngine.GameObject HandObject::Index2
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Index2_6;
+	// UnityEngine.GameObject HandObject::Index3
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Index3_7;
+	// UnityEngine.GameObject HandObject::Thumb0
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Thumb0_8;
+	// UnityEngine.GameObject HandObject::Thumb1
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Thumb1_9;
+	// UnityEngine.GameObject HandObject::Thumb2
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Thumb2_10;
+	// UnityEngine.GameObject HandObject::Thumb3
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Thumb3_11;
+	// UnityEngine.GameObject HandObject::Middle1
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Middle1_12;
+	// UnityEngine.GameObject HandObject::Middle2
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Middle2_13;
+	// UnityEngine.GameObject HandObject::Middle3
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Middle3_14;
+	// UnityEngine.GameObject HandObject::Ring1
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Ring1_15;
+	// UnityEngine.GameObject HandObject::Ring2
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Ring2_16;
+	// UnityEngine.GameObject HandObject::Ring3
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Ring3_17;
+	// UnityEngine.GameObject HandObject::Pinky0
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Pinky0_18;
+	// UnityEngine.GameObject HandObject::Pinky1
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Pinky1_19;
+	// UnityEngine.GameObject HandObject::Pinky2
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Pinky2_20;
+	// UnityEngine.GameObject HandObject::Pinky3
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Pinky3_21;
+	// UnityEngine.GameObject HandObject::Wrist
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Wrist_22;
+	// UnityEngine.GameObject HandObject::ForearmStub
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___ForearmStub_23;
 };
 
 // Oculus.Interaction.Input.HandPhysicsCapsules
@@ -29267,45 +29336,6 @@ struct HandsActiveChecker_t6A81E0F5764685D2323A37325349986B1BC3283A  : public Mo
 	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ____centerEye_7;
 };
 
-// OculusSampleFramework.HandsManager
-struct HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
-{
-	// UnityEngine.GameObject OculusSampleFramework.HandsManager::_leftHand
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ____leftHand_5;
-	// UnityEngine.GameObject OculusSampleFramework.HandsManager::_rightHand
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ____rightHand_6;
-	// OculusSampleFramework.HandsManager/HandsVisualMode OculusSampleFramework.HandsManager::VisualMode
-	int32_t ___VisualMode_7;
-	// OVRHand[] OculusSampleFramework.HandsManager::_hand
-	OVRHandU5BU5D_tF90935AD4A2EDB5D90711E5FEA8D5DD77029C839* ____hand_8;
-	// OVRSkeleton[] OculusSampleFramework.HandsManager::_handSkeleton
-	OVRSkeletonU5BU5D_t8571A9F94528C9F3D576BA4834AED2D551212F89* ____handSkeleton_9;
-	// OVRSkeletonRenderer[] OculusSampleFramework.HandsManager::_handSkeletonRenderer
-	OVRSkeletonRendererU5BU5D_tA05C9B59A89C88B8B7A4245774D8A7401C64F6BB* ____handSkeletonRenderer_10;
-	// OVRMesh[] OculusSampleFramework.HandsManager::_handMesh
-	OVRMeshU5BU5D_t377D5C6C4996BA927ACB17EE21925C9443854301* ____handMesh_11;
-	// OVRMeshRenderer[] OculusSampleFramework.HandsManager::_handMeshRenderer
-	OVRMeshRendererU5BU5D_tFF55780FAB1E5521FA63751229939BEEA0B9D471* ____handMeshRenderer_12;
-	// UnityEngine.SkinnedMeshRenderer OculusSampleFramework.HandsManager::_leftMeshRenderer
-	SkinnedMeshRenderer_t020C4E8648EA1C4C6BA5C41502919B387E7E1C2E* ____leftMeshRenderer_13;
-	// UnityEngine.SkinnedMeshRenderer OculusSampleFramework.HandsManager::_rightMeshRenderer
-	SkinnedMeshRenderer_t020C4E8648EA1C4C6BA5C41502919B387E7E1C2E* ____rightMeshRenderer_14;
-	// UnityEngine.GameObject OculusSampleFramework.HandsManager::_leftSkeletonVisual
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ____leftSkeletonVisual_15;
-	// UnityEngine.GameObject OculusSampleFramework.HandsManager::_rightSkeletonVisual
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ____rightSkeletonVisual_16;
-	// System.Single OculusSampleFramework.HandsManager::_currentHandAlpha
-	float ____currentHandAlpha_17;
-	// System.Int32 OculusSampleFramework.HandsManager::HandAlphaId
-	int32_t ___HandAlphaId_18;
-};
-
-struct HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7_StaticFields
-{
-	// OculusSampleFramework.HandsManager OculusSampleFramework.HandsManager::<Instance>k__BackingField
-	HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7* ___U3CInstanceU3Ek__BackingField_19;
-};
-
 // Oculus.Interaction.PoseDetection.HmdOffset
 struct HmdOffset_tA46C7E559912B2860322E45CEACBA26A76FD147A  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -29377,25 +29407,6 @@ struct InputDataProviderUpdateTriggerOVR_tC3DEA6A00A64C09ED31A9307A431B762224F73
 	bool ____started_9;
 	// Oculus.Interaction.Input.IOVRCameraRigRef Oculus.Interaction.Input.InputDataProviderUpdateTriggerOVR::<CameraRigRef>k__BackingField
 	RuntimeObject* ___U3CCameraRigRefU3Ek__BackingField_10;
-};
-
-// OculusSampleFramework.Interactable
-struct Interactable_tC2DBF86B740EB02367138A8BCF634242CA3B93D2  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
-{
-	// OculusSampleFramework.ColliderZone OculusSampleFramework.Interactable::_proximityZoneCollider
-	RuntimeObject* ____proximityZoneCollider_4;
-	// OculusSampleFramework.ColliderZone OculusSampleFramework.Interactable::_contactZoneCollider
-	RuntimeObject* ____contactZoneCollider_5;
-	// OculusSampleFramework.ColliderZone OculusSampleFramework.Interactable::_actionZoneCollider
-	RuntimeObject* ____actionZoneCollider_6;
-	// System.Action`1<OculusSampleFramework.ColliderZoneArgs> OculusSampleFramework.Interactable::ProximityZoneEvent
-	Action_1_tCFBE340FD442BC4B5557FD1B5ECC8237D9ADD49F* ___ProximityZoneEvent_7;
-	// System.Action`1<OculusSampleFramework.ColliderZoneArgs> OculusSampleFramework.Interactable::ContactZoneEvent
-	Action_1_tCFBE340FD442BC4B5557FD1B5ECC8237D9ADD49F* ___ContactZoneEvent_8;
-	// System.Action`1<OculusSampleFramework.ColliderZoneArgs> OculusSampleFramework.Interactable::ActionZoneEvent
-	Action_1_tCFBE340FD442BC4B5557FD1B5ECC8237D9ADD49F* ___ActionZoneEvent_9;
-	// OculusSampleFramework.Interactable/InteractableStateArgsEvent OculusSampleFramework.Interactable::InteractableStateChanged
-	InteractableStateArgsEvent_tAE90140049B5BEA21987B055A652C8CBA4D67D41* ___InteractableStateChanged_10;
 };
 
 // Oculus.Interaction.InteractableColorVisual
@@ -30206,51 +30217,6 @@ struct OVRGrabbable_t322F6468B588212B888E9397723397A16E7614B5  : public MonoBeha
 	OVRGrabber_tC16FABB1A90FB635BDE98E18F032A793D7033FCC* ___m_grabbedBy_11;
 };
 
-// OVRGrabber
-struct OVRGrabber_tC16FABB1A90FB635BDE98E18F032A793D7033FCC  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
-{
-	// System.Single OVRGrabber::grabBegin
-	float ___grabBegin_4;
-	// System.Single OVRGrabber::grabEnd
-	float ___grabEnd_5;
-	// System.Boolean OVRGrabber::m_parentHeldObject
-	bool ___m_parentHeldObject_6;
-	// System.Boolean OVRGrabber::m_moveHandPosition
-	bool ___m_moveHandPosition_7;
-	// UnityEngine.Transform OVRGrabber::m_gripTransform
-	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___m_gripTransform_8;
-	// UnityEngine.Collider[] OVRGrabber::m_grabVolumes
-	ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* ___m_grabVolumes_9;
-	// OVRInput/Controller OVRGrabber::m_controller
-	int32_t ___m_controller_10;
-	// UnityEngine.Transform OVRGrabber::m_parentTransform
-	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___m_parentTransform_11;
-	// UnityEngine.GameObject OVRGrabber::m_player
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___m_player_12;
-	// System.Boolean OVRGrabber::m_grabVolumeEnabled
-	bool ___m_grabVolumeEnabled_13;
-	// UnityEngine.Vector3 OVRGrabber::m_lastPos
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_lastPos_14;
-	// UnityEngine.Quaternion OVRGrabber::m_lastRot
-	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___m_lastRot_15;
-	// UnityEngine.Quaternion OVRGrabber::m_anchorOffsetRotation
-	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___m_anchorOffsetRotation_16;
-	// UnityEngine.Vector3 OVRGrabber::m_anchorOffsetPosition
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_anchorOffsetPosition_17;
-	// System.Single OVRGrabber::m_prevFlex
-	float ___m_prevFlex_18;
-	// OVRGrabbable OVRGrabber::m_grabbedObj
-	OVRGrabbable_t322F6468B588212B888E9397723397A16E7614B5* ___m_grabbedObj_19;
-	// UnityEngine.Vector3 OVRGrabber::m_grabbedObjectPosOff
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_grabbedObjectPosOff_20;
-	// UnityEngine.Quaternion OVRGrabber::m_grabbedObjectRotOff
-	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___m_grabbedObjectRotOff_21;
-	// System.Collections.Generic.Dictionary`2<OVRGrabbable,System.Int32> OVRGrabber::m_grabCandidates
-	Dictionary_2_t749E8D446C2E8EE6FF423979EE55DB04E3E91EBD* ___m_grabCandidates_22;
-	// System.Boolean OVRGrabber::m_operatingWithoutOVRCameraRig
-	bool ___m_operatingWithoutOVRCameraRig_23;
-};
-
 // Oculus.Interaction.Input.OVRInputDeviceActiveState
 struct OVRInputDeviceActiveState_t450214A1DEAF8C015486192BC446C8DA29DB1982  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -30645,6 +30611,93 @@ struct PlatformManager_t713E3B9F73E37B6DE96E2DAFFBC69586F1AF2953_StaticFields
 {
 	// Oculus.Platform.Samples.VrVoiceChat.PlatformManager Oculus.Platform.Samples.VrVoiceChat.PlatformManager::s_instance
 	PlatformManager_t713E3B9F73E37B6DE96E2DAFFBC69586F1AF2953* ___s_instance_9;
+};
+
+// Playback
+struct Playback_t5E538A64E9969718C803D112CCC63C35A0756C90  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// ClipHandler Playback::clipHandler
+	ClipHandler_t53A2898CB5FBDC9DB2D5262A9EECD44D237B8EC8* ___clipHandler_4;
+	// PlaybackStateHandler Playback::playbackStateHandler
+	PlaybackStateHandler_t271BAC0632A0164F2337FE0864AE6E11094D9F37* ___playbackStateHandler_5;
+	// PlaybackObjectHandler Playback::playbackObjectHandler
+	PlaybackObjectHandler_t24E6FE8D9D39CA06311DFFC65AE17C616C4D47F1* ___playbackObjectHandler_6;
+};
+
+struct Playback_t5E538A64E9969718C803D112CCC63C35A0756C90_StaticFields
+{
+	// System.Boolean Playback::<isSceneLoaded>k__BackingField
+	bool ___U3CisSceneLoadedU3Ek__BackingField_7;
+	// System.Int32 Playback::<frameCount>k__BackingField
+	int32_t ___U3CframeCountU3Ek__BackingField_8;
+};
+
+// PlaybackHandler
+struct PlaybackHandler_tB51D0A6EE1AFD5D0E97A44F27E3408DC641FEB17  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// Playback PlaybackHandler::playback
+	Playback_t5E538A64E9969718C803D112CCC63C35A0756C90* ___playback_4;
+	// PlaybackSlider PlaybackHandler::playbackSlider
+	PlaybackSlider_t7605D76A2AE864327F20ABF3D355D39DBC96488E* ___playbackSlider_5;
+	// PlaybackObjectHandler PlaybackHandler::playbackObjectHandler
+	PlaybackObjectHandler_t24E6FE8D9D39CA06311DFFC65AE17C616C4D47F1* ___playbackObjectHandler_6;
+};
+
+struct PlaybackHandler_tB51D0A6EE1AFD5D0E97A44F27E3408DC641FEB17_StaticFields
+{
+	// System.Int32 PlaybackHandler::currentPlaybackIndex
+	int32_t ___currentPlaybackIndex_7;
+};
+
+// PlaybackObjectHandler
+struct PlaybackObjectHandler_t24E6FE8D9D39CA06311DFFC65AE17C616C4D47F1  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// UnityEngine.GameObject PlaybackObjectHandler::HMDTransparent
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___HMDTransparent_4;
+	// UnityEngine.GameObject PlaybackObjectHandler::RightHandSolidPrefab
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___RightHandSolidPrefab_5;
+	// UnityEngine.GameObject PlaybackObjectHandler::LeftHandSolidPrefab
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___LeftHandSolidPrefab_6;
+	// UnityEngine.Transform PlaybackObjectHandler::prefabHolderTransform
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___prefabHolderTransform_7;
+	// UnityEngine.GameObject PlaybackObjectHandler::UI
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___UI_8;
+	// UnityEngine.GameObject PlaybackObjectHandler::CenterEye
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___CenterEye_9;
+	// HandObject PlaybackObjectHandler::<RightHandObject>k__BackingField
+	HandObject_t3A9581D70D096243B393856C243A540351D989AA* ___U3CRightHandObjectU3Ek__BackingField_10;
+	// HandObject PlaybackObjectHandler::<LeftHandObject>k__BackingField
+	HandObject_t3A9581D70D096243B393856C243A540351D989AA* ___U3CLeftHandObjectU3Ek__BackingField_11;
+	// HMDObject PlaybackObjectHandler::<HMDObject>k__BackingField
+	HMDObject_t2FD76A1C2AA6A66C605C8E80DD80956993024757* ___U3CHMDObjectU3Ek__BackingField_12;
+	// UnityEngine.Vector3 PlaybackObjectHandler::AvatarOffset
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___AvatarOffset_13;
+};
+
+// PlaybackSlider
+struct PlaybackSlider_t7605D76A2AE864327F20ABF3D355D39DBC96488E  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// UnityEngine.UI.Slider PlaybackSlider::slider
+	Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* ___slider_4;
+	// PlaybackStateHandler PlaybackSlider::playbackStateHandler
+	PlaybackStateHandler_t271BAC0632A0164F2337FE0864AE6E11094D9F37* ___playbackStateHandler_5;
+};
+
+// PlaybackStateHandler
+struct PlaybackStateHandler_t271BAC0632A0164F2337FE0864AE6E11094D9F37  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// UnityEngine.GameObject PlaybackStateHandler::playButton
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___playButton_4;
+	// UnityEngine.GameObject PlaybackStateHandler::pauseButton
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___pauseButton_5;
+};
+
+struct PlaybackStateHandler_t271BAC0632A0164F2337FE0864AE6E11094D9F37_StaticFields
+{
+	// PlaybackState PlaybackStateHandler::currentState
+	int32_t ___currentState_6;
+	// PlaybackState PlaybackStateHandler::previousState
+	int32_t ___previousState_7;
 };
 
 // Oculus.Platform.Samples.VrHoops.Player
@@ -32061,35 +32114,6 @@ struct BaseRaycaster_t7DC8158FD3CA0193455344379DD5FF7CD5F1F832  : public UIBehav
 	BaseRaycaster_t7DC8158FD3CA0193455344379DD5FF7CD5F1F832* ___m_RootRaycaster_4;
 };
 
-// OculusSampleFramework.ButtonController
-struct ButtonController_t1660558E417C701B092265A45EBC1795F1DBBC79  : public Interactable_tC2DBF86B740EB02367138A8BCF634242CA3B93D2
-{
-	// UnityEngine.GameObject OculusSampleFramework.ButtonController::_proximityZone
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ____proximityZone_13;
-	// UnityEngine.GameObject OculusSampleFramework.ButtonController::_contactZone
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ____contactZone_14;
-	// UnityEngine.GameObject OculusSampleFramework.ButtonController::_actionZone
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ____actionZone_15;
-	// OculusSampleFramework.ButtonController/ContactTest[] OculusSampleFramework.ButtonController::_contactTests
-	ContactTestU5BU5D_t75A498A776B0A042C8885B8D28F9A1BB0F0D23C6* ____contactTests_16;
-	// UnityEngine.Transform OculusSampleFramework.ButtonController::_buttonPlaneCenter
-	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ____buttonPlaneCenter_17;
-	// System.Boolean OculusSampleFramework.ButtonController::_makeSureToolIsOnPositiveSide
-	bool ____makeSureToolIsOnPositiveSide_18;
-	// UnityEngine.Vector3 OculusSampleFramework.ButtonController::_localButtonDirection
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____localButtonDirection_19;
-	// OculusSampleFramework.InteractableToolTags[] OculusSampleFramework.ButtonController::_allValidToolsTags
-	InteractableToolTagsU5BU5D_t9691CC6F71F873F7CCADD2EFE97DC96C689B7DBA* ____allValidToolsTags_20;
-	// System.Int32 OculusSampleFramework.ButtonController::_toolTagsMask
-	int32_t ____toolTagsMask_21;
-	// System.Boolean OculusSampleFramework.ButtonController::_allowMultipleNearFieldInteraction
-	bool ____allowMultipleNearFieldInteraction_22;
-	// OculusSampleFramework.InteractableState OculusSampleFramework.ButtonController::<CurrentButtonState>k__BackingField
-	int32_t ___U3CCurrentButtonStateU3Ek__BackingField_23;
-	// System.Collections.Generic.Dictionary`2<OculusSampleFramework.InteractableTool,OculusSampleFramework.InteractableState> OculusSampleFramework.ButtonController::_toolToState
-	Dictionary_2_t6DB59BF621375F7C5B905DE434C895D071F4FA2E* ____toolToState_24;
-};
-
 // Oculus.Interaction.CandidatePositionComparer
 struct CandidatePositionComparer_t7FA714597C2B9E3BDAFDDB04C3CDB3B8736FCD2D  : public CandidateComparer_1_tBE59CB1244CA880C59B63D7E8FDAB400DC037949
 {
@@ -32243,37 +32267,6 @@ struct DistanceGrabbable_tACCCB0048BA604AD31B49237D057C5DF38DB07BB  : public OVR
 	bool ___m_inRange_17;
 	// System.Boolean OculusSampleFramework.DistanceGrabbable::m_targeted
 	bool ___m_targeted_18;
-};
-
-// OculusSampleFramework.DistanceGrabber
-struct DistanceGrabber_t56690441864EC9DD12844C2AAA0441AB4E3761C9  : public OVRGrabber_tC16FABB1A90FB635BDE98E18F032A793D7033FCC
-{
-	// System.Single OculusSampleFramework.DistanceGrabber::m_spherecastRadius
-	float ___m_spherecastRadius_24;
-	// System.Single OculusSampleFramework.DistanceGrabber::m_noSnapThreshhold
-	float ___m_noSnapThreshhold_25;
-	// System.Boolean OculusSampleFramework.DistanceGrabber::m_useSpherecast
-	bool ___m_useSpherecast_26;
-	// System.Boolean OculusSampleFramework.DistanceGrabber::m_preventGrabThroughWalls
-	bool ___m_preventGrabThroughWalls_27;
-	// System.Single OculusSampleFramework.DistanceGrabber::m_objectPullVelocity
-	float ___m_objectPullVelocity_28;
-	// System.Single OculusSampleFramework.DistanceGrabber::m_objectPullMaxRotationRate
-	float ___m_objectPullMaxRotationRate_29;
-	// System.Boolean OculusSampleFramework.DistanceGrabber::m_movingObjectToHand
-	bool ___m_movingObjectToHand_30;
-	// System.Single OculusSampleFramework.DistanceGrabber::m_maxGrabDistance
-	float ___m_maxGrabDistance_31;
-	// System.Int32 OculusSampleFramework.DistanceGrabber::m_grabObjectsInLayer
-	int32_t ___m_grabObjectsInLayer_32;
-	// System.Int32 OculusSampleFramework.DistanceGrabber::m_obstructionLayer
-	int32_t ___m_obstructionLayer_33;
-	// OculusSampleFramework.DistanceGrabber OculusSampleFramework.DistanceGrabber::m_otherHand
-	DistanceGrabber_t56690441864EC9DD12844C2AAA0441AB4E3761C9* ___m_otherHand_34;
-	// OculusSampleFramework.DistanceGrabbable OculusSampleFramework.DistanceGrabber::m_target
-	DistanceGrabbable_tACCCB0048BA604AD31B49237D057C5DF38DB07BB* ___m_target_35;
-	// UnityEngine.Collider OculusSampleFramework.DistanceGrabber::m_targetCollider
-	Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* ___m_targetCollider_36;
 };
 
 // Oculus.Interaction.DistanceReticles.DistantInteractionLineRendererVisual
@@ -41195,75 +41188,81 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5970[2] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5971[3] = 
 {
 	static_cast<int32_t>(offsetof(StartMenu_t75C686A394618522E32AD30C819F308E68E45818, ___overlay_4)),static_cast<int32_t>(offsetof(StartMenu_t75C686A394618522E32AD30C819F308E68E45818, ___text_5)),static_cast<int32_t>(offsetof(StartMenu_t75C686A394618522E32AD30C819F308E68E45818, ___vrRig_6)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5972[4] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5972[20] = 
+{
+	static_cast<int32_t>(offsetof(HandObject_t3A9581D70D096243B393856C243A540351D989AA, ___HandModel_4)),static_cast<int32_t>(offsetof(HandObject_t3A9581D70D096243B393856C243A540351D989AA, ___Index1_5)),static_cast<int32_t>(offsetof(HandObject_t3A9581D70D096243B393856C243A540351D989AA, ___Index2_6)),static_cast<int32_t>(offsetof(HandObject_t3A9581D70D096243B393856C243A540351D989AA, ___Index3_7)),static_cast<int32_t>(offsetof(HandObject_t3A9581D70D096243B393856C243A540351D989AA, ___Thumb0_8)),static_cast<int32_t>(offsetof(HandObject_t3A9581D70D096243B393856C243A540351D989AA, ___Thumb1_9)),static_cast<int32_t>(offsetof(HandObject_t3A9581D70D096243B393856C243A540351D989AA, ___Thumb2_10)),static_cast<int32_t>(offsetof(HandObject_t3A9581D70D096243B393856C243A540351D989AA, ___Thumb3_11)),static_cast<int32_t>(offsetof(HandObject_t3A9581D70D096243B393856C243A540351D989AA, ___Middle1_12)),static_cast<int32_t>(offsetof(HandObject_t3A9581D70D096243B393856C243A540351D989AA, ___Middle2_13)),static_cast<int32_t>(offsetof(HandObject_t3A9581D70D096243B393856C243A540351D989AA, ___Middle3_14)),static_cast<int32_t>(offsetof(HandObject_t3A9581D70D096243B393856C243A540351D989AA, ___Ring1_15)),static_cast<int32_t>(offsetof(HandObject_t3A9581D70D096243B393856C243A540351D989AA, ___Ring2_16)),static_cast<int32_t>(offsetof(HandObject_t3A9581D70D096243B393856C243A540351D989AA, ___Ring3_17)),static_cast<int32_t>(offsetof(HandObject_t3A9581D70D096243B393856C243A540351D989AA, ___Pinky0_18)),static_cast<int32_t>(offsetof(HandObject_t3A9581D70D096243B393856C243A540351D989AA, ___Pinky1_19)),static_cast<int32_t>(offsetof(HandObject_t3A9581D70D096243B393856C243A540351D989AA, ___Pinky2_20)),static_cast<int32_t>(offsetof(HandObject_t3A9581D70D096243B393856C243A540351D989AA, ___Pinky3_21)),static_cast<int32_t>(offsetof(HandObject_t3A9581D70D096243B393856C243A540351D989AA, ___Wrist_22)),static_cast<int32_t>(offsetof(HandObject_t3A9581D70D096243B393856C243A540351D989AA, ___ForearmStub_23)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5973[1] = 
+{
+	static_cast<int32_t>(offsetof(HMDObject_t2FD76A1C2AA6A66C605C8E80DD80956993024757, ___HMD_4)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5974[4] = 
 {
 	static_cast<int32_t>(offsetof(Blink_tF4CBCA63BFE89C3E2C9EA91C6D62923958DA626C, ___startColor_4)),static_cast<int32_t>(offsetof(Blink_tF4CBCA63BFE89C3E2C9EA91C6D62923958DA626C, ___endColor_5)),static_cast<int32_t>(offsetof(Blink_tF4CBCA63BFE89C3E2C9EA91C6D62923958DA626C, ___speed_6)),static_cast<int32_t>(offsetof(Blink_tF4CBCA63BFE89C3E2C9EA91C6D62923958DA626C, ___imgComp_7)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5973[40] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5975[2] = 
 {
-	static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CHandPositionU3Ek__BackingField_0)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CWristPositionU3Ek__BackingField_1)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CForearmStubPositionU3Ek__BackingField_2)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CIndex1PositionU3Ek__BackingField_3)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CIndex2PositionU3Ek__BackingField_4)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CIndex3PositionU3Ek__BackingField_5)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CThumb0PositionU3Ek__BackingField_6)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CThumb1PositionU3Ek__BackingField_7)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CThumb2PositionU3Ek__BackingField_8)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CThumb3PositionU3Ek__BackingField_9)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CMiddle1PositionU3Ek__BackingField_10)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CMiddle2PositionU3Ek__BackingField_11)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CMiddle3PositionU3Ek__BackingField_12)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CRing1PositionU3Ek__BackingField_13)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CRing2PositionU3Ek__BackingField_14)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CRing3PositionU3Ek__BackingField_15)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CPinky0PositionU3Ek__BackingField_16)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CPinky1PositionU3Ek__BackingField_17)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CPinky2PositionU3Ek__BackingField_18)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CPinky3PositionU3Ek__BackingField_19)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CHandRotationU3Ek__BackingField_20)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CWristRotationU3Ek__BackingField_21)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CForearmStubRotationU3Ek__BackingField_22)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CIndex1RotationU3Ek__BackingField_23)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CIndex2RotationU3Ek__BackingField_24)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CIndex3RotationU3Ek__BackingField_25)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CThumb0RotationU3Ek__BackingField_26)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CThumb1RotationU3Ek__BackingField_27)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CThumb2RotationU3Ek__BackingField_28)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CThumb3RotationU3Ek__BackingField_29)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CMiddle1RotationU3Ek__BackingField_30)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CMiddle2RotationU3Ek__BackingField_31)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CMiddle3RotationU3Ek__BackingField_32)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CRing1RotationU3Ek__BackingField_33)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CRing2RotationU3Ek__BackingField_34)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CRing3RotationU3Ek__BackingField_35)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CPinky0RotationU3Ek__BackingField_36)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CPinky1RotationU3Ek__BackingField_37)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CPinky2RotationU3Ek__BackingField_38)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CPinky3RotationU3Ek__BackingField_39)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5974[55] = 
-{
-	static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CCurlOpenIndexU3Ek__BackingField_0)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CCurlOpenMiddleU3Ek__BackingField_1)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CCurlOpenRingU3Ek__BackingField_2)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CCurlOpenPinkyU3Ek__BackingField_3)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CCurlOpenThumbU3Ek__BackingField_4)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CCurlClosedIndexU3Ek__BackingField_5)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CCurlClosedMiddleU3Ek__BackingField_6)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CCurlClosedRingU3Ek__BackingField_7)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CCurlClosedPinkyU3Ek__BackingField_8)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CCurlClosedThumbU3Ek__BackingField_9)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CCurlNeutralIndexU3Ek__BackingField_10)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CCurlNeutralMiddleU3Ek__BackingField_11)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CCurlNeutralRingU3Ek__BackingField_12)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CCurlNeutralPinkyU3Ek__BackingField_13)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CCurlNeutralThumbU3Ek__BackingField_14)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CFlexionOpenIndexU3Ek__BackingField_15)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CFlexionOpenMiddleU3Ek__BackingField_16)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CFlexionOpenRingU3Ek__BackingField_17)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CFlexionOpenPinkyU3Ek__BackingField_18)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CFlexionClosedIndexU3Ek__BackingField_19)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CFlexionClosedMiddleU3Ek__BackingField_20)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CFlexionClosedRingU3Ek__BackingField_21)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CFlexionClosedPinkyU3Ek__BackingField_22)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CFlexionNeutralIndexU3Ek__BackingField_23)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CFlexionNeutralMiddleU3Ek__BackingField_24)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CFlexionNeutralRingU3Ek__BackingField_25)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CFlexionNeutralPinkyU3Ek__BackingField_26)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CAbductionOpenIndexU3Ek__BackingField_27)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CAbductionOpenMiddleU3Ek__BackingField_28)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CAbductionOpenRingU3Ek__BackingField_29)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CAbductionOpenThumbU3Ek__BackingField_30)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CAbductionClosedIndexU3Ek__BackingField_31)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CAbductionClosedMiddleU3Ek__BackingField_32)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CAbductionClosedRingU3Ek__BackingField_33)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CAbductionClosedThumbU3Ek__BackingField_34)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3COppositionTouchingIndexU3Ek__BackingField_35)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3COppositionTouchingMiddleU3Ek__BackingField_36)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3COppositionTouchingRingU3Ek__BackingField_37)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3COppositionTouchingPinkyU3Ek__BackingField_38)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3COppositionNearIndexU3Ek__BackingField_39)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3COppositionNearMiddleU3Ek__BackingField_40)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3COppositionNearRingU3Ek__BackingField_41)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3COppositionNearPinkyU3Ek__BackingField_42)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3COppositionNoneIndexU3Ek__BackingField_43)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3COppositionNoneMiddleU3Ek__BackingField_44)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3COppositionNoneRingU3Ek__BackingField_45)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3COppositionNonePinkyU3Ek__BackingField_46)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CWristUpU3Ek__BackingField_47)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CWristDownU3Ek__BackingField_48)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CPalmUpU3Ek__BackingField_49)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CPalmDownU3Ek__BackingField_50)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CPalmTowardsFaceU3Ek__BackingField_51)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CPalmAwayFromFaceU3Ek__BackingField_52)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CFingersUpU3Ek__BackingField_53)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CFingersDownU3Ek__BackingField_54)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5975[40] = 
-{
-	static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CHandPositionU3Ek__BackingField_0)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CWristPositionU3Ek__BackingField_1)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CForearmStubPositionU3Ek__BackingField_2)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CIndex1PositionU3Ek__BackingField_3)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CIndex2PositionU3Ek__BackingField_4)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CIndex3PositionU3Ek__BackingField_5)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CThumb0PositionU3Ek__BackingField_6)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CThumb1PositionU3Ek__BackingField_7)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CThumb2PositionU3Ek__BackingField_8)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CThumb3PositionU3Ek__BackingField_9)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CMiddle1PositionU3Ek__BackingField_10)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CMiddle2PositionU3Ek__BackingField_11)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CMiddle3PositionU3Ek__BackingField_12)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CRing1PositionU3Ek__BackingField_13)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CRing2PositionU3Ek__BackingField_14)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CRing3PositionU3Ek__BackingField_15)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CPinky0PositionU3Ek__BackingField_16)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CPinky1PositionU3Ek__BackingField_17)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CPinky2PositionU3Ek__BackingField_18)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CPinky3PositionU3Ek__BackingField_19)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CHandRotationU3Ek__BackingField_20)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CWristRotationU3Ek__BackingField_21)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CForearmStubRotationU3Ek__BackingField_22)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CIndex1RotationU3Ek__BackingField_23)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CIndex2RotationU3Ek__BackingField_24)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CIndex3RotationU3Ek__BackingField_25)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CThumb0RotationU3Ek__BackingField_26)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CThumb1RotationU3Ek__BackingField_27)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CThumb2RotationU3Ek__BackingField_28)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CThumb3RotationU3Ek__BackingField_29)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CMiddle1RotationU3Ek__BackingField_30)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CMiddle2RotationU3Ek__BackingField_31)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CMiddle3RotationU3Ek__BackingField_32)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CRing1RotationU3Ek__BackingField_33)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CRing2RotationU3Ek__BackingField_34)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CRing3RotationU3Ek__BackingField_35)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CPinky0RotationU3Ek__BackingField_36)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CPinky1RotationU3Ek__BackingField_37)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CPinky2RotationU3Ek__BackingField_38)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CPinky3RotationU3Ek__BackingField_39)),};
+	static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass10_0_t913EF55A57532E9D4973FAB984D7502BA0E23D4B, ___clipButton_0)),static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass10_0_t913EF55A57532E9D4973FAB984D7502BA0E23D4B, ___U3CU3E4__this_1)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5976[2] = 
 {
+	static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass10_1_t21D65AF0D3C7D10FCB0723580E6A0A5164CBD5A6, ___buttonToggle_0)),static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass10_1_t21D65AF0D3C7D10FCB0723580E6A0A5164CBD5A6, ___CSU24U3CU3E8__locals1_1)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5977[5] = 
+{
+	static_cast<int32_t>(offsetof(ClipButtonHandler_t3FBDE6AE475092D41C0DDFA11642AAC5821C97E0, ___clipPrefab_4)),static_cast<int32_t>(offsetof(ClipButtonHandler_t3FBDE6AE475092D41C0DDFA11642AAC5821C97E0, ___clipPanel_5)),static_cast<int32_t>(offsetof(ClipButtonHandler_t3FBDE6AE475092D41C0DDFA11642AAC5821C97E0, ___clipHandler_6)),static_cast<int32_t>(offsetof(ClipButtonHandler_t3FBDE6AE475092D41C0DDFA11642AAC5821C97E0_StaticFields, ___U3CClipButtonListU3Ek__BackingField_7)),static_cast<int32_t>(offsetof(ClipButtonHandler_t3FBDE6AE475092D41C0DDFA11642AAC5821C97E0, ___ClipButtonObjects_8)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5978[2] = 
+{
+	static_cast<int32_t>(offsetof(U3CU3Ec_tCE4340198325CF80EBD6717B59E8765F728943DB_StaticFields, ___U3CU3E9_0)),static_cast<int32_t>(offsetof(U3CU3Ec_tCE4340198325CF80EBD6717B59E8765F728943DB_StaticFields, ___U3CU3E9__18_0_1)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5979[8] = 
+{
+	static_cast<int32_t>(offsetof(ClipHandler_t53A2898CB5FBDC9DB2D5262A9EECD44D237B8EC8, ___slider_4)),static_cast<int32_t>(offsetof(ClipHandler_t53A2898CB5FBDC9DB2D5262A9EECD44D237B8EC8, ___sliderHandle_5)),static_cast<int32_t>(offsetof(ClipHandler_t53A2898CB5FBDC9DB2D5262A9EECD44D237B8EC8, ___clipButtonHandler_6)),static_cast<int32_t>(offsetof(ClipHandler_t53A2898CB5FBDC9DB2D5262A9EECD44D237B8EC8, ___playback_7)),static_cast<int32_t>(offsetof(ClipHandler_t53A2898CB5FBDC9DB2D5262A9EECD44D237B8EC8, ___playbackSlider_8)),static_cast<int32_t>(offsetof(ClipHandler_t53A2898CB5FBDC9DB2D5262A9EECD44D237B8EC8, ___playbackStateHandler_9)),static_cast<int32_t>(offsetof(ClipHandler_t53A2898CB5FBDC9DB2D5262A9EECD44D237B8EC8_StaticFields, ___U3CClipListU3Ek__BackingField_10)),static_cast<int32_t>(offsetof(ClipHandler_t53A2898CB5FBDC9DB2D5262A9EECD44D237B8EC8_StaticFields, ___U3CclipIdU3Ek__BackingField_11)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5980[3] = 
+{
+	static_cast<int32_t>(offsetof(Clip_t5B493D4729396BB82DD0E7ED754916E180EC23BD, ___Id_0)),static_cast<int32_t>(offsetof(Clip_t5B493D4729396BB82DD0E7ED754916E180EC23BD, ___startIndex_1)),static_cast<int32_t>(offsetof(Clip_t5B493D4729396BB82DD0E7ED754916E180EC23BD, ___endIndex_2)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5981[4] = 
+{
+	static_cast<int32_t>(offsetof(ClipButton_t87136662AD56ABC2D225D8DEBF1368A8C2226F98, ___clip_0)),static_cast<int32_t>(offsetof(ClipButton_t87136662AD56ABC2D225D8DEBF1368A8C2226F98, ___StartPosition_1)),static_cast<int32_t>(offsetof(ClipButton_t87136662AD56ABC2D225D8DEBF1368A8C2226F98, ___EndPosition_2)),static_cast<int32_t>(offsetof(ClipButton_t87136662AD56ABC2D225D8DEBF1368A8C2226F98, ___isToggleOn_3)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5982[40] = 
+{
+	static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CHandPositionU3Ek__BackingField_0)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CWristPositionU3Ek__BackingField_1)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CForearmStubPositionU3Ek__BackingField_2)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CIndex1PositionU3Ek__BackingField_3)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CIndex2PositionU3Ek__BackingField_4)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CIndex3PositionU3Ek__BackingField_5)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CThumb0PositionU3Ek__BackingField_6)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CThumb1PositionU3Ek__BackingField_7)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CThumb2PositionU3Ek__BackingField_8)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CThumb3PositionU3Ek__BackingField_9)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CMiddle1PositionU3Ek__BackingField_10)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CMiddle2PositionU3Ek__BackingField_11)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CMiddle3PositionU3Ek__BackingField_12)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CRing1PositionU3Ek__BackingField_13)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CRing2PositionU3Ek__BackingField_14)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CRing3PositionU3Ek__BackingField_15)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CPinky0PositionU3Ek__BackingField_16)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CPinky1PositionU3Ek__BackingField_17)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CPinky2PositionU3Ek__BackingField_18)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CPinky3PositionU3Ek__BackingField_19)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CHandRotationU3Ek__BackingField_20)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CWristRotationU3Ek__BackingField_21)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CForearmStubRotationU3Ek__BackingField_22)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CIndex1RotationU3Ek__BackingField_23)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CIndex2RotationU3Ek__BackingField_24)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CIndex3RotationU3Ek__BackingField_25)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CThumb0RotationU3Ek__BackingField_26)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CThumb1RotationU3Ek__BackingField_27)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CThumb2RotationU3Ek__BackingField_28)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CThumb3RotationU3Ek__BackingField_29)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CMiddle1RotationU3Ek__BackingField_30)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CMiddle2RotationU3Ek__BackingField_31)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CMiddle3RotationU3Ek__BackingField_32)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CRing1RotationU3Ek__BackingField_33)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CRing2RotationU3Ek__BackingField_34)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CRing3RotationU3Ek__BackingField_35)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CPinky0RotationU3Ek__BackingField_36)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CPinky1RotationU3Ek__BackingField_37)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CPinky2RotationU3Ek__BackingField_38)),static_cast<int32_t>(offsetof(HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F, ___U3CPinky3RotationU3Ek__BackingField_39)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5983[55] = 
+{
+	static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CCurlOpenIndexU3Ek__BackingField_0)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CCurlOpenMiddleU3Ek__BackingField_1)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CCurlOpenRingU3Ek__BackingField_2)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CCurlOpenPinkyU3Ek__BackingField_3)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CCurlOpenThumbU3Ek__BackingField_4)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CCurlClosedIndexU3Ek__BackingField_5)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CCurlClosedMiddleU3Ek__BackingField_6)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CCurlClosedRingU3Ek__BackingField_7)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CCurlClosedPinkyU3Ek__BackingField_8)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CCurlClosedThumbU3Ek__BackingField_9)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CCurlNeutralIndexU3Ek__BackingField_10)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CCurlNeutralMiddleU3Ek__BackingField_11)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CCurlNeutralRingU3Ek__BackingField_12)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CCurlNeutralPinkyU3Ek__BackingField_13)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CCurlNeutralThumbU3Ek__BackingField_14)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CFlexionOpenIndexU3Ek__BackingField_15)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CFlexionOpenMiddleU3Ek__BackingField_16)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CFlexionOpenRingU3Ek__BackingField_17)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CFlexionOpenPinkyU3Ek__BackingField_18)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CFlexionClosedIndexU3Ek__BackingField_19)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CFlexionClosedMiddleU3Ek__BackingField_20)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CFlexionClosedRingU3Ek__BackingField_21)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CFlexionClosedPinkyU3Ek__BackingField_22)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CFlexionNeutralIndexU3Ek__BackingField_23)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CFlexionNeutralMiddleU3Ek__BackingField_24)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CFlexionNeutralRingU3Ek__BackingField_25)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CFlexionNeutralPinkyU3Ek__BackingField_26)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CAbductionOpenIndexU3Ek__BackingField_27)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CAbductionOpenMiddleU3Ek__BackingField_28)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CAbductionOpenRingU3Ek__BackingField_29)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CAbductionOpenThumbU3Ek__BackingField_30)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CAbductionClosedIndexU3Ek__BackingField_31)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CAbductionClosedMiddleU3Ek__BackingField_32)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CAbductionClosedRingU3Ek__BackingField_33)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CAbductionClosedThumbU3Ek__BackingField_34)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3COppositionTouchingIndexU3Ek__BackingField_35)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3COppositionTouchingMiddleU3Ek__BackingField_36)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3COppositionTouchingRingU3Ek__BackingField_37)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3COppositionTouchingPinkyU3Ek__BackingField_38)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3COppositionNearIndexU3Ek__BackingField_39)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3COppositionNearMiddleU3Ek__BackingField_40)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3COppositionNearRingU3Ek__BackingField_41)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3COppositionNearPinkyU3Ek__BackingField_42)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3COppositionNoneIndexU3Ek__BackingField_43)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3COppositionNoneMiddleU3Ek__BackingField_44)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3COppositionNoneRingU3Ek__BackingField_45)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3COppositionNonePinkyU3Ek__BackingField_46)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CWristUpU3Ek__BackingField_47)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CWristDownU3Ek__BackingField_48)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CPalmUpU3Ek__BackingField_49)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CPalmDownU3Ek__BackingField_50)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CPalmTowardsFaceU3Ek__BackingField_51)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CPalmAwayFromFaceU3Ek__BackingField_52)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CFingersUpU3Ek__BackingField_53)),static_cast<int32_t>(offsetof(HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D, ___U3CFingersDownU3Ek__BackingField_54)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5984[40] = 
+{
+	static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CHandPositionU3Ek__BackingField_0)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CWristPositionU3Ek__BackingField_1)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CForearmStubPositionU3Ek__BackingField_2)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CIndex1PositionU3Ek__BackingField_3)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CIndex2PositionU3Ek__BackingField_4)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CIndex3PositionU3Ek__BackingField_5)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CThumb0PositionU3Ek__BackingField_6)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CThumb1PositionU3Ek__BackingField_7)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CThumb2PositionU3Ek__BackingField_8)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CThumb3PositionU3Ek__BackingField_9)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CMiddle1PositionU3Ek__BackingField_10)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CMiddle2PositionU3Ek__BackingField_11)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CMiddle3PositionU3Ek__BackingField_12)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CRing1PositionU3Ek__BackingField_13)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CRing2PositionU3Ek__BackingField_14)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CRing3PositionU3Ek__BackingField_15)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CPinky0PositionU3Ek__BackingField_16)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CPinky1PositionU3Ek__BackingField_17)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CPinky2PositionU3Ek__BackingField_18)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CPinky3PositionU3Ek__BackingField_19)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CHandRotationU3Ek__BackingField_20)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CWristRotationU3Ek__BackingField_21)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CForearmStubRotationU3Ek__BackingField_22)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CIndex1RotationU3Ek__BackingField_23)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CIndex2RotationU3Ek__BackingField_24)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CIndex3RotationU3Ek__BackingField_25)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CThumb0RotationU3Ek__BackingField_26)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CThumb1RotationU3Ek__BackingField_27)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CThumb2RotationU3Ek__BackingField_28)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CThumb3RotationU3Ek__BackingField_29)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CMiddle1RotationU3Ek__BackingField_30)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CMiddle2RotationU3Ek__BackingField_31)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CMiddle3RotationU3Ek__BackingField_32)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CRing1RotationU3Ek__BackingField_33)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CRing2RotationU3Ek__BackingField_34)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CRing3RotationU3Ek__BackingField_35)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CPinky0RotationU3Ek__BackingField_36)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CPinky1RotationU3Ek__BackingField_37)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CPinky2RotationU3Ek__BackingField_38)),static_cast<int32_t>(offsetof(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320, ___U3CPinky3RotationU3Ek__BackingField_39)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5985[2] = 
+{
 	static_cast<int32_t>(offsetof(HMDMotion_tEE8DBE27DBA99C1705FAF579B42808426F3FDC56, ___U3CHMDPositionU3Ek__BackingField_0)),static_cast<int32_t>(offsetof(HMDMotion_tEE8DBE27DBA99C1705FAF579B42808426F3FDC56, ___U3CHMDRotationU3Ek__BackingField_1)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5977[40] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5986[5] = 
 {
-	static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___HandPosition_4)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___WristPosition_5)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___ForearmStubPosition_6)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Index1Position_7)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Index2Position_8)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Index3Position_9)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Thumb0Position_10)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Thumb1Position_11)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Thumb2Position_12)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Thumb3Position_13)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Middle1Position_14)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Middle2Position_15)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Middle3Position_16)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Ring1Position_17)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Ring2Position_18)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Ring3Position_19)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Pinky0Position_20)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Pinky1Position_21)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Pinky2Position_22)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Pinky3Position_23)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___HandRotation_24)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___ForearmStubRotation_25)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___WristRotation_26)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Index1Rotation_27)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Index2Rotation_28)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Index3Rotation_29)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Thumb0Rotation_30)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Thumb1Rotation_31)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Thumb2Rotation_32)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Thumb3Rotation_33)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Middle1Rotation_34)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Middle2Rotation_35)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Middle3Rotation_36)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Ring1Rotation_37)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Ring2Rotation_38)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Ring3Rotation_39)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Pinky0Rotation_40)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Pinky1Rotation_41)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Pinky2Rotation_42)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Pinky3Rotation_43)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5978[110] = 
-{
-	static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightCurlOpenIndex_4)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightCurlOpenMiddle_5)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightCurlOpenRing_6)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightCurlOpenPinky_7)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightCurlOpenThumb_8)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightCurlClosedIndex_9)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightCurlClosedMiddle_10)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightCurlClosedRing_11)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightCurlClosedPinky_12)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightCurlClosedThumb_13)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightCurlNeutralIndex_14)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightCurlNeutralMiddle_15)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightCurlNeutralRing_16)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightCurlNeutralPinky_17)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightCurlNeutralThumb_18)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightFlexionOpenIndex_19)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightFlexionOpenMiddle_20)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightFlexionOpenRing_21)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightFlexionOpenPinky_22)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightFlexionClosedIndex_23)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightFlexionClosedMiddle_24)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightFlexionClosedRing_25)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightFlexionClosedPinky_26)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightFlexionNeutralIndex_27)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightFlexionNeutralMiddle_28)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightFlexionNeutralRing_29)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightFlexionNeutralPinky_30)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightAbductionOpenIndex_31)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightAbductionOpenMiddle_32)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightAbductionOpenRing_33)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightAbductionOpenThumb_34)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightAbductionClosedIndex_35)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightAbductionClosedMiddle_36)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightAbductionClosedRing_37)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightAbductionClosedThumb_38)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightOppositionTouchingIndex_39)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightOppositionTouchingMiddle_40)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightOppositionTouchingRing_41)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightOppositionTouchingPinky_42)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightOppositionNearIndex_43)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightOppositionNearMiddle_44)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightOppositionNearRing_45)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightOppositionNearPinky_46)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightOppositionNoneIndex_47)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightOppositionNoneMiddle_48)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightOppositionNoneRing_49)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightOppositionNonePinky_50)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightWristUp_51)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightWristDown_52)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightPalmUp_53)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightPalmDown_54)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightPalmTowardsFace_55)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightPalmAwayFromFace_56)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightFingersUp_57)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightFingersDown_58)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftCurlOpenIndex_59)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftCurlOpenMiddle_60)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftCurlOpenRing_61)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftCurlOpenPinky_62)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftCurlOpenThumb_63)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftCurlClosedIndex_64)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftCurlClosedMiddle_65)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftCurlClosedRing_66)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftCurlClosedPinky_67)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftCurlClosedThumb_68)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftCurlNeutralIndex_69)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftCurlNeutralMiddle_70)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftCurlNeutralRing_71)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftCurlNeutralPinky_72)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftCurlNeutralThumb_73)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftFlexionOpenIndex_74)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftFlexionOpenMiddle_75)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftFlexionOpenRing_76)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftFlexionOpenPinky_77)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftFlexionClosedIndex_78)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftFlexionClosedMiddle_79)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftFlexionClosedRing_80)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftFlexionClosedPinky_81)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftFlexionNeutralIndex_82)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftFlexionNeutralMiddle_83)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftFlexionNeutralRing_84)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftFlexionNeutralPinky_85)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftAbductionOpenIndex_86)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftAbductionOpenMiddle_87)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftAbductionOpenRing_88)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftAbductionOpenThumb_89)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftAbductionClosedIndex_90)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftAbductionClosedMiddle_91)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftAbductionClosedRing_92)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftAbductionClosedThumb_93)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftOppositionTouchingIndex_94)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftOppositionTouchingMiddle_95)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftOppositionTouchingRing_96)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftOppositionTouchingPinky_97)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftOppositionNearIndex_98)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftOppositionNearMiddle_99)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftOppositionNearRing_100)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftOppositionNearPinky_101)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftOppositionNoneIndex_102)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftOppositionNoneMiddle_103)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftOppositionNoneRing_104)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftOppositionNonePinky_105)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftWristUp_106)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftWristDown_107)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftPalmUp_108)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftPalmDown_109)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftPalmTowardsFace_110)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftPalmAwayFromFace_111)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftFingersUp_112)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftFingersDown_113)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5979[40] = 
-{
-	static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___HandPosition_4)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___WristPosition_5)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___ForearmStubPosition_6)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Index1Position_7)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Index2Position_8)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Index3Position_9)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Thumb0Position_10)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Thumb1Position_11)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Thumb2Position_12)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Thumb3Position_13)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Middle1Position_14)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Middle2Position_15)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Middle3Position_16)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Ring1Position_17)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Ring2Position_18)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Ring3Position_19)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Pinky0Position_20)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Pinky1Position_21)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Pinky2Position_22)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Pinky3Position_23)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___HandRotation_24)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___ForearmStubRotation_25)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___WristRotation_26)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Index1Rotation_27)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Index2Rotation_28)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Index3Rotation_29)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Thumb0Rotation_30)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Thumb1Rotation_31)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Thumb2Rotation_32)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Thumb3Rotation_33)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Middle1Rotation_34)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Middle2Rotation_35)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Middle3Rotation_36)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Ring1Rotation_37)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Ring2Rotation_38)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Ring3Rotation_39)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Pinky0Rotation_40)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Pinky1Rotation_41)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Pinky2Rotation_42)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Pinky3Rotation_43)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5981[18] = 
-{
-	static_cast<int32_t>(offsetof(MasterRecording_t928917BA80091E24356531DAEAB9978B400B62D7, ___handMotionRecorder_4)),static_cast<int32_t>(offsetof(MasterRecording_t928917BA80091E24356531DAEAB9978B400B62D7, ___handSkeletonRecorder_5)),static_cast<int32_t>(offsetof(MasterRecording_t928917BA80091E24356531DAEAB9978B400B62D7, ___handPoseRecorder_6)),static_cast<int32_t>(offsetof(MasterRecording_t928917BA80091E24356531DAEAB9978B400B62D7, ___HMDRecorder_7)),static_cast<int32_t>(offsetof(MasterRecording_t928917BA80091E24356531DAEAB9978B400B62D7, ___ovrHandRight_8)),static_cast<int32_t>(offsetof(MasterRecording_t928917BA80091E24356531DAEAB9978B400B62D7, ___ovrSkeletonRight_9)),static_cast<int32_t>(offsetof(MasterRecording_t928917BA80091E24356531DAEAB9978B400B62D7, ___ovrHandLeft_10)),static_cast<int32_t>(offsetof(MasterRecording_t928917BA80091E24356531DAEAB9978B400B62D7, ___ovrSkeletonLeft_11)),static_cast<int32_t>(offsetof(MasterRecording_t928917BA80091E24356531DAEAB9978B400B62D7, ___HMD_12)),static_cast<int32_t>(offsetof(MasterRecording_t928917BA80091E24356531DAEAB9978B400B62D7, ___RecordLabel_13)),static_cast<int32_t>(offsetof(MasterRecording_t928917BA80091E24356531DAEAB9978B400B62D7_StaticFields, ___RightHandMotion_14)),static_cast<int32_t>(offsetof(MasterRecording_t928917BA80091E24356531DAEAB9978B400B62D7_StaticFields, ___LeftHandMotion_15)),static_cast<int32_t>(offsetof(MasterRecording_t928917BA80091E24356531DAEAB9978B400B62D7_StaticFields, ___RightHandSkeleton_16)),static_cast<int32_t>(offsetof(MasterRecording_t928917BA80091E24356531DAEAB9978B400B62D7_StaticFields, ___LeftHandSkeleton_17)),static_cast<int32_t>(offsetof(MasterRecording_t928917BA80091E24356531DAEAB9978B400B62D7_StaticFields, ___RightHandPose_18)),static_cast<int32_t>(offsetof(MasterRecording_t928917BA80091E24356531DAEAB9978B400B62D7_StaticFields, ___LeftHandPose_19)),static_cast<int32_t>(offsetof(MasterRecording_t928917BA80091E24356531DAEAB9978B400B62D7_StaticFields, ___HMDMotion_20)),static_cast<int32_t>(offsetof(MasterRecording_t928917BA80091E24356531DAEAB9978B400B62D7, ___isRecordRestarting_21)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5983[5] = 
-{
-	static_cast<int32_t>(offsetof(ColorGrabbable_t5D566462724092EB2B56A59AB4A4054969A46121_StaticFields, ___COLOR_GRAB_12)),static_cast<int32_t>(offsetof(ColorGrabbable_t5D566462724092EB2B56A59AB4A4054969A46121_StaticFields, ___COLOR_HIGHLIGHT_13)),static_cast<int32_t>(offsetof(ColorGrabbable_t5D566462724092EB2B56A59AB4A4054969A46121, ___m_color_14)),static_cast<int32_t>(offsetof(ColorGrabbable_t5D566462724092EB2B56A59AB4A4054969A46121, ___m_meshRenderers_15)),static_cast<int32_t>(offsetof(ColorGrabbable_t5D566462724092EB2B56A59AB4A4054969A46121, ___m_highlight_16)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5984[7] = 
-{
-	static_cast<int32_t>(offsetof(DistanceGrabbable_tACCCB0048BA604AD31B49237D057C5DF38DB07BB, ___m_materialColorField_12)),static_cast<int32_t>(offsetof(DistanceGrabbable_tACCCB0048BA604AD31B49237D057C5DF38DB07BB, ___m_crosshair_13)),static_cast<int32_t>(offsetof(DistanceGrabbable_tACCCB0048BA604AD31B49237D057C5DF38DB07BB, ___m_crosshairManager_14)),static_cast<int32_t>(offsetof(DistanceGrabbable_tACCCB0048BA604AD31B49237D057C5DF38DB07BB, ___m_renderer_15)),static_cast<int32_t>(offsetof(DistanceGrabbable_tACCCB0048BA604AD31B49237D057C5DF38DB07BB, ___m_mpb_16)),static_cast<int32_t>(offsetof(DistanceGrabbable_tACCCB0048BA604AD31B49237D057C5DF38DB07BB, ___m_inRange_17)),static_cast<int32_t>(offsetof(DistanceGrabbable_tACCCB0048BA604AD31B49237D057C5DF38DB07BB, ___m_targeted_18)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5985[13] = 
-{
-	static_cast<int32_t>(offsetof(DistanceGrabber_t56690441864EC9DD12844C2AAA0441AB4E3761C9, ___m_spherecastRadius_24)),static_cast<int32_t>(offsetof(DistanceGrabber_t56690441864EC9DD12844C2AAA0441AB4E3761C9, ___m_noSnapThreshhold_25)),static_cast<int32_t>(offsetof(DistanceGrabber_t56690441864EC9DD12844C2AAA0441AB4E3761C9, ___m_useSpherecast_26)),static_cast<int32_t>(offsetof(DistanceGrabber_t56690441864EC9DD12844C2AAA0441AB4E3761C9, ___m_preventGrabThroughWalls_27)),static_cast<int32_t>(offsetof(DistanceGrabber_t56690441864EC9DD12844C2AAA0441AB4E3761C9, ___m_objectPullVelocity_28)),static_cast<int32_t>(offsetof(DistanceGrabber_t56690441864EC9DD12844C2AAA0441AB4E3761C9, ___m_objectPullMaxRotationRate_29)),static_cast<int32_t>(offsetof(DistanceGrabber_t56690441864EC9DD12844C2AAA0441AB4E3761C9, ___m_movingObjectToHand_30)),static_cast<int32_t>(offsetof(DistanceGrabber_t56690441864EC9DD12844C2AAA0441AB4E3761C9, ___m_maxGrabDistance_31)),static_cast<int32_t>(offsetof(DistanceGrabber_t56690441864EC9DD12844C2AAA0441AB4E3761C9, ___m_grabObjectsInLayer_32)),static_cast<int32_t>(offsetof(DistanceGrabber_t56690441864EC9DD12844C2AAA0441AB4E3761C9, ___m_obstructionLayer_33)),static_cast<int32_t>(offsetof(DistanceGrabber_t56690441864EC9DD12844C2AAA0441AB4E3761C9, ___m_otherHand_34)),static_cast<int32_t>(offsetof(DistanceGrabber_t56690441864EC9DD12844C2AAA0441AB4E3761C9, ___m_target_35)),static_cast<int32_t>(offsetof(DistanceGrabber_t56690441864EC9DD12844C2AAA0441AB4E3761C9, ___m_targetCollider_36)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5986[4] = 
-{
-	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,};
+	static_cast<int32_t>(offsetof(Playback_t5E538A64E9969718C803D112CCC63C35A0756C90, ___clipHandler_4)),static_cast<int32_t>(offsetof(Playback_t5E538A64E9969718C803D112CCC63C35A0756C90, ___playbackStateHandler_5)),static_cast<int32_t>(offsetof(Playback_t5E538A64E9969718C803D112CCC63C35A0756C90, ___playbackObjectHandler_6)),static_cast<int32_t>(offsetof(Playback_t5E538A64E9969718C803D112CCC63C35A0756C90_StaticFields, ___U3CisSceneLoadedU3Ek__BackingField_7)),static_cast<int32_t>(offsetof(Playback_t5E538A64E9969718C803D112CCC63C35A0756C90_StaticFields, ___U3CframeCountU3Ek__BackingField_8)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5987[4] = 
 {
-	static_cast<int32_t>(offsetof(GrabbableCrosshair_tD64497CB725FFAC3BADD88AA55713B55DEDD28B2, ___m_state_4)),static_cast<int32_t>(offsetof(GrabbableCrosshair_tD64497CB725FFAC3BADD88AA55713B55DEDD28B2, ___m_centerEyeAnchor_5)),static_cast<int32_t>(offsetof(GrabbableCrosshair_tD64497CB725FFAC3BADD88AA55713B55DEDD28B2, ___m_targetedCrosshair_6)),static_cast<int32_t>(offsetof(GrabbableCrosshair_tD64497CB725FFAC3BADD88AA55713B55DEDD28B2, ___m_enabledCrosshair_7)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5988[4] = 
+	static_cast<int32_t>(offsetof(PlaybackHandler_tB51D0A6EE1AFD5D0E97A44F27E3408DC641FEB17, ___playback_4)),static_cast<int32_t>(offsetof(PlaybackHandler_tB51D0A6EE1AFD5D0E97A44F27E3408DC641FEB17, ___playbackSlider_5)),static_cast<int32_t>(offsetof(PlaybackHandler_tB51D0A6EE1AFD5D0E97A44F27E3408DC641FEB17, ___playbackObjectHandler_6)),static_cast<int32_t>(offsetof(PlaybackHandler_tB51D0A6EE1AFD5D0E97A44F27E3408DC641FEB17_StaticFields, ___currentPlaybackIndex_7)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5988[10] = 
 {
-	static_cast<int32_t>(offsetof(GrabManager_tFDD6F5108DC387CBC460080257A754833896B753, ___m_grabVolume_4)),static_cast<int32_t>(offsetof(GrabManager_tFDD6F5108DC387CBC460080257A754833896B753, ___OutlineColorInRange_5)),static_cast<int32_t>(offsetof(GrabManager_tFDD6F5108DC387CBC460080257A754833896B753, ___OutlineColorHighlighted_6)),static_cast<int32_t>(offsetof(GrabManager_tFDD6F5108DC387CBC460080257A754833896B753, ___OutlineColorOutOfRange_7)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5990[3] = 
+	static_cast<int32_t>(offsetof(PlaybackObjectHandler_t24E6FE8D9D39CA06311DFFC65AE17C616C4D47F1, ___HMDTransparent_4)),static_cast<int32_t>(offsetof(PlaybackObjectHandler_t24E6FE8D9D39CA06311DFFC65AE17C616C4D47F1, ___RightHandSolidPrefab_5)),static_cast<int32_t>(offsetof(PlaybackObjectHandler_t24E6FE8D9D39CA06311DFFC65AE17C616C4D47F1, ___LeftHandSolidPrefab_6)),static_cast<int32_t>(offsetof(PlaybackObjectHandler_t24E6FE8D9D39CA06311DFFC65AE17C616C4D47F1, ___prefabHolderTransform_7)),static_cast<int32_t>(offsetof(PlaybackObjectHandler_t24E6FE8D9D39CA06311DFFC65AE17C616C4D47F1, ___UI_8)),static_cast<int32_t>(offsetof(PlaybackObjectHandler_t24E6FE8D9D39CA06311DFFC65AE17C616C4D47F1, ___CenterEye_9)),static_cast<int32_t>(offsetof(PlaybackObjectHandler_t24E6FE8D9D39CA06311DFFC65AE17C616C4D47F1, ___U3CRightHandObjectU3Ek__BackingField_10)),static_cast<int32_t>(offsetof(PlaybackObjectHandler_t24E6FE8D9D39CA06311DFFC65AE17C616C4D47F1, ___U3CLeftHandObjectU3Ek__BackingField_11)),static_cast<int32_t>(offsetof(PlaybackObjectHandler_t24E6FE8D9D39CA06311DFFC65AE17C616C4D47F1, ___U3CHMDObjectU3Ek__BackingField_12)),static_cast<int32_t>(offsetof(PlaybackObjectHandler_t24E6FE8D9D39CA06311DFFC65AE17C616C4D47F1, ___AvatarOffset_13)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5989[2] = 
 {
-	static_cast<int32_t>(offsetof(BoneCapsuleTriggerLogic_tD4D51F420091F829BEE215AB6FD960BF83FBB2D4, ___ToolTags_4)),static_cast<int32_t>(offsetof(BoneCapsuleTriggerLogic_tD4D51F420091F829BEE215AB6FD960BF83FBB2D4, ___CollidersTouchingUs_5)),static_cast<int32_t>(offsetof(BoneCapsuleTriggerLogic_tD4D51F420091F829BEE215AB6FD960BF83FBB2D4, ____elementsToCleanUp_6)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5991[3] = 
+	static_cast<int32_t>(offsetof(PlaybackSlider_t7605D76A2AE864327F20ABF3D355D39DBC96488E, ___slider_4)),static_cast<int32_t>(offsetof(PlaybackSlider_t7605D76A2AE864327F20ABF3D355D39DBC96488E, ___playbackStateHandler_5)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5990[7] = 
 {
-	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5992[14] = 
+	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,0,0,0,};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5991[4] = 
 {
-	0,0,static_cast<int32_t>(offsetof(ButtonController_t1660558E417C701B092265A45EBC1795F1DBBC79, ____proximityZone_13)),static_cast<int32_t>(offsetof(ButtonController_t1660558E417C701B092265A45EBC1795F1DBBC79, ____contactZone_14)),static_cast<int32_t>(offsetof(ButtonController_t1660558E417C701B092265A45EBC1795F1DBBC79, ____actionZone_15)),static_cast<int32_t>(offsetof(ButtonController_t1660558E417C701B092265A45EBC1795F1DBBC79, ____contactTests_16)),static_cast<int32_t>(offsetof(ButtonController_t1660558E417C701B092265A45EBC1795F1DBBC79, ____buttonPlaneCenter_17)),static_cast<int32_t>(offsetof(ButtonController_t1660558E417C701B092265A45EBC1795F1DBBC79, ____makeSureToolIsOnPositiveSide_18)),static_cast<int32_t>(offsetof(ButtonController_t1660558E417C701B092265A45EBC1795F1DBBC79, ____localButtonDirection_19)),static_cast<int32_t>(offsetof(ButtonController_t1660558E417C701B092265A45EBC1795F1DBBC79, ____allValidToolsTags_20)),static_cast<int32_t>(offsetof(ButtonController_t1660558E417C701B092265A45EBC1795F1DBBC79, ____toolTagsMask_21)),static_cast<int32_t>(offsetof(ButtonController_t1660558E417C701B092265A45EBC1795F1DBBC79, ____allowMultipleNearFieldInteraction_22)),static_cast<int32_t>(offsetof(ButtonController_t1660558E417C701B092265A45EBC1795F1DBBC79, ___U3CCurrentButtonStateU3Ek__BackingField_23)),static_cast<int32_t>(offsetof(ButtonController_t1660558E417C701B092265A45EBC1795F1DBBC79, ____toolToState_24)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5993[3] = 
+	static_cast<int32_t>(offsetof(PlaybackStateHandler_t271BAC0632A0164F2337FE0864AE6E11094D9F37, ___playButton_4)),static_cast<int32_t>(offsetof(PlaybackStateHandler_t271BAC0632A0164F2337FE0864AE6E11094D9F37, ___pauseButton_5)),static_cast<int32_t>(offsetof(PlaybackStateHandler_t271BAC0632A0164F2337FE0864AE6E11094D9F37_StaticFields, ___currentState_6)),static_cast<int32_t>(offsetof(PlaybackStateHandler_t271BAC0632A0164F2337FE0864AE6E11094D9F37_StaticFields, ___previousState_7)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5992[40] = 
 {
-	static_cast<int32_t>(offsetof(ButtonTriggerZone_t804E2DD4406B082D050C64D7403494F07F068721, ____parentInteractableObj_4)),static_cast<int32_t>(offsetof(ButtonTriggerZone_t804E2DD4406B082D050C64D7403494F07F068721, ___U3CColliderU3Ek__BackingField_5)),static_cast<int32_t>(offsetof(ButtonTriggerZone_t804E2DD4406B082D050C64D7403494F07F068721, ___U3CParentInteractableU3Ek__BackingField_6)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5995[4] = 
+	static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___HandPosition_4)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___WristPosition_5)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___ForearmStubPosition_6)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Index1Position_7)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Index2Position_8)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Index3Position_9)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Thumb0Position_10)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Thumb1Position_11)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Thumb2Position_12)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Thumb3Position_13)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Middle1Position_14)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Middle2Position_15)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Middle3Position_16)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Ring1Position_17)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Ring2Position_18)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Ring3Position_19)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Pinky0Position_20)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Pinky1Position_21)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Pinky2Position_22)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Pinky3Position_23)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___HandRotation_24)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___ForearmStubRotation_25)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___WristRotation_26)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Index1Rotation_27)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Index2Rotation_28)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Index3Rotation_29)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Thumb0Rotation_30)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Thumb1Rotation_31)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Thumb2Rotation_32)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Thumb3Rotation_33)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Middle1Rotation_34)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Middle2Rotation_35)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Middle3Rotation_36)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Ring1Rotation_37)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Ring2Rotation_38)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Ring3Rotation_39)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Pinky0Rotation_40)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Pinky1Rotation_41)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Pinky2Rotation_42)),static_cast<int32_t>(offsetof(HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A, ___Pinky3Rotation_43)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5993[110] = 
 {
-	static_cast<int32_t>(offsetof(ColliderZoneArgs_tC7431174FDF0C6002A554118B81A5E6096D41087, ___Collider_1)),static_cast<int32_t>(offsetof(ColliderZoneArgs_tC7431174FDF0C6002A554118B81A5E6096D41087, ___FrameTime_2)),static_cast<int32_t>(offsetof(ColliderZoneArgs_tC7431174FDF0C6002A554118B81A5E6096D41087, ___CollidingTool_3)),static_cast<int32_t>(offsetof(ColliderZoneArgs_tC7431174FDF0C6002A554118B81A5E6096D41087, ___InteractionT_4)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5996[4] = 
+	static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightCurlOpenIndex_4)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightCurlOpenMiddle_5)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightCurlOpenRing_6)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightCurlOpenPinky_7)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightCurlOpenThumb_8)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightCurlClosedIndex_9)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightCurlClosedMiddle_10)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightCurlClosedRing_11)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightCurlClosedPinky_12)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightCurlClosedThumb_13)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightCurlNeutralIndex_14)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightCurlNeutralMiddle_15)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightCurlNeutralRing_16)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightCurlNeutralPinky_17)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightCurlNeutralThumb_18)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightFlexionOpenIndex_19)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightFlexionOpenMiddle_20)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightFlexionOpenRing_21)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightFlexionOpenPinky_22)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightFlexionClosedIndex_23)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightFlexionClosedMiddle_24)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightFlexionClosedRing_25)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightFlexionClosedPinky_26)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightFlexionNeutralIndex_27)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightFlexionNeutralMiddle_28)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightFlexionNeutralRing_29)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightFlexionNeutralPinky_30)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightAbductionOpenIndex_31)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightAbductionOpenMiddle_32)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightAbductionOpenRing_33)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightAbductionOpenThumb_34)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightAbductionClosedIndex_35)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightAbductionClosedMiddle_36)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightAbductionClosedRing_37)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightAbductionClosedThumb_38)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightOppositionTouchingIndex_39)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightOppositionTouchingMiddle_40)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightOppositionTouchingRing_41)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightOppositionTouchingPinky_42)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightOppositionNearIndex_43)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightOppositionNearMiddle_44)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightOppositionNearRing_45)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightOppositionNearPinky_46)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightOppositionNoneIndex_47)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightOppositionNoneMiddle_48)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightOppositionNoneRing_49)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightOppositionNonePinky_50)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightWristUp_51)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightWristDown_52)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightPalmUp_53)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightPalmDown_54)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightPalmTowardsFace_55)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightPalmAwayFromFace_56)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightFingersUp_57)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___rightFingersDown_58)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftCurlOpenIndex_59)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftCurlOpenMiddle_60)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftCurlOpenRing_61)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftCurlOpenPinky_62)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftCurlOpenThumb_63)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftCurlClosedIndex_64)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftCurlClosedMiddle_65)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftCurlClosedRing_66)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftCurlClosedPinky_67)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftCurlClosedThumb_68)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftCurlNeutralIndex_69)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftCurlNeutralMiddle_70)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftCurlNeutralRing_71)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftCurlNeutralPinky_72)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftCurlNeutralThumb_73)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftFlexionOpenIndex_74)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftFlexionOpenMiddle_75)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftFlexionOpenRing_76)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftFlexionOpenPinky_77)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftFlexionClosedIndex_78)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftFlexionClosedMiddle_79)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftFlexionClosedRing_80)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftFlexionClosedPinky_81)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftFlexionNeutralIndex_82)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftFlexionNeutralMiddle_83)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftFlexionNeutralRing_84)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftFlexionNeutralPinky_85)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftAbductionOpenIndex_86)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftAbductionOpenMiddle_87)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftAbductionOpenRing_88)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftAbductionOpenThumb_89)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftAbductionClosedIndex_90)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftAbductionClosedMiddle_91)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftAbductionClosedRing_92)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftAbductionClosedThumb_93)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftOppositionTouchingIndex_94)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftOppositionTouchingMiddle_95)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftOppositionTouchingRing_96)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftOppositionTouchingPinky_97)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftOppositionNearIndex_98)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftOppositionNearMiddle_99)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftOppositionNearRing_100)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftOppositionNearPinky_101)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftOppositionNoneIndex_102)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftOppositionNoneMiddle_103)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftOppositionNoneRing_104)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftOppositionNonePinky_105)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftWristUp_106)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftWristDown_107)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftPalmUp_108)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftPalmDown_109)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftPalmTowardsFace_110)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftPalmAwayFromFace_111)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftFingersUp_112)),static_cast<int32_t>(offsetof(HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A, ___leftFingersDown_113)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5994[40] = 
 {
-	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5997[4] = 
+	static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___HandPosition_4)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___WristPosition_5)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___ForearmStubPosition_6)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Index1Position_7)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Index2Position_8)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Index3Position_9)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Thumb0Position_10)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Thumb1Position_11)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Thumb2Position_12)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Thumb3Position_13)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Middle1Position_14)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Middle2Position_15)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Middle3Position_16)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Ring1Position_17)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Ring2Position_18)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Ring3Position_19)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Pinky0Position_20)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Pinky1Position_21)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Pinky2Position_22)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Pinky3Position_23)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___HandRotation_24)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___ForearmStubRotation_25)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___WristRotation_26)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Index1Rotation_27)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Index2Rotation_28)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Index3Rotation_29)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Thumb0Rotation_30)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Thumb1Rotation_31)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Thumb2Rotation_32)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Thumb3Rotation_33)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Middle1Rotation_34)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Middle2Rotation_35)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Middle3Rotation_36)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Ring1Rotation_37)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Ring2Rotation_38)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Ring3Rotation_39)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Pinky0Rotation_40)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Pinky1Rotation_41)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Pinky2Rotation_42)),static_cast<int32_t>(offsetof(HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A, ___Pinky3Rotation_43)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5996[18] = 
 {
-	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,};
+	static_cast<int32_t>(offsetof(MasterRecording_t928917BA80091E24356531DAEAB9978B400B62D7, ___handMotionRecorder_4)),static_cast<int32_t>(offsetof(MasterRecording_t928917BA80091E24356531DAEAB9978B400B62D7, ___handSkeletonRecorder_5)),static_cast<int32_t>(offsetof(MasterRecording_t928917BA80091E24356531DAEAB9978B400B62D7, ___handPoseRecorder_6)),static_cast<int32_t>(offsetof(MasterRecording_t928917BA80091E24356531DAEAB9978B400B62D7, ___HMDRecorder_7)),static_cast<int32_t>(offsetof(MasterRecording_t928917BA80091E24356531DAEAB9978B400B62D7, ___ovrHandRight_8)),static_cast<int32_t>(offsetof(MasterRecording_t928917BA80091E24356531DAEAB9978B400B62D7, ___ovrSkeletonRight_9)),static_cast<int32_t>(offsetof(MasterRecording_t928917BA80091E24356531DAEAB9978B400B62D7, ___ovrHandLeft_10)),static_cast<int32_t>(offsetof(MasterRecording_t928917BA80091E24356531DAEAB9978B400B62D7, ___ovrSkeletonLeft_11)),static_cast<int32_t>(offsetof(MasterRecording_t928917BA80091E24356531DAEAB9978B400B62D7, ___HMD_12)),static_cast<int32_t>(offsetof(MasterRecording_t928917BA80091E24356531DAEAB9978B400B62D7, ___RecordLabel_13)),static_cast<int32_t>(offsetof(MasterRecording_t928917BA80091E24356531DAEAB9978B400B62D7_StaticFields, ___RightHandMotion_14)),static_cast<int32_t>(offsetof(MasterRecording_t928917BA80091E24356531DAEAB9978B400B62D7_StaticFields, ___LeftHandMotion_15)),static_cast<int32_t>(offsetof(MasterRecording_t928917BA80091E24356531DAEAB9978B400B62D7_StaticFields, ___RightHandSkeleton_16)),static_cast<int32_t>(offsetof(MasterRecording_t928917BA80091E24356531DAEAB9978B400B62D7_StaticFields, ___LeftHandSkeleton_17)),static_cast<int32_t>(offsetof(MasterRecording_t928917BA80091E24356531DAEAB9978B400B62D7_StaticFields, ___RightHandPose_18)),static_cast<int32_t>(offsetof(MasterRecording_t928917BA80091E24356531DAEAB9978B400B62D7_StaticFields, ___LeftHandPose_19)),static_cast<int32_t>(offsetof(MasterRecording_t928917BA80091E24356531DAEAB9978B400B62D7_StaticFields, ___HMDMotion_20)),static_cast<int32_t>(offsetof(MasterRecording_t928917BA80091E24356531DAEAB9978B400B62D7, ___isRecordRestarting_21)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5998[5] = 
 {
-	static_cast<int32_t>(offsetof(U3CFindSkeletonVisualGameObjectsU3Ed__52_tAEE38F2607C43B4EC514A9C784FC4E9A2135DF16, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CFindSkeletonVisualGameObjectsU3Ed__52_tAEE38F2607C43B4EC514A9C784FC4E9A2135DF16, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CFindSkeletonVisualGameObjectsU3Ed__52_tAEE38F2607C43B4EC514A9C784FC4E9A2135DF16, ___U3CU3E4__this_2)),static_cast<int32_t>(offsetof(U3CFindSkeletonVisualGameObjectsU3Ed__52_tAEE38F2607C43B4EC514A9C784FC4E9A2135DF16, ___U3CleftSkeletonVisualTransformU3E5__1_3)),static_cast<int32_t>(offsetof(U3CFindSkeletonVisualGameObjectsU3Ed__52_tAEE38F2607C43B4EC514A9C784FC4E9A2135DF16, ___U3CrightSkeletonVisualTransformU3E5__2_4)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5999[16] = 
+	static_cast<int32_t>(offsetof(ColorGrabbable_t5D566462724092EB2B56A59AB4A4054969A46121_StaticFields, ___COLOR_GRAB_12)),static_cast<int32_t>(offsetof(ColorGrabbable_t5D566462724092EB2B56A59AB4A4054969A46121_StaticFields, ___COLOR_HIGHLIGHT_13)),static_cast<int32_t>(offsetof(ColorGrabbable_t5D566462724092EB2B56A59AB4A4054969A46121, ___m_color_14)),static_cast<int32_t>(offsetof(ColorGrabbable_t5D566462724092EB2B56A59AB4A4054969A46121, ___m_meshRenderers_15)),static_cast<int32_t>(offsetof(ColorGrabbable_t5D566462724092EB2B56A59AB4A4054969A46121, ___m_highlight_16)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5999[7] = 
 {
-	0,static_cast<int32_t>(offsetof(HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7, ____leftHand_5)),static_cast<int32_t>(offsetof(HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7, ____rightHand_6)),static_cast<int32_t>(offsetof(HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7, ___VisualMode_7)),static_cast<int32_t>(offsetof(HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7, ____hand_8)),static_cast<int32_t>(offsetof(HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7, ____handSkeleton_9)),static_cast<int32_t>(offsetof(HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7, ____handSkeletonRenderer_10)),static_cast<int32_t>(offsetof(HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7, ____handMesh_11)),static_cast<int32_t>(offsetof(HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7, ____handMeshRenderer_12)),static_cast<int32_t>(offsetof(HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7, ____leftMeshRenderer_13)),static_cast<int32_t>(offsetof(HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7, ____rightMeshRenderer_14)),static_cast<int32_t>(offsetof(HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7, ____leftSkeletonVisual_15)),static_cast<int32_t>(offsetof(HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7, ____rightSkeletonVisual_16)),static_cast<int32_t>(offsetof(HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7, ____currentHandAlpha_17)),static_cast<int32_t>(offsetof(HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7, ___HandAlphaId_18)),static_cast<int32_t>(offsetof(HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7_StaticFields, ___U3CInstanceU3Ek__BackingField_19)),};
+	static_cast<int32_t>(offsetof(DistanceGrabbable_tACCCB0048BA604AD31B49237D057C5DF38DB07BB, ___m_materialColorField_12)),static_cast<int32_t>(offsetof(DistanceGrabbable_tACCCB0048BA604AD31B49237D057C5DF38DB07BB, ___m_crosshair_13)),static_cast<int32_t>(offsetof(DistanceGrabbable_tACCCB0048BA604AD31B49237D057C5DF38DB07BB, ___m_crosshairManager_14)),static_cast<int32_t>(offsetof(DistanceGrabbable_tACCCB0048BA604AD31B49237D057C5DF38DB07BB, ___m_renderer_15)),static_cast<int32_t>(offsetof(DistanceGrabbable_tACCCB0048BA604AD31B49237D057C5DF38DB07BB, ___m_mpb_16)),static_cast<int32_t>(offsetof(DistanceGrabbable_tACCCB0048BA604AD31B49237D057C5DF38DB07BB, ___m_inRange_17)),static_cast<int32_t>(offsetof(DistanceGrabbable_tACCCB0048BA604AD31B49237D057C5DF38DB07BB, ___m_targeted_18)),};
