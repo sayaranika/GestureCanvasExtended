@@ -111,7 +111,7 @@ public class InteractionInitializer : MonoBehaviour
             Interaction interaction = new Interaction(1); // suggested interaction will have id 1
             if (clip.clipValidity.isDataValid_R == false && clip.clipValidity.isDataValid_L == false)
             {
-                clip.interactions.Add(interaction);
+                //clip.interactions.Add(interaction);
                 continue; //do not parse data
             }
             // RIGHT HAND
@@ -162,6 +162,8 @@ public class InteractionInitializer : MonoBehaviour
                 }
                 else interaction.setGesture(Handedness.Left, clip.startIndex, clip.endIndex);
             }
+
+            clip.interactions.Add(interaction);
         }
         //set transitions
         if (ClipHandler.ClipList.Count > 1)

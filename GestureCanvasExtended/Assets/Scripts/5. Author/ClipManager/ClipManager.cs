@@ -96,18 +96,21 @@ public class ClipManager : MonoBehaviour
                 if (clipButtons.clip.Id == clipId)
                 {
                     clipButtons.isToggleOn = toggleButton.isOn;
-                    if (toggleButton.isOn == true) _selectedClip = clipButtons.clip;
+                    if (toggleButton.isOn == true)
+                    {
+                        _selectedClip = clipButtons.clip;
+                    }
                     break;
                 }
             }
 
-            if (selectedClip != null)
+            if (_selectedClip != null)
             {
-                AvatarPlayback.startFrame = selectedClip.startIndex;
-                AvatarPlayback.endFrame = selectedClip.endIndex;
-                AvatarPlayback.currentClip = selectedClip;
+                AvatarPlayback.startFrame = _selectedClip.startIndex;
+                AvatarPlayback.endFrame = _selectedClip.endIndex;
+                AvatarPlayback.currentClip = _selectedClip;
                 AvatarPlayback.currentClipButton = clipButton;
-                avatarManager.SetTransform(selectedClip.startIndex);
+                avatarManager.SetTransform(_selectedClip.startIndex);
             }
             else
             {
@@ -117,7 +120,6 @@ public class ClipManager : MonoBehaviour
                 AvatarPlayback.currentClipButton = null;
                 AssetPanelVisibilityHandler.hideAssetPanel = true;
             }
-
             InteractionBuilderContent.refresh = true;
         }
     }
@@ -127,8 +129,11 @@ public class ClipManager : MonoBehaviour
     #region DRAW TRANSITIONS
     public void DrawTransitions()
     {
+        Debug.Log("9000A");
         if (transitionArrowList.Count > 0)
         {
+            Debug.Log("9000B");
+
             foreach (LineRenderer l in transitionArrowList)
             {
                 Destroy(l.gameObject);
@@ -138,24 +143,50 @@ public class ClipManager : MonoBehaviour
         transitionArrowList.Clear();
         foreach (ClipButton clipButton in ClipButtonHandler.ClipButtonList)
         {
+            Debug.Log("9000C: clip id " + clipButton.clip.Id);
+
             foreach (Interaction interaction in clipButton.clip.interactions)
             {
+                Debug.Log("9000D: int id " + interaction.Id);
+
                 if (interaction.transitionClip != null)
                 {
+                    Debug.Log("9000E");
+
                     GameObject transitionClipButton = null;
                     foreach(ClipButton cb in ClipButtonHandler.ClipButtonList)
                     {
-                        if(cb.clip.Id == interaction.transitionClip.Id)
+                        Debug.Log("9000F");
+
+                        if (cb.clip.Id == interaction.transitionClip.Id)
                         {
+                            Debug.Log("9000G");
+
                             transitionClipButton = cb.button;
                             break;
                         }
                     }
 
-                    if(transitionClipButton != null) DrawArrow(clipButton.button, transitionClipButton);
+                    if (transitionClipButton != null)
+                    {
+                        Debug.Log("9000H");
+
+                        DrawArrow(clipButton.button, transitionClipButton);
+                        Debug.Log("9000I");
+
+                    }
+                    Debug.Log("9000J");
+
                 }
+                Debug.Log("9000K");
+
             }
+
+        Debug.Log("9000:L");
+
         }
+        Debug.Log("9000M");
+
     }
 
     public void DrawArrow(GameObject source, GameObject destination, PointingDirection pointingDirection)
@@ -201,22 +232,32 @@ public class ClipManager : MonoBehaviour
 
     public void DrawArrow(GameObject source, GameObject destination)
     {
+        Debug.Log("8000A");
         bool ArrowDrawn = false;
         int sourceClipId = source.GetComponent<ClipReference>().clip.Id;
         int destClipId = destination.GetComponent<ClipReference>().clip.Id;
+        Debug.Log("8000B");
 
         if (clipButtonList[0].GetComponent<ClipReference>().clip.Id == sourceClipId && clipButtonList[1].GetComponent<ClipReference>().clip.Id == destClipId)
         {
+            Debug.Log("8000C");
+
             DrawArrow(source, destination, PointingDirection.Right);
             ArrowDrawn = true;
+            Debug.Log("8000D");
+
         }
         else if (clipButtonList[clipButtonList.Count - 1].GetComponent<ClipReference>().clip.Id == sourceClipId && clipButtonList[clipButtonList.Count - 2].GetComponent<ClipReference>().clip.Id == destClipId)
         {
+            Debug.Log("8000E");
+
             DrawArrow(source, destination, PointingDirection.Left);
             ArrowDrawn = true;
         }
         else
         {
+            Debug.Log("8000F");
+
             for (int i = 1; i < clipButtonList.Count - 1; i++)
             {
                 if (clipButtonList[i].GetComponent<ClipReference>().clip.Id == sourceClipId)
@@ -237,6 +278,8 @@ public class ClipManager : MonoBehaviour
 
         if (ArrowDrawn == false) //arrow needs to be drawn between clips that are not adjacent
         {
+            Debug.Log("8000G");
+
             //down line
             LineRenderer lineDown = Object.Instantiate(ArrowPrefab, clipPanel).GetComponent<LineRenderer>();
             lineDown.positionCount = 2;

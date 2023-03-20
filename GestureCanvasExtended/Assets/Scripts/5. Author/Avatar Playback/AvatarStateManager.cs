@@ -37,14 +37,19 @@ public class AvatarStateManager : MonoBehaviour
 
                 if (selectedClip != null)
                 {
+                    Debug.Log("2000: selected clip: "+selectedClip.Id + "number of interactions: " + selectedClip.interactions.Count);
 
-                    int ratio = (int)0.15f * (selectedClip.endIndex - selectedClip.startIndex);
+
+                    //int ratio = (int)0.15f * (selectedClip.endIndex - selectedClip.startIndex);
                     foreach (Interaction i in selectedClip.interactions)
                     {
+                        Debug.Log("2000: selected interaction: " + i.Id);
                         if (i.isGesture_R == true)
                         {
+                            Debug.Log("2000A");
                             if (AvatarPlayback.currentFrame > selectedClip.endIndex - 15 && AvatarPlayback.currentFrame < selectedClip.endIndex)
                             {
+                                Debug.Log("2000B");
                                 avatarManager.SetMode(AvatarState.Highlighted, Handedness.Right);
                             }
 
@@ -61,6 +66,7 @@ public class AvatarStateManager : MonoBehaviour
 
                         if (i.isPose_R == true)
                         {
+                            Debug.Log("3000A");
                             bool highlight = false;
 
                             highlight = HandPose.IsEqual(i.expectedPose_R, MasterRecording.RightHandPose[AvatarPlayback.currentFrame]);
@@ -68,13 +74,16 @@ public class AvatarStateManager : MonoBehaviour
                             {
                                 if (i.isTransformConstraint_R == true)
                                 {
+                                    Debug.Log("3000B");
                                     if (HandPose.isTransformEqual(i.expectedPose_R, MasterRecording.RightHandPose[AvatarPlayback.currentFrame]))
                                     {
+                                        Debug.Log("3000C");
                                         avatarManager.SetMode(AvatarState.Highlighted, Handedness.Right);
                                     }
                                 }
                                 else
                                 {
+                                    Debug.Log("3000D");
                                     avatarManager.SetMode(AvatarState.Highlighted, Handedness.Right);
                                 }
 
