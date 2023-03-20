@@ -487,8 +487,14 @@ struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C;
 struct PassthroughPlayInEditor_tF1649048FD999567153FA936731A0B7404E2E589;
 // PassthroughSurface
 struct PassthroughSurface_t5DEF489C691B1678CA206E5B904FF22B8FCD4264;
+// PlaytestManager
+struct PlaytestManager_t2536ABEEACA1FCB05D8A4CEA27055E8999416737;
 // PoseRecognizer
 struct PoseRecognizer_t7E2392814517130FD64A57E16671267462AE9329;
+// RealtimeData
+struct RealtimeData_tFECB5A6DF241086C755EE6DB8D613EADC7BAEA45;
+// RecognizerManager
+struct RecognizerManager_t777C5709ACC04D7B928C0D4C559150A82FB5CEDA;
 // UnityEngine.UI.RectMask2D
 struct RectMask2D_tACF92BE999C791A665BD1ADEABF5BCEB82846670;
 // UnityEngine.RectTransform
@@ -635,7 +641,6 @@ IL2CPP_EXTERN_C RuntimeClass* GrabbedObject_tA6B05BA3219A736CE99A71B409844173245
 IL2CPP_EXTERN_C RuntimeClass* GuidU5BU5D_t0B65C049D6CE72B5A2BF6E42AE9C98CEC1BE6B42_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* IEnumerable_1_t349E66EC5F09B881A8E52EE40A1AB9EC60E08E44_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* IEnumerator_1_t73FD060C436E3C4264A734C8F8DCC01DFF6046B8_il2cpp_TypeInfo_var;
@@ -662,6 +667,7 @@ IL2CPP_EXTERN_C RuntimeClass* OVRSpatialAnchor_t934BFAE22D42E703A59DD025972C1FBF
 IL2CPP_EXTERN_C RuntimeClass* Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* OnClick_tE915BFC88D1C91D68F96A97D675ECCCF91B8D46A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Path_t8A38A801D0219E8209C1B1D90D82D4D755D998BC_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* PlaytestManager_t2536ABEEACA1FCB05D8A4CEA27055E8999416737_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* PrimaryPressDelegate_tED364AEF243F75F45C071DA3E1B596D16F2C9123_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ReleasedObject_t03C81AEEB8828CDCAD8F6B13F9816FEA331DBAF3_il2cpp_TypeInfo_var;
@@ -689,6 +695,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral2E3D8376A2AF9873C3CE7D5139856AE599C8F0F1
 IL2CPP_EXTERN_C String_t* _stringLiteral362F6C49457218D1AD9C8F28CDEBFED6FE4E0445;
 IL2CPP_EXTERN_C String_t* _stringLiteral382BF78E08260DE1DA14563F3987282174498879;
 IL2CPP_EXTERN_C String_t* _stringLiteral43356C793C1782D1DEFF4B7AE46F73B2F2DE4876;
+IL2CPP_EXTERN_C String_t* _stringLiteral43EB4131D4DE5CEAA7B3C86039C2F3C064C118E8;
 IL2CPP_EXTERN_C String_t* _stringLiteral477487F4E3F1A8774A8290919F367704C0D6AE89;
 IL2CPP_EXTERN_C String_t* _stringLiteral4BE390DECEEEE18D4A96B887C53C404D445D17D4;
 IL2CPP_EXTERN_C String_t* _stringLiteral4E51ED10D963155C5A37DB456384ED61E1974DE6;
@@ -4174,91 +4181,6 @@ struct HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A  : public Mono
 	int32_t ___HandPoseId_114;
 };
 
-// HandSkeletonRecorder
-struct HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
-{
-	// UnityEngine.Vector3 HandSkeletonRecorder::HandPosition
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___HandPosition_4;
-	// UnityEngine.Vector3 HandSkeletonRecorder::WristPosition
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___WristPosition_5;
-	// UnityEngine.Vector3 HandSkeletonRecorder::ForearmStubPosition
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___ForearmStubPosition_6;
-	// UnityEngine.Vector3 HandSkeletonRecorder::Index1Position
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Index1Position_7;
-	// UnityEngine.Vector3 HandSkeletonRecorder::Index2Position
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Index2Position_8;
-	// UnityEngine.Vector3 HandSkeletonRecorder::Index3Position
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Index3Position_9;
-	// UnityEngine.Vector3 HandSkeletonRecorder::Thumb0Position
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Thumb0Position_10;
-	// UnityEngine.Vector3 HandSkeletonRecorder::Thumb1Position
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Thumb1Position_11;
-	// UnityEngine.Vector3 HandSkeletonRecorder::Thumb2Position
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Thumb2Position_12;
-	// UnityEngine.Vector3 HandSkeletonRecorder::Thumb3Position
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Thumb3Position_13;
-	// UnityEngine.Vector3 HandSkeletonRecorder::Middle1Position
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Middle1Position_14;
-	// UnityEngine.Vector3 HandSkeletonRecorder::Middle2Position
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Middle2Position_15;
-	// UnityEngine.Vector3 HandSkeletonRecorder::Middle3Position
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Middle3Position_16;
-	// UnityEngine.Vector3 HandSkeletonRecorder::Ring1Position
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Ring1Position_17;
-	// UnityEngine.Vector3 HandSkeletonRecorder::Ring2Position
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Ring2Position_18;
-	// UnityEngine.Vector3 HandSkeletonRecorder::Ring3Position
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Ring3Position_19;
-	// UnityEngine.Vector3 HandSkeletonRecorder::Pinky0Position
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Pinky0Position_20;
-	// UnityEngine.Vector3 HandSkeletonRecorder::Pinky1Position
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Pinky1Position_21;
-	// UnityEngine.Vector3 HandSkeletonRecorder::Pinky2Position
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Pinky2Position_22;
-	// UnityEngine.Vector3 HandSkeletonRecorder::Pinky3Position
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Pinky3Position_23;
-	// UnityEngine.Quaternion HandSkeletonRecorder::HandRotation
-	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___HandRotation_24;
-	// UnityEngine.Quaternion HandSkeletonRecorder::ForearmStubRotation
-	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___ForearmStubRotation_25;
-	// UnityEngine.Quaternion HandSkeletonRecorder::WristRotation
-	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___WristRotation_26;
-	// UnityEngine.Quaternion HandSkeletonRecorder::Index1Rotation
-	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Index1Rotation_27;
-	// UnityEngine.Quaternion HandSkeletonRecorder::Index2Rotation
-	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Index2Rotation_28;
-	// UnityEngine.Quaternion HandSkeletonRecorder::Index3Rotation
-	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Index3Rotation_29;
-	// UnityEngine.Quaternion HandSkeletonRecorder::Thumb0Rotation
-	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Thumb0Rotation_30;
-	// UnityEngine.Quaternion HandSkeletonRecorder::Thumb1Rotation
-	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Thumb1Rotation_31;
-	// UnityEngine.Quaternion HandSkeletonRecorder::Thumb2Rotation
-	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Thumb2Rotation_32;
-	// UnityEngine.Quaternion HandSkeletonRecorder::Thumb3Rotation
-	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Thumb3Rotation_33;
-	// UnityEngine.Quaternion HandSkeletonRecorder::Middle1Rotation
-	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Middle1Rotation_34;
-	// UnityEngine.Quaternion HandSkeletonRecorder::Middle2Rotation
-	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Middle2Rotation_35;
-	// UnityEngine.Quaternion HandSkeletonRecorder::Middle3Rotation
-	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Middle3Rotation_36;
-	// UnityEngine.Quaternion HandSkeletonRecorder::Ring1Rotation
-	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Ring1Rotation_37;
-	// UnityEngine.Quaternion HandSkeletonRecorder::Ring2Rotation
-	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Ring2Rotation_38;
-	// UnityEngine.Quaternion HandSkeletonRecorder::Ring3Rotation
-	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Ring3Rotation_39;
-	// UnityEngine.Quaternion HandSkeletonRecorder::Pinky0Rotation
-	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Pinky0Rotation_40;
-	// UnityEngine.Quaternion HandSkeletonRecorder::Pinky1Rotation
-	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Pinky1Rotation_41;
-	// UnityEngine.Quaternion HandSkeletonRecorder::Pinky2Rotation
-	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Pinky2Rotation_42;
-	// UnityEngine.Quaternion HandSkeletonRecorder::Pinky3Rotation
-	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Pinky3Rotation_43;
-};
-
 // InformationPanelManager
 struct InformationPanelManager_t3B28A7AB6FC23AFFF614D77D4C7583D6D26A3CC4  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -5071,6 +4993,43 @@ struct PassthroughSurface_t5DEF489C691B1678CA206E5B904FF22B8FCD4264  : public Mo
 	OVRPassthroughLayer_tE81E021B78942BCB1DCCAEDDC82A25C9F6AD771F* ___passthroughLayer_4;
 	// UnityEngine.MeshFilter PassthroughSurface::projectionObject
 	MeshFilter_t6D1CE2473A1E45AC73013400585A1163BF66B2F5* ___projectionObject_5;
+};
+
+// PlaytestManager
+struct PlaytestManager_t2536ABEEACA1FCB05D8A4CEA27055E8999416737  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// UnityEngine.GameObject PlaytestManager::recognizerObject
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___recognizerObject_4;
+	// PoseRecognizer PlaytestManager::poseRecognizer
+	PoseRecognizer_t7E2392814517130FD64A57E16671267462AE9329* ___poseRecognizer_5;
+	// UnityEngine.UI.Text PlaytestManager::msg
+	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___msg_6;
+};
+
+struct PlaytestManager_t2536ABEEACA1FCB05D8A4CEA27055E8999416737_StaticFields
+{
+	// Clip PlaytestManager::currentClip
+	Clip_t5B493D4729396BB82DD0E7ED754916E180EC23BD* ___currentClip_7;
+	// System.Collections.Generic.List`1<UnityEngine.GameObject> PlaytestManager::Recognizers
+	List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* ___Recognizers_8;
+};
+
+// PoseRecognizer
+struct PoseRecognizer_t7E2392814517130FD64A57E16671267462AE9329  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// RealtimeData PoseRecognizer::realtimeData
+	RealtimeData_tFECB5A6DF241086C755EE6DB8D613EADC7BAEA45* ___realtimeData_4;
+};
+
+// RecognizerManager
+struct RecognizerManager_t777C5709ACC04D7B928C0D4C559150A82FB5CEDA  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// Interaction RecognizerManager::interaction
+	Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* ___interaction_4;
+	// PoseRecognizer RecognizerManager::poseRecognizer
+	PoseRecognizer_t7E2392814517130FD64A57E16671267462AE9329* ___poseRecognizer_5;
+	// PlaytestManager RecognizerManager::playtestManager
+	PlaytestManager_t2536ABEEACA1FCB05D8A4CEA27055E8999416737* ___playtestManager_6;
 };
 
 // RequestCaptureFlow
@@ -6282,12 +6241,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m2E1DFA67718FC1A0B6E5DFEB
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Component_TryGetComponent_TisRuntimeObject_m69D4ED21F14D49D805A2337F4332934CDA07DEDB_gshared (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, RuntimeObject** ___component0, const RuntimeMethod* method) ;
 // System.Void System.Action`2<OVRSpatialAnchor/UnboundAnchor,System.Boolean>::Invoke(T1,T2)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_2_Invoke_m85770B8746363639715731D577A3EFD84D32B3A7_gshared_inline (Action_2_t979AFF408DA299E0AA292FEEB3C2633BBD5B4EBD* __this, UnboundAnchor_tB94D982DC1C3B6FF028AD53B3D1CEFF5EFBAAF71 ___arg10, bool ___arg21, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<System.Object>::Clear()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Clear_m16C1F2C61FED5955F10EB36BC1CB2DF34B128994_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<System.Object>::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<System.Int32>::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_m17F501B5A5C289ECE1B4F3D6EBF05DFA421433F8_gshared (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* __this, const RuntimeMethod* method) ;
-// System.Void System.Collections.Generic.List`1<System.Object>::Clear()
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Clear_m16C1F2C61FED5955F10EB36BC1CB2DF34B128994_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<System.Object>::Add(T)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___item0, const RuntimeMethod* method) ;
 // System.Boolean System.Collections.Generic.List`1<System.Object>::Remove(T)
@@ -6915,6 +6874,11 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED02
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_black_mB50217951591A045844C61E7FF31EEE3FEF16737_inline (const RuntimeMethod* method) ;
 // System.Void UnityEngine.SceneManagement.SceneManager::LoadScene(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneManager_LoadScene_mBB3DBC1601A21F8F4E8A5D68FED30EA9412F218E (String_t* ___sceneName0, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<UnityEngine.GameObject>::Clear()
+inline void List_1_Clear_m32D399BDD753B5BD6CE27560249096418F3F0867_inline (List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B*, const RuntimeMethod*))List_1_Clear_m16C1F2C61FED5955F10EB36BC1CB2DF34B128994_gshared_inline)(__this, method);
+}
 // System.Void System.Collections.Generic.List`1<Interaction>::.ctor()
 inline void List_1__ctor_mB3D8965622B0B87D736052482EA02B7F1DA6F6EE (List_1_t8D2EAF6AA1B446B2DA30A936D11966AFBC257F2C* __this, const RuntimeMethod* method)
 {
@@ -7438,11 +7402,6 @@ inline bool Enumerator_MoveNext_m96F4B0BD0A5485C8E8CC57D961DF6F1FA256AF27 (Enume
 {
 	return ((  bool (*) (Enumerator_t88BD1282EF117E59AACFC9EC55B89F0B9EDACE60*, const RuntimeMethod*))Enumerator_MoveNext_mE921CC8F29FBBDE7CC3209A0ED0D921D58D00BCB_gshared)(__this, method);
 }
-// System.Void System.Collections.Generic.List`1<UnityEngine.GameObject>::Clear()
-inline void List_1_Clear_m32D399BDD753B5BD6CE27560249096418F3F0867_inline (List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* __this, const RuntimeMethod* method)
-{
-	((  void (*) (List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B*, const RuntimeMethod*))List_1_Clear_m16C1F2C61FED5955F10EB36BC1CB2DF34B128994_gshared_inline)(__this, method);
-}
 // System.Void InteractionPanelManager::DeactivateClipPanelButtons()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InteractionPanelManager_DeactivateClipPanelButtons_mB72DEB978EFC44527F7B245971790AE5D53E45A4 (InteractionPanelManager_tBB48A2CA5A19EBCF08494DEDFDEC61C4EA5E1EEE* __this, const RuntimeMethod* method) ;
 // T UnityEngine.GameObject::GetComponent<UnityEngine.UI.Image>()
@@ -7577,6 +7536,10 @@ inline void List_1__ctor_m447372C1EF7141193B93090A77395B786C72C7BC (List_1_tB951
 {
 	((  void (*) (List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
 }
+// System.Boolean PoseRecognizer::Recognize(Handedness,HandPose,HandPose,System.Boolean,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PoseRecognizer_Recognize_m81C8BA8E54312FDA9F69FE084946325D79C213F6 (PoseRecognizer_t7E2392814517130FD64A57E16671267462AE9329* __this, int32_t ___handedness0, HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D* ___handPose_R1, HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D* ___handPose_L2, bool ___isTransformConstraint3, bool ___isConditionSetToTrue4, const RuntimeMethod* method) ;
+// System.Void PlaytestManager::Load(Clip)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlaytestManager_Load_m523699B72F489E87507501060006CE9FBDBE8980 (PlaytestManager_t2536ABEEACA1FCB05D8A4CEA27055E8999416737* __this, Clip_t5B493D4729396BB82DD0E7ED754916E180EC23BD* ___clip0, const RuntimeMethod* method) ;
 // System.Boolean OVRHand::get_IsTracked()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool OVRHand_get_IsTracked_m869AA41C7CC8F224F1CD5A10FF6CD62E6F6BDFDA_inline (OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* __this, const RuntimeMethod* method) ;
 // System.Boolean OVRHand::get_IsDataValid()
@@ -7589,12 +7552,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandMotion__ctor_m7DC882729A7B030194462E37F7E2D068C75AADB7 (HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___HandPosition0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___WristPosition1, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___ForearmStubPosition2, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Index1Position3, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Index2Position4, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Index3Position5, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Thumb0Position6, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Thumb1Position7, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Thumb2Position8, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Thumb3Position9, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Middle1Position10, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Middle2Position11, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Middle3Position12, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Ring1Position13, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Ring2Position14, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Ring3Position15, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Pinky0Position16, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Pinky1Position17, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Pinky2Position18, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Pinky3Position19, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___HandRotation20, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___WristRotation21, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___ForearmStubRotation22, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Index1Rotation23, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Index2Rotation24, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Index3Rotation25, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Thumb0Rotation26, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Thumb1Rotation27, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Thumb2Rotation28, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Thumb3Rotation29, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Middle1Rotation30, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Middle2Rotation31, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Middle3Rotation32, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Ring1Rotation33, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Ring2Rotation34, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Ring3Rotation35, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Pinky0Rotation36, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Pinky1Rotation37, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Pinky2Rotation38, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Pinky3Rotation39, const RuntimeMethod* method) ;
 // System.Void HandPose::.ctor(System.Int32,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandPose__ctor_m8EE9E3D45F0106DBF21E5AE06AB0581FC6E12D6E (HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D* __this, int32_t ___HandPoseId0, bool ___CurlOpenIndex1, bool ___CurlOpenMiddle2, bool ___CurlOpenRing3, bool ___CurlOpenPinky4, bool ___CurlOpenThumb5, bool ___CurlClosedIndex6, bool ___CurlClosedMiddle7, bool ___CurlClosedRing8, bool ___CurlClosedPinky9, bool ___CurlClosedThumb10, bool ___CurlNeutralIndex11, bool ___CurlNeutralMiddle12, bool ___CurlNeutralRing13, bool ___CurlNeutralPinky14, bool ___CurlNeutralThumb15, bool ___FlexionOpenIndex16, bool ___FlexionOpenMiddle17, bool ___FlexionOpenRing18, bool ___FlexionOpenPinky19, bool ___FlexionClosedIndex20, bool ___FlexionClosedMiddle21, bool ___FlexionClosedRing22, bool ___FlexionClosedPinky23, bool ___FlexionNeutralIndex24, bool ___FlexionNeutralMiddle25, bool ___FlexionNeutralRing26, bool ___FlexionNeutralPinky27, bool ___AbductionOpenIndex28, bool ___AbductionOpenMiddle29, bool ___AbductionOpenRing30, bool ___AbductionOpenThumb31, bool ___AbductionClosedIndex32, bool ___AbductionClosedMiddle33, bool ___AbductionClosedRing34, bool ___AbductionClosedThumb35, bool ___OppositionTouchingIndex36, bool ___OppositionTouchingMiddle37, bool ___OppositionTouchingRing38, bool ___OppositionTouchingPinky39, bool ___OppositionNearIndex40, bool ___OppositionNearMiddle41, bool ___OppositionNearRing42, bool ___OppositionNearPinky43, bool ___OppositionNoneIndex44, bool ___OppositionNoneMiddle45, bool ___OppositionNoneRing46, bool ___OppositionNonePinky47, bool ___WristUp48, bool ___WristDown49, bool ___PalmUp50, bool ___PalmDown51, bool ___PalmTowardsFace52, bool ___PalmAwayFromFace53, bool ___FingersUp54, bool ___FingersDown55, const RuntimeMethod* method) ;
-// UnityEngine.Vector3 UnityEngine.Transform::get_localPosition()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
-// UnityEngine.Quaternion UnityEngine.Transform::get_localRotation()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Transform_get_localRotation_mD53D37611A5DAE93EC6C7BBCAC337408C5CACA77 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
-// System.Void HandSkeleton::.ctor(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Quaternion,UnityEngine.Quaternion,UnityEngine.Quaternion,UnityEngine.Quaternion,UnityEngine.Quaternion,UnityEngine.Quaternion,UnityEngine.Quaternion,UnityEngine.Quaternion,UnityEngine.Quaternion,UnityEngine.Quaternion,UnityEngine.Quaternion,UnityEngine.Quaternion,UnityEngine.Quaternion,UnityEngine.Quaternion,UnityEngine.Quaternion,UnityEngine.Quaternion,UnityEngine.Quaternion,UnityEngine.Quaternion,UnityEngine.Quaternion)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandSkeleton__ctor_m3DDB60AB324EE32114F59865AFAD29BF0CFA55AB (HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___HandPosition0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___WristPosition1, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___ForearmStubPosition2, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Index1Position3, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Index2Position4, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Index3Position5, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Thumb0Position6, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Thumb1Position7, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Thumb2Position8, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Thumb3Position9, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Middle1Position10, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Middle2Position11, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Middle3Position12, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Ring1Position13, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Ring2Position14, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Ring3Position15, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Pinky0Position16, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Pinky1Position17, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Pinky2Position18, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Pinky3Position19, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___HandRotation20, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___WristRotation21, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___ForearmStubRotation22, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Index1Rotation23, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Index2Rotation24, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Index3Rotation25, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Thumb0Rotation26, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Thumb1Rotation27, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Thumb2Rotation28, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Thumb3Rotation29, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Middle1Rotation30, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Middle2Rotation31, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Middle3Rotation32, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Ring1Rotation33, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Ring2Rotation34, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Ring3Rotation35, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Pinky0Rotation36, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Pinky1Rotation37, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Pinky2Rotation38, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Pinky3Rotation39, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Color::.ctor(System.Single,System.Single,System.Single,System.Single)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* __this, float ___r0, float ___g1, float ___b2, float ___a3, const RuntimeMethod* method) ;
 // System.Single UnityEngine.Mathf::Repeat(System.Single,System.Single)
@@ -14455,6 +14412,34 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneLauncher_RestartRecording_mCAEBBFCD
 		// SceneManager.LoadScene("Record");
 		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
 		SceneManager_LoadScene_mBB3DBC1601A21F8F4E8A5D68FED30EA9412F218E(_stringLiteral2E3D8376A2AF9873C3CE7D5139856AE599C8F0F1, NULL);
+		// }
+		return;
+	}
+}
+// System.Void SceneLauncher::StartPlaytest()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneLauncher_StartPlaytest_mD52F7F307AD78DFA96A47F9C17FBDE164B0A9E0D (SceneLauncher_tD0CB6527B24A24DFB148588B51A164188AB31952* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Clear_m32D399BDD753B5BD6CE27560249096418F3F0867_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlaytestManager_t2536ABEEACA1FCB05D8A4CEA27055E8999416737_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral43EB4131D4DE5CEAA7B3C86039C2F3C064C118E8);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// PlaytestManager.currentClip = null;
+		il2cpp_codegen_runtime_class_init_inline(PlaytestManager_t2536ABEEACA1FCB05D8A4CEA27055E8999416737_il2cpp_TypeInfo_var);
+		((PlaytestManager_t2536ABEEACA1FCB05D8A4CEA27055E8999416737_StaticFields*)il2cpp_codegen_static_fields_for(PlaytestManager_t2536ABEEACA1FCB05D8A4CEA27055E8999416737_il2cpp_TypeInfo_var))->___currentClip_7 = (Clip_t5B493D4729396BB82DD0E7ED754916E180EC23BD*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&((PlaytestManager_t2536ABEEACA1FCB05D8A4CEA27055E8999416737_StaticFields*)il2cpp_codegen_static_fields_for(PlaytestManager_t2536ABEEACA1FCB05D8A4CEA27055E8999416737_il2cpp_TypeInfo_var))->___currentClip_7), (void*)(Clip_t5B493D4729396BB82DD0E7ED754916E180EC23BD*)NULL);
+		// PlaytestManager.Recognizers.Clear();
+		List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* L_0 = ((PlaytestManager_t2536ABEEACA1FCB05D8A4CEA27055E8999416737_StaticFields*)il2cpp_codegen_static_fields_for(PlaytestManager_t2536ABEEACA1FCB05D8A4CEA27055E8999416737_il2cpp_TypeInfo_var))->___Recognizers_8;
+		NullCheck(L_0);
+		List_1_Clear_m32D399BDD753B5BD6CE27560249096418F3F0867_inline(L_0, List_1_Clear_m32D399BDD753B5BD6CE27560249096418F3F0867_RuntimeMethod_var);
+		// SceneManager.LoadScene("Playtest");
+		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
+		SceneManager_LoadScene_mBB3DBC1601A21F8F4E8A5D68FED30EA9412F218E(_stringLiteral43EB4131D4DE5CEAA7B3C86039C2F3C064C118E8, NULL);
 		// }
 		return;
 	}
@@ -25818,6 +25803,248 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InteractionPanelManager__ctor_m8451AFA1B
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void RecognizerManager::Update()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RecognizerManager_Update_m3D8CFBA7D739664A327D68D86776A7EF58E494FB (RecognizerManager_t777C5709ACC04D7B928C0D4C559150A82FB5CEDA* __this, const RuntimeMethod* method) 
+{
+	bool V_0 = false;
+	bool V_1 = false;
+	bool V_2 = false;
+	bool V_3 = false;
+	bool V_4 = false;
+	int32_t G_B3_0 = 0;
+	int32_t G_B8_0 = 0;
+	int32_t G_B13_0 = 0;
+	int32_t G_B17_0 = 0;
+	{
+		// bool isRecognized = false;
+		V_0 = (bool)0;
+		// if (interaction.isPose_R == true && interaction.isPose_L == false)
+		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_0 = __this->___interaction_4;
+		NullCheck(L_0);
+		bool L_1 = L_0->___isPose_R_4;
+		if (!L_1)
+		{
+			goto IL_0020;
+		}
+	}
+	{
+		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_2 = __this->___interaction_4;
+		NullCheck(L_2);
+		bool L_3 = L_2->___isPose_L_5;
+		G_B3_0 = ((((int32_t)L_3) == ((int32_t)0))? 1 : 0);
+		goto IL_0021;
+	}
+
+IL_0020:
+	{
+		G_B3_0 = 0;
+	}
+
+IL_0021:
+	{
+		V_1 = (bool)G_B3_0;
+		bool L_4 = V_1;
+		if (!L_4)
+		{
+			goto IL_005b;
+		}
+	}
+	{
+		// isRecognized = poseRecognizer.Recognize(Handedness.Right, interaction.expectedPose_R, null, interaction.isTransformConstraint_R, interaction.isConditionSetToTrue);
+		PoseRecognizer_t7E2392814517130FD64A57E16671267462AE9329* L_5 = __this->___poseRecognizer_5;
+		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_6 = __this->___interaction_4;
+		NullCheck(L_6);
+		HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D* L_7 = L_6->___expectedPose_R_6;
+		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_8 = __this->___interaction_4;
+		NullCheck(L_8);
+		bool L_9 = L_8->___isTransformConstraint_R_8;
+		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_10 = __this->___interaction_4;
+		NullCheck(L_10);
+		bool L_11 = L_10->___isConditionSetToTrue_17;
+		NullCheck(L_5);
+		bool L_12;
+		L_12 = PoseRecognizer_Recognize_m81C8BA8E54312FDA9F69FE084946325D79C213F6(L_5, 0, L_7, (HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D*)NULL, L_9, L_11, NULL);
+		V_0 = L_12;
+		goto IL_0133;
+	}
+
+IL_005b:
+	{
+		// else if (interaction.isPose_R == false && interaction.isPose_L == true)
+		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_13 = __this->___interaction_4;
+		NullCheck(L_13);
+		bool L_14 = L_13->___isPose_R_4;
+		if (L_14)
+		{
+			goto IL_0075;
+		}
+	}
+	{
+		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_15 = __this->___interaction_4;
+		NullCheck(L_15);
+		bool L_16 = L_15->___isPose_L_5;
+		G_B8_0 = ((int32_t)(L_16));
+		goto IL_0076;
+	}
+
+IL_0075:
+	{
+		G_B8_0 = 0;
+	}
+
+IL_0076:
+	{
+		V_2 = (bool)G_B8_0;
+		bool L_17 = V_2;
+		if (!L_17)
+		{
+			goto IL_00b0;
+		}
+	}
+	{
+		// isRecognized = poseRecognizer.Recognize(Handedness.Left, null, interaction.expectedPose_L, interaction.isTransformConstraint_L, interaction.isConditionSetToTrue);
+		PoseRecognizer_t7E2392814517130FD64A57E16671267462AE9329* L_18 = __this->___poseRecognizer_5;
+		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_19 = __this->___interaction_4;
+		NullCheck(L_19);
+		HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D* L_20 = L_19->___expectedPose_L_7;
+		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_21 = __this->___interaction_4;
+		NullCheck(L_21);
+		bool L_22 = L_21->___isTransformConstraint_L_9;
+		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_23 = __this->___interaction_4;
+		NullCheck(L_23);
+		bool L_24 = L_23->___isConditionSetToTrue_17;
+		NullCheck(L_18);
+		bool L_25;
+		L_25 = PoseRecognizer_Recognize_m81C8BA8E54312FDA9F69FE084946325D79C213F6(L_18, 1, (HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D*)NULL, L_20, L_22, L_24, NULL);
+		V_0 = L_25;
+		goto IL_0133;
+	}
+
+IL_00b0:
+	{
+		// else if(interaction.isPose_L == true && interaction.isPose_R == true)
+		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_26 = __this->___interaction_4;
+		NullCheck(L_26);
+		bool L_27 = L_26->___isPose_L_5;
+		if (!L_27)
+		{
+			goto IL_00ca;
+		}
+	}
+	{
+		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_28 = __this->___interaction_4;
+		NullCheck(L_28);
+		bool L_29 = L_28->___isPose_R_4;
+		G_B13_0 = ((int32_t)(L_29));
+		goto IL_00cb;
+	}
+
+IL_00ca:
+	{
+		G_B13_0 = 0;
+	}
+
+IL_00cb:
+	{
+		V_3 = (bool)G_B13_0;
+		bool L_30 = V_3;
+		if (!L_30)
+		{
+			goto IL_0133;
+		}
+	}
+	{
+		// isRecognized = poseRecognizer.Recognize(Handedness.Right, interaction.expectedPose_R, null, interaction.isTransformConstraint_R, interaction.isConditionSetToTrue)
+		//         && poseRecognizer.Recognize(Handedness.Left, null, interaction.expectedPose_L, interaction.isTransformConstraint_L, interaction.isConditionSetToTrue);
+		PoseRecognizer_t7E2392814517130FD64A57E16671267462AE9329* L_31 = __this->___poseRecognizer_5;
+		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_32 = __this->___interaction_4;
+		NullCheck(L_32);
+		HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D* L_33 = L_32->___expectedPose_R_6;
+		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_34 = __this->___interaction_4;
+		NullCheck(L_34);
+		bool L_35 = L_34->___isTransformConstraint_R_8;
+		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_36 = __this->___interaction_4;
+		NullCheck(L_36);
+		bool L_37 = L_36->___isConditionSetToTrue_17;
+		NullCheck(L_31);
+		bool L_38;
+		L_38 = PoseRecognizer_Recognize_m81C8BA8E54312FDA9F69FE084946325D79C213F6(L_31, 0, L_33, (HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D*)NULL, L_35, L_37, NULL);
+		if (!L_38)
+		{
+			goto IL_0130;
+		}
+	}
+	{
+		PoseRecognizer_t7E2392814517130FD64A57E16671267462AE9329* L_39 = __this->___poseRecognizer_5;
+		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_40 = __this->___interaction_4;
+		NullCheck(L_40);
+		HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D* L_41 = L_40->___expectedPose_L_7;
+		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_42 = __this->___interaction_4;
+		NullCheck(L_42);
+		bool L_43 = L_42->___isTransformConstraint_L_9;
+		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_44 = __this->___interaction_4;
+		NullCheck(L_44);
+		bool L_45 = L_44->___isConditionSetToTrue_17;
+		NullCheck(L_39);
+		bool L_46;
+		L_46 = PoseRecognizer_Recognize_m81C8BA8E54312FDA9F69FE084946325D79C213F6(L_39, 1, (HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D*)NULL, L_41, L_43, L_45, NULL);
+		G_B17_0 = ((int32_t)(L_46));
+		goto IL_0131;
+	}
+
+IL_0130:
+	{
+		G_B17_0 = 0;
+	}
+
+IL_0131:
+	{
+		V_0 = (bool)G_B17_0;
+	}
+
+IL_0133:
+	{
+		// if (isRecognized == true)
+		bool L_47 = V_0;
+		V_4 = L_47;
+		bool L_48 = V_4;
+		if (!L_48)
+		{
+			goto IL_0153;
+		}
+	}
+	{
+		// playtestManager.Load(interaction.transitionClip);
+		PlaytestManager_t2536ABEEACA1FCB05D8A4CEA27055E8999416737* L_49 = __this->___playtestManager_6;
+		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_50 = __this->___interaction_4;
+		NullCheck(L_50);
+		Clip_t5B493D4729396BB82DD0E7ED754916E180EC23BD* L_51 = L_50->___transitionClip_1;
+		NullCheck(L_49);
+		PlaytestManager_Load_m523699B72F489E87507501060006CE9FBDBE8980(L_49, L_51, NULL);
+	}
+
+IL_0153:
+	{
+		// }
+		return;
+	}
+}
+// System.Void RecognizerManager::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RecognizerManager__ctor_mE54699FEE97B3CF515BDC618F417C605CD2BD0AB (RecognizerManager_t777C5709ACC04D7B928C0D4C559150A82FB5CEDA* __this, const RuntimeMethod* method) 
+{
+	{
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 // HandMotion HandMotionRecorder::GetHandMotion(OVRSkeleton,OVRHand)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F* HandMotionRecorder_GetHandMotion_mE888048AA62D959EFEA632923E82FCEF4A8B320B (HandMotionRecorder_t4A68E90ADD29D84CC91B6E8EA848C3ABC005108A* __this, OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* ___ovrSkeleton0, OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* ___ovrHand1, const RuntimeMethod* method) 
 {
@@ -28473,943 +28700,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandPoseRecorder__ctor_mD754A4FC55146A90
 		__this->___leftFingersDown_113 = (bool)0;
 		// public int HandPoseId = -1;
 		__this->___HandPoseId_114 = (-1);
-		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
-		return;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// HandSkeleton HandSkeletonRecorder::GetHandSkeleton(OVRSkeleton,OVRHand)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320* HandSkeletonRecorder_GetHandSkeleton_mC8C02DE660AEB93464449E23B123E78EC214BB55 (HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A* __this, OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* ___ovrSkeleton0, OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* ___ovrHand1, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IList_1_t6FCBF894D7E49C8479135ED3B9FB86D7311E22FC_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	bool V_0 = false;
-	HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320* V_1 = NULL;
-	int32_t G_B3_0 = 0;
-	{
-		// if (ovrHand.IsTracked && ovrHand.IsDataValid)
-		OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* L_0 = ___ovrHand1;
-		NullCheck(L_0);
-		bool L_1;
-		L_1 = OVRHand_get_IsTracked_m869AA41C7CC8F224F1CD5A10FF6CD62E6F6BDFDA_inline(L_0, NULL);
-		if (!L_1)
-		{
-			goto IL_0011;
-		}
-	}
-	{
-		OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* L_2 = ___ovrHand1;
-		NullCheck(L_2);
-		bool L_3;
-		L_3 = OVRHand_get_IsDataValid_m5B8E2792F5537ABB0DA53ACB27AC2C17DABEF534_inline(L_2, NULL);
-		G_B3_0 = ((int32_t)(L_3));
-		goto IL_0012;
-	}
-
-IL_0011:
-	{
-		G_B3_0 = 0;
-	}
-
-IL_0012:
-	{
-		V_0 = (bool)G_B3_0;
-		bool L_4 = V_0;
-		if (!L_4)
-		{
-			goto IL_047e;
-		}
-	}
-	{
-		// HandPosition = ovrSkeleton.transform.position;
-		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_5 = ___ovrSkeleton0;
-		NullCheck(L_5);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6;
-		L_6 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_5, NULL);
-		NullCheck(L_6);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7;
-		L_7 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_6, NULL);
-		__this->___HandPosition_4 = L_7;
-		// WristPosition = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_WristRoot].Transform.localPosition;
-		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_8 = ___ovrSkeleton0;
-		NullCheck(L_8);
-		RuntimeObject* L_9;
-		L_9 = OVRSkeleton_get_Bones_mA38877C10AAB3F56F41939A858400F267899304F_inline(L_8, NULL);
-		NullCheck(L_9);
-		OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* L_10;
-		L_10 = InterfaceFuncInvoker1< OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A*, int32_t >::Invoke(0 /* T System.Collections.Generic.IList`1<OVRBone>::get_Item(System.Int32) */, IList_1_t6FCBF894D7E49C8479135ED3B9FB86D7311E22FC_il2cpp_TypeInfo_var, L_9, 0);
-		NullCheck(L_10);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_11;
-		L_11 = OVRBone_get_Transform_m10B9A0E5ADEE62EA0668BA406E0D44084F87AF2F_inline(L_10, NULL);
-		NullCheck(L_11);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12;
-		L_12 = Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95(L_11, NULL);
-		__this->___WristPosition_5 = L_12;
-		// ForearmStubPosition = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_ForearmStub].Transform.localPosition;
-		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_13 = ___ovrSkeleton0;
-		NullCheck(L_13);
-		RuntimeObject* L_14;
-		L_14 = OVRSkeleton_get_Bones_mA38877C10AAB3F56F41939A858400F267899304F_inline(L_13, NULL);
-		NullCheck(L_14);
-		OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* L_15;
-		L_15 = InterfaceFuncInvoker1< OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A*, int32_t >::Invoke(0 /* T System.Collections.Generic.IList`1<OVRBone>::get_Item(System.Int32) */, IList_1_t6FCBF894D7E49C8479135ED3B9FB86D7311E22FC_il2cpp_TypeInfo_var, L_14, 1);
-		NullCheck(L_15);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_16;
-		L_16 = OVRBone_get_Transform_m10B9A0E5ADEE62EA0668BA406E0D44084F87AF2F_inline(L_15, NULL);
-		NullCheck(L_16);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_17;
-		L_17 = Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95(L_16, NULL);
-		__this->___ForearmStubPosition_6 = L_17;
-		// Index1Position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Index1].Transform.localPosition;
-		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_18 = ___ovrSkeleton0;
-		NullCheck(L_18);
-		RuntimeObject* L_19;
-		L_19 = OVRSkeleton_get_Bones_mA38877C10AAB3F56F41939A858400F267899304F_inline(L_18, NULL);
-		NullCheck(L_19);
-		OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* L_20;
-		L_20 = InterfaceFuncInvoker1< OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A*, int32_t >::Invoke(0 /* T System.Collections.Generic.IList`1<OVRBone>::get_Item(System.Int32) */, IList_1_t6FCBF894D7E49C8479135ED3B9FB86D7311E22FC_il2cpp_TypeInfo_var, L_19, 6);
-		NullCheck(L_20);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_21;
-		L_21 = OVRBone_get_Transform_m10B9A0E5ADEE62EA0668BA406E0D44084F87AF2F_inline(L_20, NULL);
-		NullCheck(L_21);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_22;
-		L_22 = Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95(L_21, NULL);
-		__this->___Index1Position_7 = L_22;
-		// Index2Position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Index2].Transform.localPosition;
-		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_23 = ___ovrSkeleton0;
-		NullCheck(L_23);
-		RuntimeObject* L_24;
-		L_24 = OVRSkeleton_get_Bones_mA38877C10AAB3F56F41939A858400F267899304F_inline(L_23, NULL);
-		NullCheck(L_24);
-		OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* L_25;
-		L_25 = InterfaceFuncInvoker1< OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A*, int32_t >::Invoke(0 /* T System.Collections.Generic.IList`1<OVRBone>::get_Item(System.Int32) */, IList_1_t6FCBF894D7E49C8479135ED3B9FB86D7311E22FC_il2cpp_TypeInfo_var, L_24, 7);
-		NullCheck(L_25);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_26;
-		L_26 = OVRBone_get_Transform_m10B9A0E5ADEE62EA0668BA406E0D44084F87AF2F_inline(L_25, NULL);
-		NullCheck(L_26);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_27;
-		L_27 = Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95(L_26, NULL);
-		__this->___Index2Position_8 = L_27;
-		// Index3Position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Index3].Transform.localPosition;
-		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_28 = ___ovrSkeleton0;
-		NullCheck(L_28);
-		RuntimeObject* L_29;
-		L_29 = OVRSkeleton_get_Bones_mA38877C10AAB3F56F41939A858400F267899304F_inline(L_28, NULL);
-		NullCheck(L_29);
-		OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* L_30;
-		L_30 = InterfaceFuncInvoker1< OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A*, int32_t >::Invoke(0 /* T System.Collections.Generic.IList`1<OVRBone>::get_Item(System.Int32) */, IList_1_t6FCBF894D7E49C8479135ED3B9FB86D7311E22FC_il2cpp_TypeInfo_var, L_29, 8);
-		NullCheck(L_30);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_31;
-		L_31 = OVRBone_get_Transform_m10B9A0E5ADEE62EA0668BA406E0D44084F87AF2F_inline(L_30, NULL);
-		NullCheck(L_31);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_32;
-		L_32 = Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95(L_31, NULL);
-		__this->___Index3Position_9 = L_32;
-		// Thumb0Position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Thumb0].Transform.localPosition;
-		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_33 = ___ovrSkeleton0;
-		NullCheck(L_33);
-		RuntimeObject* L_34;
-		L_34 = OVRSkeleton_get_Bones_mA38877C10AAB3F56F41939A858400F267899304F_inline(L_33, NULL);
-		NullCheck(L_34);
-		OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* L_35;
-		L_35 = InterfaceFuncInvoker1< OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A*, int32_t >::Invoke(0 /* T System.Collections.Generic.IList`1<OVRBone>::get_Item(System.Int32) */, IList_1_t6FCBF894D7E49C8479135ED3B9FB86D7311E22FC_il2cpp_TypeInfo_var, L_34, 2);
-		NullCheck(L_35);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_36;
-		L_36 = OVRBone_get_Transform_m10B9A0E5ADEE62EA0668BA406E0D44084F87AF2F_inline(L_35, NULL);
-		NullCheck(L_36);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_37;
-		L_37 = Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95(L_36, NULL);
-		__this->___Thumb0Position_10 = L_37;
-		// Thumb1Position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Thumb1].Transform.localPosition;
-		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_38 = ___ovrSkeleton0;
-		NullCheck(L_38);
-		RuntimeObject* L_39;
-		L_39 = OVRSkeleton_get_Bones_mA38877C10AAB3F56F41939A858400F267899304F_inline(L_38, NULL);
-		NullCheck(L_39);
-		OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* L_40;
-		L_40 = InterfaceFuncInvoker1< OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A*, int32_t >::Invoke(0 /* T System.Collections.Generic.IList`1<OVRBone>::get_Item(System.Int32) */, IList_1_t6FCBF894D7E49C8479135ED3B9FB86D7311E22FC_il2cpp_TypeInfo_var, L_39, 3);
-		NullCheck(L_40);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_41;
-		L_41 = OVRBone_get_Transform_m10B9A0E5ADEE62EA0668BA406E0D44084F87AF2F_inline(L_40, NULL);
-		NullCheck(L_41);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_42;
-		L_42 = Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95(L_41, NULL);
-		__this->___Thumb1Position_11 = L_42;
-		// Thumb2Position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Thumb2].Transform.localPosition;
-		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_43 = ___ovrSkeleton0;
-		NullCheck(L_43);
-		RuntimeObject* L_44;
-		L_44 = OVRSkeleton_get_Bones_mA38877C10AAB3F56F41939A858400F267899304F_inline(L_43, NULL);
-		NullCheck(L_44);
-		OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* L_45;
-		L_45 = InterfaceFuncInvoker1< OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A*, int32_t >::Invoke(0 /* T System.Collections.Generic.IList`1<OVRBone>::get_Item(System.Int32) */, IList_1_t6FCBF894D7E49C8479135ED3B9FB86D7311E22FC_il2cpp_TypeInfo_var, L_44, 4);
-		NullCheck(L_45);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_46;
-		L_46 = OVRBone_get_Transform_m10B9A0E5ADEE62EA0668BA406E0D44084F87AF2F_inline(L_45, NULL);
-		NullCheck(L_46);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_47;
-		L_47 = Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95(L_46, NULL);
-		__this->___Thumb2Position_12 = L_47;
-		// Thumb3Position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Thumb3].Transform.localPosition;
-		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_48 = ___ovrSkeleton0;
-		NullCheck(L_48);
-		RuntimeObject* L_49;
-		L_49 = OVRSkeleton_get_Bones_mA38877C10AAB3F56F41939A858400F267899304F_inline(L_48, NULL);
-		NullCheck(L_49);
-		OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* L_50;
-		L_50 = InterfaceFuncInvoker1< OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A*, int32_t >::Invoke(0 /* T System.Collections.Generic.IList`1<OVRBone>::get_Item(System.Int32) */, IList_1_t6FCBF894D7E49C8479135ED3B9FB86D7311E22FC_il2cpp_TypeInfo_var, L_49, 5);
-		NullCheck(L_50);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_51;
-		L_51 = OVRBone_get_Transform_m10B9A0E5ADEE62EA0668BA406E0D44084F87AF2F_inline(L_50, NULL);
-		NullCheck(L_51);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_52;
-		L_52 = Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95(L_51, NULL);
-		__this->___Thumb3Position_13 = L_52;
-		// Middle1Position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Middle1].Transform.localPosition;
-		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_53 = ___ovrSkeleton0;
-		NullCheck(L_53);
-		RuntimeObject* L_54;
-		L_54 = OVRSkeleton_get_Bones_mA38877C10AAB3F56F41939A858400F267899304F_inline(L_53, NULL);
-		NullCheck(L_54);
-		OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* L_55;
-		L_55 = InterfaceFuncInvoker1< OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A*, int32_t >::Invoke(0 /* T System.Collections.Generic.IList`1<OVRBone>::get_Item(System.Int32) */, IList_1_t6FCBF894D7E49C8479135ED3B9FB86D7311E22FC_il2cpp_TypeInfo_var, L_54, ((int32_t)9));
-		NullCheck(L_55);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_56;
-		L_56 = OVRBone_get_Transform_m10B9A0E5ADEE62EA0668BA406E0D44084F87AF2F_inline(L_55, NULL);
-		NullCheck(L_56);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_57;
-		L_57 = Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95(L_56, NULL);
-		__this->___Middle1Position_14 = L_57;
-		// Middle2Position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Middle2].Transform.localPosition;
-		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_58 = ___ovrSkeleton0;
-		NullCheck(L_58);
-		RuntimeObject* L_59;
-		L_59 = OVRSkeleton_get_Bones_mA38877C10AAB3F56F41939A858400F267899304F_inline(L_58, NULL);
-		NullCheck(L_59);
-		OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* L_60;
-		L_60 = InterfaceFuncInvoker1< OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A*, int32_t >::Invoke(0 /* T System.Collections.Generic.IList`1<OVRBone>::get_Item(System.Int32) */, IList_1_t6FCBF894D7E49C8479135ED3B9FB86D7311E22FC_il2cpp_TypeInfo_var, L_59, ((int32_t)10));
-		NullCheck(L_60);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_61;
-		L_61 = OVRBone_get_Transform_m10B9A0E5ADEE62EA0668BA406E0D44084F87AF2F_inline(L_60, NULL);
-		NullCheck(L_61);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_62;
-		L_62 = Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95(L_61, NULL);
-		__this->___Middle2Position_15 = L_62;
-		// Middle3Position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Middle3].Transform.localPosition;
-		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_63 = ___ovrSkeleton0;
-		NullCheck(L_63);
-		RuntimeObject* L_64;
-		L_64 = OVRSkeleton_get_Bones_mA38877C10AAB3F56F41939A858400F267899304F_inline(L_63, NULL);
-		NullCheck(L_64);
-		OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* L_65;
-		L_65 = InterfaceFuncInvoker1< OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A*, int32_t >::Invoke(0 /* T System.Collections.Generic.IList`1<OVRBone>::get_Item(System.Int32) */, IList_1_t6FCBF894D7E49C8479135ED3B9FB86D7311E22FC_il2cpp_TypeInfo_var, L_64, ((int32_t)11));
-		NullCheck(L_65);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_66;
-		L_66 = OVRBone_get_Transform_m10B9A0E5ADEE62EA0668BA406E0D44084F87AF2F_inline(L_65, NULL);
-		NullCheck(L_66);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_67;
-		L_67 = Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95(L_66, NULL);
-		__this->___Middle3Position_16 = L_67;
-		// Ring1Position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Ring1].Transform.localPosition;
-		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_68 = ___ovrSkeleton0;
-		NullCheck(L_68);
-		RuntimeObject* L_69;
-		L_69 = OVRSkeleton_get_Bones_mA38877C10AAB3F56F41939A858400F267899304F_inline(L_68, NULL);
-		NullCheck(L_69);
-		OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* L_70;
-		L_70 = InterfaceFuncInvoker1< OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A*, int32_t >::Invoke(0 /* T System.Collections.Generic.IList`1<OVRBone>::get_Item(System.Int32) */, IList_1_t6FCBF894D7E49C8479135ED3B9FB86D7311E22FC_il2cpp_TypeInfo_var, L_69, ((int32_t)12));
-		NullCheck(L_70);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_71;
-		L_71 = OVRBone_get_Transform_m10B9A0E5ADEE62EA0668BA406E0D44084F87AF2F_inline(L_70, NULL);
-		NullCheck(L_71);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_72;
-		L_72 = Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95(L_71, NULL);
-		__this->___Ring1Position_17 = L_72;
-		// Ring2Position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Ring2].Transform.localPosition;
-		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_73 = ___ovrSkeleton0;
-		NullCheck(L_73);
-		RuntimeObject* L_74;
-		L_74 = OVRSkeleton_get_Bones_mA38877C10AAB3F56F41939A858400F267899304F_inline(L_73, NULL);
-		NullCheck(L_74);
-		OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* L_75;
-		L_75 = InterfaceFuncInvoker1< OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A*, int32_t >::Invoke(0 /* T System.Collections.Generic.IList`1<OVRBone>::get_Item(System.Int32) */, IList_1_t6FCBF894D7E49C8479135ED3B9FB86D7311E22FC_il2cpp_TypeInfo_var, L_74, ((int32_t)13));
-		NullCheck(L_75);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_76;
-		L_76 = OVRBone_get_Transform_m10B9A0E5ADEE62EA0668BA406E0D44084F87AF2F_inline(L_75, NULL);
-		NullCheck(L_76);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_77;
-		L_77 = Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95(L_76, NULL);
-		__this->___Ring2Position_18 = L_77;
-		// Ring3Position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Ring3].Transform.localPosition;
-		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_78 = ___ovrSkeleton0;
-		NullCheck(L_78);
-		RuntimeObject* L_79;
-		L_79 = OVRSkeleton_get_Bones_mA38877C10AAB3F56F41939A858400F267899304F_inline(L_78, NULL);
-		NullCheck(L_79);
-		OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* L_80;
-		L_80 = InterfaceFuncInvoker1< OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A*, int32_t >::Invoke(0 /* T System.Collections.Generic.IList`1<OVRBone>::get_Item(System.Int32) */, IList_1_t6FCBF894D7E49C8479135ED3B9FB86D7311E22FC_il2cpp_TypeInfo_var, L_79, ((int32_t)14));
-		NullCheck(L_80);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_81;
-		L_81 = OVRBone_get_Transform_m10B9A0E5ADEE62EA0668BA406E0D44084F87AF2F_inline(L_80, NULL);
-		NullCheck(L_81);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_82;
-		L_82 = Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95(L_81, NULL);
-		__this->___Ring3Position_19 = L_82;
-		// Pinky0Position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Pinky0].Transform.localPosition;
-		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_83 = ___ovrSkeleton0;
-		NullCheck(L_83);
-		RuntimeObject* L_84;
-		L_84 = OVRSkeleton_get_Bones_mA38877C10AAB3F56F41939A858400F267899304F_inline(L_83, NULL);
-		NullCheck(L_84);
-		OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* L_85;
-		L_85 = InterfaceFuncInvoker1< OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A*, int32_t >::Invoke(0 /* T System.Collections.Generic.IList`1<OVRBone>::get_Item(System.Int32) */, IList_1_t6FCBF894D7E49C8479135ED3B9FB86D7311E22FC_il2cpp_TypeInfo_var, L_84, ((int32_t)15));
-		NullCheck(L_85);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_86;
-		L_86 = OVRBone_get_Transform_m10B9A0E5ADEE62EA0668BA406E0D44084F87AF2F_inline(L_85, NULL);
-		NullCheck(L_86);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_87;
-		L_87 = Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95(L_86, NULL);
-		__this->___Pinky0Position_20 = L_87;
-		// Pinky1Position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Pinky1].Transform.localPosition;
-		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_88 = ___ovrSkeleton0;
-		NullCheck(L_88);
-		RuntimeObject* L_89;
-		L_89 = OVRSkeleton_get_Bones_mA38877C10AAB3F56F41939A858400F267899304F_inline(L_88, NULL);
-		NullCheck(L_89);
-		OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* L_90;
-		L_90 = InterfaceFuncInvoker1< OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A*, int32_t >::Invoke(0 /* T System.Collections.Generic.IList`1<OVRBone>::get_Item(System.Int32) */, IList_1_t6FCBF894D7E49C8479135ED3B9FB86D7311E22FC_il2cpp_TypeInfo_var, L_89, ((int32_t)16));
-		NullCheck(L_90);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_91;
-		L_91 = OVRBone_get_Transform_m10B9A0E5ADEE62EA0668BA406E0D44084F87AF2F_inline(L_90, NULL);
-		NullCheck(L_91);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_92;
-		L_92 = Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95(L_91, NULL);
-		__this->___Pinky1Position_21 = L_92;
-		// Pinky2Position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Pinky2].Transform.localPosition;
-		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_93 = ___ovrSkeleton0;
-		NullCheck(L_93);
-		RuntimeObject* L_94;
-		L_94 = OVRSkeleton_get_Bones_mA38877C10AAB3F56F41939A858400F267899304F_inline(L_93, NULL);
-		NullCheck(L_94);
-		OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* L_95;
-		L_95 = InterfaceFuncInvoker1< OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A*, int32_t >::Invoke(0 /* T System.Collections.Generic.IList`1<OVRBone>::get_Item(System.Int32) */, IList_1_t6FCBF894D7E49C8479135ED3B9FB86D7311E22FC_il2cpp_TypeInfo_var, L_94, ((int32_t)17));
-		NullCheck(L_95);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_96;
-		L_96 = OVRBone_get_Transform_m10B9A0E5ADEE62EA0668BA406E0D44084F87AF2F_inline(L_95, NULL);
-		NullCheck(L_96);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_97;
-		L_97 = Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95(L_96, NULL);
-		__this->___Pinky2Position_22 = L_97;
-		// Pinky3Position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Pinky3].Transform.localPosition;
-		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_98 = ___ovrSkeleton0;
-		NullCheck(L_98);
-		RuntimeObject* L_99;
-		L_99 = OVRSkeleton_get_Bones_mA38877C10AAB3F56F41939A858400F267899304F_inline(L_98, NULL);
-		NullCheck(L_99);
-		OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* L_100;
-		L_100 = InterfaceFuncInvoker1< OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A*, int32_t >::Invoke(0 /* T System.Collections.Generic.IList`1<OVRBone>::get_Item(System.Int32) */, IList_1_t6FCBF894D7E49C8479135ED3B9FB86D7311E22FC_il2cpp_TypeInfo_var, L_99, ((int32_t)18));
-		NullCheck(L_100);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_101;
-		L_101 = OVRBone_get_Transform_m10B9A0E5ADEE62EA0668BA406E0D44084F87AF2F_inline(L_100, NULL);
-		NullCheck(L_101);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_102;
-		L_102 = Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95(L_101, NULL);
-		__this->___Pinky3Position_23 = L_102;
-		// HandRotation = ovrSkeleton.transform.rotation;
-		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_103 = ___ovrSkeleton0;
-		NullCheck(L_103);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_104;
-		L_104 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_103, NULL);
-		NullCheck(L_104);
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_105;
-		L_105 = Transform_get_rotation_m32AF40CA0D50C797DA639A696F8EAEC7524C179C(L_104, NULL);
-		__this->___HandRotation_24 = L_105;
-		// ForearmStubRotation = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_ForearmStub].Transform.localRotation;
-		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_106 = ___ovrSkeleton0;
-		NullCheck(L_106);
-		RuntimeObject* L_107;
-		L_107 = OVRSkeleton_get_Bones_mA38877C10AAB3F56F41939A858400F267899304F_inline(L_106, NULL);
-		NullCheck(L_107);
-		OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* L_108;
-		L_108 = InterfaceFuncInvoker1< OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A*, int32_t >::Invoke(0 /* T System.Collections.Generic.IList`1<OVRBone>::get_Item(System.Int32) */, IList_1_t6FCBF894D7E49C8479135ED3B9FB86D7311E22FC_il2cpp_TypeInfo_var, L_107, 1);
-		NullCheck(L_108);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_109;
-		L_109 = OVRBone_get_Transform_m10B9A0E5ADEE62EA0668BA406E0D44084F87AF2F_inline(L_108, NULL);
-		NullCheck(L_109);
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_110;
-		L_110 = Transform_get_localRotation_mD53D37611A5DAE93EC6C7BBCAC337408C5CACA77(L_109, NULL);
-		__this->___ForearmStubRotation_25 = L_110;
-		// WristRotation = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_WristRoot].Transform.localRotation;
-		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_111 = ___ovrSkeleton0;
-		NullCheck(L_111);
-		RuntimeObject* L_112;
-		L_112 = OVRSkeleton_get_Bones_mA38877C10AAB3F56F41939A858400F267899304F_inline(L_111, NULL);
-		NullCheck(L_112);
-		OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* L_113;
-		L_113 = InterfaceFuncInvoker1< OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A*, int32_t >::Invoke(0 /* T System.Collections.Generic.IList`1<OVRBone>::get_Item(System.Int32) */, IList_1_t6FCBF894D7E49C8479135ED3B9FB86D7311E22FC_il2cpp_TypeInfo_var, L_112, 0);
-		NullCheck(L_113);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_114;
-		L_114 = OVRBone_get_Transform_m10B9A0E5ADEE62EA0668BA406E0D44084F87AF2F_inline(L_113, NULL);
-		NullCheck(L_114);
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_115;
-		L_115 = Transform_get_localRotation_mD53D37611A5DAE93EC6C7BBCAC337408C5CACA77(L_114, NULL);
-		__this->___WristRotation_26 = L_115;
-		// Index1Rotation = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Index1].Transform.localRotation;
-		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_116 = ___ovrSkeleton0;
-		NullCheck(L_116);
-		RuntimeObject* L_117;
-		L_117 = OVRSkeleton_get_Bones_mA38877C10AAB3F56F41939A858400F267899304F_inline(L_116, NULL);
-		NullCheck(L_117);
-		OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* L_118;
-		L_118 = InterfaceFuncInvoker1< OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A*, int32_t >::Invoke(0 /* T System.Collections.Generic.IList`1<OVRBone>::get_Item(System.Int32) */, IList_1_t6FCBF894D7E49C8479135ED3B9FB86D7311E22FC_il2cpp_TypeInfo_var, L_117, 6);
-		NullCheck(L_118);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_119;
-		L_119 = OVRBone_get_Transform_m10B9A0E5ADEE62EA0668BA406E0D44084F87AF2F_inline(L_118, NULL);
-		NullCheck(L_119);
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_120;
-		L_120 = Transform_get_localRotation_mD53D37611A5DAE93EC6C7BBCAC337408C5CACA77(L_119, NULL);
-		__this->___Index1Rotation_27 = L_120;
-		// Index2Rotation = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Index2].Transform.localRotation;
-		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_121 = ___ovrSkeleton0;
-		NullCheck(L_121);
-		RuntimeObject* L_122;
-		L_122 = OVRSkeleton_get_Bones_mA38877C10AAB3F56F41939A858400F267899304F_inline(L_121, NULL);
-		NullCheck(L_122);
-		OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* L_123;
-		L_123 = InterfaceFuncInvoker1< OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A*, int32_t >::Invoke(0 /* T System.Collections.Generic.IList`1<OVRBone>::get_Item(System.Int32) */, IList_1_t6FCBF894D7E49C8479135ED3B9FB86D7311E22FC_il2cpp_TypeInfo_var, L_122, 7);
-		NullCheck(L_123);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_124;
-		L_124 = OVRBone_get_Transform_m10B9A0E5ADEE62EA0668BA406E0D44084F87AF2F_inline(L_123, NULL);
-		NullCheck(L_124);
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_125;
-		L_125 = Transform_get_localRotation_mD53D37611A5DAE93EC6C7BBCAC337408C5CACA77(L_124, NULL);
-		__this->___Index2Rotation_28 = L_125;
-		// Index3Rotation = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Index3].Transform.localRotation;
-		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_126 = ___ovrSkeleton0;
-		NullCheck(L_126);
-		RuntimeObject* L_127;
-		L_127 = OVRSkeleton_get_Bones_mA38877C10AAB3F56F41939A858400F267899304F_inline(L_126, NULL);
-		NullCheck(L_127);
-		OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* L_128;
-		L_128 = InterfaceFuncInvoker1< OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A*, int32_t >::Invoke(0 /* T System.Collections.Generic.IList`1<OVRBone>::get_Item(System.Int32) */, IList_1_t6FCBF894D7E49C8479135ED3B9FB86D7311E22FC_il2cpp_TypeInfo_var, L_127, 8);
-		NullCheck(L_128);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_129;
-		L_129 = OVRBone_get_Transform_m10B9A0E5ADEE62EA0668BA406E0D44084F87AF2F_inline(L_128, NULL);
-		NullCheck(L_129);
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_130;
-		L_130 = Transform_get_localRotation_mD53D37611A5DAE93EC6C7BBCAC337408C5CACA77(L_129, NULL);
-		__this->___Index3Rotation_29 = L_130;
-		// Thumb0Rotation = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Thumb0].Transform.localRotation;
-		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_131 = ___ovrSkeleton0;
-		NullCheck(L_131);
-		RuntimeObject* L_132;
-		L_132 = OVRSkeleton_get_Bones_mA38877C10AAB3F56F41939A858400F267899304F_inline(L_131, NULL);
-		NullCheck(L_132);
-		OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* L_133;
-		L_133 = InterfaceFuncInvoker1< OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A*, int32_t >::Invoke(0 /* T System.Collections.Generic.IList`1<OVRBone>::get_Item(System.Int32) */, IList_1_t6FCBF894D7E49C8479135ED3B9FB86D7311E22FC_il2cpp_TypeInfo_var, L_132, 2);
-		NullCheck(L_133);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_134;
-		L_134 = OVRBone_get_Transform_m10B9A0E5ADEE62EA0668BA406E0D44084F87AF2F_inline(L_133, NULL);
-		NullCheck(L_134);
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_135;
-		L_135 = Transform_get_localRotation_mD53D37611A5DAE93EC6C7BBCAC337408C5CACA77(L_134, NULL);
-		__this->___Thumb0Rotation_30 = L_135;
-		// Thumb1Rotation = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Thumb1].Transform.localRotation;
-		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_136 = ___ovrSkeleton0;
-		NullCheck(L_136);
-		RuntimeObject* L_137;
-		L_137 = OVRSkeleton_get_Bones_mA38877C10AAB3F56F41939A858400F267899304F_inline(L_136, NULL);
-		NullCheck(L_137);
-		OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* L_138;
-		L_138 = InterfaceFuncInvoker1< OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A*, int32_t >::Invoke(0 /* T System.Collections.Generic.IList`1<OVRBone>::get_Item(System.Int32) */, IList_1_t6FCBF894D7E49C8479135ED3B9FB86D7311E22FC_il2cpp_TypeInfo_var, L_137, 3);
-		NullCheck(L_138);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_139;
-		L_139 = OVRBone_get_Transform_m10B9A0E5ADEE62EA0668BA406E0D44084F87AF2F_inline(L_138, NULL);
-		NullCheck(L_139);
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_140;
-		L_140 = Transform_get_localRotation_mD53D37611A5DAE93EC6C7BBCAC337408C5CACA77(L_139, NULL);
-		__this->___Thumb1Rotation_31 = L_140;
-		// Thumb2Rotation = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Thumb2].Transform.localRotation;
-		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_141 = ___ovrSkeleton0;
-		NullCheck(L_141);
-		RuntimeObject* L_142;
-		L_142 = OVRSkeleton_get_Bones_mA38877C10AAB3F56F41939A858400F267899304F_inline(L_141, NULL);
-		NullCheck(L_142);
-		OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* L_143;
-		L_143 = InterfaceFuncInvoker1< OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A*, int32_t >::Invoke(0 /* T System.Collections.Generic.IList`1<OVRBone>::get_Item(System.Int32) */, IList_1_t6FCBF894D7E49C8479135ED3B9FB86D7311E22FC_il2cpp_TypeInfo_var, L_142, 4);
-		NullCheck(L_143);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_144;
-		L_144 = OVRBone_get_Transform_m10B9A0E5ADEE62EA0668BA406E0D44084F87AF2F_inline(L_143, NULL);
-		NullCheck(L_144);
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_145;
-		L_145 = Transform_get_localRotation_mD53D37611A5DAE93EC6C7BBCAC337408C5CACA77(L_144, NULL);
-		__this->___Thumb2Rotation_32 = L_145;
-		// Thumb3Rotation = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Thumb3].Transform.localRotation;
-		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_146 = ___ovrSkeleton0;
-		NullCheck(L_146);
-		RuntimeObject* L_147;
-		L_147 = OVRSkeleton_get_Bones_mA38877C10AAB3F56F41939A858400F267899304F_inline(L_146, NULL);
-		NullCheck(L_147);
-		OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* L_148;
-		L_148 = InterfaceFuncInvoker1< OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A*, int32_t >::Invoke(0 /* T System.Collections.Generic.IList`1<OVRBone>::get_Item(System.Int32) */, IList_1_t6FCBF894D7E49C8479135ED3B9FB86D7311E22FC_il2cpp_TypeInfo_var, L_147, 5);
-		NullCheck(L_148);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_149;
-		L_149 = OVRBone_get_Transform_m10B9A0E5ADEE62EA0668BA406E0D44084F87AF2F_inline(L_148, NULL);
-		NullCheck(L_149);
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_150;
-		L_150 = Transform_get_localRotation_mD53D37611A5DAE93EC6C7BBCAC337408C5CACA77(L_149, NULL);
-		__this->___Thumb3Rotation_33 = L_150;
-		// Middle1Rotation = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Middle1].Transform.localRotation;
-		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_151 = ___ovrSkeleton0;
-		NullCheck(L_151);
-		RuntimeObject* L_152;
-		L_152 = OVRSkeleton_get_Bones_mA38877C10AAB3F56F41939A858400F267899304F_inline(L_151, NULL);
-		NullCheck(L_152);
-		OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* L_153;
-		L_153 = InterfaceFuncInvoker1< OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A*, int32_t >::Invoke(0 /* T System.Collections.Generic.IList`1<OVRBone>::get_Item(System.Int32) */, IList_1_t6FCBF894D7E49C8479135ED3B9FB86D7311E22FC_il2cpp_TypeInfo_var, L_152, ((int32_t)9));
-		NullCheck(L_153);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_154;
-		L_154 = OVRBone_get_Transform_m10B9A0E5ADEE62EA0668BA406E0D44084F87AF2F_inline(L_153, NULL);
-		NullCheck(L_154);
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_155;
-		L_155 = Transform_get_localRotation_mD53D37611A5DAE93EC6C7BBCAC337408C5CACA77(L_154, NULL);
-		__this->___Middle1Rotation_34 = L_155;
-		// Middle2Rotation = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Middle2].Transform.localRotation;
-		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_156 = ___ovrSkeleton0;
-		NullCheck(L_156);
-		RuntimeObject* L_157;
-		L_157 = OVRSkeleton_get_Bones_mA38877C10AAB3F56F41939A858400F267899304F_inline(L_156, NULL);
-		NullCheck(L_157);
-		OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* L_158;
-		L_158 = InterfaceFuncInvoker1< OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A*, int32_t >::Invoke(0 /* T System.Collections.Generic.IList`1<OVRBone>::get_Item(System.Int32) */, IList_1_t6FCBF894D7E49C8479135ED3B9FB86D7311E22FC_il2cpp_TypeInfo_var, L_157, ((int32_t)10));
-		NullCheck(L_158);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_159;
-		L_159 = OVRBone_get_Transform_m10B9A0E5ADEE62EA0668BA406E0D44084F87AF2F_inline(L_158, NULL);
-		NullCheck(L_159);
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_160;
-		L_160 = Transform_get_localRotation_mD53D37611A5DAE93EC6C7BBCAC337408C5CACA77(L_159, NULL);
-		__this->___Middle2Rotation_35 = L_160;
-		// Middle3Rotation = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Middle3].Transform.localRotation;
-		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_161 = ___ovrSkeleton0;
-		NullCheck(L_161);
-		RuntimeObject* L_162;
-		L_162 = OVRSkeleton_get_Bones_mA38877C10AAB3F56F41939A858400F267899304F_inline(L_161, NULL);
-		NullCheck(L_162);
-		OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* L_163;
-		L_163 = InterfaceFuncInvoker1< OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A*, int32_t >::Invoke(0 /* T System.Collections.Generic.IList`1<OVRBone>::get_Item(System.Int32) */, IList_1_t6FCBF894D7E49C8479135ED3B9FB86D7311E22FC_il2cpp_TypeInfo_var, L_162, ((int32_t)11));
-		NullCheck(L_163);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_164;
-		L_164 = OVRBone_get_Transform_m10B9A0E5ADEE62EA0668BA406E0D44084F87AF2F_inline(L_163, NULL);
-		NullCheck(L_164);
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_165;
-		L_165 = Transform_get_localRotation_mD53D37611A5DAE93EC6C7BBCAC337408C5CACA77(L_164, NULL);
-		__this->___Middle3Rotation_36 = L_165;
-		// Ring1Rotation = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Ring1].Transform.localRotation;
-		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_166 = ___ovrSkeleton0;
-		NullCheck(L_166);
-		RuntimeObject* L_167;
-		L_167 = OVRSkeleton_get_Bones_mA38877C10AAB3F56F41939A858400F267899304F_inline(L_166, NULL);
-		NullCheck(L_167);
-		OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* L_168;
-		L_168 = InterfaceFuncInvoker1< OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A*, int32_t >::Invoke(0 /* T System.Collections.Generic.IList`1<OVRBone>::get_Item(System.Int32) */, IList_1_t6FCBF894D7E49C8479135ED3B9FB86D7311E22FC_il2cpp_TypeInfo_var, L_167, ((int32_t)12));
-		NullCheck(L_168);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_169;
-		L_169 = OVRBone_get_Transform_m10B9A0E5ADEE62EA0668BA406E0D44084F87AF2F_inline(L_168, NULL);
-		NullCheck(L_169);
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_170;
-		L_170 = Transform_get_localRotation_mD53D37611A5DAE93EC6C7BBCAC337408C5CACA77(L_169, NULL);
-		__this->___Ring1Rotation_37 = L_170;
-		// Ring2Rotation = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Ring2].Transform.localRotation;
-		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_171 = ___ovrSkeleton0;
-		NullCheck(L_171);
-		RuntimeObject* L_172;
-		L_172 = OVRSkeleton_get_Bones_mA38877C10AAB3F56F41939A858400F267899304F_inline(L_171, NULL);
-		NullCheck(L_172);
-		OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* L_173;
-		L_173 = InterfaceFuncInvoker1< OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A*, int32_t >::Invoke(0 /* T System.Collections.Generic.IList`1<OVRBone>::get_Item(System.Int32) */, IList_1_t6FCBF894D7E49C8479135ED3B9FB86D7311E22FC_il2cpp_TypeInfo_var, L_172, ((int32_t)13));
-		NullCheck(L_173);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_174;
-		L_174 = OVRBone_get_Transform_m10B9A0E5ADEE62EA0668BA406E0D44084F87AF2F_inline(L_173, NULL);
-		NullCheck(L_174);
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_175;
-		L_175 = Transform_get_localRotation_mD53D37611A5DAE93EC6C7BBCAC337408C5CACA77(L_174, NULL);
-		__this->___Ring2Rotation_38 = L_175;
-		// Ring3Rotation = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Ring3].Transform.localRotation;
-		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_176 = ___ovrSkeleton0;
-		NullCheck(L_176);
-		RuntimeObject* L_177;
-		L_177 = OVRSkeleton_get_Bones_mA38877C10AAB3F56F41939A858400F267899304F_inline(L_176, NULL);
-		NullCheck(L_177);
-		OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* L_178;
-		L_178 = InterfaceFuncInvoker1< OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A*, int32_t >::Invoke(0 /* T System.Collections.Generic.IList`1<OVRBone>::get_Item(System.Int32) */, IList_1_t6FCBF894D7E49C8479135ED3B9FB86D7311E22FC_il2cpp_TypeInfo_var, L_177, ((int32_t)14));
-		NullCheck(L_178);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_179;
-		L_179 = OVRBone_get_Transform_m10B9A0E5ADEE62EA0668BA406E0D44084F87AF2F_inline(L_178, NULL);
-		NullCheck(L_179);
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_180;
-		L_180 = Transform_get_localRotation_mD53D37611A5DAE93EC6C7BBCAC337408C5CACA77(L_179, NULL);
-		__this->___Ring3Rotation_39 = L_180;
-		// Pinky0Rotation = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Pinky0].Transform.localRotation;
-		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_181 = ___ovrSkeleton0;
-		NullCheck(L_181);
-		RuntimeObject* L_182;
-		L_182 = OVRSkeleton_get_Bones_mA38877C10AAB3F56F41939A858400F267899304F_inline(L_181, NULL);
-		NullCheck(L_182);
-		OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* L_183;
-		L_183 = InterfaceFuncInvoker1< OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A*, int32_t >::Invoke(0 /* T System.Collections.Generic.IList`1<OVRBone>::get_Item(System.Int32) */, IList_1_t6FCBF894D7E49C8479135ED3B9FB86D7311E22FC_il2cpp_TypeInfo_var, L_182, ((int32_t)15));
-		NullCheck(L_183);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_184;
-		L_184 = OVRBone_get_Transform_m10B9A0E5ADEE62EA0668BA406E0D44084F87AF2F_inline(L_183, NULL);
-		NullCheck(L_184);
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_185;
-		L_185 = Transform_get_localRotation_mD53D37611A5DAE93EC6C7BBCAC337408C5CACA77(L_184, NULL);
-		__this->___Pinky0Rotation_40 = L_185;
-		// Pinky1Rotation = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Pinky1].Transform.localRotation;
-		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_186 = ___ovrSkeleton0;
-		NullCheck(L_186);
-		RuntimeObject* L_187;
-		L_187 = OVRSkeleton_get_Bones_mA38877C10AAB3F56F41939A858400F267899304F_inline(L_186, NULL);
-		NullCheck(L_187);
-		OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* L_188;
-		L_188 = InterfaceFuncInvoker1< OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A*, int32_t >::Invoke(0 /* T System.Collections.Generic.IList`1<OVRBone>::get_Item(System.Int32) */, IList_1_t6FCBF894D7E49C8479135ED3B9FB86D7311E22FC_il2cpp_TypeInfo_var, L_187, ((int32_t)16));
-		NullCheck(L_188);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_189;
-		L_189 = OVRBone_get_Transform_m10B9A0E5ADEE62EA0668BA406E0D44084F87AF2F_inline(L_188, NULL);
-		NullCheck(L_189);
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_190;
-		L_190 = Transform_get_localRotation_mD53D37611A5DAE93EC6C7BBCAC337408C5CACA77(L_189, NULL);
-		__this->___Pinky1Rotation_41 = L_190;
-		// Pinky2Rotation = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Pinky2].Transform.localRotation;
-		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_191 = ___ovrSkeleton0;
-		NullCheck(L_191);
-		RuntimeObject* L_192;
-		L_192 = OVRSkeleton_get_Bones_mA38877C10AAB3F56F41939A858400F267899304F_inline(L_191, NULL);
-		NullCheck(L_192);
-		OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* L_193;
-		L_193 = InterfaceFuncInvoker1< OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A*, int32_t >::Invoke(0 /* T System.Collections.Generic.IList`1<OVRBone>::get_Item(System.Int32) */, IList_1_t6FCBF894D7E49C8479135ED3B9FB86D7311E22FC_il2cpp_TypeInfo_var, L_192, ((int32_t)17));
-		NullCheck(L_193);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_194;
-		L_194 = OVRBone_get_Transform_m10B9A0E5ADEE62EA0668BA406E0D44084F87AF2F_inline(L_193, NULL);
-		NullCheck(L_194);
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_195;
-		L_195 = Transform_get_localRotation_mD53D37611A5DAE93EC6C7BBCAC337408C5CACA77(L_194, NULL);
-		__this->___Pinky2Rotation_42 = L_195;
-		// Pinky3Rotation = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Pinky3].Transform.localRotation;
-		OVRSkeleton_tB20461CF545E43EA4D24FC36EDE3D21B3ECA5374* L_196 = ___ovrSkeleton0;
-		NullCheck(L_196);
-		RuntimeObject* L_197;
-		L_197 = OVRSkeleton_get_Bones_mA38877C10AAB3F56F41939A858400F267899304F_inline(L_196, NULL);
-		NullCheck(L_197);
-		OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A* L_198;
-		L_198 = InterfaceFuncInvoker1< OVRBone_tB3106B7D44FF86F8A767E0E6160EAB259B70A14A*, int32_t >::Invoke(0 /* T System.Collections.Generic.IList`1<OVRBone>::get_Item(System.Int32) */, IList_1_t6FCBF894D7E49C8479135ED3B9FB86D7311E22FC_il2cpp_TypeInfo_var, L_197, ((int32_t)18));
-		NullCheck(L_198);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_199;
-		L_199 = OVRBone_get_Transform_m10B9A0E5ADEE62EA0668BA406E0D44084F87AF2F_inline(L_198, NULL);
-		NullCheck(L_199);
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_200;
-		L_200 = Transform_get_localRotation_mD53D37611A5DAE93EC6C7BBCAC337408C5CACA77(L_199, NULL);
-		__this->___Pinky3Rotation_43 = L_200;
-		goto IL_0764;
-	}
-
-IL_047e:
-	{
-		// HandPosition = new Vector3(-1000.0f, -1000.0f, -1000.0f); //INVALID FRAME
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_201;
-		memset((&L_201), 0, sizeof(L_201));
-		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_201), (-1000.0f), (-1000.0f), (-1000.0f), /*hidden argument*/NULL);
-		__this->___HandPosition_4 = L_201;
-		// WristPosition = new Vector3(-1000.0f, -1000.0f, -1000.0f);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_202;
-		memset((&L_202), 0, sizeof(L_202));
-		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_202), (-1000.0f), (-1000.0f), (-1000.0f), /*hidden argument*/NULL);
-		__this->___WristPosition_5 = L_202;
-		// ForearmStubPosition = new Vector3(-1000.0f, -1000.0f, -1000.0f);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_203;
-		memset((&L_203), 0, sizeof(L_203));
-		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_203), (-1000.0f), (-1000.0f), (-1000.0f), /*hidden argument*/NULL);
-		__this->___ForearmStubPosition_6 = L_203;
-		// Index1Position = new Vector3(-1000.0f, -1000.0f, -1000.0f);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_204;
-		memset((&L_204), 0, sizeof(L_204));
-		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_204), (-1000.0f), (-1000.0f), (-1000.0f), /*hidden argument*/NULL);
-		__this->___Index1Position_7 = L_204;
-		// Index2Position = new Vector3(-1000.0f, -1000.0f, -1000.0f);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_205;
-		memset((&L_205), 0, sizeof(L_205));
-		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_205), (-1000.0f), (-1000.0f), (-1000.0f), /*hidden argument*/NULL);
-		__this->___Index2Position_8 = L_205;
-		// Index3Position = new Vector3(-1000.0f, -1000.0f, -1000.0f);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_206;
-		memset((&L_206), 0, sizeof(L_206));
-		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_206), (-1000.0f), (-1000.0f), (-1000.0f), /*hidden argument*/NULL);
-		__this->___Index3Position_9 = L_206;
-		// Thumb0Position = new Vector3(-1000.0f, -1000.0f, -1000.0f);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_207;
-		memset((&L_207), 0, sizeof(L_207));
-		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_207), (-1000.0f), (-1000.0f), (-1000.0f), /*hidden argument*/NULL);
-		__this->___Thumb0Position_10 = L_207;
-		// Thumb1Position = new Vector3(-1000.0f, -1000.0f, -1000.0f);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_208;
-		memset((&L_208), 0, sizeof(L_208));
-		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_208), (-1000.0f), (-1000.0f), (-1000.0f), /*hidden argument*/NULL);
-		__this->___Thumb1Position_11 = L_208;
-		// Thumb2Position = new Vector3(-1000.0f, -1000.0f, -1000.0f);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_209;
-		memset((&L_209), 0, sizeof(L_209));
-		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_209), (-1000.0f), (-1000.0f), (-1000.0f), /*hidden argument*/NULL);
-		__this->___Thumb2Position_12 = L_209;
-		// Thumb3Position = new Vector3(-1000.0f, -1000.0f, -1000.0f);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_210;
-		memset((&L_210), 0, sizeof(L_210));
-		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_210), (-1000.0f), (-1000.0f), (-1000.0f), /*hidden argument*/NULL);
-		__this->___Thumb3Position_13 = L_210;
-		// Middle1Position = new Vector3(-1000.0f, -1000.0f, -1000.0f);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_211;
-		memset((&L_211), 0, sizeof(L_211));
-		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_211), (-1000.0f), (-1000.0f), (-1000.0f), /*hidden argument*/NULL);
-		__this->___Middle1Position_14 = L_211;
-		// Middle2Position = new Vector3(-1000.0f, -1000.0f, -1000.0f);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_212;
-		memset((&L_212), 0, sizeof(L_212));
-		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_212), (-1000.0f), (-1000.0f), (-1000.0f), /*hidden argument*/NULL);
-		__this->___Middle2Position_15 = L_212;
-		// Middle3Position = new Vector3(-1000.0f, -1000.0f, -1000.0f);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_213;
-		memset((&L_213), 0, sizeof(L_213));
-		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_213), (-1000.0f), (-1000.0f), (-1000.0f), /*hidden argument*/NULL);
-		__this->___Middle3Position_16 = L_213;
-		// Ring1Position = new Vector3(-1000.0f, -1000.0f, -1000.0f);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_214;
-		memset((&L_214), 0, sizeof(L_214));
-		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_214), (-1000.0f), (-1000.0f), (-1000.0f), /*hidden argument*/NULL);
-		__this->___Ring1Position_17 = L_214;
-		// Ring2Position = new Vector3(-1000.0f, -1000.0f, -1000.0f);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_215;
-		memset((&L_215), 0, sizeof(L_215));
-		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_215), (-1000.0f), (-1000.0f), (-1000.0f), /*hidden argument*/NULL);
-		__this->___Ring2Position_18 = L_215;
-		// Ring3Position = new Vector3(-1000.0f, -1000.0f, -1000.0f);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_216;
-		memset((&L_216), 0, sizeof(L_216));
-		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_216), (-1000.0f), (-1000.0f), (-1000.0f), /*hidden argument*/NULL);
-		__this->___Ring3Position_19 = L_216;
-		// Pinky0Position = new Vector3(-1000.0f, -1000.0f, -1000.0f);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_217;
-		memset((&L_217), 0, sizeof(L_217));
-		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_217), (-1000.0f), (-1000.0f), (-1000.0f), /*hidden argument*/NULL);
-		__this->___Pinky0Position_20 = L_217;
-		// Pinky1Position = new Vector3(-1000.0f, -1000.0f, -1000.0f);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_218;
-		memset((&L_218), 0, sizeof(L_218));
-		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_218), (-1000.0f), (-1000.0f), (-1000.0f), /*hidden argument*/NULL);
-		__this->___Pinky1Position_21 = L_218;
-		// Pinky2Position = new Vector3(-1000.0f, -1000.0f, -1000.0f);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_219;
-		memset((&L_219), 0, sizeof(L_219));
-		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_219), (-1000.0f), (-1000.0f), (-1000.0f), /*hidden argument*/NULL);
-		__this->___Pinky2Position_22 = L_219;
-		// Pinky3Position = new Vector3(-1000.0f, -1000.0f, -1000.0f);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_220;
-		memset((&L_220), 0, sizeof(L_220));
-		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_220), (-1000.0f), (-1000.0f), (-1000.0f), /*hidden argument*/NULL);
-		__this->___Pinky3Position_23 = L_220;
-		// HandRotation = Quaternion.identity;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_221;
-		L_221 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
-		__this->___HandRotation_24 = L_221;
-		// ForearmStubRotation = Quaternion.identity;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_222;
-		L_222 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
-		__this->___ForearmStubRotation_25 = L_222;
-		// WristRotation = Quaternion.identity;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_223;
-		L_223 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
-		__this->___WristRotation_26 = L_223;
-		// Index1Rotation = Quaternion.identity;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_224;
-		L_224 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
-		__this->___Index1Rotation_27 = L_224;
-		// Index2Rotation = Quaternion.identity;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_225;
-		L_225 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
-		__this->___Index2Rotation_28 = L_225;
-		// Index3Rotation = Quaternion.identity;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_226;
-		L_226 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
-		__this->___Index3Rotation_29 = L_226;
-		// Thumb0Rotation = Quaternion.identity;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_227;
-		L_227 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
-		__this->___Thumb0Rotation_30 = L_227;
-		// Thumb1Rotation = Quaternion.identity;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_228;
-		L_228 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
-		__this->___Thumb1Rotation_31 = L_228;
-		// Thumb2Rotation = Quaternion.identity;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_229;
-		L_229 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
-		__this->___Thumb2Rotation_32 = L_229;
-		// Thumb3Rotation = Quaternion.identity;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_230;
-		L_230 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
-		__this->___Thumb3Rotation_33 = L_230;
-		// Middle1Rotation = Quaternion.identity;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_231;
-		L_231 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
-		__this->___Middle1Rotation_34 = L_231;
-		// Middle2Rotation = Quaternion.identity;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_232;
-		L_232 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
-		__this->___Middle2Rotation_35 = L_232;
-		// Middle3Rotation = Quaternion.identity;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_233;
-		L_233 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
-		__this->___Middle3Rotation_36 = L_233;
-		// Ring1Rotation = Quaternion.identity;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_234;
-		L_234 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
-		__this->___Ring1Rotation_37 = L_234;
-		// Ring2Rotation = Quaternion.identity;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_235;
-		L_235 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
-		__this->___Ring2Rotation_38 = L_235;
-		// Ring3Rotation = Quaternion.identity;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_236;
-		L_236 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
-		__this->___Ring3Rotation_39 = L_236;
-		// Pinky0Rotation = Quaternion.identity;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_237;
-		L_237 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
-		__this->___Pinky0Rotation_40 = L_237;
-		// Pinky1Rotation = Quaternion.identity;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_238;
-		L_238 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
-		__this->___Pinky1Rotation_41 = L_238;
-		// Pinky2Rotation = Quaternion.identity;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_239;
-		L_239 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
-		__this->___Pinky2Rotation_42 = L_239;
-		// Pinky3Rotation = Quaternion.identity;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_240;
-		L_240 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
-		__this->___Pinky3Rotation_43 = L_240;
-	}
-
-IL_0764:
-	{
-		// return new HandSkeleton(
-		// HandPosition,
-		// WristPosition,
-		// ForearmStubPosition,
-		// Index1Position,
-		// Index2Position,
-		// Index3Position,
-		// Thumb0Position,
-		// Thumb1Position,
-		// Thumb2Position,
-		// Thumb3Position,
-		// Middle1Position,
-		// Middle2Position,
-		// Middle3Position,
-		// Ring1Position,
-		// Ring2Position,
-		// Ring3Position,
-		// Pinky0Position,
-		// Pinky1Position,
-		// Pinky2Position,
-		// Pinky3Position,
-		// HandRotation,
-		// WristRotation,
-		// ForearmStubRotation,
-		// Index1Rotation,
-		// Index2Rotation,
-		// Index3Rotation,
-		// Thumb0Rotation,
-		// Thumb1Rotation,
-		// Thumb2Rotation,
-		// Thumb3Rotation,
-		// Middle1Rotation,
-		// Middle2Rotation,
-		// Middle3Rotation,
-		// Ring1Rotation,
-		// Ring2Rotation,
-		// Ring3Rotation,
-		// Pinky0Rotation,
-		// Pinky1Rotation,
-		// Pinky2Rotation,
-		// Pinky3Rotation
-		//     );
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_241 = __this->___HandPosition_4;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_242 = __this->___WristPosition_5;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_243 = __this->___ForearmStubPosition_6;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_244 = __this->___Index1Position_7;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_245 = __this->___Index2Position_8;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_246 = __this->___Index3Position_9;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_247 = __this->___Thumb0Position_10;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_248 = __this->___Thumb1Position_11;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_249 = __this->___Thumb2Position_12;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_250 = __this->___Thumb3Position_13;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_251 = __this->___Middle1Position_14;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_252 = __this->___Middle2Position_15;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_253 = __this->___Middle3Position_16;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_254 = __this->___Ring1Position_17;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_255 = __this->___Ring2Position_18;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_256 = __this->___Ring3Position_19;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_257 = __this->___Pinky0Position_20;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_258 = __this->___Pinky1Position_21;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_259 = __this->___Pinky2Position_22;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_260 = __this->___Pinky3Position_23;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_261 = __this->___HandRotation_24;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_262 = __this->___WristRotation_26;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_263 = __this->___ForearmStubRotation_25;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_264 = __this->___Index1Rotation_27;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_265 = __this->___Index2Rotation_28;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_266 = __this->___Index3Rotation_29;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_267 = __this->___Thumb0Rotation_30;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_268 = __this->___Thumb1Rotation_31;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_269 = __this->___Thumb2Rotation_32;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_270 = __this->___Thumb3Rotation_33;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_271 = __this->___Middle1Rotation_34;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_272 = __this->___Middle2Rotation_35;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_273 = __this->___Middle3Rotation_36;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_274 = __this->___Ring1Rotation_37;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_275 = __this->___Ring2Rotation_38;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_276 = __this->___Ring3Rotation_39;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_277 = __this->___Pinky0Rotation_40;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_278 = __this->___Pinky1Rotation_41;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_279 = __this->___Pinky2Rotation_42;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_280 = __this->___Pinky3Rotation_43;
-		HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320* L_281 = (HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320*)il2cpp_codegen_object_new(HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320_il2cpp_TypeInfo_var);
-		NullCheck(L_281);
-		HandSkeleton__ctor_m3DDB60AB324EE32114F59865AFAD29BF0CFA55AB(L_281, L_241, L_242, L_243, L_244, L_245, L_246, L_247, L_248, L_249, L_250, L_251, L_252, L_253, L_254, L_255, L_256, L_257, L_258, L_259, L_260, L_261, L_262, L_263, L_264, L_265, L_266, L_267, L_268, L_269, L_270, L_271, L_272, L_273, L_274, L_275, L_276, L_277, L_278, L_279, L_280, NULL);
-		V_1 = L_281;
-		goto IL_085c;
-	}
-
-IL_085c:
-	{
-		// }
-		HandSkeleton_t2599F0CBFE04F6614A002E6AD4D7B13377AF8320* L_282 = V_1;
-		return L_282;
-	}
-}
-// System.Void HandSkeletonRecorder::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandSkeletonRecorder__ctor_mADD049819F166F37C5A2EC9F069CFDC6E1F38813 (HandSkeletonRecorder_tDCB0562F87FC58ABA8E8F96E12B9CDFDA4ED205A* __this, const RuntimeMethod* method) 
-{
-	{
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
 	}
