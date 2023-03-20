@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using UnityEngine;
 public class HandPose 
 {
     public int HandPoseId { get; private set; }
@@ -191,12 +192,28 @@ public class HandPose
         this.PalmAwayFromFace = PalmAwayFromFace;
         this.FingersUp = FingersUp;
         this.FingersDown = FingersDown;
+
+        this.ParentConfigId = -1;
+        this.ChildTransforms = new List<int>();
+        this.ParentTransformId = -1;
     }
 
     #region IS HAND POSE EQUAL?
     public static bool IsEqual(HandPose template, HandPose realtime)
     {
         bool isEqual = false;
+
+        if(template == null)
+        {
+            Debug.Log("5000: template is null");
+            return isEqual;
+        }
+
+        if (realtime == null)
+        {
+            Debug.Log("5000: realtime is null");
+            return isEqual;
+        }
 
         #region MATCHING INDEX STATE
 
@@ -455,6 +472,18 @@ public class HandPose
     public static bool isTransformEqual(HandPose template, HandPose realtime)
     {
         bool isEqual = false;
+
+        if (template == null)
+        {
+            Debug.Log("6000: template is null");
+            return isEqual;
+        }
+
+        if (realtime == null)
+        {
+            Debug.Log("6000: realtime is null");
+            return isEqual;
+        }
 
         if (template.WristUp == realtime.WristUp) isEqual = true;
         else return false;

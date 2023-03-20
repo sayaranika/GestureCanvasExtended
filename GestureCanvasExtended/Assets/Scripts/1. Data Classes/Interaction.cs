@@ -17,12 +17,15 @@ public class Interaction
 
     public List<HandSkeleton> expectedGesture_R = new List<HandSkeleton>();
     public List<HandSkeleton> expectedGesture_L = new List<HandSkeleton>();
+    public List<HandSkeleton> expectedGesture = new List<HandSkeleton>();
 
     public int rightHandGestureStartIndex;
     public int leftHandGestureStartIndex;
 
     public int rightHandGestureEndIndex;
     public int leftHandGestureEndIndex;
+
+    public bool isConditionSetToTrue;
 
     public Interaction(int interactionId)
     {
@@ -35,7 +38,7 @@ public class Interaction
         isTransformConstraint_L = false;
         isTransformConstraint_R = false;
         transitionClip = null;
-        //isConditionSetToTrue = true;*/
+        isConditionSetToTrue = true;
     }
 
     public void setGesture(Handedness handedness, int startIndex, int endIndex)

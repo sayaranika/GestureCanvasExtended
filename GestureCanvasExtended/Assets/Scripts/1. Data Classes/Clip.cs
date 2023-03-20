@@ -12,6 +12,7 @@ public class Clip
     public List<HandPoseInstance> HandPoses_L = new List<HandPoseInstance>();
 
     public ClipValidity clipValidity; //no need to ship with json
+    public Interaction DefaultInteraction;
 
     public Clip(int Id, int startIndex, int endIndex)
     {

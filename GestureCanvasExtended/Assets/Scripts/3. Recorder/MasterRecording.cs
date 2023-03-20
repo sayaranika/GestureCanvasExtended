@@ -33,6 +33,17 @@ public class MasterRecording : MonoBehaviour
 
     private bool isRecordRestarting = false;
 
+    private void Awake()
+    {
+        RightHandMotion.Clear();
+        LeftHandMotion.Clear();
+        RightHandSkeleton.Clear();
+        LeftHandSkeleton.Clear();
+        RightHandPose.Clear();
+        LeftHandPose.Clear();
+        HMDMotion.Clear();
+    }
+
     private void LateUpdate()
     {
         if (isRecordRestarting == false) RecordData();

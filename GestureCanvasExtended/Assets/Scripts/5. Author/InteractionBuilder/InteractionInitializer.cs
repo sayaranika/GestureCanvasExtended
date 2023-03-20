@@ -181,6 +181,12 @@ public class InteractionInitializer : MonoBehaviour
             }
 
         }
+
+        //set default hand interactions
+        foreach(Clip clip in ClipHandler.ClipList)
+        {
+            clip.DefaultInteraction = clip.interactions[0];
+        }
     }
     #endregion
 }

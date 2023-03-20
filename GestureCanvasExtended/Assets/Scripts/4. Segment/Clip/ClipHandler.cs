@@ -167,14 +167,9 @@ public class ClipHandler : MonoBehaviour
 
     public void Delete()
     {
-        Debug.Log("A");
         playbackStateHandler.Set(PlaybackState.InEditingState);
-        Debug.Log("B");
         DeleteClip();
-        Debug.Log("C");
         clipButtonHandler.RefreshClipButtons();
-        Debug.Log("D");
         playbackStateHandler.Set(PlaybackState.InPlaybackState);
-        Debug.Log("E");
     }
 }
