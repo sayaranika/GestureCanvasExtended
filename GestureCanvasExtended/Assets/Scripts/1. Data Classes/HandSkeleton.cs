@@ -1,5 +1,8 @@
 using UnityEngine;
+using Newtonsoft.Json;
+using System;
 
+[Serializable]
 public class HandSkeleton
 {
     ////////////////////////////////// POSITIONAL AND ROTATIONAL INFORMATION OF HAND //////////////////////////////////

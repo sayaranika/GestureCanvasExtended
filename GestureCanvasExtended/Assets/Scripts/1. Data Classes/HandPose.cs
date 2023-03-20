@@ -1,12 +1,15 @@
 using System.Collections.Generic;
 using UnityEngine;
+using Newtonsoft.Json;
+using System;
+
+[Serializable]
 public class HandPose 
 {
     public int HandPoseId { get; private set; }
-    //don't ship with json the following
-    public int ParentConfigId { get; set; } //hand pose id with same config
-    public int ParentTransformId { get; set; } //hand pose id with same config
-    public List<int> ChildTransforms { get; set; } //the different transforms of this config
+    [JsonIgnore] public int ParentConfigId { get; set; } //hand pose id with same config
+    [JsonIgnore] public int ParentTransformId { get; set; } //hand pose id with same config
+    [JsonIgnore] public List<int> ChildTransforms { get; set; } //the different transforms of this config
 
     //////////////////////////////////              CURL                //////////////////////////////////
     public bool CurlOpenIndex { get; private set; }

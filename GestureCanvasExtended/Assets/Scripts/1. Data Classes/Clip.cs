@@ -1,18 +1,20 @@
 using System.Collections.Generic;
 using UnityEngine;
+using Newtonsoft.Json;
 
-public class Clip 
+[SerializeField]
+public class Clip
 {
     public int Id;
-    public int startIndex;
-    public int endIndex;
+    [JsonIgnore] public int startIndex;
+    [JsonIgnore] public int endIndex;
     public List<Interaction> interactions = new List<Interaction>();
 
-    public List<HandPoseInstance> HandPoses_R = new List<HandPoseInstance>();
-    public List<HandPoseInstance> HandPoses_L = new List<HandPoseInstance>();
+    [JsonIgnore] public List<HandPoseInstance> HandPoses_R = new List<HandPoseInstance>();
+    [JsonIgnore] public List<HandPoseInstance> HandPoses_L = new List<HandPoseInstance>();
 
-    public ClipValidity clipValidity; //no need to ship with json
-    public Interaction DefaultInteraction;
+    [JsonIgnore] public ClipValidity clipValidity;
+    [JsonIgnore] public Interaction DefaultInteraction;
 
     public Clip(int Id, int startIndex, int endIndex)
     {

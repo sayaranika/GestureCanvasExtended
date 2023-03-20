@@ -13680,7 +13680,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OpenCloseStateBuilder__ctor_mAB0F90185AD
 		int32_t L_3 = __this->____fingerFeature_1;
 		NullCheck(L_2);
 		FeatureDescription_t8FF400243BDD3D1212B4BE0678426ADD02EBCE02* L_4;
-		L_4 = InterfaceFuncInvoker1< FeatureDescription_t8FF400243BDD3D1212B4BE0678426ADD02EBCE02*, int32_t >::Invoke(1 /* TValue System.Collections.Generic.IReadOnlyDictionary`2<Oculus.Interaction.PoseDetection.FingerFeature,Oculus.Interaction.PoseDetection.FeatureDescription>::get_Item(TKey) */, IReadOnlyDictionary_2_tDBEDDB3C706A71057C78ED712625FF0C07F43EB4_il2cpp_TypeInfo_var, L_2, L_3);
+		L_4 = InterfaceFuncInvoker1< FeatureDescription_t8FF400243BDD3D1212B4BE0678426ADD02EBCE02*, int32_t >::Invoke(2 /* TValue System.Collections.Generic.IReadOnlyDictionary`2<Oculus.Interaction.PoseDetection.FingerFeature,Oculus.Interaction.PoseDetection.FeatureDescription>::get_Item(TKey) */, IReadOnlyDictionary_2_tDBEDDB3C706A71057C78ED712625FF0C07F43EB4_il2cpp_TypeInfo_var, L_2, L_3);
 		NullCheck(L_4);
 		FeatureStateDescriptionU5BU5D_t9E59F8181F6573B081F443C115351608B525183C* L_5;
 		L_5 = FeatureDescription_get_FeatureStates_mDC30D3E98102B4CCAA82C439EBF5C667DC39DED8_inline(L_4, NULL);
@@ -14498,7 +14498,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrueFalseStateBuilder__ctor_m4E8D404212F
 		int32_t L_3 = __this->____transformFeature_1;
 		NullCheck(L_2);
 		FeatureDescription_t8FF400243BDD3D1212B4BE0678426ADD02EBCE02* L_4;
-		L_4 = InterfaceFuncInvoker1< FeatureDescription_t8FF400243BDD3D1212B4BE0678426ADD02EBCE02*, int32_t >::Invoke(1 /* TValue System.Collections.Generic.IReadOnlyDictionary`2<Oculus.Interaction.PoseDetection.TransformFeature,Oculus.Interaction.PoseDetection.FeatureDescription>::get_Item(TKey) */, IReadOnlyDictionary_2_t7AEA088251267779522229886D06EDBDAB08DCF9_il2cpp_TypeInfo_var, L_2, L_3);
+		L_4 = InterfaceFuncInvoker1< FeatureDescription_t8FF400243BDD3D1212B4BE0678426ADD02EBCE02*, int32_t >::Invoke(2 /* TValue System.Collections.Generic.IReadOnlyDictionary`2<Oculus.Interaction.PoseDetection.TransformFeature,Oculus.Interaction.PoseDetection.FeatureDescription>::get_Item(TKey) */, IReadOnlyDictionary_2_t7AEA088251267779522229886D06EDBDAB08DCF9_il2cpp_TypeInfo_var, L_2, L_3);
 		NullCheck(L_4);
 		FeatureStateDescriptionU5BU5D_t9E59F8181F6573B081F443C115351608B525183C* L_5;
 		L_5 = FeatureDescription_get_FeatureStates_mDC30D3E98102B4CCAA82C439EBF5C667DC39DED8_inline(L_4, NULL);
@@ -24335,7 +24335,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR FingerFeatureConfigList_t0EE1BB85B55BD7045F88
 		int32_t L_2 = ___finger0;
 		NullCheck(L_1);
 		bool L_3;
-		L_3 = InterfaceFuncInvoker2< bool, int32_t, FingerFeatureConfigU5BU5D_tCAACD85F21F10B140260488530E5C5A00A60BA8F** >::Invoke(6 /* System.Boolean System.Collections.Generic.IDictionary`2<Oculus.Interaction.Input.HandFinger,Oculus.Interaction.PoseDetection.ShapeRecognizer/FingerFeatureConfig[]>::TryGetValue(TKey,TValue&) */, IDictionary_2_t804AE5CC8741CB78B8079CFD7C716CFFF6D6393D_il2cpp_TypeInfo_var, L_1, L_2, (&V_0));
+		L_3 = InterfaceFuncInvoker2< bool, int32_t, FingerFeatureConfigU5BU5D_tCAACD85F21F10B140260488530E5C5A00A60BA8F** >::Invoke(7 /* System.Boolean System.Collections.Generic.IDictionary`2<Oculus.Interaction.Input.HandFinger,Oculus.Interaction.PoseDetection.ShapeRecognizer/FingerFeatureConfig[]>::TryGetValue(TKey,TValue&) */, IDictionary_2_t804AE5CC8741CB78B8079CFD7C716CFFF6D6393D_il2cpp_TypeInfo_var, L_1, L_2, (&V_0));
 		V_1 = (bool)((((int32_t)L_3) == ((int32_t)0))? 1 : 0);
 		bool L_4 = V_1;
 		if (!L_4)
@@ -30604,11 +30604,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ActiveStateGroupModel_GetChild
 		L_0 = ActiveStateModel_1_get_Type_mED95A74D9896182A88B3EDC80A65F78CA20668AB(__this, ActiveStateModel_1_get_Type_mED95A74D9896182A88B3EDC80A65F78CA20668AB_RuntimeMethod_var);
 		NullCheck(L_0);
 		FieldInfo_t* L_1;
-		L_1 = VirtualFuncInvoker2< FieldInfo_t*, String_t*, int32_t >::Invoke(83 /* System.Reflection.FieldInfo System.Type::GetField(System.String,System.Reflection.BindingFlags) */, L_0, _stringLiteralDCB52C4C2CF742030535294F997B907C44BCECF2, ((int32_t)36));
+		L_1 = VirtualFuncInvoker2< FieldInfo_t*, String_t*, int32_t >::Invoke(87 /* System.Reflection.FieldInfo System.Type::GetField(System.String,System.Reflection.BindingFlags) */, L_0, _stringLiteralDCB52C4C2CF742030535294F997B907C44BCECF2, ((int32_t)36));
 		ActiveStateGroup_tE37F4D8ACC95010ED7AB1CCE0B2BA1908519D9F9* L_2 = ___group0;
 		NullCheck(L_1);
 		RuntimeObject* L_3;
-		L_3 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(21 /* System.Object System.Reflection.FieldInfo::GetValue(System.Object) */, L_1, L_2);
+		L_3 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(25 /* System.Object System.Reflection.FieldInfo::GetValue(System.Object) */, L_1, L_2);
 		V_0 = ((List_1_tA5E66D1BD80F6F91F291E59395D3F01B878ACDAB*)IsInstClass((RuntimeObject*)L_3, List_1_tA5E66D1BD80F6F91F291E59395D3F01B878ACDAB_il2cpp_TypeInfo_var));
 		// return children;
 		List_1_tA5E66D1BD80F6F91F291E59395D3F01B878ACDAB* L_4 = V_0;
@@ -30702,11 +30702,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* SequenceModel_GetChildren_m368
 		L_0 = ActiveStateModel_1_get_Type_m8848B6BBD3CADD32AF13DA43253C1778EDB3600C(__this, ActiveStateModel_1_get_Type_m8848B6BBD3CADD32AF13DA43253C1778EDB3600C_RuntimeMethod_var);
 		NullCheck(L_0);
 		FieldInfo_t* L_1;
-		L_1 = VirtualFuncInvoker2< FieldInfo_t*, String_t*, int32_t >::Invoke(83 /* System.Reflection.FieldInfo System.Type::GetField(System.String,System.Reflection.BindingFlags) */, L_0, _stringLiteral61A82065268A934ECC866F4C6C60E1D2C713EBF1, ((int32_t)36));
+		L_1 = VirtualFuncInvoker2< FieldInfo_t*, String_t*, int32_t >::Invoke(87 /* System.Reflection.FieldInfo System.Type::GetField(System.String,System.Reflection.BindingFlags) */, L_0, _stringLiteral61A82065268A934ECC866F4C6C60E1D2C713EBF1, ((int32_t)36));
 		Sequence_t50A8D51B81FDFEC29CA244607C23F1F42C99D0D3* L_2 = ___sequence0;
 		NullCheck(L_1);
 		RuntimeObject* L_3;
-		L_3 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(21 /* System.Object System.Reflection.FieldInfo::GetValue(System.Object) */, L_1, L_2);
+		L_3 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(25 /* System.Object System.Reflection.FieldInfo::GetValue(System.Object) */, L_1, L_2);
 		V_0 = ((ActivationStepU5BU5D_t63526ACF8651409C10F77F8EB0F4C67BD87DF8A1*)IsInst((RuntimeObject*)L_3, ActivationStepU5BU5D_t63526ACF8651409C10F77F8EB0F4C67BD87DF8A1_il2cpp_TypeInfo_var));
 		// List<IActiveState> children = new List<IActiveState>(
 		//     steps.Select(GetActiveStateFromStep));
@@ -30811,11 +30811,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* SequenceActiveStateModel_GetCh
 		L_0 = ActiveStateModel_1_get_Type_m97A3FA978114B97FEADC2FF38E57D705FF3E8A50(__this, ActiveStateModel_1_get_Type_m97A3FA978114B97FEADC2FF38E57D705FF3E8A50_RuntimeMethod_var);
 		NullCheck(L_0);
 		FieldInfo_t* L_1;
-		L_1 = VirtualFuncInvoker2< FieldInfo_t*, String_t*, int32_t >::Invoke(83 /* System.Reflection.FieldInfo System.Type::GetField(System.String,System.Reflection.BindingFlags) */, L_0, _stringLiteral32E56DF2417D92A6E9D75297B2DABCA7B1BD80D6, ((int32_t)36));
+		L_1 = VirtualFuncInvoker2< FieldInfo_t*, String_t*, int32_t >::Invoke(87 /* System.Reflection.FieldInfo System.Type::GetField(System.String,System.Reflection.BindingFlags) */, L_0, _stringLiteral32E56DF2417D92A6E9D75297B2DABCA7B1BD80D6, ((int32_t)36));
 		SequenceActiveState_t29B92FE644C3A96E3298751837EC74141520BF99* L_2 = ___seqActiveState0;
 		NullCheck(L_1);
 		RuntimeObject* L_3;
-		L_3 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(21 /* System.Object System.Reflection.FieldInfo::GetValue(System.Object) */, L_1, L_2);
+		L_3 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(25 /* System.Object System.Reflection.FieldInfo::GetValue(System.Object) */, L_1, L_2);
 		V_0 = ((Sequence_t50A8D51B81FDFEC29CA244607C23F1F42C99D0D3*)IsInstClass((RuntimeObject*)L_3, Sequence_t50A8D51B81FDFEC29CA244607C23F1F42C99D0D3_il2cpp_TypeInfo_var));
 		// return new List<IActiveState>() { sequence };
 		List_1_tA5E66D1BD80F6F91F291E59395D3F01B878ACDAB* L_4 = (List_1_tA5E66D1BD80F6F91F291E59395D3F01B878ACDAB*)il2cpp_codegen_object_new(List_1_tA5E66D1BD80F6F91F291E59395D3F01B878ACDAB_il2cpp_TypeInfo_var);
@@ -30890,11 +30890,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ActiveStateNotModel_GetChildre
 		L_2 = ActiveStateModel_1_get_Type_mD14E3FF6659CF1E6BC2764D7886022EA3A4A169A(__this, ActiveStateModel_1_get_Type_mD14E3FF6659CF1E6BC2764D7886022EA3A4A169A_RuntimeMethod_var);
 		NullCheck(L_2);
 		FieldInfo_t* L_3;
-		L_3 = VirtualFuncInvoker2< FieldInfo_t*, String_t*, int32_t >::Invoke(83 /* System.Reflection.FieldInfo System.Type::GetField(System.String,System.Reflection.BindingFlags) */, L_2, _stringLiteral6EF639062793F64119E4E176605585480200155E, ((int32_t)36));
+		L_3 = VirtualFuncInvoker2< FieldInfo_t*, String_t*, int32_t >::Invoke(87 /* System.Reflection.FieldInfo System.Type::GetField(System.String,System.Reflection.BindingFlags) */, L_2, _stringLiteral6EF639062793F64119E4E176605585480200155E, ((int32_t)36));
 		ActiveStateNot_tA9490645D62D2BFB57A5191817F9C8DB71EA8C3A* L_4 = ___not0;
 		NullCheck(L_3);
 		RuntimeObject* L_5;
-		L_5 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(21 /* System.Object System.Reflection.FieldInfo::GetValue(System.Object) */, L_3, L_4);
+		L_5 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(25 /* System.Object System.Reflection.FieldInfo::GetValue(System.Object) */, L_3, L_4);
 		NullCheck(L_1);
 		List_1_Add_m91849044F064C7E4A2B2A552A71BEE55FB71EF40_inline(L_1, ((RuntimeObject*)IsInst((RuntimeObject*)L_5, IActiveState_tE0F401037570483F58CD8CD4ED2A862D494517EB_il2cpp_TypeInfo_var)), List_1_Add_m91849044F064C7E4A2B2A552A71BEE55FB71EF40_RuntimeMethod_var);
 		List_1_tA5E66D1BD80F6F91F291E59395D3F01B878ACDAB* L_6 = V_1;
@@ -31165,7 +31165,7 @@ IL_0043:
 		L_14 = Object_GetType_mE10A8FC1E57F3DF29972CCBC026C2DC3942263B3(L_13, NULL);
 		NullCheck(L_14);
 		String_t* L_15;
-		L_15 = VirtualFuncInvoker0< String_t* >::Invoke(7 /* System.String System.Reflection.MemberInfo::get_Name() */, L_14);
+		L_15 = VirtualFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_14);
 		String_t* L_16;
 		L_16 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral27B2622F51D1A545D09D454DF2EF3173C91721B9, L_15, NULL);
 		String_t* L_17;
@@ -31442,7 +31442,7 @@ IL_0043:
 		L_13 = Object_GetType_mE10A8FC1E57F3DF29972CCBC026C2DC3942263B3(L_12, NULL);
 		NullCheck(L_13);
 		String_t* L_14;
-		L_14 = VirtualFuncInvoker0< String_t* >::Invoke(7 /* System.String System.Reflection.MemberInfo::get_Name() */, L_13);
+		L_14 = VirtualFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_13);
 		String_t* L_15;
 		L_15 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral27B2622F51D1A545D09D454DF2EF3173C91721B9, L_14, NULL);
 		String_t* L_16;

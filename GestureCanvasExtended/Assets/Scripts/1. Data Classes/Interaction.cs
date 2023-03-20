@@ -1,5 +1,9 @@
 using System.Collections.Generic;
 using UnityEngine;
+using Newtonsoft.Json;
+using System;
+
+[Serializable]
 public class Interaction
 {
     public int Id;
@@ -19,11 +23,11 @@ public class Interaction
     public List<HandSkeleton> expectedGesture_L = new List<HandSkeleton>();
     public List<HandSkeleton> expectedGesture = new List<HandSkeleton>();
 
-    public int rightHandGestureStartIndex;
-    public int leftHandGestureStartIndex;
+    [JsonIgnore] public int rightHandGestureStartIndex;
+    [JsonIgnore] public int leftHandGestureStartIndex;
 
-    public int rightHandGestureEndIndex;
-    public int leftHandGestureEndIndex;
+    [JsonIgnore] public int rightHandGestureEndIndex;
+    [JsonIgnore] public int leftHandGestureEndIndex;
 
     public bool isConditionSetToTrue;
 

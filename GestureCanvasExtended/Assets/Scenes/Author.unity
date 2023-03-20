@@ -11426,6 +11426,50 @@ MonoBehaviour:
   _hand: {fileID: 1382583501}
   _shapes:
   - {fileID: 11400000, guid: 03400ef8452953c4e841dc387d6ff726, type: 2}
+--- !u!1 &1382879447
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1382879448}
+  - component: {fileID: 1382879449}
+  m_Layer: 0
+  m_Name: UploadManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1382879448
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1382879447}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.028193107, z: 0.00824834}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1382879449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1382879447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 875379e4f0a843e428b18b862353f53d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1390982311
 GameObject:
   m_ObjectHideFlags: 0
@@ -26152,7 +26196,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4132443869627099871}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.4, z: 0.2}
+  m_LocalPosition: {x: 0, y: 1, z: 0.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -27929,7 +27973,7 @@ RectTransform:
   - {fileID: 4132443869688632019}
   - {fileID: 4132443869942683071}
   m_Father: {fileID: 4132443870392532787}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -32802,9 +32846,9 @@ Transform:
   - {fileID: 4132443869639212801}
   - {fileID: 4132443871245993986}
   - {fileID: 4132443870648151652}
+  - {fileID: 4132443871176463912}
   - {fileID: 4132443869805471017}
   - {fileID: 4132443870813729207}
-  - {fileID: 4132443871176463912}
   m_Father: {fileID: 4132443869627099870}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 20, y: 0, z: 0}
@@ -36435,7 +36479,7 @@ RectTransform:
   - {fileID: 4132443869792744011}
   - {fileID: 4132443870770980583}
   m_Father: {fileID: 4132443870392532787}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -39450,7 +39494,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7b60b6a906e98cc45a17a52271932196, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3e56aa0298446044aa8a3752d6be6430, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -40126,7 +40170,7 @@ Transform:
   - {fileID: 4132443870380566193}
   - {fileID: 4132443871263189675}
   m_Father: {fileID: 4132443870392532787}
-  m_RootOrder: 8
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4132443871176463913
 GameObject:
@@ -40140,12 +40184,12 @@ GameObject:
   - component: {fileID: 4132443871176463915}
   - component: {fileID: 4132443871176463914}
   m_Layer: 0
-  m_Name: Stop
+  m_Name: Upload
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &4132443871176463914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40180,9 +40224,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UIButtonsManager, Assembly-CSharp
-        m_MethodName: StopRecordAll
+      - m_Target: {fileID: 1382879449}
+        m_TargetAssemblyTypeName: ExportManager, Assembly-CSharp
+        m_MethodName: Export
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
