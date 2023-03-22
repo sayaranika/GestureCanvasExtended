@@ -11,7 +11,7 @@ public class AnchorObjects : MonoBehaviour
     {
         Debug.Log("300: " + other.name + " " + other.tag);
 
-        /*if(other.tag == "SpawnedVFX")
+        if(other.tag == "SpawnedVFX")
         {
             Debug.Log("300: spawned");
             if (other.GetComponent<VFXController>().isAttachable == true && other.GetComponent<VFXController>().vfxObjectRef.isAttached == false)
@@ -21,7 +21,7 @@ public class AnchorObjects : MonoBehaviour
                 other.GetComponent<VFXController>().vfxObjectRef.AttachedBone = anchorName;
 
             }
-        }*/
+        }
 
         if (other.tag == "SpawnedObject")
         {
@@ -50,7 +50,7 @@ public class AnchorObjects : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
         Debug.Log("400: " + other.name + " " + other.tag);
-        /*if (other.tag == "SpawnedVFX")
+        if (other.tag == "SpawnedVFX")
         {
             Debug.Log("400: spawned");
             if (other.GetComponent<VFXController>().isAttachable == true && other.GetComponent<VFXController>().vfxObjectRef.isAttached == false)
@@ -61,7 +61,7 @@ public class AnchorObjects : MonoBehaviour
                 other.GetComponent<VFXController>().vfxObjectRef.AttachedBone = anchorName;
 
             }
-        }*/
+        }
 
         if (other.tag == "SpawnedObject")
         {

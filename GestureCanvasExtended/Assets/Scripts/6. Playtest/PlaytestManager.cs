@@ -7,6 +7,7 @@ public class PlaytestManager : MonoBehaviour
 {
     [SerializeField] GameObject recognizerObject;
     [SerializeField] PoseRecognizer poseRecognizer;
+    [SerializeField] AssetManager assetManager;
     [SerializeField] Text msg;
     public static Clip currentClip = null;
 
@@ -32,11 +33,13 @@ public class PlaytestManager : MonoBehaviour
             Object.Destroy(recognizerObject);
         }
         Recognizers.Clear();
+
         currentClip = clip;
         Debug.Log("4000: Clip ID: " + clip.Id);
         msg.text = "Clip ID: " + clip.Id;
+        assetManager.LoadObjects();
 
-        foreach(Interaction i in clip.interactions)
+        foreach (Interaction i in clip.interactions)
         {
             GameObject recognizer = Instantiate(recognizerObject);
             Recognizers.Add(recognizer);

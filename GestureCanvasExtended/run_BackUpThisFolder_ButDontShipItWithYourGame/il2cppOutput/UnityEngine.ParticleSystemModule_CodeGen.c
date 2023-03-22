@@ -16,110 +16,145 @@
 extern void ParticleSystem_Emit_m27ED2FE38DEE11C9C98F7D30392BB5B39B6A16ED (void);
 // 0x00000002 System.Void UnityEngine.ParticleSystem::Emit(UnityEngine.ParticleSystem/Particle)
 extern void ParticleSystem_Emit_m329091E7F55C972CE85A100CA624192AD8442688 (void);
-// 0x00000003 System.Void UnityEngine.ParticleSystem::set_time(System.Single)
+// 0x00000003 System.Boolean UnityEngine.ParticleSystem::get_isPlaying()
+extern void ParticleSystem_get_isPlaying_mC5170DA3C904670B88200C8DA1E0F8FC1BC7C42B (void);
+// 0x00000004 System.Void UnityEngine.ParticleSystem::set_time(System.Single)
 extern void ParticleSystem_set_time_mD7AF2E34304DBF8ED9ECA84710C0871B184B73EC (void);
-// 0x00000004 System.Void UnityEngine.ParticleSystem::SetParticles(UnityEngine.ParticleSystem/Particle[],System.Int32,System.Int32)
+// 0x00000005 System.Void UnityEngine.ParticleSystem::SetParticles(UnityEngine.ParticleSystem/Particle[],System.Int32,System.Int32)
 extern void ParticleSystem_SetParticles_mE6E111588BA43659450D2FC1BAA5D82D324F25A5 (void);
-// 0x00000005 System.Void UnityEngine.ParticleSystem::SetParticles(UnityEngine.ParticleSystem/Particle[],System.Int32)
+// 0x00000006 System.Void UnityEngine.ParticleSystem::SetParticles(UnityEngine.ParticleSystem/Particle[],System.Int32)
 extern void ParticleSystem_SetParticles_m4EDBF9B885CD31D8F491636C49F4F1235FE66592 (void);
-// 0x00000006 System.Void UnityEngine.ParticleSystem::Play(System.Boolean)
+// 0x00000007 System.Void UnityEngine.ParticleSystem::Play(System.Boolean)
 extern void ParticleSystem_Play_m4A59E0A2C7CA49EF75287A067305ABB314A16E62 (void);
-// 0x00000007 System.Void UnityEngine.ParticleSystem::Play()
+// 0x00000008 System.Void UnityEngine.ParticleSystem::Play()
 extern void ParticleSystem_Play_mD943E601BFE16CB9BB5D1F5E6AED5C36F5F11EF5 (void);
-// 0x00000008 System.Void UnityEngine.ParticleSystem::Stop(System.Boolean,UnityEngine.ParticleSystemStopBehavior)
+// 0x00000009 System.Void UnityEngine.ParticleSystem::Stop(System.Boolean,UnityEngine.ParticleSystemStopBehavior)
 extern void ParticleSystem_Stop_mB5761CB85083F593FFEC3D27931CACF1855A6326 (void);
-// 0x00000009 System.Void UnityEngine.ParticleSystem::Stop(System.Boolean)
+// 0x0000000A System.Void UnityEngine.ParticleSystem::Stop(System.Boolean)
 extern void ParticleSystem_Stop_m6CA855033D5CE2D3AF7927B6709BC65DBCD632DF (void);
-// 0x0000000A System.Void UnityEngine.ParticleSystem::Stop()
+// 0x0000000B System.Void UnityEngine.ParticleSystem::Stop()
 extern void ParticleSystem_Stop_m2D8D4967496EF0F5BFEF679C49A9E65A9646C423 (void);
-// 0x0000000B System.Void UnityEngine.ParticleSystem::Emit(System.Int32)
+// 0x0000000C System.Void UnityEngine.ParticleSystem::Emit(System.Int32)
 extern void ParticleSystem_Emit_m3E9E6359087607E84E0D4D35844D80D9452AD72D (void);
-// 0x0000000C System.Void UnityEngine.ParticleSystem::Emit_Internal(System.Int32)
+// 0x0000000D System.Void UnityEngine.ParticleSystem::Emit_Internal(System.Int32)
 extern void ParticleSystem_Emit_Internal_m54D6D9A78E8634846C9DB6445C0E0A0885E8A20E (void);
-// 0x0000000D System.Void UnityEngine.ParticleSystem::Emit(UnityEngine.ParticleSystem/EmitParams,System.Int32)
+// 0x0000000E System.Void UnityEngine.ParticleSystem::Emit(UnityEngine.ParticleSystem/EmitParams,System.Int32)
 extern void ParticleSystem_Emit_m5AD1A3F02A19B61E3B0CC738FD498B52D19B65AA (void);
-// 0x0000000E System.Void UnityEngine.ParticleSystem::EmitOld_Internal(UnityEngine.ParticleSystem/Particle&)
+// 0x0000000F System.Void UnityEngine.ParticleSystem::EmitOld_Internal(UnityEngine.ParticleSystem/Particle&)
 extern void ParticleSystem_EmitOld_Internal_mD22E235F6AB32455147A7DAF814AC8B4949C89D3 (void);
-// 0x0000000F UnityEngine.ParticleSystem/MainModule UnityEngine.ParticleSystem::get_main()
+// 0x00000010 UnityEngine.ParticleSystem/MainModule UnityEngine.ParticleSystem::get_main()
 extern void ParticleSystem_get_main_mD86DFCD96150E2CE760CD2F37052BB3BCA33C189 (void);
-// 0x00000010 UnityEngine.ParticleSystem/EmissionModule UnityEngine.ParticleSystem::get_emission()
+// 0x00000011 UnityEngine.ParticleSystem/EmissionModule UnityEngine.ParticleSystem::get_emission()
 extern void ParticleSystem_get_emission_mD9402CE632A3607DA0B0486F9F58F7FB2B44CF08 (void);
-// 0x00000011 UnityEngine.ParticleSystem/ShapeModule UnityEngine.ParticleSystem::get_shape()
+// 0x00000012 UnityEngine.ParticleSystem/ShapeModule UnityEngine.ParticleSystem::get_shape()
 extern void ParticleSystem_get_shape_mD7F072CC18587858138AA7B3A882995493AA7C80 (void);
-// 0x00000012 System.Void UnityEngine.ParticleSystem::Emit_Injected(UnityEngine.ParticleSystem/EmitParams&,System.Int32)
+// 0x00000013 System.Void UnityEngine.ParticleSystem::Emit_Injected(UnityEngine.ParticleSystem/EmitParams&,System.Int32)
 extern void ParticleSystem_Emit_Injected_mC5638D07E58C6EDB8C0CD3717A66A61CBA30C3A6 (void);
-// 0x00000013 System.Void UnityEngine.ParticleSystem/MainModule::.ctor(UnityEngine.ParticleSystem)
+// 0x00000014 System.Void UnityEngine.ParticleSystem/MainModule::.ctor(UnityEngine.ParticleSystem)
 extern void MainModule__ctor_m5F7D2DD815C741DE3FA18A0C1BB2F2776612EF7A (void);
-// 0x00000014 System.Void UnityEngine.ParticleSystem/MainModule::set_loop(System.Boolean)
+// 0x00000015 System.Single UnityEngine.ParticleSystem/MainModule::get_duration()
+extern void MainModule_get_duration_mDCB80E6BD3B6B2DFB92E41FBCCA154D7E7150EB1 (void);
+// 0x00000016 System.Void UnityEngine.ParticleSystem/MainModule::set_loop(System.Boolean)
 extern void MainModule_set_loop_mB3FC83A6DA8D248D15C53388D6B9B7711ADD89BE (void);
-// 0x00000015 System.Void UnityEngine.ParticleSystem/MainModule::set_simulationSpace(UnityEngine.ParticleSystemSimulationSpace)
+// 0x00000017 System.Single UnityEngine.ParticleSystem/MainModule::get_startLifetimeMultiplier()
+extern void MainModule_get_startLifetimeMultiplier_m635DF5E608211FCF706FBAD039AE0C140BCEDB7C (void);
+// 0x00000018 UnityEngine.ParticleSystem/MinMaxGradient UnityEngine.ParticleSystem/MainModule::get_startColor()
+extern void MainModule_get_startColor_m24E66E583EB51341A885ABAE84114CBB37018781 (void);
+// 0x00000019 System.Void UnityEngine.ParticleSystem/MainModule::set_startColor(UnityEngine.ParticleSystem/MinMaxGradient)
+extern void MainModule_set_startColor_m504911284CAC53A7C1B97B5D01BBDD2FA67D0E7A (void);
+// 0x0000001A System.Void UnityEngine.ParticleSystem/MainModule::set_simulationSpace(UnityEngine.ParticleSystemSimulationSpace)
 extern void MainModule_set_simulationSpace_m23D533E66925AABF0C336894FBF2FF03FF3891BC (void);
-// 0x00000016 System.Void UnityEngine.ParticleSystem/MainModule::set_playOnAwake(System.Boolean)
+// 0x0000001B System.Void UnityEngine.ParticleSystem/MainModule::set_playOnAwake(System.Boolean)
 extern void MainModule_set_playOnAwake_mC86DBF96156C8783FAC2AD1628529F354FB1C6D8 (void);
-// 0x00000017 System.Int32 UnityEngine.ParticleSystem/MainModule::get_maxParticles()
+// 0x0000001C System.Int32 UnityEngine.ParticleSystem/MainModule::get_maxParticles()
 extern void MainModule_get_maxParticles_m7E3A0D115823903F57BEAA9E3D2EDA019FD09198 (void);
-// 0x00000018 System.Void UnityEngine.ParticleSystem/MainModule::set_maxParticles(System.Int32)
+// 0x0000001D System.Void UnityEngine.ParticleSystem/MainModule::set_maxParticles(System.Int32)
 extern void MainModule_set_maxParticles_mF9E7A56D7E1A528904BE1A8C0E14F15C3AF0F748 (void);
-// 0x00000019 System.Void UnityEngine.ParticleSystem/MainModule::set_loop_Injected(UnityEngine.ParticleSystem/MainModule&,System.Boolean)
+// 0x0000001E System.Single UnityEngine.ParticleSystem/MainModule::get_duration_Injected(UnityEngine.ParticleSystem/MainModule&)
+extern void MainModule_get_duration_Injected_m9F3A5598AEAB180D2CA14AC34E8FDAE306DAE4BA (void);
+// 0x0000001F System.Void UnityEngine.ParticleSystem/MainModule::set_loop_Injected(UnityEngine.ParticleSystem/MainModule&,System.Boolean)
 extern void MainModule_set_loop_Injected_mF673B0C6B2194F3C5FD0DCAB438350685E5CE815 (void);
-// 0x0000001A System.Void UnityEngine.ParticleSystem/MainModule::set_simulationSpace_Injected(UnityEngine.ParticleSystem/MainModule&,UnityEngine.ParticleSystemSimulationSpace)
+// 0x00000020 System.Single UnityEngine.ParticleSystem/MainModule::get_startLifetimeMultiplier_Injected(UnityEngine.ParticleSystem/MainModule&)
+extern void MainModule_get_startLifetimeMultiplier_Injected_m6B2A665AD38BD4060365A81678783E85B1AA7E08 (void);
+// 0x00000021 System.Void UnityEngine.ParticleSystem/MainModule::get_startColor_Injected(UnityEngine.ParticleSystem/MainModule&,UnityEngine.ParticleSystem/MinMaxGradient&)
+extern void MainModule_get_startColor_Injected_m29B9E581238C0CEB45140E5B9E959486017F4CBE (void);
+// 0x00000022 System.Void UnityEngine.ParticleSystem/MainModule::set_startColor_Injected(UnityEngine.ParticleSystem/MainModule&,UnityEngine.ParticleSystem/MinMaxGradient&)
+extern void MainModule_set_startColor_Injected_mF946A6488A011017014FD84C86FAC959F2909812 (void);
+// 0x00000023 System.Void UnityEngine.ParticleSystem/MainModule::set_simulationSpace_Injected(UnityEngine.ParticleSystem/MainModule&,UnityEngine.ParticleSystemSimulationSpace)
 extern void MainModule_set_simulationSpace_Injected_m7710E894FA3BF3F226A89C24DC461672201445BA (void);
-// 0x0000001B System.Void UnityEngine.ParticleSystem/MainModule::set_playOnAwake_Injected(UnityEngine.ParticleSystem/MainModule&,System.Boolean)
+// 0x00000024 System.Void UnityEngine.ParticleSystem/MainModule::set_playOnAwake_Injected(UnityEngine.ParticleSystem/MainModule&,System.Boolean)
 extern void MainModule_set_playOnAwake_Injected_m78E74790A03FCE7E576933E31DA258375AEC7938 (void);
-// 0x0000001C System.Int32 UnityEngine.ParticleSystem/MainModule::get_maxParticles_Injected(UnityEngine.ParticleSystem/MainModule&)
+// 0x00000025 System.Int32 UnityEngine.ParticleSystem/MainModule::get_maxParticles_Injected(UnityEngine.ParticleSystem/MainModule&)
 extern void MainModule_get_maxParticles_Injected_mCEB9ED3E77E56A724C9E4F76D70313202CAAA495 (void);
-// 0x0000001D System.Void UnityEngine.ParticleSystem/MainModule::set_maxParticles_Injected(UnityEngine.ParticleSystem/MainModule&,System.Int32)
+// 0x00000026 System.Void UnityEngine.ParticleSystem/MainModule::set_maxParticles_Injected(UnityEngine.ParticleSystem/MainModule&,System.Int32)
 extern void MainModule_set_maxParticles_Injected_mF64A68D92E3D851D26BCE9E2E63BE5123AA58659 (void);
-// 0x0000001E System.Void UnityEngine.ParticleSystem/EmissionModule::.ctor(UnityEngine.ParticleSystem)
+// 0x00000027 System.Void UnityEngine.ParticleSystem/EmissionModule::.ctor(UnityEngine.ParticleSystem)
 extern void EmissionModule__ctor_m6AE98CC2103BECB52B7551D1304E733AE8BD70B1 (void);
-// 0x0000001F System.Void UnityEngine.ParticleSystem/EmissionModule::set_enabled(System.Boolean)
+// 0x00000028 System.Void UnityEngine.ParticleSystem/EmissionModule::set_enabled(System.Boolean)
 extern void EmissionModule_set_enabled_mC82B6915ED485AB8DB54DFA6599C9C973BB5D867 (void);
-// 0x00000020 System.Single UnityEngine.ParticleSystem/EmissionModule::get_rateOverTimeMultiplier()
+// 0x00000029 System.Single UnityEngine.ParticleSystem/EmissionModule::get_rateOverTimeMultiplier()
 extern void EmissionModule_get_rateOverTimeMultiplier_m9BD9DA04BD762F6E7C22D025DC86CB6B96227867 (void);
-// 0x00000021 System.Void UnityEngine.ParticleSystem/EmissionModule::set_rateOverTimeMultiplier(System.Single)
+// 0x0000002A System.Void UnityEngine.ParticleSystem/EmissionModule::set_rateOverTimeMultiplier(System.Single)
 extern void EmissionModule_set_rateOverTimeMultiplier_mB15A82A2C188437DA4432F4402731132F64259EC (void);
-// 0x00000022 System.Void UnityEngine.ParticleSystem/EmissionModule::set_enabled_Injected(UnityEngine.ParticleSystem/EmissionModule&,System.Boolean)
+// 0x0000002B System.Void UnityEngine.ParticleSystem/EmissionModule::set_enabled_Injected(UnityEngine.ParticleSystem/EmissionModule&,System.Boolean)
 extern void EmissionModule_set_enabled_Injected_m78ACA5DBC6846ADDCFFA4748293EB9AA053DCEC6 (void);
-// 0x00000023 System.Single UnityEngine.ParticleSystem/EmissionModule::get_rateOverTimeMultiplier_Injected(UnityEngine.ParticleSystem/EmissionModule&)
+// 0x0000002C System.Single UnityEngine.ParticleSystem/EmissionModule::get_rateOverTimeMultiplier_Injected(UnityEngine.ParticleSystem/EmissionModule&)
 extern void EmissionModule_get_rateOverTimeMultiplier_Injected_m0D0E9FBBCC50E12E909921192FA8C827A89B077B (void);
-// 0x00000024 System.Void UnityEngine.ParticleSystem/EmissionModule::set_rateOverTimeMultiplier_Injected(UnityEngine.ParticleSystem/EmissionModule&,System.Single)
+// 0x0000002D System.Void UnityEngine.ParticleSystem/EmissionModule::set_rateOverTimeMultiplier_Injected(UnityEngine.ParticleSystem/EmissionModule&,System.Single)
 extern void EmissionModule_set_rateOverTimeMultiplier_Injected_m51D88F059B8270D6CF34DB9ACEF7F73DBF475102 (void);
-// 0x00000025 System.Void UnityEngine.ParticleSystem/ShapeModule::.ctor(UnityEngine.ParticleSystem)
+// 0x0000002E System.Void UnityEngine.ParticleSystem/ShapeModule::.ctor(UnityEngine.ParticleSystem)
 extern void ShapeModule__ctor_m951B06AF6BDA194E8111B2B72C104562F41CB0AD (void);
-// 0x00000026 System.Void UnityEngine.ParticleSystem/ShapeModule::set_enabled(System.Boolean)
+// 0x0000002F System.Void UnityEngine.ParticleSystem/ShapeModule::set_enabled(System.Boolean)
 extern void ShapeModule_set_enabled_m6BA02351FEED67A82664135B922DDA66D71DF399 (void);
-// 0x00000027 System.Void UnityEngine.ParticleSystem/ShapeModule::set_enabled_Injected(UnityEngine.ParticleSystem/ShapeModule&,System.Boolean)
+// 0x00000030 System.Void UnityEngine.ParticleSystem/ShapeModule::set_enabled_Injected(UnityEngine.ParticleSystem/ShapeModule&,System.Boolean)
 extern void ShapeModule_set_enabled_Injected_m1EE1CA0CCE2E7B3FDA6AD07E7D45A7A4B236C23C (void);
-// 0x00000028 System.Void UnityEngine.ParticleSystem/Particle::set_lifetime(System.Single)
+// 0x00000031 System.Void UnityEngine.ParticleSystem/Particle::set_lifetime(System.Single)
 extern void Particle_set_lifetime_m29360AF093721364BF46996EE1D400256DB95911 (void);
-// 0x00000029 System.Void UnityEngine.ParticleSystem/Particle::set_position(UnityEngine.Vector3)
+// 0x00000032 System.Void UnityEngine.ParticleSystem/Particle::set_position(UnityEngine.Vector3)
 extern void Particle_set_position_mE9103000DB4EA6CE09D25650F5A2915731F7A63E (void);
-// 0x0000002A System.Void UnityEngine.ParticleSystem/Particle::set_velocity(UnityEngine.Vector3)
+// 0x00000033 System.Void UnityEngine.ParticleSystem/Particle::set_velocity(UnityEngine.Vector3)
 extern void Particle_set_velocity_mF4C1DE326CCABE480F44D3DF3873241E85A6303B (void);
-// 0x0000002B System.Void UnityEngine.ParticleSystem/Particle::set_remainingLifetime(System.Single)
+// 0x00000034 System.Void UnityEngine.ParticleSystem/Particle::set_remainingLifetime(System.Single)
 extern void Particle_set_remainingLifetime_m3E58D8B3599B0BA6790D43022C3DF16E6896D018 (void);
-// 0x0000002C System.Void UnityEngine.ParticleSystem/Particle::set_startLifetime(System.Single)
+// 0x00000035 System.Void UnityEngine.ParticleSystem/Particle::set_startLifetime(System.Single)
 extern void Particle_set_startLifetime_mCD0B16F2B1F2E2AEED84C4FCD85D5AD96F853A77 (void);
-// 0x0000002D System.Void UnityEngine.ParticleSystem/Particle::set_startColor(UnityEngine.Color32)
+// 0x00000036 System.Void UnityEngine.ParticleSystem/Particle::set_startColor(UnityEngine.Color32)
 extern void Particle_set_startColor_mC3031F4238B0C003DFA5BF9AB4B3141B7CF71538 (void);
-// 0x0000002E System.Void UnityEngine.ParticleSystem/Particle::set_randomSeed(System.UInt32)
+// 0x00000037 System.Void UnityEngine.ParticleSystem/Particle::set_randomSeed(System.UInt32)
 extern void Particle_set_randomSeed_mCC3C02CCBF9C0EA80E2CE01EC47AD30F31D5F6C2 (void);
-// 0x0000002F System.Void UnityEngine.ParticleSystem/Particle::set_startSize(System.Single)
+// 0x00000038 System.Void UnityEngine.ParticleSystem/Particle::set_startSize(System.Single)
 extern void Particle_set_startSize_mBBEBF7365A4E68FF2044E2ECEACC562376EA4A1F (void);
-// 0x00000030 System.Void UnityEngine.ParticleSystem/Particle::set_rotation3D(UnityEngine.Vector3)
+// 0x00000039 System.Void UnityEngine.ParticleSystem/Particle::set_startSize3D(UnityEngine.Vector3)
+extern void Particle_set_startSize3D_m9FF9CB94583F3A09E97B7D488716D09059E88FF2 (void);
+// 0x0000003A System.Void UnityEngine.ParticleSystem/Particle::set_rotation3D(UnityEngine.Vector3)
 extern void Particle_set_rotation3D_mC0B19BFEBA780F95C763DE14C80B29764E519D62 (void);
-// 0x00000031 System.Void UnityEngine.ParticleSystem/Particle::set_angularVelocity3D(UnityEngine.Vector3)
+// 0x0000003B System.Void UnityEngine.ParticleSystem/Particle::set_angularVelocity3D(UnityEngine.Vector3)
 extern void Particle_set_angularVelocity3D_m56AE22FE7AFB178DD206EA2A7E0DA64B360D7EA8 (void);
-// 0x00000032 System.Void UnityEngine.ParticleSystemRenderer::set_renderMode(UnityEngine.ParticleSystemRenderMode)
+// 0x0000003C System.Void UnityEngine.ParticleSystem/MinMaxGradient::.ctor(UnityEngine.Color)
+extern void MinMaxGradient__ctor_m982C2A8AD071EA714E5583F90727C306B126F062 (void);
+// 0x0000003D UnityEngine.Color UnityEngine.ParticleSystem/MinMaxGradient::get_color()
+extern void MinMaxGradient_get_color_m534E35D538D549F006E9F90E453D41B92FBAC3BF (void);
+// 0x0000003E UnityEngine.ParticleSystem/MinMaxGradient UnityEngine.ParticleSystem/MinMaxGradient::op_Implicit(UnityEngine.Color)
+extern void MinMaxGradient_op_Implicit_mAA6154D6644E72BBA49EB34DC957538EE929DE02 (void);
+// 0x0000003F System.Int32 UnityEngine.ParticlePhysicsExtensions::GetCollisionEvents(UnityEngine.ParticleSystem,UnityEngine.GameObject,System.Collections.Generic.List`1<UnityEngine.ParticleCollisionEvent>)
+extern void ParticlePhysicsExtensions_GetCollisionEvents_mD44421A4CC66ECB3D6FD5D9012FE6131D3DB74B7 (void);
+// 0x00000040 System.Void UnityEngine.ParticleSystemRenderer::set_renderMode(UnityEngine.ParticleSystemRenderMode)
 extern void ParticleSystemRenderer_set_renderMode_mB2FE8134522E19C9C0C2E8DE371303BCE834016F (void);
-// 0x00000033 System.Void UnityEngine.ParticleSystemRenderer::set_mesh(UnityEngine.Mesh)
+// 0x00000041 System.Void UnityEngine.ParticleSystemRenderer::set_mesh(UnityEngine.Mesh)
 extern void ParticleSystemRenderer_set_mesh_mD5263BAD87D6B6805DDB332DFB8F4E6971BCACAD (void);
-// 0x00000034 System.Int32 UnityEngine.ParticleSystemRenderer::GetMeshes(UnityEngine.Mesh[])
+// 0x00000042 System.Int32 UnityEngine.ParticleSystemRenderer::GetMeshes(UnityEngine.Mesh[])
 extern void ParticleSystemRenderer_GetMeshes_m3CA9AA8947C7F0468F6C0B7F1344D747EA43D440 (void);
-static Il2CppMethodPointer s_methodPointers[52] = 
+// 0x00000043 UnityEngine.Vector3 UnityEngine.ParticleCollisionEvent::get_intersection()
+extern void ParticleCollisionEvent_get_intersection_m5CD7C517228E7D6148DEA4ED0500533C146DEC97 (void);
+// 0x00000044 UnityEngine.Vector3 UnityEngine.ParticleCollisionEvent::get_normal()
+extern void ParticleCollisionEvent_get_normal_m7FC8D0427210D507D8003DB9CCD791AB88DC63FC (void);
+// 0x00000045 System.Int32 UnityEngine.ParticleSystemExtensionsImpl::GetCollisionEvents(UnityEngine.ParticleSystem,UnityEngine.GameObject,System.Collections.Generic.List`1<UnityEngine.ParticleCollisionEvent>)
+extern void ParticleSystemExtensionsImpl_GetCollisionEvents_mEEDB71C2FE85835660149E03178CFD1F503E15E3 (void);
+static Il2CppMethodPointer s_methodPointers[69] = 
 {
 	ParticleSystem_Emit_m27ED2FE38DEE11C9C98F7D30392BB5B39B6A16ED,
 	ParticleSystem_Emit_m329091E7F55C972CE85A100CA624192AD8442688,
+	ParticleSystem_get_isPlaying_mC5170DA3C904670B88200C8DA1E0F8FC1BC7C42B,
 	ParticleSystem_set_time_mD7AF2E34304DBF8ED9ECA84710C0871B184B73EC,
 	ParticleSystem_SetParticles_mE6E111588BA43659450D2FC1BAA5D82D324F25A5,
 	ParticleSystem_SetParticles_m4EDBF9B885CD31D8F491636C49F4F1235FE66592,
@@ -137,12 +172,20 @@ static Il2CppMethodPointer s_methodPointers[52] =
 	ParticleSystem_get_shape_mD7F072CC18587858138AA7B3A882995493AA7C80,
 	ParticleSystem_Emit_Injected_mC5638D07E58C6EDB8C0CD3717A66A61CBA30C3A6,
 	MainModule__ctor_m5F7D2DD815C741DE3FA18A0C1BB2F2776612EF7A,
+	MainModule_get_duration_mDCB80E6BD3B6B2DFB92E41FBCCA154D7E7150EB1,
 	MainModule_set_loop_mB3FC83A6DA8D248D15C53388D6B9B7711ADD89BE,
+	MainModule_get_startLifetimeMultiplier_m635DF5E608211FCF706FBAD039AE0C140BCEDB7C,
+	MainModule_get_startColor_m24E66E583EB51341A885ABAE84114CBB37018781,
+	MainModule_set_startColor_m504911284CAC53A7C1B97B5D01BBDD2FA67D0E7A,
 	MainModule_set_simulationSpace_m23D533E66925AABF0C336894FBF2FF03FF3891BC,
 	MainModule_set_playOnAwake_mC86DBF96156C8783FAC2AD1628529F354FB1C6D8,
 	MainModule_get_maxParticles_m7E3A0D115823903F57BEAA9E3D2EDA019FD09198,
 	MainModule_set_maxParticles_mF9E7A56D7E1A528904BE1A8C0E14F15C3AF0F748,
+	MainModule_get_duration_Injected_m9F3A5598AEAB180D2CA14AC34E8FDAE306DAE4BA,
 	MainModule_set_loop_Injected_mF673B0C6B2194F3C5FD0DCAB438350685E5CE815,
+	MainModule_get_startLifetimeMultiplier_Injected_m6B2A665AD38BD4060365A81678783E85B1AA7E08,
+	MainModule_get_startColor_Injected_m29B9E581238C0CEB45140E5B9E959486017F4CBE,
+	MainModule_set_startColor_Injected_mF946A6488A011017014FD84C86FAC959F2909812,
 	MainModule_set_simulationSpace_Injected_m7710E894FA3BF3F226A89C24DC461672201445BA,
 	MainModule_set_playOnAwake_Injected_m78E74790A03FCE7E576933E31DA258375AEC7938,
 	MainModule_get_maxParticles_Injected_mCEB9ED3E77E56A724C9E4F76D70313202CAAA495,
@@ -165,14 +208,26 @@ static Il2CppMethodPointer s_methodPointers[52] =
 	Particle_set_startColor_mC3031F4238B0C003DFA5BF9AB4B3141B7CF71538,
 	Particle_set_randomSeed_mCC3C02CCBF9C0EA80E2CE01EC47AD30F31D5F6C2,
 	Particle_set_startSize_mBBEBF7365A4E68FF2044E2ECEACC562376EA4A1F,
+	Particle_set_startSize3D_m9FF9CB94583F3A09E97B7D488716D09059E88FF2,
 	Particle_set_rotation3D_mC0B19BFEBA780F95C763DE14C80B29764E519D62,
 	Particle_set_angularVelocity3D_m56AE22FE7AFB178DD206EA2A7E0DA64B360D7EA8,
+	MinMaxGradient__ctor_m982C2A8AD071EA714E5583F90727C306B126F062,
+	MinMaxGradient_get_color_m534E35D538D549F006E9F90E453D41B92FBAC3BF,
+	MinMaxGradient_op_Implicit_mAA6154D6644E72BBA49EB34DC957538EE929DE02,
+	ParticlePhysicsExtensions_GetCollisionEvents_mD44421A4CC66ECB3D6FD5D9012FE6131D3DB74B7,
 	ParticleSystemRenderer_set_renderMode_mB2FE8134522E19C9C0C2E8DE371303BCE834016F,
 	ParticleSystemRenderer_set_mesh_mD5263BAD87D6B6805DDB332DFB8F4E6971BCACAD,
 	ParticleSystemRenderer_GetMeshes_m3CA9AA8947C7F0468F6C0B7F1344D747EA43D440,
+	ParticleCollisionEvent_get_intersection_m5CD7C517228E7D6148DEA4ED0500533C146DEC97,
+	ParticleCollisionEvent_get_normal_m7FC8D0427210D507D8003DB9CCD791AB88DC63FC,
+	ParticleSystemExtensionsImpl_GetCollisionEvents_mEEDB71C2FE85835660149E03178CFD1F503E15E3,
 };
 extern void MainModule__ctor_m5F7D2DD815C741DE3FA18A0C1BB2F2776612EF7A_AdjustorThunk (void);
+extern void MainModule_get_duration_mDCB80E6BD3B6B2DFB92E41FBCCA154D7E7150EB1_AdjustorThunk (void);
 extern void MainModule_set_loop_mB3FC83A6DA8D248D15C53388D6B9B7711ADD89BE_AdjustorThunk (void);
+extern void MainModule_get_startLifetimeMultiplier_m635DF5E608211FCF706FBAD039AE0C140BCEDB7C_AdjustorThunk (void);
+extern void MainModule_get_startColor_m24E66E583EB51341A885ABAE84114CBB37018781_AdjustorThunk (void);
+extern void MainModule_set_startColor_m504911284CAC53A7C1B97B5D01BBDD2FA67D0E7A_AdjustorThunk (void);
 extern void MainModule_set_simulationSpace_m23D533E66925AABF0C336894FBF2FF03FF3891BC_AdjustorThunk (void);
 extern void MainModule_set_playOnAwake_mC86DBF96156C8783FAC2AD1628529F354FB1C6D8_AdjustorThunk (void);
 extern void MainModule_get_maxParticles_m7E3A0D115823903F57BEAA9E3D2EDA019FD09198_AdjustorThunk (void);
@@ -191,95 +246,126 @@ extern void Particle_set_startLifetime_mCD0B16F2B1F2E2AEED84C4FCD85D5AD96F853A77
 extern void Particle_set_startColor_mC3031F4238B0C003DFA5BF9AB4B3141B7CF71538_AdjustorThunk (void);
 extern void Particle_set_randomSeed_mCC3C02CCBF9C0EA80E2CE01EC47AD30F31D5F6C2_AdjustorThunk (void);
 extern void Particle_set_startSize_mBBEBF7365A4E68FF2044E2ECEACC562376EA4A1F_AdjustorThunk (void);
+extern void Particle_set_startSize3D_m9FF9CB94583F3A09E97B7D488716D09059E88FF2_AdjustorThunk (void);
 extern void Particle_set_rotation3D_mC0B19BFEBA780F95C763DE14C80B29764E519D62_AdjustorThunk (void);
 extern void Particle_set_angularVelocity3D_m56AE22FE7AFB178DD206EA2A7E0DA64B360D7EA8_AdjustorThunk (void);
-static Il2CppTokenAdjustorThunkPair s_adjustorThunks[22] = 
+extern void MinMaxGradient__ctor_m982C2A8AD071EA714E5583F90727C306B126F062_AdjustorThunk (void);
+extern void MinMaxGradient_get_color_m534E35D538D549F006E9F90E453D41B92FBAC3BF_AdjustorThunk (void);
+extern void ParticleCollisionEvent_get_intersection_m5CD7C517228E7D6148DEA4ED0500533C146DEC97_AdjustorThunk (void);
+extern void ParticleCollisionEvent_get_normal_m7FC8D0427210D507D8003DB9CCD791AB88DC63FC_AdjustorThunk (void);
+static Il2CppTokenAdjustorThunkPair s_adjustorThunks[31] = 
 {
-	{ 0x06000013, MainModule__ctor_m5F7D2DD815C741DE3FA18A0C1BB2F2776612EF7A_AdjustorThunk },
-	{ 0x06000014, MainModule_set_loop_mB3FC83A6DA8D248D15C53388D6B9B7711ADD89BE_AdjustorThunk },
-	{ 0x06000015, MainModule_set_simulationSpace_m23D533E66925AABF0C336894FBF2FF03FF3891BC_AdjustorThunk },
-	{ 0x06000016, MainModule_set_playOnAwake_mC86DBF96156C8783FAC2AD1628529F354FB1C6D8_AdjustorThunk },
-	{ 0x06000017, MainModule_get_maxParticles_m7E3A0D115823903F57BEAA9E3D2EDA019FD09198_AdjustorThunk },
-	{ 0x06000018, MainModule_set_maxParticles_mF9E7A56D7E1A528904BE1A8C0E14F15C3AF0F748_AdjustorThunk },
-	{ 0x0600001E, EmissionModule__ctor_m6AE98CC2103BECB52B7551D1304E733AE8BD70B1_AdjustorThunk },
-	{ 0x0600001F, EmissionModule_set_enabled_mC82B6915ED485AB8DB54DFA6599C9C973BB5D867_AdjustorThunk },
-	{ 0x06000020, EmissionModule_get_rateOverTimeMultiplier_m9BD9DA04BD762F6E7C22D025DC86CB6B96227867_AdjustorThunk },
-	{ 0x06000021, EmissionModule_set_rateOverTimeMultiplier_mB15A82A2C188437DA4432F4402731132F64259EC_AdjustorThunk },
-	{ 0x06000025, ShapeModule__ctor_m951B06AF6BDA194E8111B2B72C104562F41CB0AD_AdjustorThunk },
-	{ 0x06000026, ShapeModule_set_enabled_m6BA02351FEED67A82664135B922DDA66D71DF399_AdjustorThunk },
-	{ 0x06000028, Particle_set_lifetime_m29360AF093721364BF46996EE1D400256DB95911_AdjustorThunk },
-	{ 0x06000029, Particle_set_position_mE9103000DB4EA6CE09D25650F5A2915731F7A63E_AdjustorThunk },
-	{ 0x0600002A, Particle_set_velocity_mF4C1DE326CCABE480F44D3DF3873241E85A6303B_AdjustorThunk },
-	{ 0x0600002B, Particle_set_remainingLifetime_m3E58D8B3599B0BA6790D43022C3DF16E6896D018_AdjustorThunk },
-	{ 0x0600002C, Particle_set_startLifetime_mCD0B16F2B1F2E2AEED84C4FCD85D5AD96F853A77_AdjustorThunk },
-	{ 0x0600002D, Particle_set_startColor_mC3031F4238B0C003DFA5BF9AB4B3141B7CF71538_AdjustorThunk },
-	{ 0x0600002E, Particle_set_randomSeed_mCC3C02CCBF9C0EA80E2CE01EC47AD30F31D5F6C2_AdjustorThunk },
-	{ 0x0600002F, Particle_set_startSize_mBBEBF7365A4E68FF2044E2ECEACC562376EA4A1F_AdjustorThunk },
-	{ 0x06000030, Particle_set_rotation3D_mC0B19BFEBA780F95C763DE14C80B29764E519D62_AdjustorThunk },
-	{ 0x06000031, Particle_set_angularVelocity3D_m56AE22FE7AFB178DD206EA2A7E0DA64B360D7EA8_AdjustorThunk },
+	{ 0x06000014, MainModule__ctor_m5F7D2DD815C741DE3FA18A0C1BB2F2776612EF7A_AdjustorThunk },
+	{ 0x06000015, MainModule_get_duration_mDCB80E6BD3B6B2DFB92E41FBCCA154D7E7150EB1_AdjustorThunk },
+	{ 0x06000016, MainModule_set_loop_mB3FC83A6DA8D248D15C53388D6B9B7711ADD89BE_AdjustorThunk },
+	{ 0x06000017, MainModule_get_startLifetimeMultiplier_m635DF5E608211FCF706FBAD039AE0C140BCEDB7C_AdjustorThunk },
+	{ 0x06000018, MainModule_get_startColor_m24E66E583EB51341A885ABAE84114CBB37018781_AdjustorThunk },
+	{ 0x06000019, MainModule_set_startColor_m504911284CAC53A7C1B97B5D01BBDD2FA67D0E7A_AdjustorThunk },
+	{ 0x0600001A, MainModule_set_simulationSpace_m23D533E66925AABF0C336894FBF2FF03FF3891BC_AdjustorThunk },
+	{ 0x0600001B, MainModule_set_playOnAwake_mC86DBF96156C8783FAC2AD1628529F354FB1C6D8_AdjustorThunk },
+	{ 0x0600001C, MainModule_get_maxParticles_m7E3A0D115823903F57BEAA9E3D2EDA019FD09198_AdjustorThunk },
+	{ 0x0600001D, MainModule_set_maxParticles_mF9E7A56D7E1A528904BE1A8C0E14F15C3AF0F748_AdjustorThunk },
+	{ 0x06000027, EmissionModule__ctor_m6AE98CC2103BECB52B7551D1304E733AE8BD70B1_AdjustorThunk },
+	{ 0x06000028, EmissionModule_set_enabled_mC82B6915ED485AB8DB54DFA6599C9C973BB5D867_AdjustorThunk },
+	{ 0x06000029, EmissionModule_get_rateOverTimeMultiplier_m9BD9DA04BD762F6E7C22D025DC86CB6B96227867_AdjustorThunk },
+	{ 0x0600002A, EmissionModule_set_rateOverTimeMultiplier_mB15A82A2C188437DA4432F4402731132F64259EC_AdjustorThunk },
+	{ 0x0600002E, ShapeModule__ctor_m951B06AF6BDA194E8111B2B72C104562F41CB0AD_AdjustorThunk },
+	{ 0x0600002F, ShapeModule_set_enabled_m6BA02351FEED67A82664135B922DDA66D71DF399_AdjustorThunk },
+	{ 0x06000031, Particle_set_lifetime_m29360AF093721364BF46996EE1D400256DB95911_AdjustorThunk },
+	{ 0x06000032, Particle_set_position_mE9103000DB4EA6CE09D25650F5A2915731F7A63E_AdjustorThunk },
+	{ 0x06000033, Particle_set_velocity_mF4C1DE326CCABE480F44D3DF3873241E85A6303B_AdjustorThunk },
+	{ 0x06000034, Particle_set_remainingLifetime_m3E58D8B3599B0BA6790D43022C3DF16E6896D018_AdjustorThunk },
+	{ 0x06000035, Particle_set_startLifetime_mCD0B16F2B1F2E2AEED84C4FCD85D5AD96F853A77_AdjustorThunk },
+	{ 0x06000036, Particle_set_startColor_mC3031F4238B0C003DFA5BF9AB4B3141B7CF71538_AdjustorThunk },
+	{ 0x06000037, Particle_set_randomSeed_mCC3C02CCBF9C0EA80E2CE01EC47AD30F31D5F6C2_AdjustorThunk },
+	{ 0x06000038, Particle_set_startSize_mBBEBF7365A4E68FF2044E2ECEACC562376EA4A1F_AdjustorThunk },
+	{ 0x06000039, Particle_set_startSize3D_m9FF9CB94583F3A09E97B7D488716D09059E88FF2_AdjustorThunk },
+	{ 0x0600003A, Particle_set_rotation3D_mC0B19BFEBA780F95C763DE14C80B29764E519D62_AdjustorThunk },
+	{ 0x0600003B, Particle_set_angularVelocity3D_m56AE22FE7AFB178DD206EA2A7E0DA64B360D7EA8_AdjustorThunk },
+	{ 0x0600003C, MinMaxGradient__ctor_m982C2A8AD071EA714E5583F90727C306B126F062_AdjustorThunk },
+	{ 0x0600003D, MinMaxGradient_get_color_m534E35D538D549F006E9F90E453D41B92FBAC3BF_AdjustorThunk },
+	{ 0x06000043, ParticleCollisionEvent_get_intersection_m5CD7C517228E7D6148DEA4ED0500533C146DEC97_AdjustorThunk },
+	{ 0x06000044, ParticleCollisionEvent_get_normal_m7FC8D0427210D507D8003DB9CCD791AB88DC63FC_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[52] = 
+static const int32_t s_InvokerIndices[69] = 
 {
-	761,
-	6236,
-	6037,
-	1936,
-	3468,
-	5875,
-	7481,
-	2895,
-	5875,
-	7481,
-	5954,
-	5954,
-	3577,
-	5863,
-	7611,
-	7610,
-	7613,
-	2880,
-	5990,
-	5875,
-	5954,
-	5875,
-	7306,
-	5954,
-	10136,
-	10138,
-	10136,
-	10556,
-	10138,
-	5990,
-	5875,
-	7393,
-	6037,
-	10136,
-	10775,
-	10141,
-	5990,
-	5875,
-	10136,
-	6037,
-	6111,
-	6111,
-	6037,
-	6037,
-	5879,
-	6100,
-	6037,
-	6111,
-	6111,
-	5954,
-	5990,
-	4997,
+	766,
+	6264,
+	7263,
+	6063,
+	1946,
+	3487,
+	5900,
+	7514,
+	2912,
+	5900,
+	7514,
+	5979,
+	5979,
+	3596,
+	5888,
+	7645,
+	7644,
+	7648,
+	2897,
+	6015,
+	7426,
+	5900,
+	7426,
+	7646,
+	6263,
+	5979,
+	5900,
+	7338,
+	5979,
+	10825,
+	10186,
+	10825,
+	10185,
+	10185,
+	10188,
+	10186,
+	10606,
+	10188,
+	6015,
+	5900,
+	7426,
+	6063,
+	10186,
+	10825,
+	10191,
+	6015,
+	5900,
+	10186,
+	6063,
+	6137,
+	6137,
+	6063,
+	6063,
+	5904,
+	6126,
+	6063,
+	6137,
+	6137,
+	6137,
+	5903,
+	7265,
+	11094,
+	9146,
+	5979,
+	6015,
+	5018,
+	7506,
+	7506,
+	9146,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_ParticleSystemModule_CodeGenModule;
 const Il2CppCodeGenModule g_UnityEngine_ParticleSystemModule_CodeGenModule = 
 {
 	"UnityEngine.ParticleSystemModule.dll",
-	52,
+	69,
 	s_methodPointers,
-	22,
+	31,
 	s_adjustorThunks,
 	s_InvokerIndices,
 	0,

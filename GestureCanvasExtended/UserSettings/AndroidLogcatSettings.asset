@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "1WMHH814SX0443",
         "name": "com.sayanika.GestureCanvasExtended",
-        "processId": 9105,
+        "processId": 11113,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -108,6 +108,12 @@
             "deviceId": "1WMHH814SX0443",
             "name": "com.sayanika.GestureCanvasExtended",
             "processId": 9105,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH814SX0443",
+            "name": "com.sayanika.GestureCanvasExtended",
+            "processId": 11113,
             "exited": false
         }
     ],

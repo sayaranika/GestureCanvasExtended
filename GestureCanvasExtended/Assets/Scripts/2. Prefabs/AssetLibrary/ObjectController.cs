@@ -104,13 +104,13 @@ public class ObjectController : MonoBehaviour
         }
         else
         {
-            if (isGravity == false)
+            /*if (isGravity == false)
             {
                 objectRef.objectRef.GetComponent<Rigidbody>().isKinematic = false;
                 objectRef.objectRef.GetComponent<Rigidbody>().useGravity = true;
 
                 isGravity = true;
-            }
+            }*/
 
         }
     }
