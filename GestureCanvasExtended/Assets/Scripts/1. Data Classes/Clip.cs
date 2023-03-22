@@ -16,6 +16,9 @@ public class Clip
     [JsonIgnore] public ClipValidity clipValidity;
     [JsonIgnore] public Interaction DefaultInteraction;
 
+    public List<VirtualObject> virtualObjects = new List<VirtualObject>();
+    public List<VFXObject> vfxObjects = new List<VFXObject>();
+
     public Clip(int Id, int startIndex, int endIndex)
     {
         this.Id = Id;

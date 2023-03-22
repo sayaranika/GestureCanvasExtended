@@ -9,7 +9,7 @@ public static class FileHandler
 {
     public static void SaveToJSON<T>(List<T> toSave, string filename)
     {
-        Debug.Log("export file path: " + GetPath(filename));
+        Debug.Log("9000 B: export file path: " + GetPath(filename));
         JsonConvert.DefaultSettings = () => new JsonSerializerSettings
         {
             ReferenceLoopHandling = ReferenceLoopHandling.Ignore,
@@ -19,7 +19,7 @@ public static class FileHandler
         T[] toSaveArray = toSave.ToArray();
 
         string content = JsonConvert.SerializeObject(toSaveArray);
-        Debug.Log("export content: " + content);
+        Debug.Log("9000 C export content: " + content);
         WriteFile(GetPath(filename), content);
     }
 

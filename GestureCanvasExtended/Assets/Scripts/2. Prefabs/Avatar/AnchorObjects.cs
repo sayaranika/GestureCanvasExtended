@@ -7,11 +7,11 @@ public class AnchorObjects : MonoBehaviour
     [SerializeField] string anchorName;
     [SerializeField] bool isRight;
     
-    /*private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         Debug.Log("300: " + other.name + " " + other.tag);
 
-        if(other.tag == "SpawnedVFX")
+        /*if(other.tag == "SpawnedVFX")
         {
             Debug.Log("300: spawned");
             if (other.GetComponent<VFXController>().isAttachable == true && other.GetComponent<VFXController>().vfxObjectRef.isAttached == false)
@@ -21,16 +21,27 @@ public class AnchorObjects : MonoBehaviour
                 other.GetComponent<VFXController>().vfxObjectRef.AttachedBone = anchorName;
 
             }
-        }
+        }*/
 
         if (other.tag == "SpawnedObject")
         {
             Debug.Log("300: spawned");
-            if (other.GetComponent<ObjectController>().isAttachable == true && other.GetComponent<ObjectController>().objectRef.isAttached == false)
+
+            ObjectController objectController = other.GetComponent<ObjectController>();
+            if(objectController == null)
+            {
+                objectController = other.GetComponentInParent<ObjectController>();
+                if(objectController == null)
+                {
+                    objectController = other.GetComponentInChildren<ObjectController>();
+                }
+            }
+
+            if (objectController.isAttachable == true && objectController.objectRef.isAttached == false)
             {
                 Debug.Log("300: attached");
-                other.GetComponent<ObjectController>().objectRef.isAttached = true;
-                other.GetComponent<ObjectController>().objectRef.AttachedBone = anchorName;
+                objectController.objectRef.isAttached = true;
+                objectController.objectRef.AttachedBone = anchorName;
 
             }
         }
@@ -39,7 +50,7 @@ public class AnchorObjects : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
         Debug.Log("400: " + other.name + " " + other.tag);
-        if (other.tag == "SpawnedVFX")
+        /*if (other.tag == "SpawnedVFX")
         {
             Debug.Log("400: spawned");
             if (other.GetComponent<VFXController>().isAttachable == true && other.GetComponent<VFXController>().vfxObjectRef.isAttached == false)
@@ -50,21 +61,32 @@ public class AnchorObjects : MonoBehaviour
                 other.GetComponent<VFXController>().vfxObjectRef.AttachedBone = anchorName;
 
             }
-        }
+        }*/
 
         if (other.tag == "SpawnedObject")
         {
             Debug.Log("400: spawned");
-            if (other.GetComponent<ObjectController>().isAttachable == true && other.GetComponent<ObjectController>().objectRef.isAttached == false)
+
+            ObjectController objectController = other.GetComponent<ObjectController>();
+            if (objectController == null)
+            {
+                objectController = other.GetComponentInParent<ObjectController>();
+                if (objectController == null)
+                {
+                    objectController = other.GetComponentInChildren<ObjectController>();
+                }
+            }
+
+            if (objectController.isAttachable == true && objectController.objectRef.isAttached == false)
             {
                 Debug.Log("400: attached");
-                other.GetComponent<ObjectController>().objectRef.isAttached = true;
-                other.GetComponent<ObjectController>().objectRef.isAttachedToRight = isRight;
-                other.GetComponent<ObjectController>().objectRef.AttachedBone = anchorName;
+                objectController.objectRef.isAttached = true;
+                objectController.objectRef.isAttachedToRight = isRight;
+                objectController.objectRef.AttachedBone = anchorName;
 
             }
         }
-    }*/
+    }
 
     
 }
