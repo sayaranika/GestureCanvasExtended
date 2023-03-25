@@ -451,7 +451,7 @@ public class InteractionPanelManager : MonoBehaviour
         foreach (GameObject buttons in ClipManager.clipButtonList)
             buttons.transform.GetChild(0).GetComponent<Toggle>().interactable = false;
 
-        InputTestManager.StartTest(interactionRef);
+        OnTheFlyTest.StartTest(interactionRef);
     }
 
     public void CancelTest()
@@ -494,7 +494,8 @@ public class InteractionPanelManager : MonoBehaviour
         foreach (GameObject buttons in ClipManager.clipButtonList)
             buttons.transform.GetChild(0).GetComponent<Toggle>().interactable = true;
 
-        InputTestManager.RunTest = false;
+        //TestManager.StopTest = false;
+        OnTheFlyTest.StopTest = true;
     }
 
     public void AddGestureSample_R()

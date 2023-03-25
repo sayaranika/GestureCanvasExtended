@@ -8,10 +8,10 @@ public class GestureDataset : MonoBehaviour
     public static Dataset GestureDataset_L = new Dataset();
     public static void Load()
     {
-        Debug.Log("500: Starting to load dataset" + GestureDataset_R.Gestures.Count + " " + GestureDataset_L.Gestures.Count);
+        //Debug.Log("500: Starting to load dataset" + GestureDataset_R.Gestures.Count + " " + GestureDataset_L.Gestures.Count);
         GestureDataset_R.ClearDataset();
         GestureDataset_L.ClearDataset();
-        Debug.Log("500: Starting to load dataset" + GestureDataset_R.Gestures.Count + " " + GestureDataset_L.Gestures.Count);
+        //Debug.Log("500: Starting to load dataset" + GestureDataset_R.Gestures.Count + " " + GestureDataset_L.Gestures.Count);
         foreach (Clip clip in ClipHandler.ClipList)
         {
             foreach(Interaction i in clip.interactions)
@@ -27,7 +27,8 @@ public class GestureDataset : MonoBehaviour
 
                         i.expectedGestureId_R = Id;
 
-                        Debug.Log("500: [Right] Expected Gesture Id for interaction " + i.Id + " from clip " + clip.Id + " : " + Id);
+
+                        //Debug.Log("500: [Right] Expected Gesture Id for interaction " + i.Id + " from clip " + clip.Id + " : " + Id);
                     }
                     
                 }
@@ -44,7 +45,7 @@ public class GestureDataset : MonoBehaviour
 
                         i.expectedGestureId_L = Id;
 
-                        Debug.Log("500: [Left] Expected Gesture Id for interaction " + i.Id + " from clip " + clip.Id + " : " + Id);
+                        //Debug.Log("500: [Left] Expected Gesture Id for interaction " + i.Id + " from clip " + clip.Id + " : " + Id);
                     }
 
                 }

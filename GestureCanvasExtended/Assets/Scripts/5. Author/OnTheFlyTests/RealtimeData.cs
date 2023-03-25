@@ -6,14 +6,12 @@ public class RealtimeData : MonoBehaviour
 {
     [SerializeField] HandPoseRecorder handPoseRecorder;
 
-    //public bool getRealtimeData = false;
     public HandPose RightHandPose;
     public HandPose LeftHandPose;
 
     private void LateUpdate()
     {
-        //if (getRealtimeData == true) 
-            GetData();
+        GetData();
     }
 
     public void GetData()

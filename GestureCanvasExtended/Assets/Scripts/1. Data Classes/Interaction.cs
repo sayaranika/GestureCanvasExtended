@@ -39,7 +39,8 @@ public class Interaction
 
     public bool isConditionSetToTrue;
 
-    
+    public int GestureLength_L;
+    public int GestureLength_R;
 
     public Interaction(int interactionId)
     {
@@ -63,14 +64,10 @@ public class Interaction
                 isGesture_R = true;
                 isPose_R = false;
 
-                //rightHandGestureStartIndex = startIndex;
-                //rightHandGestureEndIndex = endIndex;
-
-                GestureSamples_R.Clear();
+                //GestureSamples_R.Clear();
                 expectedGestureId_R = -1;
-                
                 GestureSamples_R.Add(new GestureSamplesWrapper(handData));
-
+                GestureLength_R = handData.Count;
                 //expectedGesture_R.Clear();
 
                 /*for(int i = rightHandGestureStartIndex; i < rightHandGestureEndIndex; i++)
@@ -81,9 +78,10 @@ public class Interaction
             case Handedness.Left:
                 isGesture_L = true;
                 isPose_R = false;
-                GestureSamples_L.Clear();
+                //GestureSamples_L.Clear();
                 expectedGestureId_L = -1;
                 GestureSamples_L.Add(new GestureSamplesWrapper(handData));
+                GestureLength_L = handData.Count;
                 break;
             /*case Handedness.Left:;
                 isGesture_L = true;

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class InputTestManager : MonoBehaviour
 {
-    [SerializeField] PoseRecognizer poseRecognizer;
+    /*[SerializeField] PoseRecognizer poseRecognizer;
     [SerializeField] GestureRecognizer gestureRecognizer;
     [SerializeField] GestureRecognizerLoader gestureRecognizerLoader;
 
@@ -12,10 +12,9 @@ public class InputTestManager : MonoBehaviour
     [SerializeField] GameObject LeftHandVisual;
 
     public static bool RunTest = false;
-    //public static bool StopTest = false;
     public static Interaction interaction = null;
-
     public static bool loadDataset = false;
+
     public static void StartTest(Interaction i)
     {
         interaction = i;
@@ -41,7 +40,6 @@ public class InputTestManager : MonoBehaviour
             {
                 gestureRecognizerLoader.Train(Handedness.Left);
             }
-
             RunTest = true;
         }
         if (RunTest == true && interaction != null)
@@ -69,10 +67,14 @@ public class InputTestManager : MonoBehaviour
             }
             if(interaction.isGesture_R == true)
             {
-                //isRecognized = gestureRecognizer.Recognize();
+                isRecognized = gestureRecognizer.Recognize(Handedness.Right, interaction.expectedGestureId_R);
+            }
+            if (interaction.isGesture_L == true)
+            {
+                isRecognized = gestureRecognizer.Recognize(Handedness.Left, interaction.expectedGestureId_L);
             }
 
-            
+
 
 
             if (isRecognized == true)
@@ -104,5 +106,5 @@ public class InputTestManager : MonoBehaviour
     public void HighlightHand(GameObject HandVisual, bool state)
     {
         HandVisual.GetComponent<HighlightPlus.HighlightEffect>().highlighted = state;
-    }
+    }*/
 }

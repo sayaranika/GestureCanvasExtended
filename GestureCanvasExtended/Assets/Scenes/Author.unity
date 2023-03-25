@@ -14586,12 +14586,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1829616034}
-  - component: {fileID: 1829616037}
   - component: {fileID: 1829616030}
   - component: {fileID: 1829616036}
+  - component: {fileID: 1829616042}
   - component: {fileID: 1829616035}
-  - component: {fileID: 1829616038}
-  - component: {fileID: 1829616039}
+  - component: {fileID: 1829616041}
+  - component: {fileID: 1829616043}
+  - component: {fileID: 1829616044}
   m_Layer: 0
   m_Name: OnTheFlyTest
   m_TagString: Untagged
@@ -14653,7 +14654,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   realtimeData: {fileID: 1829616035}
---- !u!114 &1829616037
+--- !u!114 &1829616041
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -14662,15 +14663,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1829616029}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dab5cc9df23b9594ab256230836480c1, type: 3}
+  m_Script: {fileID: 11500000, guid: bbcd83b95532e2541bb4a4cb1eaf6697, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poseRecognizer: {fileID: 1829616036}
-  gestureRecognizer: {fileID: 1829616038}
-  gestureRecognizerLoader: {fileID: 1829616039}
   RightHandVisual: {fileID: 881449976730326950}
   LeftHandVisual: {fileID: 2496065496519996848}
---- !u!114 &1829616038
+  gestureRecognizer_L: {fileID: 1829616044}
+  gestureRecognizer_R: {fileID: 1829616043}
+  poseRecognizer: {fileID: 1829616036}
+--- !u!114 &1829616042
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -14682,18 +14683,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ad49ecd978715c4392170af1bdce5c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1829616039
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1829616029}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb2c3f150cbe9e646af56247f662666f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  realtimeData: {fileID: 1829616035}
   jackknife_R:
     cost: []
     templates: []
@@ -14718,6 +14708,46 @@ MonoBehaviour:
       LowerBound: 0
       CFAbsDistance: 0
       CFBbWidths: 0
+  trained_R: 1
+  trained_L: 1
+--- !u!114 &1829616043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829616029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fb1ff87af477ae4d86fde9dda42dccf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RightHandVisual: {fileID: 881449976730326950}
+  gestureRecognizer: {fileID: 1829616042}
+  active: 0
+  gestureLength: 0
+  len: 0
+  detectedId: -1
+  expectedId: -1
+--- !u!114 &1829616044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829616029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17c2895ed4e30ba488777cb589941317, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LeftHandVisual: {fileID: 2496065496519996848}
+  gestureRecognizer: {fileID: 1829616042}
+  active: 0
+  gestureLength: 0
+  len: 0
+  detectedId: -1
+  expectedId: -1
 --- !u!1 &1862855104
 GameObject:
   m_ObjectHideFlags: 0
