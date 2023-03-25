@@ -7268,6 +7268,22 @@ MonoBehaviour:
   arrowImage: {fileID: 127934597209724576}
   actionPlate: {fileID: 2934916908859816125, guid: 9f9164c2c0464bf408829c1c8798acc3, type: 3}
   logic: {fileID: 127934597195213747}
+  interactionRef:
+    Id: 0
+    isGesture_R: 0
+    isGesture_L: 0
+    isPose_R: 0
+    isPose_L: 0
+    isTransformConstraint_R: 0
+    isTransformConstraint_L: 0
+    expectedGesture_R: []
+    expectedGesture_L: []
+    expectedGesture: []
+    rightHandGestureStartIndex: 0
+    leftHandGestureStartIndex: 0
+    rightHandGestureEndIndex: 0
+    leftHandGestureEndIndex: 0
+    isConditionSetToTrue: 0
   ClipsPanel: {fileID: 6773079831312222768}
   ClipPanelBtnPrefab: {fileID: 127934598809779073}
 --- !u!1 &127934598849784311

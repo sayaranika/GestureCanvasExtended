@@ -42,9 +42,13 @@ public class AddInteractionManager : MonoBehaviour
         i.isTransformConstraint_R = defaultInt.isTransformConstraint_R;
         i.isTransformConstraint_L = defaultInt.isTransformConstraint_L;
 
-        i.expectedGesture_R = defaultInt.expectedGesture_R;
+        if(defaultInt.GestureSamples_R.Count > 0) i.GestureSamples_R.Add(defaultInt.GestureSamples_R[0]);
+        if (defaultInt.GestureSamples_L.Count > 0) i.GestureSamples_L.Add(defaultInt.GestureSamples_L[0]);
+
+
+        /*i.expectedGesture_R = defaultInt.expectedGesture_R;
         i.expectedGesture_L = defaultInt.expectedGesture_L;
-        i.expectedGesture = defaultInt.expectedGesture;
+        i.expectedGesture = defaultInt.expectedGesture;*/
         i.expectedPose_R = defaultInt.expectedPose_R;
         i.expectedPose_L = defaultInt.expectedPose_L;
 

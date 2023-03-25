@@ -6,6 +6,7 @@ public class RecognizerManager : MonoBehaviour
 {
     public Interaction interaction;
     public PoseRecognizer poseRecognizer;
+    public GestureRecognizer gestureRecognizer;
     public PlaytestManager playtestManager;
 
     private void Update()
@@ -24,7 +25,10 @@ public class RecognizerManager : MonoBehaviour
         {
             isRecognized = poseRecognizer.Recognize(Handedness.Right, interaction.expectedPose_R, null, interaction.isTransformConstraint_R, interaction.isConditionSetToTrue)
                     && poseRecognizer.Recognize(Handedness.Left, null, interaction.expectedPose_L, interaction.isTransformConstraint_L, interaction.isConditionSetToTrue);
-
+        }
+        else if(interaction.isGesture_R == true)
+        {
+            
         }
 
         if (isRecognized == true)

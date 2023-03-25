@@ -5,21 +5,45 @@ using UnityEngine;
 public class InputTestManager : MonoBehaviour
 {
     [SerializeField] PoseRecognizer poseRecognizer;
+    [SerializeField] GestureRecognizer gestureRecognizer;
+    [SerializeField] GestureRecognizerLoader gestureRecognizerLoader;
 
     [SerializeField] GameObject RightHandVisual;
     [SerializeField] GameObject LeftHandVisual;
 
     public static bool RunTest = false;
-    public static bool StopTest = false;
+    //public static bool StopTest = false;
     public static Interaction interaction = null;
+
+    public static bool loadDataset = false;
     public static void StartTest(Interaction i)
     {
         interaction = i;
-        RunTest = true;
+
+        if (interaction.isGesture_R == true || interaction.isGesture_L == true)
+        {
+            loadDataset = true;
+        }
+        else RunTest = true;
     }
 
     private void Update()
     {
+        if(loadDataset == true)
+        {
+            loadDataset = false;
+            gestureRecognizerLoader.Initialize();
+            if (interaction.isGesture_R == true)
+            {
+                gestureRecognizerLoader.Train(Handedness.Right);
+            }
+            if(interaction.isGesture_L == true)
+            {
+                gestureRecognizerLoader.Train(Handedness.Left);
+            }
+
+            RunTest = true;
+        }
         if (RunTest == true && interaction != null)
         {
             bool isRecognized = false;
@@ -43,6 +67,12 @@ public class InputTestManager : MonoBehaviour
                 isRightHandRecognized = isRecognized;
                 isLeftHandRecognized = isRecognized;
             }
+            if(interaction.isGesture_R == true)
+            {
+                //isRecognized = gestureRecognizer.Recognize();
+            }
+
+            
 
 
             if (isRecognized == true)

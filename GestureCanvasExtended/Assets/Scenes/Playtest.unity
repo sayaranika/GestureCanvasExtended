@@ -3950,6 +3950,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ovrSkeleton_R: {fileID: 3969958659988665142}
   ovrSkeleton_L: {fileID: 964850428665112206}
+  RightHand: {fileID: 3927407883829678970}
+  LeftHand: {fileID: 935344290666055362}
   CenterCamera: {fileID: 8159341325599352136}
   Shield: {fileID: 5602063274053904892, guid: 2e223802993bd974698845ef6ef87641, type: 3}
   Crate: {fileID: 2689795100330841512, guid: f3f55abd2d015b44c8a1fc909f897843, type: 3}

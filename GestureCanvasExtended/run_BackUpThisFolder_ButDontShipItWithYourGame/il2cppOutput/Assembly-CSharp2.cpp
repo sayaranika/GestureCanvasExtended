@@ -1110,18 +1110,18 @@ struct Clip_t5B493D4729396BB82DD0E7ED754916E180EC23BD  : public RuntimeObject
 	int32_t ___endIndex_2;
 	// System.Collections.Generic.List`1<Interaction> Clip::interactions
 	List_1_t8D2EAF6AA1B446B2DA30A936D11966AFBC257F2C* ___interactions_3;
-	// System.Collections.Generic.List`1<HandPoseInstance> Clip::HandPoses_R
-	List_1_tFC65151E0EDAF92F2A613E1C5960DFB3B439910F* ___HandPoses_R_4;
-	// System.Collections.Generic.List`1<HandPoseInstance> Clip::HandPoses_L
-	List_1_tFC65151E0EDAF92F2A613E1C5960DFB3B439910F* ___HandPoses_L_5;
-	// ClipValidity Clip::clipValidity
-	ClipValidity_t50F2680512F87093AF0314D9FC8755326B12134F* ___clipValidity_6;
-	// Interaction Clip::DefaultInteraction
-	Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* ___DefaultInteraction_7;
 	// System.Collections.Generic.List`1<VirtualObject> Clip::virtualObjects
-	List_1_t845A527FBE0C057FF526F5FCD51CA86956E31101* ___virtualObjects_8;
+	List_1_t845A527FBE0C057FF526F5FCD51CA86956E31101* ___virtualObjects_4;
 	// System.Collections.Generic.List`1<VFXObject> Clip::vfxObjects
-	List_1_tB754A38AEFA98ABE5BA9DB1BC97C5A13EDF15380* ___vfxObjects_9;
+	List_1_tB754A38AEFA98ABE5BA9DB1BC97C5A13EDF15380* ___vfxObjects_5;
+	// System.Collections.Generic.List`1<HandPoseInstance> Clip::HandPoses_R
+	List_1_tFC65151E0EDAF92F2A613E1C5960DFB3B439910F* ___HandPoses_R_6;
+	// System.Collections.Generic.List`1<HandPoseInstance> Clip::HandPoses_L
+	List_1_tFC65151E0EDAF92F2A613E1C5960DFB3B439910F* ___HandPoses_L_7;
+	// ClipValidity Clip::clipValidity
+	ClipValidity_t50F2680512F87093AF0314D9FC8755326B12134F* ___clipValidity_8;
+	// Interaction Clip::DefaultInteraction
+	Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* ___DefaultInteraction_9;
 };
 
 // ClipButton
@@ -2772,6 +2772,25 @@ struct RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5
 	int32_t ___m_Collider_5;
 };
 
+// VFXObject
+struct VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145  : public RuntimeObject
+{
+	// System.String VFXObject::objectName
+	String_t* ___objectName_0;
+	// UnityEngine.Vector3 VFXObject::Position
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Position_1;
+	// UnityEngine.Quaternion VFXObject::Rotation
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Rotation_2;
+	// System.Boolean VFXObject::isAttached
+	bool ___isAttached_3;
+	// System.Boolean VFXObject::isAttachedToRight
+	bool ___isAttachedToRight_4;
+	// System.String VFXObject::AttachedBone
+	String_t* ___AttachedBone_5;
+	// UnityEngine.GameObject VFXObject::vfxRef
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___vfxRef_6;
+};
+
 // TMPro.VertexGradient
 struct VertexGradient_t2C057B53C0EA6E987C2B7BAB0305E686DA1C9A8F 
 {
@@ -2783,6 +2802,27 @@ struct VertexGradient_t2C057B53C0EA6E987C2B7BAB0305E686DA1C9A8F
 	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___bottomLeft_2;
 	// UnityEngine.Color TMPro.VertexGradient::bottomRight
 	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___bottomRight_3;
+};
+
+// VirtualObject
+struct VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136  : public RuntimeObject
+{
+	// System.String VirtualObject::objectName
+	String_t* ___objectName_0;
+	// UnityEngine.Vector3 VirtualObject::Position
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Position_1;
+	// UnityEngine.Quaternion VirtualObject::Rotation
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Rotation_2;
+	// UnityEngine.Vector3 VirtualObject::Scale
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Scale_3;
+	// System.Boolean VirtualObject::isAttached
+	bool ___isAttached_4;
+	// System.Boolean VirtualObject::isAttachedToRight
+	bool ___isAttachedToRight_5;
+	// System.String VirtualObject::AttachedBone
+	String_t* ___AttachedBone_6;
+	// UnityEngine.GameObject VirtualObject::objectRef
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___objectRef_7;
 };
 
 // OVRPlugin/EventDataBuffer
@@ -4901,46 +4941,6 @@ struct VFXController_tE62F51646A94F274DE492C3B9D87B73D7F3A62D4_StaticFields
 	bool ___UpdateData_6;
 };
 
-// VFXObject
-struct VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
-{
-	// System.String VFXObject::objectName
-	String_t* ___objectName_4;
-	// UnityEngine.Vector3 VFXObject::Position
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Position_5;
-	// UnityEngine.Quaternion VFXObject::Rotation
-	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Rotation_6;
-	// System.Boolean VFXObject::isAttached
-	bool ___isAttached_7;
-	// System.Boolean VFXObject::isAttachedToRight
-	bool ___isAttachedToRight_8;
-	// System.String VFXObject::AttachedBone
-	String_t* ___AttachedBone_9;
-	// UnityEngine.GameObject VFXObject::vfxRef
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___vfxRef_10;
-};
-
-// VirtualObject
-struct VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
-{
-	// System.String VirtualObject::objectName
-	String_t* ___objectName_4;
-	// UnityEngine.Vector3 VirtualObject::Position
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Position_5;
-	// UnityEngine.Quaternion VirtualObject::Rotation
-	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Rotation_6;
-	// UnityEngine.Vector3 VirtualObject::Scale
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Scale_7;
-	// System.Boolean VirtualObject::isAttached
-	bool ___isAttached_8;
-	// System.Boolean VirtualObject::isAttachedToRight
-	bool ___isAttachedToRight_9;
-	// System.String VirtualObject::AttachedBone
-	String_t* ___AttachedBone_10;
-	// UnityEngine.GameObject VirtualObject::objectRef
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___objectRef_11;
-};
-
 // VolumeAndPlaneSwitcher
 struct VolumeAndPlaneSwitcher_tBC9040CF8181A95B11E58104FAC293D5AF080F54  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -6682,11 +6682,6 @@ inline void List_1__ctor_mB3D8965622B0B87D736052482EA02B7F1DA6F6EE (List_1_t8D2E
 {
 	((  void (*) (List_1_t8D2EAF6AA1B446B2DA30A936D11966AFBC257F2C*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
 }
-// System.Void System.Collections.Generic.List`1<HandPoseInstance>::.ctor()
-inline void List_1__ctor_m771AE69DB8690B2511FB41CCF23EF21B5B3967AD (List_1_tFC65151E0EDAF92F2A613E1C5960DFB3B439910F* __this, const RuntimeMethod* method)
-{
-	((  void (*) (List_1_tFC65151E0EDAF92F2A613E1C5960DFB3B439910F*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
-}
 // System.Void System.Collections.Generic.List`1<VirtualObject>::.ctor()
 inline void List_1__ctor_m8F60C02FCD0891D43277DF3F9B9C290C89C83B62 (List_1_t845A527FBE0C057FF526F5FCD51CA86956E31101* __this, const RuntimeMethod* method)
 {
@@ -6696,6 +6691,11 @@ inline void List_1__ctor_m8F60C02FCD0891D43277DF3F9B9C290C89C83B62 (List_1_t845A
 inline void List_1__ctor_m5B3EC637B39D1B5A79D9DA109E29ECE8A3549AE3 (List_1_tB754A38AEFA98ABE5BA9DB1BC97C5A13EDF15380* __this, const RuntimeMethod* method)
 {
 	((  void (*) (List_1_tB754A38AEFA98ABE5BA9DB1BC97C5A13EDF15380*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.List`1<HandPoseInstance>::.ctor()
+inline void List_1__ctor_m771AE69DB8690B2511FB41CCF23EF21B5B3967AD (List_1_tFC65151E0EDAF92F2A613E1C5960DFB3B439910F* __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_tFC65151E0EDAF92F2A613E1C5960DFB3B439910F*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
 }
 // System.Void HandMotion::set_HandPosition(UnityEngine.Vector3)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HandMotion_set_HandPosition_m1EDA0C9428364DE988E2179FABDB97DC78FEC8A8_inline (HandMotion_tB68AEF4FFA2CC09A3DB9F4CC636B280FAA52FC3F* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___value0, const RuntimeMethod* method) ;
@@ -14805,30 +14805,30 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clip__ctor_m4B4DF1147FBBEB13A4B72FFCD4E0
 		List_1__ctor_mB3D8965622B0B87D736052482EA02B7F1DA6F6EE(L_0, List_1__ctor_mB3D8965622B0B87D736052482EA02B7F1DA6F6EE_RuntimeMethod_var);
 		__this->___interactions_3 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___interactions_3), (void*)L_0);
-		// [JsonIgnore] public List<HandPoseInstance> HandPoses_R = new List<HandPoseInstance>();
-		List_1_tFC65151E0EDAF92F2A613E1C5960DFB3B439910F* L_1 = (List_1_tFC65151E0EDAF92F2A613E1C5960DFB3B439910F*)il2cpp_codegen_object_new(List_1_tFC65151E0EDAF92F2A613E1C5960DFB3B439910F_il2cpp_TypeInfo_var);
-		NullCheck(L_1);
-		List_1__ctor_m771AE69DB8690B2511FB41CCF23EF21B5B3967AD(L_1, List_1__ctor_m771AE69DB8690B2511FB41CCF23EF21B5B3967AD_RuntimeMethod_var);
-		__this->___HandPoses_R_4 = L_1;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___HandPoses_R_4), (void*)L_1);
-		// [JsonIgnore] public List<HandPoseInstance> HandPoses_L = new List<HandPoseInstance>();
-		List_1_tFC65151E0EDAF92F2A613E1C5960DFB3B439910F* L_2 = (List_1_tFC65151E0EDAF92F2A613E1C5960DFB3B439910F*)il2cpp_codegen_object_new(List_1_tFC65151E0EDAF92F2A613E1C5960DFB3B439910F_il2cpp_TypeInfo_var);
-		NullCheck(L_2);
-		List_1__ctor_m771AE69DB8690B2511FB41CCF23EF21B5B3967AD(L_2, List_1__ctor_m771AE69DB8690B2511FB41CCF23EF21B5B3967AD_RuntimeMethod_var);
-		__this->___HandPoses_L_5 = L_2;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___HandPoses_L_5), (void*)L_2);
 		// public List<VirtualObject> virtualObjects = new List<VirtualObject>();
-		List_1_t845A527FBE0C057FF526F5FCD51CA86956E31101* L_3 = (List_1_t845A527FBE0C057FF526F5FCD51CA86956E31101*)il2cpp_codegen_object_new(List_1_t845A527FBE0C057FF526F5FCD51CA86956E31101_il2cpp_TypeInfo_var);
-		NullCheck(L_3);
-		List_1__ctor_m8F60C02FCD0891D43277DF3F9B9C290C89C83B62(L_3, List_1__ctor_m8F60C02FCD0891D43277DF3F9B9C290C89C83B62_RuntimeMethod_var);
-		__this->___virtualObjects_8 = L_3;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___virtualObjects_8), (void*)L_3);
+		List_1_t845A527FBE0C057FF526F5FCD51CA86956E31101* L_1 = (List_1_t845A527FBE0C057FF526F5FCD51CA86956E31101*)il2cpp_codegen_object_new(List_1_t845A527FBE0C057FF526F5FCD51CA86956E31101_il2cpp_TypeInfo_var);
+		NullCheck(L_1);
+		List_1__ctor_m8F60C02FCD0891D43277DF3F9B9C290C89C83B62(L_1, List_1__ctor_m8F60C02FCD0891D43277DF3F9B9C290C89C83B62_RuntimeMethod_var);
+		__this->___virtualObjects_4 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___virtualObjects_4), (void*)L_1);
 		// public List<VFXObject> vfxObjects = new List<VFXObject>();
-		List_1_tB754A38AEFA98ABE5BA9DB1BC97C5A13EDF15380* L_4 = (List_1_tB754A38AEFA98ABE5BA9DB1BC97C5A13EDF15380*)il2cpp_codegen_object_new(List_1_tB754A38AEFA98ABE5BA9DB1BC97C5A13EDF15380_il2cpp_TypeInfo_var);
+		List_1_tB754A38AEFA98ABE5BA9DB1BC97C5A13EDF15380* L_2 = (List_1_tB754A38AEFA98ABE5BA9DB1BC97C5A13EDF15380*)il2cpp_codegen_object_new(List_1_tB754A38AEFA98ABE5BA9DB1BC97C5A13EDF15380_il2cpp_TypeInfo_var);
+		NullCheck(L_2);
+		List_1__ctor_m5B3EC637B39D1B5A79D9DA109E29ECE8A3549AE3(L_2, List_1__ctor_m5B3EC637B39D1B5A79D9DA109E29ECE8A3549AE3_RuntimeMethod_var);
+		__this->___vfxObjects_5 = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___vfxObjects_5), (void*)L_2);
+		// [JsonIgnore] public List<HandPoseInstance> HandPoses_R = new List<HandPoseInstance>();
+		List_1_tFC65151E0EDAF92F2A613E1C5960DFB3B439910F* L_3 = (List_1_tFC65151E0EDAF92F2A613E1C5960DFB3B439910F*)il2cpp_codegen_object_new(List_1_tFC65151E0EDAF92F2A613E1C5960DFB3B439910F_il2cpp_TypeInfo_var);
+		NullCheck(L_3);
+		List_1__ctor_m771AE69DB8690B2511FB41CCF23EF21B5B3967AD(L_3, List_1__ctor_m771AE69DB8690B2511FB41CCF23EF21B5B3967AD_RuntimeMethod_var);
+		__this->___HandPoses_R_6 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___HandPoses_R_6), (void*)L_3);
+		// [JsonIgnore] public List<HandPoseInstance> HandPoses_L = new List<HandPoseInstance>();
+		List_1_tFC65151E0EDAF92F2A613E1C5960DFB3B439910F* L_4 = (List_1_tFC65151E0EDAF92F2A613E1C5960DFB3B439910F*)il2cpp_codegen_object_new(List_1_tFC65151E0EDAF92F2A613E1C5960DFB3B439910F_il2cpp_TypeInfo_var);
 		NullCheck(L_4);
-		List_1__ctor_m5B3EC637B39D1B5A79D9DA109E29ECE8A3549AE3(L_4, List_1__ctor_m5B3EC637B39D1B5A79D9DA109E29ECE8A3549AE3_RuntimeMethod_var);
-		__this->___vfxObjects_9 = L_4;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___vfxObjects_9), (void*)L_4);
+		List_1__ctor_m771AE69DB8690B2511FB41CCF23EF21B5B3967AD(L_4, List_1__ctor_m771AE69DB8690B2511FB41CCF23EF21B5B3967AD_RuntimeMethod_var);
+		__this->___HandPoses_L_7 = L_4;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___HandPoses_L_7), (void*)L_4);
 		// public Clip(int Id, int startIndex, int endIndex)
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		// this.Id = Id;
@@ -21400,28 +21400,28 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VFXObject__ctor_mD97E8558FA73EB68E9C3C33
 	}
 	{
 		// public bool isAttached = false;
-		__this->___isAttached_7 = (bool)0;
+		__this->___isAttached_3 = (bool)0;
 		// public bool isAttachedToRight = false;
-		__this->___isAttachedToRight_8 = (bool)0;
+		__this->___isAttachedToRight_4 = (bool)0;
 		// public string AttachedBone = "";
-		__this->___AttachedBone_9 = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___AttachedBone_9), (void*)_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
+		__this->___AttachedBone_5 = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___AttachedBone_5), (void*)_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
 		// public VFXObject(GameObject vfxRef, string objectName, Vector3 Position, Quaternion Rotation)
-		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		// this.vfxRef = vfxRef;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = ___vfxRef0;
-		__this->___vfxRef_10 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___vfxRef_10), (void*)L_0);
+		__this->___vfxRef_6 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___vfxRef_6), (void*)L_0);
 		// this.objectName = objectName;
 		String_t* L_1 = ___objectName1;
-		__this->___objectName_4 = L_1;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___objectName_4), (void*)L_1);
+		__this->___objectName_0 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___objectName_0), (void*)L_1);
 		// this.Position = Position;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = ___Position2;
-		__this->___Position_5 = L_2;
+		__this->___Position_1 = L_2;
 		// this.Rotation = Rotation;
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_3 = ___Rotation3;
-		__this->___Rotation_6 = L_3;
+		__this->___Rotation_2 = L_3;
 		// }
 		return;
 	}
@@ -21445,31 +21445,31 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VirtualObject__ctor_m01834C236F3BCA2CDE3
 	}
 	{
 		// public bool isAttached = false;
-		__this->___isAttached_8 = (bool)0;
+		__this->___isAttached_4 = (bool)0;
 		// public bool isAttachedToRight = false;
-		__this->___isAttachedToRight_9 = (bool)0;
+		__this->___isAttachedToRight_5 = (bool)0;
 		// public string AttachedBone = "";
-		__this->___AttachedBone_10 = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___AttachedBone_10), (void*)_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
+		__this->___AttachedBone_6 = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___AttachedBone_6), (void*)_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
 		// public VirtualObject(GameObject objectRef, string objectName, Vector3 Position, Quaternion Rotation, Vector3 Scale)
-		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		// this.objectRef = objectRef;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = ___objectRef0;
-		__this->___objectRef_11 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___objectRef_11), (void*)L_0);
+		__this->___objectRef_7 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___objectRef_7), (void*)L_0);
 		// this.objectName = objectName;
 		String_t* L_1 = ___objectName1;
-		__this->___objectName_4 = L_1;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___objectName_4), (void*)L_1);
+		__this->___objectName_0 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___objectName_0), (void*)L_1);
 		// this.Position = Position;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = ___Position2;
-		__this->___Position_5 = L_2;
+		__this->___Position_1 = L_2;
 		// this.Rotation = Rotation;
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_3 = ___Rotation3;
-		__this->___Rotation_6 = L_3;
+		__this->___Rotation_2 = L_3;
 		// this.Scale = Scale;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = ___Scale4;
-		__this->___Scale_7 = L_4;
+		__this->___Scale_3 = L_4;
 		// }
 		return;
 	}
@@ -21573,7 +21573,7 @@ IL_0010:
 		// if (objectRef.isAttached == true)
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_2 = __this->___objectRef_5;
 		NullCheck(L_2);
-		bool L_3 = L_2->___isAttached_8;
+		bool L_3 = L_2->___isAttached_4;
 		V_1 = L_3;
 		bool L_4 = V_1;
 		if (!L_4)
@@ -21595,7 +21595,7 @@ IL_0010:
 		// objectRef.objectRef.GetComponent<Rigidbody>().isKinematic = true;
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_7 = __this->___objectRef_5;
 		NullCheck(L_7);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_8 = L_7->___objectRef_11;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_8 = L_7->___objectRef_7;
 		NullCheck(L_8);
 		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_9;
 		L_9 = GameObject_GetComponent_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m2D7F86C77ECF9B82AAC077B511F1004280571B90(L_8, GameObject_GetComponent_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m2D7F86C77ECF9B82AAC077B511F1004280571B90_RuntimeMethod_var);
@@ -21604,7 +21604,7 @@ IL_0010:
 		// objectRef.objectRef.GetComponent<Rigidbody>().useGravity = false;
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_10 = __this->___objectRef_5;
 		NullCheck(L_10);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_11 = L_10->___objectRef_11;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_11 = L_10->___objectRef_7;
 		NullCheck(L_11);
 		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_12;
 		L_12 = GameObject_GetComponent_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m2D7F86C77ECF9B82AAC077B511F1004280571B90(L_11, GameObject_GetComponent_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m2D7F86C77ECF9B82AAC077B511F1004280571B90_RuntimeMethod_var);
@@ -21619,7 +21619,7 @@ IL_0064:
 		// if (objectRef.isAttachedToRight == true)
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_13 = __this->___objectRef_5;
 		NullCheck(L_13);
-		bool L_14 = L_13->___isAttachedToRight_9;
+		bool L_14 = L_13->___isAttachedToRight_5;
 		V_3 = L_14;
 		bool L_15 = V_3;
 		if (!L_15)
@@ -21638,7 +21638,7 @@ IL_0064:
 		// if (objectRef.AttachedBone == "wrist") gameObject.transform.position = avatarManager.CurrentAvatar_R().GetComponent<HandObjectGlobalPosition>().wrist();
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_18 = __this->___objectRef_5;
 		NullCheck(L_18);
-		String_t* L_19 = L_18->___AttachedBone_10;
+		String_t* L_19 = L_18->___AttachedBone_6;
 		bool L_20;
 		L_20 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_19, _stringLiteral4570A663AF0A1A8FADED435B88F1FA89256D23DF, NULL);
 		V_5 = L_20;
@@ -21674,7 +21674,7 @@ IL_00c5:
 		// if (objectRef.AttachedBone == "index1") gameObject.transform.position = avatarManager.CurrentAvatar_R().GetComponent<HandObjectGlobalPosition>().index1();
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_28 = __this->___objectRef_5;
 		NullCheck(L_28);
-		String_t* L_29 = L_28->___AttachedBone_10;
+		String_t* L_29 = L_28->___AttachedBone_6;
 		bool L_30;
 		L_30 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_29, _stringLiteral991EE12E665ED6D632A6A05B1ED57EE663CCC920, NULL);
 		V_6 = L_30;
@@ -21710,7 +21710,7 @@ IL_0102:
 		// if (objectRef.AttachedBone == "index2") gameObject.transform.position = avatarManager.CurrentAvatar_R().GetComponent<HandObjectGlobalPosition>().index2();
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_38 = __this->___objectRef_5;
 		NullCheck(L_38);
-		String_t* L_39 = L_38->___AttachedBone_10;
+		String_t* L_39 = L_38->___AttachedBone_6;
 		bool L_40;
 		L_40 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_39, _stringLiteral3356214D501D9273DB4022DE33B10D82F6557224, NULL);
 		V_7 = L_40;
@@ -21746,7 +21746,7 @@ IL_013f:
 		// if (objectRef.AttachedBone == "index3") gameObject.transform.position = avatarManager.CurrentAvatar_R().GetComponent<HandObjectGlobalPosition>().index3();
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_48 = __this->___objectRef_5;
 		NullCheck(L_48);
-		String_t* L_49 = L_48->___AttachedBone_10;
+		String_t* L_49 = L_48->___AttachedBone_6;
 		bool L_50;
 		L_50 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_49, _stringLiteral2D87613611FDE080EFDF130A0CD55DC6C291607A, NULL);
 		V_8 = L_50;
@@ -21782,7 +21782,7 @@ IL_017c:
 		// if (objectRef.AttachedBone == "middle1") gameObject.transform.position = avatarManager.CurrentAvatar_R().GetComponent<HandObjectGlobalPosition>().middle1();
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_58 = __this->___objectRef_5;
 		NullCheck(L_58);
-		String_t* L_59 = L_58->___AttachedBone_10;
+		String_t* L_59 = L_58->___AttachedBone_6;
 		bool L_60;
 		L_60 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_59, _stringLiteralFFFFCED58F3866402BDA3104AA63E7CBC7598C12, NULL);
 		V_9 = L_60;
@@ -21818,7 +21818,7 @@ IL_01b9:
 		// if (objectRef.AttachedBone == "middle2") gameObject.transform.position = avatarManager.CurrentAvatar_R().GetComponent<HandObjectGlobalPosition>().middle2();
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_68 = __this->___objectRef_5;
 		NullCheck(L_68);
-		String_t* L_69 = L_68->___AttachedBone_10;
+		String_t* L_69 = L_68->___AttachedBone_6;
 		bool L_70;
 		L_70 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_69, _stringLiteral75096CDEA63A40A22F3F7D3242921835C35D3AB9, NULL);
 		V_10 = L_70;
@@ -21854,7 +21854,7 @@ IL_01f6:
 		// if (objectRef.AttachedBone == "middle3") gameObject.transform.position = avatarManager.CurrentAvatar_R().GetComponent<HandObjectGlobalPosition>().middle3();
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_78 = __this->___objectRef_5;
 		NullCheck(L_78);
-		String_t* L_79 = L_78->___AttachedBone_10;
+		String_t* L_79 = L_78->___AttachedBone_6;
 		bool L_80;
 		L_80 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_79, _stringLiteralA10CF75D7518B1DEC82B065947FD32152FBAE053, NULL);
 		V_11 = L_80;
@@ -21890,7 +21890,7 @@ IL_0233:
 		// if (objectRef.AttachedBone == "pinky0") gameObject.transform.position = avatarManager.CurrentAvatar_R().GetComponent<HandObjectGlobalPosition>().pinky0();
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_88 = __this->___objectRef_5;
 		NullCheck(L_88);
-		String_t* L_89 = L_88->___AttachedBone_10;
+		String_t* L_89 = L_88->___AttachedBone_6;
 		bool L_90;
 		L_90 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_89, _stringLiteralF049C39CE7FF6F343405D10F2AAD9316D6E12B9D, NULL);
 		V_12 = L_90;
@@ -21926,7 +21926,7 @@ IL_0270:
 		// if (objectRef.AttachedBone == "pinky1") gameObject.transform.position = avatarManager.CurrentAvatar_R().GetComponent<HandObjectGlobalPosition>().pinky1();
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_98 = __this->___objectRef_5;
 		NullCheck(L_98);
-		String_t* L_99 = L_98->___AttachedBone_10;
+		String_t* L_99 = L_98->___AttachedBone_6;
 		bool L_100;
 		L_100 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_99, _stringLiteral8DF93A8EA2CE230E750FF12A4B6326162C8B8FE7, NULL);
 		V_13 = L_100;
@@ -21962,7 +21962,7 @@ IL_02ad:
 		// if (objectRef.AttachedBone == "pinky2") gameObject.transform.position = avatarManager.CurrentAvatar_R().GetComponent<HandObjectGlobalPosition>().pinky2();
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_108 = __this->___objectRef_5;
 		NullCheck(L_108);
-		String_t* L_109 = L_108->___AttachedBone_10;
+		String_t* L_109 = L_108->___AttachedBone_6;
 		bool L_110;
 		L_110 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_109, _stringLiteralB15B2C6B4288C74200E64404D82390CB7E1E690E, NULL);
 		V_14 = L_110;
@@ -21998,7 +21998,7 @@ IL_02ea:
 		// if (objectRef.AttachedBone == "pinky3") gameObject.transform.position = avatarManager.CurrentAvatar_R().GetComponent<HandObjectGlobalPosition>().pinky3();
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_118 = __this->___objectRef_5;
 		NullCheck(L_118);
-		String_t* L_119 = L_118->___AttachedBone_10;
+		String_t* L_119 = L_118->___AttachedBone_6;
 		bool L_120;
 		L_120 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_119, _stringLiteral379CC4B154D8E67B03C1F23F19193BED9D5E3FF5, NULL);
 		V_15 = L_120;
@@ -22034,7 +22034,7 @@ IL_0327:
 		// if (objectRef.AttachedBone == "ring1") gameObject.transform.position = avatarManager.CurrentAvatar_R().GetComponent<HandObjectGlobalPosition>().ring1();
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_128 = __this->___objectRef_5;
 		NullCheck(L_128);
-		String_t* L_129 = L_128->___AttachedBone_10;
+		String_t* L_129 = L_128->___AttachedBone_6;
 		bool L_130;
 		L_130 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_129, _stringLiteral9AFBF8537A43F7DE144ED1F63771856F085801E5, NULL);
 		V_16 = L_130;
@@ -22070,7 +22070,7 @@ IL_0364:
 		// if (objectRef.AttachedBone == "ring2") gameObject.transform.position = avatarManager.CurrentAvatar_R().GetComponent<HandObjectGlobalPosition>().ring2();
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_138 = __this->___objectRef_5;
 		NullCheck(L_138);
-		String_t* L_139 = L_138->___AttachedBone_10;
+		String_t* L_139 = L_138->___AttachedBone_6;
 		bool L_140;
 		L_140 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_139, _stringLiteralBF287434EA292D115DE2ED5599B212B1053512CE, NULL);
 		V_17 = L_140;
@@ -22106,7 +22106,7 @@ IL_03a1:
 		// if (objectRef.AttachedBone == "ring3") gameObject.transform.position = avatarManager.CurrentAvatar_R().GetComponent<HandObjectGlobalPosition>().ring3();
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_148 = __this->___objectRef_5;
 		NullCheck(L_148);
-		String_t* L_149 = L_148->___AttachedBone_10;
+		String_t* L_149 = L_148->___AttachedBone_6;
 		bool L_150;
 		L_150 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_149, _stringLiteral2845B15DBD8A4733B4390EC45C2B662084B181D1, NULL);
 		V_18 = L_150;
@@ -22142,7 +22142,7 @@ IL_03de:
 		// if (objectRef.AttachedBone == "thumb0") gameObject.transform.position = avatarManager.CurrentAvatar_R().GetComponent<HandObjectGlobalPosition>().thumb0();
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_158 = __this->___objectRef_5;
 		NullCheck(L_158);
-		String_t* L_159 = L_158->___AttachedBone_10;
+		String_t* L_159 = L_158->___AttachedBone_6;
 		bool L_160;
 		L_160 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_159, _stringLiteral6D96CA7D941390645FDB4812740923D854D7370D, NULL);
 		V_19 = L_160;
@@ -22178,7 +22178,7 @@ IL_041b:
 		// if (objectRef.AttachedBone == "thumb1") gameObject.transform.position = avatarManager.CurrentAvatar_R().GetComponent<HandObjectGlobalPosition>().thumb1();
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_168 = __this->___objectRef_5;
 		NullCheck(L_168);
-		String_t* L_169 = L_168->___AttachedBone_10;
+		String_t* L_169 = L_168->___AttachedBone_6;
 		bool L_170;
 		L_170 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_169, _stringLiteralF206D4B45A0D4F61BAF1BC6536DEB023AEC3334C, NULL);
 		V_20 = L_170;
@@ -22214,7 +22214,7 @@ IL_0458:
 		// if (objectRef.AttachedBone == "thumb2") gameObject.transform.position = avatarManager.CurrentAvatar_R().GetComponent<HandObjectGlobalPosition>().thumb2();
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_178 = __this->___objectRef_5;
 		NullCheck(L_178);
-		String_t* L_179 = L_178->___AttachedBone_10;
+		String_t* L_179 = L_178->___AttachedBone_6;
 		bool L_180;
 		L_180 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_179, _stringLiteral46D27075FF2138D2A1E8605CEB8B6993710F275A, NULL);
 		V_21 = L_180;
@@ -22250,7 +22250,7 @@ IL_0495:
 		// if (objectRef.AttachedBone == "thumb3") gameObject.transform.position = avatarManager.CurrentAvatar_R().GetComponent<HandObjectGlobalPosition>().thumb3();
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_188 = __this->___objectRef_5;
 		NullCheck(L_188);
-		String_t* L_189 = L_188->___AttachedBone_10;
+		String_t* L_189 = L_188->___AttachedBone_6;
 		bool L_190;
 		L_190 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_189, _stringLiteral2682F712A78BC240DBD27AE4D729AB21B3F4ABF6, NULL);
 		V_22 = L_190;
@@ -22291,7 +22291,7 @@ IL_04d8:
 		// else if (objectRef.isAttachedToRight == false)
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_198 = __this->___objectRef_5;
 		NullCheck(L_198);
-		bool L_199 = L_198->___isAttachedToRight_9;
+		bool L_199 = L_198->___isAttachedToRight_5;
 		V_23 = (bool)((((int32_t)L_199) == ((int32_t)0))? 1 : 0);
 		bool L_200 = V_23;
 		if (!L_200)
@@ -22310,7 +22310,7 @@ IL_04d8:
 		// if (objectRef.AttachedBone == "wrist") gameObject.transform.position = avatarManager.CurrentAvatar_L().GetComponent<HandObjectGlobalPosition>().wrist();
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_203 = __this->___objectRef_5;
 		NullCheck(L_203);
-		String_t* L_204 = L_203->___AttachedBone_10;
+		String_t* L_204 = L_203->___AttachedBone_6;
 		bool L_205;
 		L_205 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_204, _stringLiteral4570A663AF0A1A8FADED435B88F1FA89256D23DF, NULL);
 		V_25 = L_205;
@@ -22346,7 +22346,7 @@ IL_053e:
 		// if (objectRef.AttachedBone == "index1") gameObject.transform.position = avatarManager.CurrentAvatar_L().GetComponent<HandObjectGlobalPosition>().index1();
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_213 = __this->___objectRef_5;
 		NullCheck(L_213);
-		String_t* L_214 = L_213->___AttachedBone_10;
+		String_t* L_214 = L_213->___AttachedBone_6;
 		bool L_215;
 		L_215 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_214, _stringLiteral991EE12E665ED6D632A6A05B1ED57EE663CCC920, NULL);
 		V_26 = L_215;
@@ -22382,7 +22382,7 @@ IL_057b:
 		// if (objectRef.AttachedBone == "index2") gameObject.transform.position = avatarManager.CurrentAvatar_L().GetComponent<HandObjectGlobalPosition>().index2();
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_223 = __this->___objectRef_5;
 		NullCheck(L_223);
-		String_t* L_224 = L_223->___AttachedBone_10;
+		String_t* L_224 = L_223->___AttachedBone_6;
 		bool L_225;
 		L_225 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_224, _stringLiteral3356214D501D9273DB4022DE33B10D82F6557224, NULL);
 		V_27 = L_225;
@@ -22418,7 +22418,7 @@ IL_05b8:
 		// if (objectRef.AttachedBone == "index3") gameObject.transform.position = avatarManager.CurrentAvatar_L().GetComponent<HandObjectGlobalPosition>().index3();
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_233 = __this->___objectRef_5;
 		NullCheck(L_233);
-		String_t* L_234 = L_233->___AttachedBone_10;
+		String_t* L_234 = L_233->___AttachedBone_6;
 		bool L_235;
 		L_235 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_234, _stringLiteral2D87613611FDE080EFDF130A0CD55DC6C291607A, NULL);
 		V_28 = L_235;
@@ -22454,7 +22454,7 @@ IL_05f5:
 		// if (objectRef.AttachedBone == "middle1") gameObject.transform.position = avatarManager.CurrentAvatar_L().GetComponent<HandObjectGlobalPosition>().middle1();
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_243 = __this->___objectRef_5;
 		NullCheck(L_243);
-		String_t* L_244 = L_243->___AttachedBone_10;
+		String_t* L_244 = L_243->___AttachedBone_6;
 		bool L_245;
 		L_245 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_244, _stringLiteralFFFFCED58F3866402BDA3104AA63E7CBC7598C12, NULL);
 		V_29 = L_245;
@@ -22490,7 +22490,7 @@ IL_0632:
 		// if (objectRef.AttachedBone == "middle2") gameObject.transform.position = avatarManager.CurrentAvatar_L().GetComponent<HandObjectGlobalPosition>().middle2();
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_253 = __this->___objectRef_5;
 		NullCheck(L_253);
-		String_t* L_254 = L_253->___AttachedBone_10;
+		String_t* L_254 = L_253->___AttachedBone_6;
 		bool L_255;
 		L_255 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_254, _stringLiteral75096CDEA63A40A22F3F7D3242921835C35D3AB9, NULL);
 		V_30 = L_255;
@@ -22526,7 +22526,7 @@ IL_066f:
 		// if (objectRef.AttachedBone == "middle3") gameObject.transform.position = avatarManager.CurrentAvatar_L().GetComponent<HandObjectGlobalPosition>().middle3();
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_263 = __this->___objectRef_5;
 		NullCheck(L_263);
-		String_t* L_264 = L_263->___AttachedBone_10;
+		String_t* L_264 = L_263->___AttachedBone_6;
 		bool L_265;
 		L_265 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_264, _stringLiteralA10CF75D7518B1DEC82B065947FD32152FBAE053, NULL);
 		V_31 = L_265;
@@ -22562,7 +22562,7 @@ IL_06ac:
 		// if (objectRef.AttachedBone == "pinky0") gameObject.transform.position = avatarManager.CurrentAvatar_L().GetComponent<HandObjectGlobalPosition>().pinky0();
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_273 = __this->___objectRef_5;
 		NullCheck(L_273);
-		String_t* L_274 = L_273->___AttachedBone_10;
+		String_t* L_274 = L_273->___AttachedBone_6;
 		bool L_275;
 		L_275 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_274, _stringLiteralF049C39CE7FF6F343405D10F2AAD9316D6E12B9D, NULL);
 		V_32 = L_275;
@@ -22598,7 +22598,7 @@ IL_06e9:
 		// if (objectRef.AttachedBone == "pinky1") gameObject.transform.position = avatarManager.CurrentAvatar_L().GetComponent<HandObjectGlobalPosition>().pinky1();
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_283 = __this->___objectRef_5;
 		NullCheck(L_283);
-		String_t* L_284 = L_283->___AttachedBone_10;
+		String_t* L_284 = L_283->___AttachedBone_6;
 		bool L_285;
 		L_285 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_284, _stringLiteral8DF93A8EA2CE230E750FF12A4B6326162C8B8FE7, NULL);
 		V_33 = L_285;
@@ -22634,7 +22634,7 @@ IL_0726:
 		// if (objectRef.AttachedBone == "pinky2") gameObject.transform.position = avatarManager.CurrentAvatar_L().GetComponent<HandObjectGlobalPosition>().pinky2();
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_293 = __this->___objectRef_5;
 		NullCheck(L_293);
-		String_t* L_294 = L_293->___AttachedBone_10;
+		String_t* L_294 = L_293->___AttachedBone_6;
 		bool L_295;
 		L_295 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_294, _stringLiteralB15B2C6B4288C74200E64404D82390CB7E1E690E, NULL);
 		V_34 = L_295;
@@ -22670,7 +22670,7 @@ IL_0763:
 		// if (objectRef.AttachedBone == "pinky3") gameObject.transform.position = avatarManager.CurrentAvatar_L().GetComponent<HandObjectGlobalPosition>().pinky3();
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_303 = __this->___objectRef_5;
 		NullCheck(L_303);
-		String_t* L_304 = L_303->___AttachedBone_10;
+		String_t* L_304 = L_303->___AttachedBone_6;
 		bool L_305;
 		L_305 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_304, _stringLiteral379CC4B154D8E67B03C1F23F19193BED9D5E3FF5, NULL);
 		V_35 = L_305;
@@ -22706,7 +22706,7 @@ IL_07a0:
 		// if (objectRef.AttachedBone == "ring1") gameObject.transform.position = avatarManager.CurrentAvatar_L().GetComponent<HandObjectGlobalPosition>().ring1();
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_313 = __this->___objectRef_5;
 		NullCheck(L_313);
-		String_t* L_314 = L_313->___AttachedBone_10;
+		String_t* L_314 = L_313->___AttachedBone_6;
 		bool L_315;
 		L_315 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_314, _stringLiteral9AFBF8537A43F7DE144ED1F63771856F085801E5, NULL);
 		V_36 = L_315;
@@ -22742,7 +22742,7 @@ IL_07dd:
 		// if (objectRef.AttachedBone == "ring2") gameObject.transform.position = avatarManager.CurrentAvatar_L().GetComponent<HandObjectGlobalPosition>().ring2();
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_323 = __this->___objectRef_5;
 		NullCheck(L_323);
-		String_t* L_324 = L_323->___AttachedBone_10;
+		String_t* L_324 = L_323->___AttachedBone_6;
 		bool L_325;
 		L_325 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_324, _stringLiteralBF287434EA292D115DE2ED5599B212B1053512CE, NULL);
 		V_37 = L_325;
@@ -22778,7 +22778,7 @@ IL_081a:
 		// if (objectRef.AttachedBone == "ring3") gameObject.transform.position = avatarManager.CurrentAvatar_L().GetComponent<HandObjectGlobalPosition>().ring3();
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_333 = __this->___objectRef_5;
 		NullCheck(L_333);
-		String_t* L_334 = L_333->___AttachedBone_10;
+		String_t* L_334 = L_333->___AttachedBone_6;
 		bool L_335;
 		L_335 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_334, _stringLiteral2845B15DBD8A4733B4390EC45C2B662084B181D1, NULL);
 		V_38 = L_335;
@@ -22814,7 +22814,7 @@ IL_0857:
 		// if (objectRef.AttachedBone == "thumb0") gameObject.transform.position = avatarManager.CurrentAvatar_L().GetComponent<HandObjectGlobalPosition>().thumb0();
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_343 = __this->___objectRef_5;
 		NullCheck(L_343);
-		String_t* L_344 = L_343->___AttachedBone_10;
+		String_t* L_344 = L_343->___AttachedBone_6;
 		bool L_345;
 		L_345 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_344, _stringLiteral6D96CA7D941390645FDB4812740923D854D7370D, NULL);
 		V_39 = L_345;
@@ -22850,7 +22850,7 @@ IL_0894:
 		// if (objectRef.AttachedBone == "thumb1") gameObject.transform.position = avatarManager.CurrentAvatar_L().GetComponent<HandObjectGlobalPosition>().thumb1();
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_353 = __this->___objectRef_5;
 		NullCheck(L_353);
-		String_t* L_354 = L_353->___AttachedBone_10;
+		String_t* L_354 = L_353->___AttachedBone_6;
 		bool L_355;
 		L_355 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_354, _stringLiteralF206D4B45A0D4F61BAF1BC6536DEB023AEC3334C, NULL);
 		V_40 = L_355;
@@ -22886,7 +22886,7 @@ IL_08d1:
 		// if (objectRef.AttachedBone == "thumb2") gameObject.transform.position = avatarManager.CurrentAvatar_L().GetComponent<HandObjectGlobalPosition>().thumb2();
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_363 = __this->___objectRef_5;
 		NullCheck(L_363);
-		String_t* L_364 = L_363->___AttachedBone_10;
+		String_t* L_364 = L_363->___AttachedBone_6;
 		bool L_365;
 		L_365 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_364, _stringLiteral46D27075FF2138D2A1E8605CEB8B6993710F275A, NULL);
 		V_41 = L_365;
@@ -22922,7 +22922,7 @@ IL_090e:
 		// if (objectRef.AttachedBone == "thumb3") gameObject.transform.position = avatarManager.CurrentAvatar_L().GetComponent<HandObjectGlobalPosition>().thumb3();
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_373 = __this->___objectRef_5;
 		NullCheck(L_373);
-		String_t* L_374 = L_373->___AttachedBone_10;
+		String_t* L_374 = L_373->___AttachedBone_6;
 		bool L_375;
 		L_375 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_374, _stringLiteral2682F712A78BC240DBD27AE4D729AB21B3F4ABF6, NULL);
 		V_42 = L_375;
@@ -22987,7 +22987,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectController_OnDestroy_m5DEF09C24CEC
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3;
 		L_3 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_2, NULL);
 		NullCheck(L_0);
-		L_0->___Position_5 = L_3;
+		L_0->___Position_1 = L_3;
 		// objectRef.Rotation = gameObject.transform.rotation;
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_4 = __this->___objectRef_5;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5;
@@ -22999,7 +22999,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectController_OnDestroy_m5DEF09C24CEC
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_7;
 		L_7 = Transform_get_rotation_m32AF40CA0D50C797DA639A696F8EAEC7524C179C(L_6, NULL);
 		NullCheck(L_4);
-		L_4->___Rotation_6 = L_7;
+		L_4->___Rotation_2 = L_7;
 		// }
 		return;
 	}
@@ -23035,7 +23035,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectController_OnTriggerEnter_mBDA7233
 		// objectRef.isAttached = false;
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_4 = __this->___objectRef_5;
 		NullCheck(L_4);
-		L_4->___isAttached_8 = (bool)0;
+		L_4->___isAttached_4 = (bool)0;
 	}
 
 IL_002a:
@@ -23141,7 +23141,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectController_StartRecording_m1B61E92
 		// if (objectRef.isAttached == false)
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_0 = __this->___objectRef_5;
 		NullCheck(L_0);
-		bool L_1 = L_0->___isAttached_8;
+		bool L_1 = L_0->___isAttached_4;
 		V_0 = (bool)((((int32_t)L_1) == ((int32_t)0))? 1 : 0);
 		bool L_2 = V_0;
 		if (!L_2)
@@ -23153,7 +23153,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectController_StartRecording_m1B61E92
 		// startPos = objectRef.objectRef.transform.position;
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_3 = __this->___objectRef_5;
 		NullCheck(L_3);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = L_3->___objectRef_11;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = L_3->___objectRef_7;
 		NullCheck(L_4);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5;
 		L_5 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_4, NULL);
@@ -23178,7 +23178,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectController_StopRecording_m1FD93347
 		// objectRef.objectRef.transform.position = startPos;
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_0 = __this->___objectRef_5;
 		NullCheck(L_0);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = L_0->___objectRef_11;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = L_0->___objectRef_7;
 		NullCheck(L_1);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2;
 		L_2 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_1, NULL);
@@ -23206,7 +23206,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectController_StartPlaybackWOReset_m7
 		// GameObject obj = objectRef.objectRef;
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_0 = __this->___objectRef_5;
 		NullCheck(L_0);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = L_0->___objectRef_11;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = L_0->___objectRef_7;
 		V_0 = L_1;
 		// startPos = obj.transform.position;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = V_0;
@@ -23354,7 +23354,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VFXController_Update_mC2E225FDF285FC9624
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5;
 		L_5 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_4, NULL);
 		NullCheck(L_2);
-		L_2->___Position_5 = L_5;
+		L_2->___Position_1 = L_5;
 		// vfxObjectRef.Rotation = gameObject.transform.rotation;
 		VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145* L_6 = __this->___vfxObjectRef_5;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7;
@@ -23366,7 +23366,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VFXController_Update_mC2E225FDF285FC9624
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_9;
 		L_9 = Transform_get_rotation_m32AF40CA0D50C797DA639A696F8EAEC7524C179C(L_8, NULL);
 		NullCheck(L_6);
-		L_6->___Rotation_6 = L_9;
+		L_6->___Rotation_2 = L_9;
 		// UpdateData = false;
 		((VFXController_tE62F51646A94F274DE492C3B9D87B73D7F3A62D4_StaticFields*)il2cpp_codegen_static_fields_for(VFXController_tE62F51646A94F274DE492C3B9D87B73D7F3A62D4_il2cpp_TypeInfo_var))->___UpdateData_6 = (bool)0;
 	}
@@ -23376,7 +23376,7 @@ IL_0048:
 		// if (vfxObjectRef.isAttached == true)
 		VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145* L_10 = __this->___vfxObjectRef_5;
 		NullCheck(L_10);
-		bool L_11 = L_10->___isAttached_7;
+		bool L_11 = L_10->___isAttached_3;
 		V_1 = L_11;
 		bool L_12 = V_1;
 		if (!L_12)
@@ -23388,7 +23388,7 @@ IL_0048:
 		// if (vfxObjectRef.isAttachedToRight == true)
 		VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145* L_13 = __this->___vfxObjectRef_5;
 		NullCheck(L_13);
-		bool L_14 = L_13->___isAttachedToRight_8;
+		bool L_14 = L_13->___isAttachedToRight_4;
 		V_3 = L_14;
 		bool L_15 = V_3;
 		if (!L_15)
@@ -23407,7 +23407,7 @@ IL_0048:
 		// if (vfxObjectRef.AttachedBone == "wrist") gameObject.transform.position = avatarManager.CurrentAvatar_R().GetComponent<HandObjectGlobalPosition>().wrist();
 		VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145* L_18 = __this->___vfxObjectRef_5;
 		NullCheck(L_18);
-		String_t* L_19 = L_18->___AttachedBone_9;
+		String_t* L_19 = L_18->___AttachedBone_5;
 		bool L_20;
 		L_20 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_19, _stringLiteral4570A663AF0A1A8FADED435B88F1FA89256D23DF, NULL);
 		V_5 = L_20;
@@ -23443,7 +23443,7 @@ IL_00bc:
 		// if (vfxObjectRef.AttachedBone == "index1") gameObject.transform.position = avatarManager.CurrentAvatar_R().GetComponent<HandObjectGlobalPosition>().index1();
 		VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145* L_28 = __this->___vfxObjectRef_5;
 		NullCheck(L_28);
-		String_t* L_29 = L_28->___AttachedBone_9;
+		String_t* L_29 = L_28->___AttachedBone_5;
 		bool L_30;
 		L_30 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_29, _stringLiteral991EE12E665ED6D632A6A05B1ED57EE663CCC920, NULL);
 		V_6 = L_30;
@@ -23479,7 +23479,7 @@ IL_00f9:
 		// if (vfxObjectRef.AttachedBone == "index2") gameObject.transform.position = avatarManager.CurrentAvatar_R().GetComponent<HandObjectGlobalPosition>().index2();
 		VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145* L_38 = __this->___vfxObjectRef_5;
 		NullCheck(L_38);
-		String_t* L_39 = L_38->___AttachedBone_9;
+		String_t* L_39 = L_38->___AttachedBone_5;
 		bool L_40;
 		L_40 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_39, _stringLiteral3356214D501D9273DB4022DE33B10D82F6557224, NULL);
 		V_7 = L_40;
@@ -23515,7 +23515,7 @@ IL_0136:
 		// if (vfxObjectRef.AttachedBone == "index3") gameObject.transform.position = avatarManager.CurrentAvatar_R().GetComponent<HandObjectGlobalPosition>().index3();
 		VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145* L_48 = __this->___vfxObjectRef_5;
 		NullCheck(L_48);
-		String_t* L_49 = L_48->___AttachedBone_9;
+		String_t* L_49 = L_48->___AttachedBone_5;
 		bool L_50;
 		L_50 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_49, _stringLiteral2D87613611FDE080EFDF130A0CD55DC6C291607A, NULL);
 		V_8 = L_50;
@@ -23551,7 +23551,7 @@ IL_0173:
 		// if (vfxObjectRef.AttachedBone == "middle1") gameObject.transform.position = avatarManager.CurrentAvatar_R().GetComponent<HandObjectGlobalPosition>().middle1();
 		VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145* L_58 = __this->___vfxObjectRef_5;
 		NullCheck(L_58);
-		String_t* L_59 = L_58->___AttachedBone_9;
+		String_t* L_59 = L_58->___AttachedBone_5;
 		bool L_60;
 		L_60 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_59, _stringLiteralFFFFCED58F3866402BDA3104AA63E7CBC7598C12, NULL);
 		V_9 = L_60;
@@ -23587,7 +23587,7 @@ IL_01b0:
 		// if (vfxObjectRef.AttachedBone == "middle2") gameObject.transform.position = avatarManager.CurrentAvatar_R().GetComponent<HandObjectGlobalPosition>().middle2();
 		VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145* L_68 = __this->___vfxObjectRef_5;
 		NullCheck(L_68);
-		String_t* L_69 = L_68->___AttachedBone_9;
+		String_t* L_69 = L_68->___AttachedBone_5;
 		bool L_70;
 		L_70 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_69, _stringLiteral75096CDEA63A40A22F3F7D3242921835C35D3AB9, NULL);
 		V_10 = L_70;
@@ -23623,7 +23623,7 @@ IL_01ed:
 		// if (vfxObjectRef.AttachedBone == "middle3") gameObject.transform.position = avatarManager.CurrentAvatar_R().GetComponent<HandObjectGlobalPosition>().middle3();
 		VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145* L_78 = __this->___vfxObjectRef_5;
 		NullCheck(L_78);
-		String_t* L_79 = L_78->___AttachedBone_9;
+		String_t* L_79 = L_78->___AttachedBone_5;
 		bool L_80;
 		L_80 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_79, _stringLiteralA10CF75D7518B1DEC82B065947FD32152FBAE053, NULL);
 		V_11 = L_80;
@@ -23659,7 +23659,7 @@ IL_022a:
 		// if (vfxObjectRef.AttachedBone == "pinky0") gameObject.transform.position = avatarManager.CurrentAvatar_R().GetComponent<HandObjectGlobalPosition>().pinky0();
 		VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145* L_88 = __this->___vfxObjectRef_5;
 		NullCheck(L_88);
-		String_t* L_89 = L_88->___AttachedBone_9;
+		String_t* L_89 = L_88->___AttachedBone_5;
 		bool L_90;
 		L_90 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_89, _stringLiteralF049C39CE7FF6F343405D10F2AAD9316D6E12B9D, NULL);
 		V_12 = L_90;
@@ -23695,7 +23695,7 @@ IL_0267:
 		// if (vfxObjectRef.AttachedBone == "pinky1") gameObject.transform.position = avatarManager.CurrentAvatar_R().GetComponent<HandObjectGlobalPosition>().pinky1();
 		VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145* L_98 = __this->___vfxObjectRef_5;
 		NullCheck(L_98);
-		String_t* L_99 = L_98->___AttachedBone_9;
+		String_t* L_99 = L_98->___AttachedBone_5;
 		bool L_100;
 		L_100 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_99, _stringLiteral8DF93A8EA2CE230E750FF12A4B6326162C8B8FE7, NULL);
 		V_13 = L_100;
@@ -23731,7 +23731,7 @@ IL_02a4:
 		// if (vfxObjectRef.AttachedBone == "pinky2") gameObject.transform.position = avatarManager.CurrentAvatar_R().GetComponent<HandObjectGlobalPosition>().pinky2();
 		VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145* L_108 = __this->___vfxObjectRef_5;
 		NullCheck(L_108);
-		String_t* L_109 = L_108->___AttachedBone_9;
+		String_t* L_109 = L_108->___AttachedBone_5;
 		bool L_110;
 		L_110 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_109, _stringLiteralB15B2C6B4288C74200E64404D82390CB7E1E690E, NULL);
 		V_14 = L_110;
@@ -23767,7 +23767,7 @@ IL_02e1:
 		// if (vfxObjectRef.AttachedBone == "pinky3") gameObject.transform.position = avatarManager.CurrentAvatar_R().GetComponent<HandObjectGlobalPosition>().pinky3();
 		VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145* L_118 = __this->___vfxObjectRef_5;
 		NullCheck(L_118);
-		String_t* L_119 = L_118->___AttachedBone_9;
+		String_t* L_119 = L_118->___AttachedBone_5;
 		bool L_120;
 		L_120 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_119, _stringLiteral379CC4B154D8E67B03C1F23F19193BED9D5E3FF5, NULL);
 		V_15 = L_120;
@@ -23803,7 +23803,7 @@ IL_031e:
 		// if (vfxObjectRef.AttachedBone == "ring1") gameObject.transform.position = avatarManager.CurrentAvatar_R().GetComponent<HandObjectGlobalPosition>().ring1();
 		VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145* L_128 = __this->___vfxObjectRef_5;
 		NullCheck(L_128);
-		String_t* L_129 = L_128->___AttachedBone_9;
+		String_t* L_129 = L_128->___AttachedBone_5;
 		bool L_130;
 		L_130 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_129, _stringLiteral9AFBF8537A43F7DE144ED1F63771856F085801E5, NULL);
 		V_16 = L_130;
@@ -23839,7 +23839,7 @@ IL_035b:
 		// if (vfxObjectRef.AttachedBone == "ring2") gameObject.transform.position = avatarManager.CurrentAvatar_R().GetComponent<HandObjectGlobalPosition>().ring2();
 		VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145* L_138 = __this->___vfxObjectRef_5;
 		NullCheck(L_138);
-		String_t* L_139 = L_138->___AttachedBone_9;
+		String_t* L_139 = L_138->___AttachedBone_5;
 		bool L_140;
 		L_140 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_139, _stringLiteralBF287434EA292D115DE2ED5599B212B1053512CE, NULL);
 		V_17 = L_140;
@@ -23875,7 +23875,7 @@ IL_0398:
 		// if (vfxObjectRef.AttachedBone == "ring3") gameObject.transform.position = avatarManager.CurrentAvatar_R().GetComponent<HandObjectGlobalPosition>().ring3();
 		VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145* L_148 = __this->___vfxObjectRef_5;
 		NullCheck(L_148);
-		String_t* L_149 = L_148->___AttachedBone_9;
+		String_t* L_149 = L_148->___AttachedBone_5;
 		bool L_150;
 		L_150 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_149, _stringLiteral2845B15DBD8A4733B4390EC45C2B662084B181D1, NULL);
 		V_18 = L_150;
@@ -23911,7 +23911,7 @@ IL_03d5:
 		// if (vfxObjectRef.AttachedBone == "thumb0") gameObject.transform.position = avatarManager.CurrentAvatar_R().GetComponent<HandObjectGlobalPosition>().thumb0();
 		VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145* L_158 = __this->___vfxObjectRef_5;
 		NullCheck(L_158);
-		String_t* L_159 = L_158->___AttachedBone_9;
+		String_t* L_159 = L_158->___AttachedBone_5;
 		bool L_160;
 		L_160 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_159, _stringLiteral6D96CA7D941390645FDB4812740923D854D7370D, NULL);
 		V_19 = L_160;
@@ -23947,7 +23947,7 @@ IL_0412:
 		// if (vfxObjectRef.AttachedBone == "thumb1") gameObject.transform.position = avatarManager.CurrentAvatar_R().GetComponent<HandObjectGlobalPosition>().thumb1();
 		VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145* L_168 = __this->___vfxObjectRef_5;
 		NullCheck(L_168);
-		String_t* L_169 = L_168->___AttachedBone_9;
+		String_t* L_169 = L_168->___AttachedBone_5;
 		bool L_170;
 		L_170 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_169, _stringLiteralF206D4B45A0D4F61BAF1BC6536DEB023AEC3334C, NULL);
 		V_20 = L_170;
@@ -23983,7 +23983,7 @@ IL_044f:
 		// if (vfxObjectRef.AttachedBone == "thumb2") gameObject.transform.position = avatarManager.CurrentAvatar_R().GetComponent<HandObjectGlobalPosition>().thumb2();
 		VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145* L_178 = __this->___vfxObjectRef_5;
 		NullCheck(L_178);
-		String_t* L_179 = L_178->___AttachedBone_9;
+		String_t* L_179 = L_178->___AttachedBone_5;
 		bool L_180;
 		L_180 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_179, _stringLiteral46D27075FF2138D2A1E8605CEB8B6993710F275A, NULL);
 		V_21 = L_180;
@@ -24019,7 +24019,7 @@ IL_048c:
 		// if (vfxObjectRef.AttachedBone == "thumb3") gameObject.transform.position = avatarManager.CurrentAvatar_R().GetComponent<HandObjectGlobalPosition>().thumb3();
 		VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145* L_188 = __this->___vfxObjectRef_5;
 		NullCheck(L_188);
-		String_t* L_189 = L_188->___AttachedBone_9;
+		String_t* L_189 = L_188->___AttachedBone_5;
 		bool L_190;
 		L_190 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_189, _stringLiteral2682F712A78BC240DBD27AE4D729AB21B3F4ABF6, NULL);
 		V_22 = L_190;
@@ -24060,7 +24060,7 @@ IL_04cf:
 		// else if (vfxObjectRef.isAttachedToRight == false)
 		VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145* L_198 = __this->___vfxObjectRef_5;
 		NullCheck(L_198);
-		bool L_199 = L_198->___isAttachedToRight_8;
+		bool L_199 = L_198->___isAttachedToRight_4;
 		V_23 = (bool)((((int32_t)L_199) == ((int32_t)0))? 1 : 0);
 		bool L_200 = V_23;
 		if (!L_200)
@@ -24079,7 +24079,7 @@ IL_04cf:
 		// if (vfxObjectRef.AttachedBone == "wrist") gameObject.transform.position = avatarManager.CurrentAvatar_L().GetComponent<HandObjectGlobalPosition>().wrist();
 		VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145* L_203 = __this->___vfxObjectRef_5;
 		NullCheck(L_203);
-		String_t* L_204 = L_203->___AttachedBone_9;
+		String_t* L_204 = L_203->___AttachedBone_5;
 		bool L_205;
 		L_205 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_204, _stringLiteral4570A663AF0A1A8FADED435B88F1FA89256D23DF, NULL);
 		V_25 = L_205;
@@ -24115,7 +24115,7 @@ IL_0535:
 		// if (vfxObjectRef.AttachedBone == "index1") gameObject.transform.position = avatarManager.CurrentAvatar_L().GetComponent<HandObjectGlobalPosition>().index1();
 		VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145* L_213 = __this->___vfxObjectRef_5;
 		NullCheck(L_213);
-		String_t* L_214 = L_213->___AttachedBone_9;
+		String_t* L_214 = L_213->___AttachedBone_5;
 		bool L_215;
 		L_215 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_214, _stringLiteral991EE12E665ED6D632A6A05B1ED57EE663CCC920, NULL);
 		V_26 = L_215;
@@ -24151,7 +24151,7 @@ IL_0572:
 		// if (vfxObjectRef.AttachedBone == "index2") gameObject.transform.position = avatarManager.CurrentAvatar_L().GetComponent<HandObjectGlobalPosition>().index2();
 		VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145* L_223 = __this->___vfxObjectRef_5;
 		NullCheck(L_223);
-		String_t* L_224 = L_223->___AttachedBone_9;
+		String_t* L_224 = L_223->___AttachedBone_5;
 		bool L_225;
 		L_225 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_224, _stringLiteral3356214D501D9273DB4022DE33B10D82F6557224, NULL);
 		V_27 = L_225;
@@ -24187,7 +24187,7 @@ IL_05af:
 		// if (vfxObjectRef.AttachedBone == "index3") gameObject.transform.position = avatarManager.CurrentAvatar_L().GetComponent<HandObjectGlobalPosition>().index3();
 		VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145* L_233 = __this->___vfxObjectRef_5;
 		NullCheck(L_233);
-		String_t* L_234 = L_233->___AttachedBone_9;
+		String_t* L_234 = L_233->___AttachedBone_5;
 		bool L_235;
 		L_235 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_234, _stringLiteral2D87613611FDE080EFDF130A0CD55DC6C291607A, NULL);
 		V_28 = L_235;
@@ -24223,7 +24223,7 @@ IL_05ec:
 		// if (vfxObjectRef.AttachedBone == "middle1") gameObject.transform.position = avatarManager.CurrentAvatar_L().GetComponent<HandObjectGlobalPosition>().middle1();
 		VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145* L_243 = __this->___vfxObjectRef_5;
 		NullCheck(L_243);
-		String_t* L_244 = L_243->___AttachedBone_9;
+		String_t* L_244 = L_243->___AttachedBone_5;
 		bool L_245;
 		L_245 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_244, _stringLiteralFFFFCED58F3866402BDA3104AA63E7CBC7598C12, NULL);
 		V_29 = L_245;
@@ -24259,7 +24259,7 @@ IL_0629:
 		// if (vfxObjectRef.AttachedBone == "middle2") gameObject.transform.position = avatarManager.CurrentAvatar_L().GetComponent<HandObjectGlobalPosition>().middle2();
 		VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145* L_253 = __this->___vfxObjectRef_5;
 		NullCheck(L_253);
-		String_t* L_254 = L_253->___AttachedBone_9;
+		String_t* L_254 = L_253->___AttachedBone_5;
 		bool L_255;
 		L_255 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_254, _stringLiteral75096CDEA63A40A22F3F7D3242921835C35D3AB9, NULL);
 		V_30 = L_255;
@@ -24295,7 +24295,7 @@ IL_0666:
 		// if (vfxObjectRef.AttachedBone == "middle3") gameObject.transform.position = avatarManager.CurrentAvatar_L().GetComponent<HandObjectGlobalPosition>().middle3();
 		VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145* L_263 = __this->___vfxObjectRef_5;
 		NullCheck(L_263);
-		String_t* L_264 = L_263->___AttachedBone_9;
+		String_t* L_264 = L_263->___AttachedBone_5;
 		bool L_265;
 		L_265 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_264, _stringLiteralA10CF75D7518B1DEC82B065947FD32152FBAE053, NULL);
 		V_31 = L_265;
@@ -24331,7 +24331,7 @@ IL_06a3:
 		// if (vfxObjectRef.AttachedBone == "pinky0") gameObject.transform.position = avatarManager.CurrentAvatar_L().GetComponent<HandObjectGlobalPosition>().pinky0();
 		VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145* L_273 = __this->___vfxObjectRef_5;
 		NullCheck(L_273);
-		String_t* L_274 = L_273->___AttachedBone_9;
+		String_t* L_274 = L_273->___AttachedBone_5;
 		bool L_275;
 		L_275 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_274, _stringLiteralF049C39CE7FF6F343405D10F2AAD9316D6E12B9D, NULL);
 		V_32 = L_275;
@@ -24367,7 +24367,7 @@ IL_06e0:
 		// if (vfxObjectRef.AttachedBone == "pinky1") gameObject.transform.position = avatarManager.CurrentAvatar_L().GetComponent<HandObjectGlobalPosition>().pinky1();
 		VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145* L_283 = __this->___vfxObjectRef_5;
 		NullCheck(L_283);
-		String_t* L_284 = L_283->___AttachedBone_9;
+		String_t* L_284 = L_283->___AttachedBone_5;
 		bool L_285;
 		L_285 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_284, _stringLiteral8DF93A8EA2CE230E750FF12A4B6326162C8B8FE7, NULL);
 		V_33 = L_285;
@@ -24403,7 +24403,7 @@ IL_071d:
 		// if (vfxObjectRef.AttachedBone == "pinky2") gameObject.transform.position = avatarManager.CurrentAvatar_L().GetComponent<HandObjectGlobalPosition>().pinky2();
 		VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145* L_293 = __this->___vfxObjectRef_5;
 		NullCheck(L_293);
-		String_t* L_294 = L_293->___AttachedBone_9;
+		String_t* L_294 = L_293->___AttachedBone_5;
 		bool L_295;
 		L_295 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_294, _stringLiteralB15B2C6B4288C74200E64404D82390CB7E1E690E, NULL);
 		V_34 = L_295;
@@ -24439,7 +24439,7 @@ IL_075a:
 		// if (vfxObjectRef.AttachedBone == "pinky3") gameObject.transform.position = avatarManager.CurrentAvatar_L().GetComponent<HandObjectGlobalPosition>().pinky3();
 		VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145* L_303 = __this->___vfxObjectRef_5;
 		NullCheck(L_303);
-		String_t* L_304 = L_303->___AttachedBone_9;
+		String_t* L_304 = L_303->___AttachedBone_5;
 		bool L_305;
 		L_305 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_304, _stringLiteral379CC4B154D8E67B03C1F23F19193BED9D5E3FF5, NULL);
 		V_35 = L_305;
@@ -24475,7 +24475,7 @@ IL_0797:
 		// if (vfxObjectRef.AttachedBone == "ring1") gameObject.transform.position = avatarManager.CurrentAvatar_L().GetComponent<HandObjectGlobalPosition>().ring1();
 		VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145* L_313 = __this->___vfxObjectRef_5;
 		NullCheck(L_313);
-		String_t* L_314 = L_313->___AttachedBone_9;
+		String_t* L_314 = L_313->___AttachedBone_5;
 		bool L_315;
 		L_315 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_314, _stringLiteral9AFBF8537A43F7DE144ED1F63771856F085801E5, NULL);
 		V_36 = L_315;
@@ -24511,7 +24511,7 @@ IL_07d4:
 		// if (vfxObjectRef.AttachedBone == "ring2") gameObject.transform.position = avatarManager.CurrentAvatar_L().GetComponent<HandObjectGlobalPosition>().ring2();
 		VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145* L_323 = __this->___vfxObjectRef_5;
 		NullCheck(L_323);
-		String_t* L_324 = L_323->___AttachedBone_9;
+		String_t* L_324 = L_323->___AttachedBone_5;
 		bool L_325;
 		L_325 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_324, _stringLiteralBF287434EA292D115DE2ED5599B212B1053512CE, NULL);
 		V_37 = L_325;
@@ -24547,7 +24547,7 @@ IL_0811:
 		// if (vfxObjectRef.AttachedBone == "ring3") gameObject.transform.position = avatarManager.CurrentAvatar_L().GetComponent<HandObjectGlobalPosition>().ring3();
 		VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145* L_333 = __this->___vfxObjectRef_5;
 		NullCheck(L_333);
-		String_t* L_334 = L_333->___AttachedBone_9;
+		String_t* L_334 = L_333->___AttachedBone_5;
 		bool L_335;
 		L_335 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_334, _stringLiteral2845B15DBD8A4733B4390EC45C2B662084B181D1, NULL);
 		V_38 = L_335;
@@ -24583,7 +24583,7 @@ IL_084e:
 		// if (vfxObjectRef.AttachedBone == "thumb0") gameObject.transform.position = avatarManager.CurrentAvatar_L().GetComponent<HandObjectGlobalPosition>().thumb0();
 		VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145* L_343 = __this->___vfxObjectRef_5;
 		NullCheck(L_343);
-		String_t* L_344 = L_343->___AttachedBone_9;
+		String_t* L_344 = L_343->___AttachedBone_5;
 		bool L_345;
 		L_345 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_344, _stringLiteral6D96CA7D941390645FDB4812740923D854D7370D, NULL);
 		V_39 = L_345;
@@ -24619,7 +24619,7 @@ IL_088b:
 		// if (vfxObjectRef.AttachedBone == "thumb1") gameObject.transform.position = avatarManager.CurrentAvatar_L().GetComponent<HandObjectGlobalPosition>().thumb1();
 		VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145* L_353 = __this->___vfxObjectRef_5;
 		NullCheck(L_353);
-		String_t* L_354 = L_353->___AttachedBone_9;
+		String_t* L_354 = L_353->___AttachedBone_5;
 		bool L_355;
 		L_355 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_354, _stringLiteralF206D4B45A0D4F61BAF1BC6536DEB023AEC3334C, NULL);
 		V_40 = L_355;
@@ -24655,7 +24655,7 @@ IL_08c8:
 		// if (vfxObjectRef.AttachedBone == "thumb2") gameObject.transform.position = avatarManager.CurrentAvatar_L().GetComponent<HandObjectGlobalPosition>().thumb2();
 		VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145* L_363 = __this->___vfxObjectRef_5;
 		NullCheck(L_363);
-		String_t* L_364 = L_363->___AttachedBone_9;
+		String_t* L_364 = L_363->___AttachedBone_5;
 		bool L_365;
 		L_365 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_364, _stringLiteral46D27075FF2138D2A1E8605CEB8B6993710F275A, NULL);
 		V_41 = L_365;
@@ -24691,7 +24691,7 @@ IL_0905:
 		// if (vfxObjectRef.AttachedBone == "thumb3") gameObject.transform.position = avatarManager.CurrentAvatar_L().GetComponent<HandObjectGlobalPosition>().thumb3();
 		VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145* L_373 = __this->___vfxObjectRef_5;
 		NullCheck(L_373);
-		String_t* L_374 = L_373->___AttachedBone_9;
+		String_t* L_374 = L_373->___AttachedBone_5;
 		bool L_375;
 		L_375 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_374, _stringLiteral2682F712A78BC240DBD27AE4D729AB21B3F4ABF6, NULL);
 		V_42 = L_375;
@@ -24772,7 +24772,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VFXController_OnDestroy_m1B46C60457A51A5
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3;
 		L_3 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_2, NULL);
 		NullCheck(L_0);
-		L_0->___Position_5 = L_3;
+		L_0->___Position_1 = L_3;
 		// vfxObjectRef.Rotation = gameObject.transform.rotation;
 		VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145* L_4 = __this->___vfxObjectRef_5;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5;
@@ -24784,7 +24784,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VFXController_OnDestroy_m1B46C60457A51A5
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_7;
 		L_7 = Transform_get_rotation_m32AF40CA0D50C797DA639A696F8EAEC7524C179C(L_6, NULL);
 		NullCheck(L_4);
-		L_4->___Rotation_6 = L_7;
+		L_4->___Rotation_2 = L_7;
 		// }
 		return;
 	}
@@ -24820,7 +24820,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VFXController_OnTriggerEnter_m31FE48D118
 		// vfxObjectRef.isAttached = false;
 		VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145* L_4 = __this->___vfxObjectRef_5;
 		NullCheck(L_4);
-		L_4->___isAttached_7 = (bool)0;
+		L_4->___isAttached_3 = (bool)0;
 	}
 
 IL_002a:
@@ -24964,7 +24964,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AnchorObjects_OnTriggerEnter_mF939947236
 		NullCheck(L_13);
 		VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145* L_14 = L_13->___vfxObjectRef_5;
 		NullCheck(L_14);
-		bool L_15 = L_14->___isAttached_7;
+		bool L_15 = L_14->___isAttached_3;
 		G_B4_0 = ((((int32_t)L_15) == ((int32_t)0))? 1 : 0);
 		goto IL_0065;
 	}
@@ -24995,7 +24995,7 @@ IL_0065:
 		NullCheck(L_18);
 		VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145* L_19 = L_18->___vfxObjectRef_5;
 		NullCheck(L_19);
-		L_19->___isAttached_7 = (bool)1;
+		L_19->___isAttached_3 = (bool)1;
 		// other.GetComponent<VFXController>().vfxObjectRef.AttachedBone = anchorName;
 		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_20 = ___other0;
 		NullCheck(L_20);
@@ -25005,8 +25005,8 @@ IL_0065:
 		VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145* L_22 = L_21->___vfxObjectRef_5;
 		String_t* L_23 = __this->___anchorName_4;
 		NullCheck(L_22);
-		L_22->___AttachedBone_9 = L_23;
-		Il2CppCodeGenWriteBarrier((void**)(&L_22->___AttachedBone_9), (void*)L_23);
+		L_22->___AttachedBone_5 = L_23;
+		Il2CppCodeGenWriteBarrier((void**)(&L_22->___AttachedBone_5), (void*)L_23);
 	}
 
 IL_009d:
@@ -25099,7 +25099,7 @@ IL_00f4:
 		NullCheck(L_42);
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_43 = L_42->___objectRef_5;
 		NullCheck(L_43);
-		bool L_44 = L_43->___isAttached_8;
+		bool L_44 = L_43->___isAttached_4;
 		G_B15_0 = ((((int32_t)L_44) == ((int32_t)0))? 1 : 0);
 		goto IL_010d;
 	}
@@ -25127,15 +25127,15 @@ IL_010d:
 		NullCheck(L_46);
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_47 = L_46->___objectRef_5;
 		NullCheck(L_47);
-		L_47->___isAttached_8 = (bool)1;
+		L_47->___isAttached_4 = (bool)1;
 		// objectController.objectRef.AttachedBone = anchorName;
 		ObjectController_tC7C3CD5CDC9519FAA82AEE4489D5319439D254BC* L_48 = V_3;
 		NullCheck(L_48);
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_49 = L_48->___objectRef_5;
 		String_t* L_50 = __this->___anchorName_4;
 		NullCheck(L_49);
-		L_49->___AttachedBone_10 = L_50;
-		Il2CppCodeGenWriteBarrier((void**)(&L_49->___AttachedBone_10), (void*)L_50);
+		L_49->___AttachedBone_6 = L_50;
+		Il2CppCodeGenWriteBarrier((void**)(&L_49->___AttachedBone_6), (void*)L_50);
 	}
 
 IL_013d:
@@ -25229,7 +25229,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AnchorObjects_OnTriggerStay_m7E4BC6E7DAC
 		NullCheck(L_13);
 		VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145* L_14 = L_13->___vfxObjectRef_5;
 		NullCheck(L_14);
-		bool L_15 = L_14->___isAttached_7;
+		bool L_15 = L_14->___isAttached_3;
 		G_B4_0 = ((((int32_t)L_15) == ((int32_t)0))? 1 : 0);
 		goto IL_0065;
 	}
@@ -25260,7 +25260,7 @@ IL_0065:
 		NullCheck(L_18);
 		VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145* L_19 = L_18->___vfxObjectRef_5;
 		NullCheck(L_19);
-		L_19->___isAttached_7 = (bool)1;
+		L_19->___isAttached_3 = (bool)1;
 		// other.GetComponent<VFXController>().vfxObjectRef.isAttachedToRight = isRight;
 		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_20 = ___other0;
 		NullCheck(L_20);
@@ -25270,7 +25270,7 @@ IL_0065:
 		VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145* L_22 = L_21->___vfxObjectRef_5;
 		bool L_23 = __this->___isRight_5;
 		NullCheck(L_22);
-		L_22->___isAttachedToRight_8 = L_23;
+		L_22->___isAttachedToRight_4 = L_23;
 		// other.GetComponent<VFXController>().vfxObjectRef.AttachedBone = anchorName;
 		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_24 = ___other0;
 		NullCheck(L_24);
@@ -25280,8 +25280,8 @@ IL_0065:
 		VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145* L_26 = L_25->___vfxObjectRef_5;
 		String_t* L_27 = __this->___anchorName_4;
 		NullCheck(L_26);
-		L_26->___AttachedBone_9 = L_27;
-		Il2CppCodeGenWriteBarrier((void**)(&L_26->___AttachedBone_9), (void*)L_27);
+		L_26->___AttachedBone_5 = L_27;
+		Il2CppCodeGenWriteBarrier((void**)(&L_26->___AttachedBone_5), (void*)L_27);
 	}
 
 IL_00b3:
@@ -25374,7 +25374,7 @@ IL_010a:
 		NullCheck(L_46);
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_47 = L_46->___objectRef_5;
 		NullCheck(L_47);
-		bool L_48 = L_47->___isAttached_8;
+		bool L_48 = L_47->___isAttached_4;
 		G_B15_0 = ((((int32_t)L_48) == ((int32_t)0))? 1 : 0);
 		goto IL_0123;
 	}
@@ -25402,22 +25402,22 @@ IL_0123:
 		NullCheck(L_50);
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_51 = L_50->___objectRef_5;
 		NullCheck(L_51);
-		L_51->___isAttached_8 = (bool)1;
+		L_51->___isAttached_4 = (bool)1;
 		// objectController.objectRef.isAttachedToRight = isRight;
 		ObjectController_tC7C3CD5CDC9519FAA82AEE4489D5319439D254BC* L_52 = V_3;
 		NullCheck(L_52);
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_53 = L_52->___objectRef_5;
 		bool L_54 = __this->___isRight_5;
 		NullCheck(L_53);
-		L_53->___isAttachedToRight_9 = L_54;
+		L_53->___isAttachedToRight_5 = L_54;
 		// objectController.objectRef.AttachedBone = anchorName;
 		ObjectController_tC7C3CD5CDC9519FAA82AEE4489D5319439D254BC* L_55 = V_3;
 		NullCheck(L_55);
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_56 = L_55->___objectRef_5;
 		String_t* L_57 = __this->___anchorName_4;
 		NullCheck(L_56);
-		L_56->___AttachedBone_10 = L_57;
-		Il2CppCodeGenWriteBarrier((void**)(&L_56->___AttachedBone_10), (void*)L_57);
+		L_56->___AttachedBone_6 = L_57;
+		Il2CppCodeGenWriteBarrier((void**)(&L_56->___AttachedBone_6), (void*)L_57);
 	}
 
 IL_0164:
@@ -26589,7 +26589,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AddInteractionManager_AddInteraction_m3C
 		// Interaction defaultInt = clipRef.DefaultInteraction;
 		Clip_t5B493D4729396BB82DD0E7ED754916E180EC23BD* L_4 = __this->___clipRef_4;
 		NullCheck(L_4);
-		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_5 = L_4->___DefaultInteraction_7;
+		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_5 = L_4->___DefaultInteraction_9;
 		V_1 = L_5;
 		// i.isGesture_R = defaultInt.isGesture_R;
 		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_6 = V_0;
@@ -27656,7 +27656,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InteractionPanelManager_AddInputOption_m
 		// if (clipRef.clipValidity.isDataValid_R == true)
 		Clip_t5B493D4729396BB82DD0E7ED754916E180EC23BD* L_0 = __this->___clipRef_33;
 		NullCheck(L_0);
-		ClipValidity_t50F2680512F87093AF0314D9FC8755326B12134F* L_1 = L_0->___clipValidity_6;
+		ClipValidity_t50F2680512F87093AF0314D9FC8755326B12134F* L_1 = L_0->___clipValidity_8;
 		NullCheck(L_1);
 		bool L_2 = L_1->___isDataValid_R_2;
 		V_1 = L_2;
@@ -27712,7 +27712,7 @@ IL_003d:
 		// if (clipRef.clipValidity.isDataValid_L == true)
 		Clip_t5B493D4729396BB82DD0E7ED754916E180EC23BD* L_9 = __this->___clipRef_33;
 		NullCheck(L_9);
-		ClipValidity_t50F2680512F87093AF0314D9FC8755326B12134F* L_10 = L_9->___clipValidity_6;
+		ClipValidity_t50F2680512F87093AF0314D9FC8755326B12134F* L_10 = L_9->___clipValidity_8;
 		NullCheck(L_10);
 		bool L_11 = L_10->___isDataValid_L_3;
 		V_3 = L_11;
@@ -28543,7 +28543,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InteractionPanelManager_AddInput_m46195B
 		// if (clipRef.clipValidity.isDataValid_R == true)
 		Clip_t5B493D4729396BB82DD0E7ED754916E180EC23BD* L_0 = __this->___clipRef_33;
 		NullCheck(L_0);
-		ClipValidity_t50F2680512F87093AF0314D9FC8755326B12134F* L_1 = L_0->___clipValidity_6;
+		ClipValidity_t50F2680512F87093AF0314D9FC8755326B12134F* L_1 = L_0->___clipValidity_8;
 		NullCheck(L_1);
 		bool L_2 = L_1->___isDataValid_R_2;
 		V_0 = L_2;
@@ -28589,7 +28589,7 @@ IL_0034:
 		// if (clipRef.DefaultInteraction.isGesture_R == true)
 		Clip_t5B493D4729396BB82DD0E7ED754916E180EC23BD* L_9 = __this->___clipRef_33;
 		NullCheck(L_9);
-		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_10 = L_9->___DefaultInteraction_7;
+		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_10 = L_9->___DefaultInteraction_9;
 		NullCheck(L_10);
 		bool L_11 = L_10->___isGesture_R_2;
 		V_2 = L_11;
@@ -28612,7 +28612,7 @@ IL_005b:
 		// else if (clipRef.DefaultInteraction.isPose_R == true)
 		Clip_t5B493D4729396BB82DD0E7ED754916E180EC23BD* L_14 = __this->___clipRef_33;
 		NullCheck(L_14);
-		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_15 = L_14->___DefaultInteraction_7;
+		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_15 = L_14->___DefaultInteraction_9;
 		NullCheck(L_15);
 		bool L_16 = L_15->___isPose_R_4;
 		V_3 = L_16;
@@ -28651,7 +28651,7 @@ IL_008b:
 		// if (clipRef.clipValidity.isDataValid_L == true)
 		Clip_t5B493D4729396BB82DD0E7ED754916E180EC23BD* L_20 = __this->___clipRef_33;
 		NullCheck(L_20);
-		ClipValidity_t50F2680512F87093AF0314D9FC8755326B12134F* L_21 = L_20->___clipValidity_6;
+		ClipValidity_t50F2680512F87093AF0314D9FC8755326B12134F* L_21 = L_20->___clipValidity_8;
 		NullCheck(L_21);
 		bool L_22 = L_21->___isDataValid_L_3;
 		V_4 = L_22;
@@ -28697,7 +28697,7 @@ IL_00c0:
 		// if (clipRef.DefaultInteraction.isGesture_L == true)
 		Clip_t5B493D4729396BB82DD0E7ED754916E180EC23BD* L_29 = __this->___clipRef_33;
 		NullCheck(L_29);
-		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_30 = L_29->___DefaultInteraction_7;
+		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_30 = L_29->___DefaultInteraction_9;
 		NullCheck(L_30);
 		bool L_31 = L_30->___isGesture_L_3;
 		V_6 = L_31;
@@ -28720,7 +28720,7 @@ IL_00eb:
 		// else if (clipRef.DefaultInteraction.isPose_R == true)
 		Clip_t5B493D4729396BB82DD0E7ED754916E180EC23BD* L_34 = __this->___clipRef_33;
 		NullCheck(L_34);
-		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_35 = L_34->___DefaultInteraction_7;
+		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_35 = L_34->___DefaultInteraction_9;
 		NullCheck(L_35);
 		bool L_36 = L_35->___isPose_R_4;
 		V_7 = L_36;
@@ -30396,7 +30396,7 @@ IL_0018:
 		// foreach (HandPoseInstance hp in clipRef.HandPoses_R)
 		Clip_t5B493D4729396BB82DD0E7ED754916E180EC23BD* L_4 = __this->___clipRef_33;
 		NullCheck(L_4);
-		List_1_tFC65151E0EDAF92F2A613E1C5960DFB3B439910F* L_5 = L_4->___HandPoses_R_4;
+		List_1_tFC65151E0EDAF92F2A613E1C5960DFB3B439910F* L_5 = L_4->___HandPoses_R_6;
 		NullCheck(L_5);
 		Enumerator_t0F5054F026FDEDB511FF18451F2C5C70C4111D77 L_6;
 		L_6 = List_1_GetEnumerator_m8035FFDB3B96FA3E2A5FCD137ED33FA133FE3F7C(L_5, List_1_GetEnumerator_m8035FFDB3B96FA3E2A5FCD137ED33FA133FE3F7C_RuntimeMethod_var);
@@ -30508,7 +30508,7 @@ IL_0092:
 		// foreach (HandPoseInstance hp in clipRef.HandPoses_L)
 		Clip_t5B493D4729396BB82DD0E7ED754916E180EC23BD* L_21 = __this->___clipRef_33;
 		NullCheck(L_21);
-		List_1_tFC65151E0EDAF92F2A613E1C5960DFB3B439910F* L_22 = L_21->___HandPoses_L_5;
+		List_1_tFC65151E0EDAF92F2A613E1C5960DFB3B439910F* L_22 = L_21->___HandPoses_L_7;
 		NullCheck(L_22);
 		Enumerator_t0F5054F026FDEDB511FF18451F2C5C70C4111D77 L_23;
 		L_23 = List_1_GetEnumerator_m8035FFDB3B96FA3E2A5FCD137ED33FA133FE3F7C(L_22, List_1_GetEnumerator_m8035FFDB3B96FA3E2A5FCD137ED33FA133FE3F7C_RuntimeMethod_var);

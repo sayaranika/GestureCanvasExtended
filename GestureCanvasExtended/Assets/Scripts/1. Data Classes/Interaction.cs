@@ -19,9 +19,17 @@ public class Interaction
     public bool isTransformConstraint_R;
     public bool isTransformConstraint_L;
 
-    public List<HandSkeleton> expectedGesture_R = new List<HandSkeleton>();
-    public List<HandSkeleton> expectedGesture_L = new List<HandSkeleton>();
-    public List<HandSkeleton> expectedGesture = new List<HandSkeleton>();
+    //public List<HandSkeleton> expectedGesture_R = new List<HandSkeleton>();
+    //public List<HandSkeleton> expectedGesture_L = new List<HandSkeleton>();
+    //public List<HandSkeleton> expectedGesture = new List<HandSkeleton>();
+
+    public List<GestureSamplesWrapper> GestureSamples_R = new List<GestureSamplesWrapper>();
+    public List<GestureSamplesWrapper> GestureSamples_L = new List<GestureSamplesWrapper>();
+    //public List<List<HandSkeleton>> GestureSamples_L = new List<List<HandSkeleton>>();
+
+    public int expectedGestureId_R;
+    public int expectedGestureId_L;
+
 
     [JsonIgnore] public int rightHandGestureStartIndex;
     [JsonIgnore] public int leftHandGestureStartIndex;
@@ -30,6 +38,8 @@ public class Interaction
     [JsonIgnore] public int leftHandGestureEndIndex;
 
     public bool isConditionSetToTrue;
+
+    
 
     public Interaction(int interactionId)
     {
@@ -45,7 +55,7 @@ public class Interaction
         isConditionSetToTrue = true;
     }
 
-    public void setGesture(Handedness handedness, int startIndex, int endIndex)
+    public void setGesture(Handedness handedness, List<HandSkeleton> handData)
     {
         switch (handedness)
         {
@@ -53,17 +63,29 @@ public class Interaction
                 isGesture_R = true;
                 isPose_R = false;
 
-                rightHandGestureStartIndex = startIndex;
-                rightHandGestureEndIndex = endIndex;
+                //rightHandGestureStartIndex = startIndex;
+                //rightHandGestureEndIndex = endIndex;
 
-                expectedGesture_R.Clear();
+                GestureSamples_R.Clear();
+                expectedGestureId_R = -1;
+                
+                GestureSamples_R.Add(new GestureSamplesWrapper(handData));
 
-                for(int i = rightHandGestureStartIndex; i < rightHandGestureEndIndex; i++)
+                //expectedGesture_R.Clear();
+
+                /*for(int i = rightHandGestureStartIndex; i < rightHandGestureEndIndex; i++)
                 {
                     expectedGesture_R.Add(MasterRecording.RightHandSkeleton[i]);
-                }
+                }*/
                 break;
-            case Handedness.Left:;
+            case Handedness.Left:
+                isGesture_L = true;
+                isPose_R = false;
+                GestureSamples_L.Clear();
+                expectedGestureId_L = -1;
+                GestureSamples_L.Add(new GestureSamplesWrapper(handData));
+                break;
+            /*case Handedness.Left:;
                 isGesture_L = true;
                 isPose_L = false;
 
@@ -76,7 +98,7 @@ public class Interaction
                 {
                     expectedGesture_L.Add(MasterRecording.LeftHandSkeleton[i]);
                 }
-                break;
+                break;*/
         }
     }
 
@@ -95,5 +117,16 @@ public class Interaction
                 expectedPose_L = handPose;
                 break;
         }
+    }
+}
+
+[Serializable]
+public class GestureSamplesWrapper
+{
+    public List<HandSkeleton> sample;
+
+    public GestureSamplesWrapper(List<HandSkeleton> handSkeleton)
+    {
+        sample = handSkeleton;
     }
 }

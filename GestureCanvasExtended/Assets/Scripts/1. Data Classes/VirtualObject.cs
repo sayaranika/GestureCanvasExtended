@@ -5,7 +5,7 @@ using System;
 using Newtonsoft.Json;
 
 [Serializable]
-public class VirtualObject : MonoBehaviour
+public class VirtualObject 
 {
     public string objectName;
     public Vector3 Position;

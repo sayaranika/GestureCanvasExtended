@@ -282,7 +282,6 @@ public class InteractionPanelManager : MonoBehaviour
 
     public void HandConditionChanged_R()
     {
-        Debug.Log("1000: inside hand condition clip ref " + clipRef.Id + " interaction ref" + interactionRef.Id);
         int i = GestureOrPoseDropdown_R.value;
 
         if (i == 0)
@@ -297,7 +296,6 @@ public class InteractionPanelManager : MonoBehaviour
 
             if (interactionRef.expectedPose_R == null)
             {
-                Debug.Log("calling set default hand pose");
                 SetDefaultHandPose(Handedness.Right);
             }
         }

@@ -9,6 +9,11 @@ public class Clip
     [JsonIgnore] public int startIndex;
     [JsonIgnore] public int endIndex;
     public List<Interaction> interactions = new List<Interaction>();
+    public List<VirtualObject> virtualObjects = new List<VirtualObject>();
+    public List<VFXObject> vfxObjects = new List<VFXObject>();
+
+    [JsonIgnore] public Jackknife GestureRecognizer_R;
+    [JsonIgnore] public Jackknife GestureRecognizer_L;
 
     [JsonIgnore] public List<HandPoseInstance> HandPoses_R = new List<HandPoseInstance>();
     [JsonIgnore] public List<HandPoseInstance> HandPoses_L = new List<HandPoseInstance>();
@@ -16,8 +21,8 @@ public class Clip
     [JsonIgnore] public ClipValidity clipValidity;
     [JsonIgnore] public Interaction DefaultInteraction;
 
-    public List<VirtualObject> virtualObjects = new List<VirtualObject>();
-    public List<VFXObject> vfxObjects = new List<VFXObject>();
+    
+
 
     public Clip(int Id, int startIndex, int endIndex)
     {

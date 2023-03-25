@@ -188,7 +188,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73dbd9846973c7e49898df4763b038d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectRef: {fileID: 0}
+  objectRef:
+    objectName: 
+    Position: {x: 0, y: 0, z: 0}
+    Rotation: {x: 0, y: 0, z: 0, w: 0}
+    Scale: {x: 0, y: 0, z: 0}
+    isAttached: 0
+    isAttachedToRight: 0
+    AttachedBone: 
+    objectRef: {fileID: 0}
   isAttachable: 1
   isGravity: 1
   isInReplay: 0

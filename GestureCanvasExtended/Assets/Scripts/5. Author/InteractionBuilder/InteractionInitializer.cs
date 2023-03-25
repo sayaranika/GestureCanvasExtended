@@ -131,12 +131,25 @@ public class InteractionInitializer : MonoBehaviour
                         Distances.Add(Vector3.Distance(MasterRecording.RightHandSkeleton[clip.startIndex].HandPosition, MasterRecording.RightHandSkeleton[i].HandPosition));
 
                     if (Distances.Max(z => z) < 0.1f) interaction.setPose(Handedness.Right, clip.HandPoses_R[0].handPose);
-                    else interaction.setGesture(Handedness.Right, clip.startIndex, clip.endIndex);
+                    else
+                    {
+                        List<HandSkeleton> defaultGesture = new List<HandSkeleton>();
+                        for (int i = clip.startIndex; i < clip.endIndex; i++)
+                        {
+                            defaultGesture.Add(MasterRecording.RightHandSkeleton[i]);
+                        }
+                        interaction.setGesture(Handedness.Right, defaultGesture);
+                    }
                     Distances.Clear();
                 }
                 else
                 {
-                    interaction.setGesture(Handedness.Right, clip.startIndex, clip.endIndex);
+                    List<HandSkeleton> defaultGesture = new List<HandSkeleton>();
+                    for (int i = clip.startIndex; i < clip.endIndex; i++)
+                    {
+                        defaultGesture.Add(MasterRecording.RightHandSkeleton[i]);
+                    }
+                    interaction.setGesture(Handedness.Right, defaultGesture);
                 }
             }
             // Left HAND
@@ -155,12 +168,32 @@ public class InteractionInitializer : MonoBehaviour
                     for (int i = clip.startIndex; i < clip.endIndex; i++)
                         Distances.Add(Vector3.Distance(MasterRecording.LeftHandSkeleton[clip.startIndex].HandPosition, MasterRecording.LeftHandSkeleton[i].HandPosition));
                     if (Distances.Max(z => z) < 0.1f) interaction.setPose(Handedness.Left, clip.HandPoses_L[0].handPose);
-                    else interaction.setGesture(Handedness.Left, clip.startIndex, clip.endIndex);
+                    else
+                    {
+                        List<HandSkeleton> defaultGesture = new List<HandSkeleton>();
+                        for (int i = clip.startIndex; i < clip.endIndex; i++)
+                        {
+                            defaultGesture.Add(MasterRecording.LeftHandSkeleton[i]);
+                        }
+                        interaction.setGesture(Handedness.Left, defaultGesture);
+
+                        //interaction.setGesture(Handedness.Left, clip.startIndex, clip.endIndex);
+                    }
 
                     Distances.Clear();
 
                 }
-                else interaction.setGesture(Handedness.Left, clip.startIndex, clip.endIndex);
+                else
+                {
+                    List<HandSkeleton> defaultGesture = new List<HandSkeleton>();
+                    for (int i = clip.startIndex; i < clip.endIndex; i++)
+                    {
+                        defaultGesture.Add(MasterRecording.LeftHandSkeleton[i]);
+                    }
+                    interaction.setGesture(Handedness.Left, defaultGesture);
+
+                    //interaction.setGesture(Handedness.Left, clip.startIndex, clip.endIndex);
+                }
             }
 
             clip.interactions.Add(interaction);

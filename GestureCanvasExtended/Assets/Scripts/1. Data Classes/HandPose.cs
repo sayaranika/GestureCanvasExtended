@@ -206,18 +206,6 @@ public class HandPose
     {
         bool isEqual = false;
 
-        if(template == null)
-        {
-            Debug.Log("5000: template is null");
-            return isEqual;
-        }
-
-        if (realtime == null)
-        {
-            Debug.Log("5000: realtime is null");
-            return isEqual;
-        }
-
         #region MATCHING INDEX STATE
 
         //curl 
@@ -231,15 +219,11 @@ public class HandPose
             if (realtime.CurlClosedIndex == true || realtime.CurlNeutralIndex == true) isEqual = true;
             else return false;
         }
-        else if (template.CurlNeutralIndex == true) //not sure about this
+        /*else if (template.CurlNeutralIndex == true) //not sure about this
         {
-            /*if (realtime.CurlNeutralIndex == true || realtime.CurlOpenIndex == true || realtime.CurlClosedIndex == true) isEqual = true;
-            else return false;*/
-
-
             if (realtime.CurlNeutralIndex == true || realtime.CurlOpenIndex == true) isEqual = true;
             else return false;
-        }
+        }*/
 
         //flexion
         if (template.FlexionOpenIndex == true)
@@ -252,11 +236,11 @@ public class HandPose
             if (realtime.FlexionClosedIndex == true || realtime.FlexionNeutralIndex == true) isEqual = true;
             else return false;
         }
-        else if (template.FlexionNeutralIndex == true)
+        /*else if (template.FlexionNeutralIndex == true)
         {
             if (realtime.FlexionNeutralIndex == true || realtime.FlexionClosedIndex == true) isEqual = true;
             else return false;
-        }
+        }*/
 
 
         //abduction
@@ -295,11 +279,11 @@ public class HandPose
             if (realtime.CurlClosedMiddle == true || realtime.CurlNeutralMiddle == true) isEqual = true;
             else return false;
         }
-        else if (template.CurlNeutralMiddle == true)
+        /*else if (template.CurlNeutralMiddle == true)
         {
             if (realtime.CurlNeutralMiddle == true || realtime.CurlOpenMiddle == true) isEqual = true;
             else return false;
-        }
+        }*/
 
         //flexion
         if (template.FlexionOpenMiddle == true)
@@ -312,11 +296,11 @@ public class HandPose
             if (realtime.FlexionClosedMiddle == true || realtime.FlexionNeutralMiddle == true) isEqual = true;
             else return false;
         }
-        else if (template.FlexionNeutralMiddle == true)
+        /*else if (template.FlexionNeutralMiddle == true)
         {
             if (realtime.FlexionNeutralMiddle == true || realtime.FlexionClosedMiddle == true) isEqual = true;
             else return false;
-        }
+        }*/
 
 
         //abduction
@@ -355,11 +339,11 @@ public class HandPose
             if (realtime.CurlClosedRing == true || realtime.CurlNeutralRing == true) isEqual = true;
             else return false;
         }
-        else if (template.CurlNeutralRing == true)
+        /*else if (template.CurlNeutralRing == true)
         {
             if (realtime.CurlNeutralRing == true || realtime.CurlOpenRing == true) isEqual = true;
             else return false;
-        }
+        }*/
 
         //flexion
         if (template.FlexionOpenRing == true)
@@ -372,11 +356,11 @@ public class HandPose
             if (realtime.FlexionClosedRing == true || realtime.FlexionNeutralRing == true) isEqual = true;
             else return false;
         }
-        else if (template.FlexionNeutralRing == true)
+        /*else if (template.FlexionNeutralRing == true)
         {
             if (realtime.FlexionNeutralRing == true || realtime.FlexionClosedRing == true) isEqual = true;
             else return false;
-        }
+        }*/
 
 
         //abduction
@@ -415,11 +399,11 @@ public class HandPose
             if (realtime.CurlClosedPinky == true || realtime.CurlNeutralPinky == true) isEqual = true;
             else return false;
         }
-        else if (template.CurlNeutralPinky == true)
+        /*else if (template.CurlNeutralPinky == true)
         {
             if (realtime.CurlNeutralPinky == true || realtime.CurlOpenPinky == true) isEqual = true;
             else return false;
-        }
+        }*/
 
         //flexion
         if (template.FlexionOpenPinky == true)
@@ -432,11 +416,11 @@ public class HandPose
             if (realtime.FlexionClosedPinky == true || realtime.FlexionNeutralPinky == true) isEqual = true;
             else return false;
         }
-        else if (template.FlexionNeutralPinky == true)
+        /*else if (template.FlexionNeutralPinky == true)
         {
             if (realtime.FlexionNeutralPinky == true || realtime.FlexionClosedPinky == true) isEqual = true;
             else return false;
-        }
+        }*/
 
         //opposition
         if (template.OppositionTouchingIndex == true)
@@ -459,11 +443,11 @@ public class HandPose
             if (realtime.CurlClosedThumb == true || realtime.CurlNeutralThumb == true) isEqual = true;
             else return false;
         }
-        else if (template.CurlNeutralThumb == true)
+        /*else if (template.CurlNeutralThumb == true)
         {
             if (realtime.CurlNeutralThumb == true || realtime.CurlOpenThumb == true) isEqual = true;
             else return false;
-        }
+        }*/
 
 
         #endregion

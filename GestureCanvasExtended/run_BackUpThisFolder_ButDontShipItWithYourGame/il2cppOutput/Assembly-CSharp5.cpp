@@ -1131,18 +1131,18 @@ struct Clip_t5B493D4729396BB82DD0E7ED754916E180EC23BD  : public RuntimeObject
 	int32_t ___endIndex_2;
 	// System.Collections.Generic.List`1<Interaction> Clip::interactions
 	List_1_t8D2EAF6AA1B446B2DA30A936D11966AFBC257F2C* ___interactions_3;
-	// System.Collections.Generic.List`1<HandPoseInstance> Clip::HandPoses_R
-	List_1_tFC65151E0EDAF92F2A613E1C5960DFB3B439910F* ___HandPoses_R_4;
-	// System.Collections.Generic.List`1<HandPoseInstance> Clip::HandPoses_L
-	List_1_tFC65151E0EDAF92F2A613E1C5960DFB3B439910F* ___HandPoses_L_5;
-	// ClipValidity Clip::clipValidity
-	ClipValidity_t50F2680512F87093AF0314D9FC8755326B12134F* ___clipValidity_6;
-	// Interaction Clip::DefaultInteraction
-	Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* ___DefaultInteraction_7;
 	// System.Collections.Generic.List`1<VirtualObject> Clip::virtualObjects
-	List_1_t845A527FBE0C057FF526F5FCD51CA86956E31101* ___virtualObjects_8;
+	List_1_t845A527FBE0C057FF526F5FCD51CA86956E31101* ___virtualObjects_4;
 	// System.Collections.Generic.List`1<VFXObject> Clip::vfxObjects
-	List_1_tB754A38AEFA98ABE5BA9DB1BC97C5A13EDF15380* ___vfxObjects_9;
+	List_1_tB754A38AEFA98ABE5BA9DB1BC97C5A13EDF15380* ___vfxObjects_5;
+	// System.Collections.Generic.List`1<HandPoseInstance> Clip::HandPoses_R
+	List_1_tFC65151E0EDAF92F2A613E1C5960DFB3B439910F* ___HandPoses_R_6;
+	// System.Collections.Generic.List`1<HandPoseInstance> Clip::HandPoses_L
+	List_1_tFC65151E0EDAF92F2A613E1C5960DFB3B439910F* ___HandPoses_L_7;
+	// ClipValidity Clip::clipValidity
+	ClipValidity_t50F2680512F87093AF0314D9FC8755326B12134F* ___clipValidity_8;
+	// Interaction Clip::DefaultInteraction
+	Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* ___DefaultInteraction_9;
 };
 
 // FileHandler

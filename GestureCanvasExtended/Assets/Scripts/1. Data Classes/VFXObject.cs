@@ -5,7 +5,7 @@ using System;
 using Newtonsoft.Json;
 
 [Serializable]
-public class VFXObject : MonoBehaviour
+public class VFXObject 
 {
     public string objectName;
     public Vector3 Position;

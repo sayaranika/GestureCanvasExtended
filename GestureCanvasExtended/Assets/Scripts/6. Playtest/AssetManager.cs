@@ -8,6 +8,8 @@ public class AssetManager : MonoBehaviour
     private OVRSkeleton ovrSkeleton_R;
     [SerializeField]
     private OVRSkeleton ovrSkeleton_L;
+    [SerializeField] Transform RightHand;
+    [SerializeField] Transform LeftHand;
 
     [SerializeField]
     private GameObject CenterCamera;
@@ -74,28 +76,55 @@ public class AssetManager : MonoBehaviour
         }
     }
 
+    public void AttachToHand(VirtualObject obj, GameObject ob, OVRSkeleton ovrSkeleton, Transform hand)
+    {
+        if (obj.AttachedBone == "wrist") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_WristRoot].Transform.position;
+        if (obj.AttachedBone == "index1") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Index1].Transform.position;
+        if (obj.AttachedBone == "index2") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Index2].Transform.position;
+        if (obj.AttachedBone == "index3") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Index3].Transform.position;
+        if (obj.AttachedBone == "middle1") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Middle1].Transform.position;
+        if (obj.AttachedBone == "middle2") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Middle2].Transform.position;
+        if (obj.AttachedBone == "middle3") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Middle3].Transform.position;
+        if (obj.AttachedBone == "pinky0") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Pinky0].Transform.position;
+        if (obj.AttachedBone == "pinky1") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Pinky1].Transform.position;
+        if (obj.AttachedBone == "pinky2") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Pinky2].Transform.position;
+        if (obj.AttachedBone == "pinky3") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Pinky3].Transform.position;
+        if (obj.AttachedBone == "ring1") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Ring1].Transform.position;
+        if (obj.AttachedBone == "ring2") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Ring2].Transform.position;
+        if (obj.AttachedBone == "ring3") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Ring3].Transform.position;
+        if (obj.AttachedBone == "thumb0") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Thumb0].Transform.position;
+        if (obj.AttachedBone == "thumb1") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Thumb1].Transform.position;
+        if (obj.AttachedBone == "thumb2") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Thumb2].Transform.position;
+        if (obj.AttachedBone == "thumb3") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Thumb3].Transform.position;
+
+        ob.transform.rotation = obj.Rotation;
+        ob.transform.parent = hand;
+    }
+
     public void SpawnVirtualObjects()
     {
         foreach(VirtualObject obj in PlaytestManager.currentClip.virtualObjects)
         {
-            if (obj.objectName == "Spike")
+            Debug.Log("3000: " + obj.objectName);
+            if (obj.isAttached == true)
             {
-                GameObject ob = Instantiate(Spike) as GameObject;
-                if(obj.isAttached == true)
-                    FollowObjects.Add(new ObjectsThatFollowHand(ob, obj.isAttachedToRight, obj.AttachedBone));
+                GameObject ob = null;
+                if (obj.objectName == "Spike") ob = Instantiate(Spike) as GameObject;
+                if (obj.objectName == "Shield") ob = Instantiate(Shield) as GameObject;
+                if (obj.objectName == "Crate") ob = Instantiate(Crate) as GameObject;
+                if (obj.isAttachedToRight == true && ob != null) AttachToHand(obj, ob, ovrSkeleton_R, RightHand);
+                else AttachToHand(obj, ob, ovrSkeleton_L, LeftHand);
             }
-            if (obj.objectName == "Shield")
+            else
             {
-                GameObject ob = Instantiate(Shield) as GameObject;
-                if (obj.isAttached == true)
-                    FollowObjects.Add(new ObjectsThatFollowHand(ob, obj.isAttachedToRight, obj.AttachedBone));
+                if (obj.objectName == "Spike") Instantiate(Spike, obj.Position, obj.Rotation);
+                if (obj.objectName == "Shield") Instantiate(Shield, obj.Position, obj.Rotation);
+                if (obj.objectName == "Crate") Instantiate(Crate, obj.Position, obj.Rotation);
             }
-            if (obj.objectName == "Crate")
-            {
-                GameObject ob = Instantiate(Crate) as GameObject;
-                if (obj.isAttached == true)
-                    FollowObjects.Add(new ObjectsThatFollowHand(ob, obj.isAttachedToRight, obj.AttachedBone));
-            }
+            
+
+            
+
         }
     }
 
@@ -146,7 +175,7 @@ public class AssetManager : MonoBehaviour
 
     public void FollowHand(ObjectsThatFollowHand followObject, OVRSkeleton skeleton)
     {
-        followObject.obj.transform.rotation = skeleton.Bones[(int)OVRPlugin.BoneId.Hand_WristRoot].Transform.rotation;
+        //followObject.obj.transform.rotation = skeleton.Bones[(int)OVRPlugin.BoneId.Hand_WristRoot].Transform.rotation;
         if (followObject.AttachedPoint == "wrist") followObject.obj.transform.position = skeleton.Bones[(int)OVRPlugin.BoneId.Hand_WristRoot].Transform.position;
         if (followObject.AttachedPoint == "index1") followObject.obj.transform.position = skeleton.Bones[(int)OVRPlugin.BoneId.Hand_Index1].Transform.position;
         if (followObject.AttachedPoint == "index2") followObject.obj.transform.position = skeleton.Bones[(int)OVRPlugin.BoneId.Hand_Index2].Transform.position;
