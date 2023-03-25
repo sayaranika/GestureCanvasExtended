@@ -29332,17 +29332,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Thread_set_Name_m53E2BA6E84C04A6393EA5E4
 		return;
 	}
 }
-// System.Threading.ThreadState System.Threading.Thread::get_ThreadState()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Thread_get_ThreadState_mEEA2DF3EBB42CC1B30E9B6B6732579E799A243A8 (Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F* __this, const RuntimeMethod* method) 
-{
-	{
-		InternalThread_tF40B7BFCBD60C82BD8475A22FF5186CA10293687* L_0;
-		L_0 = Thread_get_Internal_m13061AAE3B1BBD66F44EE8A254C6C0824371A2FB(__this, NULL);
-		int32_t L_1;
-		L_1 = Thread_GetState_mF9BF023B440C80C214330EC105DA8696CD4E5B36(L_0, NULL);
-		return L_1;
-	}
-}
 // System.Void System.Threading.Thread::Abort_internal(System.Threading.InternalThread,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Thread_Abort_internal_m93B438F3CEE3958A436FBCFE14B84FECB4B34497 (InternalThread_tF40B7BFCBD60C82BD8475A22FF5186CA10293687* ___thread0, RuntimeObject* ___stateInfo1, const RuntimeMethod* method) 
 {

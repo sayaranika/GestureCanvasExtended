@@ -366,8 +366,6 @@ struct FurnitureSpawner_tC3C532786588E281CD80DCB11C39A15F78B6DC2B;
 struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F;
 // GestureSamplesWrapper
 struct GestureSamplesWrapper_t871E2AC21C26555E3B89A32F7192F21FEED13B03;
-// GestureStream
-struct GestureStream_t613E63C3371D9B6BB68BC0995214B44591BFA291;
 // GrabObject
 struct GrabObject_t130848A98FEF2A2803328956DEE21A3DD4AF4E9A;
 // UnityEngine.Gradient
@@ -492,6 +490,12 @@ struct PassthroughStyler_t87AC7A601361B0249EABA465575B8BC98524B79E;
 struct PassthroughSurface_t5DEF489C691B1678CA206E5B904FF22B8FCD4264;
 // PoseRecognizer
 struct PoseRecognizer_t7E2392814517130FD64A57E16671267462AE9329;
+// ProducerData
+struct ProducerData_tDC421A7FADA5552E7723BB7961B563D82A3D7ECE;
+// RealtimeData
+struct RealtimeData_tFECB5A6DF241086C755EE6DB8D613EADC7BAEA45;
+// RealtimeHandData
+struct RealtimeHandData_tFD533B8C513C097695976A02AF5D5C3E3E9A96DE;
 // UnityEngine.UI.RectMask2D
 struct RectMask2D_tACF92BE999C791A665BD1ADEABF5BCEB82846670;
 // UnityEngine.RectTransform
@@ -1184,13 +1188,6 @@ struct GestureSamplesWrapper_t871E2AC21C26555E3B89A32F7192F21FEED13B03  : public
 	List_1_t090E4A4DB594DA67CF08DA78F73A3594DCCCEC6C* ___sample_0;
 };
 
-// GestureStream
-struct GestureStream_t613E63C3371D9B6BB68BC0995214B44591BFA291  : public RuntimeObject
-{
-	// Vector GestureStream::point
-	Vector_t070748219E90B88E313B65D95957C6DC0C018A71* ___point_0;
-};
-
 // HandPose
 struct HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D  : public RuntimeObject
 {
@@ -1370,6 +1367,15 @@ struct Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295  : public RuntimeOb
 	int32_t ___GestureLength_L_19;
 	// System.Int32 Interaction::GestureLength_R
 	int32_t ___GestureLength_R_20;
+};
+
+// ProducerData
+struct ProducerData_tDC421A7FADA5552E7723BB7961B563D82A3D7ECE  : public RuntimeObject
+{
+	// Vector ProducerData::point
+	Vector_t070748219E90B88E313B65D95957C6DC0C018A71* ___point_0;
+	// System.Int32 ProducerData::frame
+	int32_t ___frame_1;
 };
 
 // SimpleResizer
@@ -2837,6 +2843,93 @@ struct RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5
 	int32_t ___m_Collider_5;
 };
 
+// RealtimeHandData
+struct RealtimeHandData_tFD533B8C513C097695976A02AF5D5C3E3E9A96DE  : public RuntimeObject
+{
+	// System.Int32 RealtimeHandData::FrameNumber
+	int32_t ___FrameNumber_0;
+	// UnityEngine.Vector3 RealtimeHandData::HandPosition
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___HandPosition_1;
+	// UnityEngine.Vector3 RealtimeHandData::WristPosition
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___WristPosition_2;
+	// UnityEngine.Vector3 RealtimeHandData::ForearmStubPosition
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___ForearmStubPosition_3;
+	// UnityEngine.Vector3 RealtimeHandData::Index1Position
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Index1Position_4;
+	// UnityEngine.Vector3 RealtimeHandData::Index2Position
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Index2Position_5;
+	// UnityEngine.Vector3 RealtimeHandData::Index3Position
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Index3Position_6;
+	// UnityEngine.Vector3 RealtimeHandData::Thumb0Position
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Thumb0Position_7;
+	// UnityEngine.Vector3 RealtimeHandData::Thumb1Position
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Thumb1Position_8;
+	// UnityEngine.Vector3 RealtimeHandData::Thumb2Position
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Thumb2Position_9;
+	// UnityEngine.Vector3 RealtimeHandData::Thumb3Position
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Thumb3Position_10;
+	// UnityEngine.Vector3 RealtimeHandData::Middle1Position
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Middle1Position_11;
+	// UnityEngine.Vector3 RealtimeHandData::Middle2Position
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Middle2Position_12;
+	// UnityEngine.Vector3 RealtimeHandData::Middle3Position
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Middle3Position_13;
+	// UnityEngine.Vector3 RealtimeHandData::Ring1Position
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Ring1Position_14;
+	// UnityEngine.Vector3 RealtimeHandData::Ring2Position
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Ring2Position_15;
+	// UnityEngine.Vector3 RealtimeHandData::Ring3Position
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Ring3Position_16;
+	// UnityEngine.Vector3 RealtimeHandData::Pinky0Position
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Pinky0Position_17;
+	// UnityEngine.Vector3 RealtimeHandData::Pinky1Position
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Pinky1Position_18;
+	// UnityEngine.Vector3 RealtimeHandData::Pinky2Position
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Pinky2Position_19;
+	// UnityEngine.Vector3 RealtimeHandData::Pinky3Position
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Pinky3Position_20;
+	// UnityEngine.Vector3 RealtimeHandData::HandPosition_L
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___HandPosition_L_21;
+	// UnityEngine.Vector3 RealtimeHandData::WristPosition_L
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___WristPosition_L_22;
+	// UnityEngine.Vector3 RealtimeHandData::ForearmStubPosition_L
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___ForearmStubPosition_L_23;
+	// UnityEngine.Vector3 RealtimeHandData::Index1Position_L
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Index1Position_L_24;
+	// UnityEngine.Vector3 RealtimeHandData::Index2Position_L
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Index2Position_L_25;
+	// UnityEngine.Vector3 RealtimeHandData::Index3Position_L
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Index3Position_L_26;
+	// UnityEngine.Vector3 RealtimeHandData::Thumb0Position_L
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Thumb0Position_L_27;
+	// UnityEngine.Vector3 RealtimeHandData::Thumb1Position_L
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Thumb1Position_L_28;
+	// UnityEngine.Vector3 RealtimeHandData::Thumb2Position_L
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Thumb2Position_L_29;
+	// UnityEngine.Vector3 RealtimeHandData::Thumb3Position_L
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Thumb3Position_L_30;
+	// UnityEngine.Vector3 RealtimeHandData::Middle1Position_L
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Middle1Position_L_31;
+	// UnityEngine.Vector3 RealtimeHandData::Middle2Position_L
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Middle2Position_L_32;
+	// UnityEngine.Vector3 RealtimeHandData::Middle3Position_L
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Middle3Position_L_33;
+	// UnityEngine.Vector3 RealtimeHandData::Ring1Position_L
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Ring1Position_L_34;
+	// UnityEngine.Vector3 RealtimeHandData::Ring2Position_L
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Ring2Position_L_35;
+	// UnityEngine.Vector3 RealtimeHandData::Ring3Position_L
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Ring3Position_L_36;
+	// UnityEngine.Vector3 RealtimeHandData::Pinky0Position_L
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Pinky0Position_L_37;
+	// UnityEngine.Vector3 RealtimeHandData::Pinky1Position_L
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Pinky1Position_L_38;
+	// UnityEngine.Vector3 RealtimeHandData::Pinky2Position_L
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Pinky2Position_L_39;
+	// UnityEngine.Vector3 RealtimeHandData::Pinky3Position_L
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Pinky3Position_L_40;
+};
+
 // VFXObject
 struct VFXObject_tFF601BF5D90FB5E7855C86608ED7FCF2F69E2145  : public RuntimeObject
 {
@@ -4047,6 +4140,233 @@ struct HandObjectGlobalPosition_tFD986512A14D4DD892092CA45BC3E9A5940C4BC7  : pub
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___ForearmStub_23;
 };
 
+// HandPoseRecorder
+struct HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// System.Boolean HandPoseRecorder::rightCurlOpenIndex
+	bool ___rightCurlOpenIndex_4;
+	// System.Boolean HandPoseRecorder::rightCurlOpenMiddle
+	bool ___rightCurlOpenMiddle_5;
+	// System.Boolean HandPoseRecorder::rightCurlOpenRing
+	bool ___rightCurlOpenRing_6;
+	// System.Boolean HandPoseRecorder::rightCurlOpenPinky
+	bool ___rightCurlOpenPinky_7;
+	// System.Boolean HandPoseRecorder::rightCurlOpenThumb
+	bool ___rightCurlOpenThumb_8;
+	// System.Boolean HandPoseRecorder::rightCurlClosedIndex
+	bool ___rightCurlClosedIndex_9;
+	// System.Boolean HandPoseRecorder::rightCurlClosedMiddle
+	bool ___rightCurlClosedMiddle_10;
+	// System.Boolean HandPoseRecorder::rightCurlClosedRing
+	bool ___rightCurlClosedRing_11;
+	// System.Boolean HandPoseRecorder::rightCurlClosedPinky
+	bool ___rightCurlClosedPinky_12;
+	// System.Boolean HandPoseRecorder::rightCurlClosedThumb
+	bool ___rightCurlClosedThumb_13;
+	// System.Boolean HandPoseRecorder::rightCurlNeutralIndex
+	bool ___rightCurlNeutralIndex_14;
+	// System.Boolean HandPoseRecorder::rightCurlNeutralMiddle
+	bool ___rightCurlNeutralMiddle_15;
+	// System.Boolean HandPoseRecorder::rightCurlNeutralRing
+	bool ___rightCurlNeutralRing_16;
+	// System.Boolean HandPoseRecorder::rightCurlNeutralPinky
+	bool ___rightCurlNeutralPinky_17;
+	// System.Boolean HandPoseRecorder::rightCurlNeutralThumb
+	bool ___rightCurlNeutralThumb_18;
+	// System.Boolean HandPoseRecorder::rightFlexionOpenIndex
+	bool ___rightFlexionOpenIndex_19;
+	// System.Boolean HandPoseRecorder::rightFlexionOpenMiddle
+	bool ___rightFlexionOpenMiddle_20;
+	// System.Boolean HandPoseRecorder::rightFlexionOpenRing
+	bool ___rightFlexionOpenRing_21;
+	// System.Boolean HandPoseRecorder::rightFlexionOpenPinky
+	bool ___rightFlexionOpenPinky_22;
+	// System.Boolean HandPoseRecorder::rightFlexionClosedIndex
+	bool ___rightFlexionClosedIndex_23;
+	// System.Boolean HandPoseRecorder::rightFlexionClosedMiddle
+	bool ___rightFlexionClosedMiddle_24;
+	// System.Boolean HandPoseRecorder::rightFlexionClosedRing
+	bool ___rightFlexionClosedRing_25;
+	// System.Boolean HandPoseRecorder::rightFlexionClosedPinky
+	bool ___rightFlexionClosedPinky_26;
+	// System.Boolean HandPoseRecorder::rightFlexionNeutralIndex
+	bool ___rightFlexionNeutralIndex_27;
+	// System.Boolean HandPoseRecorder::rightFlexionNeutralMiddle
+	bool ___rightFlexionNeutralMiddle_28;
+	// System.Boolean HandPoseRecorder::rightFlexionNeutralRing
+	bool ___rightFlexionNeutralRing_29;
+	// System.Boolean HandPoseRecorder::rightFlexionNeutralPinky
+	bool ___rightFlexionNeutralPinky_30;
+	// System.Boolean HandPoseRecorder::rightAbductionOpenIndex
+	bool ___rightAbductionOpenIndex_31;
+	// System.Boolean HandPoseRecorder::rightAbductionOpenMiddle
+	bool ___rightAbductionOpenMiddle_32;
+	// System.Boolean HandPoseRecorder::rightAbductionOpenRing
+	bool ___rightAbductionOpenRing_33;
+	// System.Boolean HandPoseRecorder::rightAbductionOpenThumb
+	bool ___rightAbductionOpenThumb_34;
+	// System.Boolean HandPoseRecorder::rightAbductionClosedIndex
+	bool ___rightAbductionClosedIndex_35;
+	// System.Boolean HandPoseRecorder::rightAbductionClosedMiddle
+	bool ___rightAbductionClosedMiddle_36;
+	// System.Boolean HandPoseRecorder::rightAbductionClosedRing
+	bool ___rightAbductionClosedRing_37;
+	// System.Boolean HandPoseRecorder::rightAbductionClosedThumb
+	bool ___rightAbductionClosedThumb_38;
+	// System.Boolean HandPoseRecorder::rightOppositionTouchingIndex
+	bool ___rightOppositionTouchingIndex_39;
+	// System.Boolean HandPoseRecorder::rightOppositionTouchingMiddle
+	bool ___rightOppositionTouchingMiddle_40;
+	// System.Boolean HandPoseRecorder::rightOppositionTouchingRing
+	bool ___rightOppositionTouchingRing_41;
+	// System.Boolean HandPoseRecorder::rightOppositionTouchingPinky
+	bool ___rightOppositionTouchingPinky_42;
+	// System.Boolean HandPoseRecorder::rightOppositionNearIndex
+	bool ___rightOppositionNearIndex_43;
+	// System.Boolean HandPoseRecorder::rightOppositionNearMiddle
+	bool ___rightOppositionNearMiddle_44;
+	// System.Boolean HandPoseRecorder::rightOppositionNearRing
+	bool ___rightOppositionNearRing_45;
+	// System.Boolean HandPoseRecorder::rightOppositionNearPinky
+	bool ___rightOppositionNearPinky_46;
+	// System.Boolean HandPoseRecorder::rightOppositionNoneIndex
+	bool ___rightOppositionNoneIndex_47;
+	// System.Boolean HandPoseRecorder::rightOppositionNoneMiddle
+	bool ___rightOppositionNoneMiddle_48;
+	// System.Boolean HandPoseRecorder::rightOppositionNoneRing
+	bool ___rightOppositionNoneRing_49;
+	// System.Boolean HandPoseRecorder::rightOppositionNonePinky
+	bool ___rightOppositionNonePinky_50;
+	// System.Boolean HandPoseRecorder::rightWristUp
+	bool ___rightWristUp_51;
+	// System.Boolean HandPoseRecorder::rightWristDown
+	bool ___rightWristDown_52;
+	// System.Boolean HandPoseRecorder::rightPalmUp
+	bool ___rightPalmUp_53;
+	// System.Boolean HandPoseRecorder::rightPalmDown
+	bool ___rightPalmDown_54;
+	// System.Boolean HandPoseRecorder::rightPalmTowardsFace
+	bool ___rightPalmTowardsFace_55;
+	// System.Boolean HandPoseRecorder::rightPalmAwayFromFace
+	bool ___rightPalmAwayFromFace_56;
+	// System.Boolean HandPoseRecorder::rightFingersUp
+	bool ___rightFingersUp_57;
+	// System.Boolean HandPoseRecorder::rightFingersDown
+	bool ___rightFingersDown_58;
+	// System.Boolean HandPoseRecorder::leftCurlOpenIndex
+	bool ___leftCurlOpenIndex_59;
+	// System.Boolean HandPoseRecorder::leftCurlOpenMiddle
+	bool ___leftCurlOpenMiddle_60;
+	// System.Boolean HandPoseRecorder::leftCurlOpenRing
+	bool ___leftCurlOpenRing_61;
+	// System.Boolean HandPoseRecorder::leftCurlOpenPinky
+	bool ___leftCurlOpenPinky_62;
+	// System.Boolean HandPoseRecorder::leftCurlOpenThumb
+	bool ___leftCurlOpenThumb_63;
+	// System.Boolean HandPoseRecorder::leftCurlClosedIndex
+	bool ___leftCurlClosedIndex_64;
+	// System.Boolean HandPoseRecorder::leftCurlClosedMiddle
+	bool ___leftCurlClosedMiddle_65;
+	// System.Boolean HandPoseRecorder::leftCurlClosedRing
+	bool ___leftCurlClosedRing_66;
+	// System.Boolean HandPoseRecorder::leftCurlClosedPinky
+	bool ___leftCurlClosedPinky_67;
+	// System.Boolean HandPoseRecorder::leftCurlClosedThumb
+	bool ___leftCurlClosedThumb_68;
+	// System.Boolean HandPoseRecorder::leftCurlNeutralIndex
+	bool ___leftCurlNeutralIndex_69;
+	// System.Boolean HandPoseRecorder::leftCurlNeutralMiddle
+	bool ___leftCurlNeutralMiddle_70;
+	// System.Boolean HandPoseRecorder::leftCurlNeutralRing
+	bool ___leftCurlNeutralRing_71;
+	// System.Boolean HandPoseRecorder::leftCurlNeutralPinky
+	bool ___leftCurlNeutralPinky_72;
+	// System.Boolean HandPoseRecorder::leftCurlNeutralThumb
+	bool ___leftCurlNeutralThumb_73;
+	// System.Boolean HandPoseRecorder::leftFlexionOpenIndex
+	bool ___leftFlexionOpenIndex_74;
+	// System.Boolean HandPoseRecorder::leftFlexionOpenMiddle
+	bool ___leftFlexionOpenMiddle_75;
+	// System.Boolean HandPoseRecorder::leftFlexionOpenRing
+	bool ___leftFlexionOpenRing_76;
+	// System.Boolean HandPoseRecorder::leftFlexionOpenPinky
+	bool ___leftFlexionOpenPinky_77;
+	// System.Boolean HandPoseRecorder::leftFlexionClosedIndex
+	bool ___leftFlexionClosedIndex_78;
+	// System.Boolean HandPoseRecorder::leftFlexionClosedMiddle
+	bool ___leftFlexionClosedMiddle_79;
+	// System.Boolean HandPoseRecorder::leftFlexionClosedRing
+	bool ___leftFlexionClosedRing_80;
+	// System.Boolean HandPoseRecorder::leftFlexionClosedPinky
+	bool ___leftFlexionClosedPinky_81;
+	// System.Boolean HandPoseRecorder::leftFlexionNeutralIndex
+	bool ___leftFlexionNeutralIndex_82;
+	// System.Boolean HandPoseRecorder::leftFlexionNeutralMiddle
+	bool ___leftFlexionNeutralMiddle_83;
+	// System.Boolean HandPoseRecorder::leftFlexionNeutralRing
+	bool ___leftFlexionNeutralRing_84;
+	// System.Boolean HandPoseRecorder::leftFlexionNeutralPinky
+	bool ___leftFlexionNeutralPinky_85;
+	// System.Boolean HandPoseRecorder::leftAbductionOpenIndex
+	bool ___leftAbductionOpenIndex_86;
+	// System.Boolean HandPoseRecorder::leftAbductionOpenMiddle
+	bool ___leftAbductionOpenMiddle_87;
+	// System.Boolean HandPoseRecorder::leftAbductionOpenRing
+	bool ___leftAbductionOpenRing_88;
+	// System.Boolean HandPoseRecorder::leftAbductionOpenThumb
+	bool ___leftAbductionOpenThumb_89;
+	// System.Boolean HandPoseRecorder::leftAbductionClosedIndex
+	bool ___leftAbductionClosedIndex_90;
+	// System.Boolean HandPoseRecorder::leftAbductionClosedMiddle
+	bool ___leftAbductionClosedMiddle_91;
+	// System.Boolean HandPoseRecorder::leftAbductionClosedRing
+	bool ___leftAbductionClosedRing_92;
+	// System.Boolean HandPoseRecorder::leftAbductionClosedThumb
+	bool ___leftAbductionClosedThumb_93;
+	// System.Boolean HandPoseRecorder::leftOppositionTouchingIndex
+	bool ___leftOppositionTouchingIndex_94;
+	// System.Boolean HandPoseRecorder::leftOppositionTouchingMiddle
+	bool ___leftOppositionTouchingMiddle_95;
+	// System.Boolean HandPoseRecorder::leftOppositionTouchingRing
+	bool ___leftOppositionTouchingRing_96;
+	// System.Boolean HandPoseRecorder::leftOppositionTouchingPinky
+	bool ___leftOppositionTouchingPinky_97;
+	// System.Boolean HandPoseRecorder::leftOppositionNearIndex
+	bool ___leftOppositionNearIndex_98;
+	// System.Boolean HandPoseRecorder::leftOppositionNearMiddle
+	bool ___leftOppositionNearMiddle_99;
+	// System.Boolean HandPoseRecorder::leftOppositionNearRing
+	bool ___leftOppositionNearRing_100;
+	// System.Boolean HandPoseRecorder::leftOppositionNearPinky
+	bool ___leftOppositionNearPinky_101;
+	// System.Boolean HandPoseRecorder::leftOppositionNoneIndex
+	bool ___leftOppositionNoneIndex_102;
+	// System.Boolean HandPoseRecorder::leftOppositionNoneMiddle
+	bool ___leftOppositionNoneMiddle_103;
+	// System.Boolean HandPoseRecorder::leftOppositionNoneRing
+	bool ___leftOppositionNoneRing_104;
+	// System.Boolean HandPoseRecorder::leftOppositionNonePinky
+	bool ___leftOppositionNonePinky_105;
+	// System.Boolean HandPoseRecorder::leftWristUp
+	bool ___leftWristUp_106;
+	// System.Boolean HandPoseRecorder::leftWristDown
+	bool ___leftWristDown_107;
+	// System.Boolean HandPoseRecorder::leftPalmUp
+	bool ___leftPalmUp_108;
+	// System.Boolean HandPoseRecorder::leftPalmDown
+	bool ___leftPalmDown_109;
+	// System.Boolean HandPoseRecorder::leftPalmTowardsFace
+	bool ___leftPalmTowardsFace_110;
+	// System.Boolean HandPoseRecorder::leftPalmAwayFromFace
+	bool ___leftPalmAwayFromFace_111;
+	// System.Boolean HandPoseRecorder::leftFingersUp
+	bool ___leftFingersUp_112;
+	// System.Boolean HandPoseRecorder::leftFingersDown
+	bool ___leftFingersDown_113;
+	// System.Int32 HandPoseRecorder::HandPoseId
+	int32_t ___HandPoseId_114;
+};
+
 // InformationPanelManager
 struct InformationPanelManager_t3B28A7AB6FC23AFFF614D77D4C7583D6D26A3CC4  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -4866,6 +5186,17 @@ struct PlaytestManager_t2536ABEEACA1FCB05D8A4CEA27055E8999416737_StaticFields
 	Clip_t5B493D4729396BB82DD0E7ED754916E180EC23BD* ___currentClip_8;
 	// System.Collections.Generic.List`1<UnityEngine.GameObject> PlaytestManager::Recognizers
 	List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* ___Recognizers_9;
+};
+
+// RealtimeData
+struct RealtimeData_tFECB5A6DF241086C755EE6DB8D613EADC7BAEA45  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// HandPoseRecorder RealtimeData::handPoseRecorder
+	HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A* ___handPoseRecorder_4;
+	// HandPose RealtimeData::RightHandPose
+	HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D* ___RightHandPose_5;
+	// HandPose RealtimeData::LeftHandPose
+	HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D* ___LeftHandPose_6;
 };
 
 // RequestCaptureFlow
@@ -6739,6 +7070,12 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_PingPong_mB1D6A10F386
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_red_mA2E53E7173FDC97E68E335049AB0FAAEE43A844D_inline (const RuntimeMethod* method) ;
 // UnityEngine.Color UnityEngine.Color::get_black()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_black_mB50217951591A045844C61E7FF31EEE3FEF16737_inline (const RuntimeMethod* method) ;
+// System.Void RealtimeData::GetData()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RealtimeData_GetData_m8E6556BE84DAF34E0138C3828772BD44D757A42B (RealtimeData_tFECB5A6DF241086C755EE6DB8D613EADC7BAEA45* __this, const RuntimeMethod* method) ;
+// HandPose HandPoseRecorder::GetRightHandPose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D* HandPoseRecorder_GetRightHandPose_mE4F2ED90B749BEF71DB0CFCFA460B73DA81B097B (HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A* __this, const RuntimeMethod* method) ;
+// HandPose HandPoseRecorder::GetLeftHandPose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D* HandPoseRecorder_GetLeftHandPose_m29A365D9E752AF16739CCCF11093AB9FAC04FCEF (HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.SceneManagement.SceneManager::LoadScene(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneManager_LoadScene_mBB3DBC1601A21F8F4E8A5D68FED30EA9412F218E (String_t* ___sceneName0, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<UnityEngine.GameObject>::Clear()
@@ -14775,6 +15112,54 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Blink__ctor_m3E072ADA8F50C34EC35BCA6AA06
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void RealtimeData::LateUpdate()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RealtimeData_LateUpdate_mBCBFFC97B8E200B57136AE2E3D9EACCA99945946 (RealtimeData_tFECB5A6DF241086C755EE6DB8D613EADC7BAEA45* __this, const RuntimeMethod* method) 
+{
+	{
+		// GetData();
+		RealtimeData_GetData_m8E6556BE84DAF34E0138C3828772BD44D757A42B(__this, NULL);
+		// }
+		return;
+	}
+}
+// System.Void RealtimeData::GetData()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RealtimeData_GetData_m8E6556BE84DAF34E0138C3828772BD44D757A42B (RealtimeData_tFECB5A6DF241086C755EE6DB8D613EADC7BAEA45* __this, const RuntimeMethod* method) 
+{
+	{
+		// RightHandPose = handPoseRecorder.GetRightHandPose();
+		HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A* L_0 = __this->___handPoseRecorder_4;
+		NullCheck(L_0);
+		HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D* L_1;
+		L_1 = HandPoseRecorder_GetRightHandPose_mE4F2ED90B749BEF71DB0CFCFA460B73DA81B097B(L_0, NULL);
+		__this->___RightHandPose_5 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___RightHandPose_5), (void*)L_1);
+		// LeftHandPose = handPoseRecorder.GetLeftHandPose();
+		HandPoseRecorder_t2A6A404942EA0AA97CABB2C2FF22C29FE30F488A* L_2 = __this->___handPoseRecorder_4;
+		NullCheck(L_2);
+		HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D* L_3;
+		L_3 = HandPoseRecorder_GetLeftHandPose_m29A365D9E752AF16739CCCF11093AB9FAC04FCEF(L_2, NULL);
+		__this->___LeftHandPose_6 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___LeftHandPose_6), (void*)L_3);
+		// }
+		return;
+	}
+}
+// System.Void RealtimeData::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RealtimeData__ctor_m95F7F7A8FFE33B00507BE156E7B675BD8D54A068 (RealtimeData_tFECB5A6DF241086C755EE6DB8D613EADC7BAEA45* __this, const RuntimeMethod* method) 
+{
+	{
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 // System.Void SceneLauncher::Launch(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneLauncher_Launch_m69BB64AD82546A8AA6D4E5097B9A8E2C38468D66 (SceneLauncher_tD0CB6527B24A24DFB148588B51A164188AB31952* __this, String_t* ___scene0, const RuntimeMethod* method) 
 {
@@ -15005,28 +15390,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClipValidity__cctor_mFD4A0B08300F4E614AE
 		memset((&L_0), 0, sizeof(L_0));
 		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_0), (-1000.0f), (-1000.0f), (-1000.0f), /*hidden argument*/NULL);
 		((ClipValidity_t50F2680512F87093AF0314D9FC8755326B12134F_StaticFields*)il2cpp_codegen_static_fields_for(ClipValidity_t50F2680512F87093AF0314D9FC8755326B12134F_il2cpp_TypeInfo_var))->___INVALID_1 = L_0;
-		return;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void GestureStream::.ctor(Vector)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GestureStream__ctor_m6294F0939A16B42ECB451863E7003509F67B230F (GestureStream_t613E63C3371D9B6BB68BC0995214B44591BFA291* __this, Vector_t070748219E90B88E313B65D95957C6DC0C018A71* ___point0, const RuntimeMethod* method) 
-{
-	{
-		// public GestureStream(Vector point)
-		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
-		// this.point = point;
-		Vector_t070748219E90B88E313B65D95957C6DC0C018A71* L_0 = ___point0;
-		__this->___point_0 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___point_0), (void*)L_0);
-		// }
 		return;
 	}
 }
@@ -20753,6 +21116,305 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GestureSamplesWrapper__ctor_m4C9F3176187
 		List_1_t090E4A4DB594DA67CF08DA78F73A3594DCCCEC6C* L_0 = ___handSkeleton0;
 		__this->___sample_0 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___sample_0), (void*)L_0);
+		// }
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void ProducerData::.ctor(System.Int32,Vector)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ProducerData__ctor_mD02E54E21E27F6B7C9B993CBB639D8F28FE681E1 (ProducerData_tDC421A7FADA5552E7723BB7961B563D82A3D7ECE* __this, int32_t ___frame0, Vector_t070748219E90B88E313B65D95957C6DC0C018A71* ___point1, const RuntimeMethod* method) 
+{
+	{
+		// public ProducerData(int frame, Vector point)
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		// this.frame = frame;
+		int32_t L_0 = ___frame0;
+		__this->___frame_1 = L_0;
+		// this.point = point;
+		Vector_t070748219E90B88E313B65D95957C6DC0C018A71* L_1 = ___point1;
+		__this->___point_0 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___point_0), (void*)L_1);
+		// }
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void RealtimeHandData::.ctor(System.Int32,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RealtimeHandData__ctor_m7A9842935F0A5182589A3F714CDD77F2CF9D1814 (RealtimeHandData_tFD533B8C513C097695976A02AF5D5C3E3E9A96DE* __this, int32_t ___FrameNumber0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___HandPosition1, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___WristPosition2, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___ForearmStubPosition3, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Index1Position4, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Index2Position5, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Index3Position6, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Thumb0Position7, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Thumb1Position8, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Thumb2Position9, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Thumb3Position10, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Middle1Position11, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Middle2Position12, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Middle3Position13, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Ring1Position14, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Ring2Position15, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Ring3Position16, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Pinky0Position17, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Pinky1Position18, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Pinky2Position19, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Pinky3Position20, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___HandPosition_L21, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___WristPosition_L22, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___ForearmStubPosition_L23, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Index1Position_L24, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Index2Position_L25, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Index3Position_L26, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Thumb0Position_L27, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Thumb1Position_L28, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Thumb2Position_L29, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Thumb3Position_L30, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Middle1Position_L31, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Middle2Position_L32, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Middle3Position_L33, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Ring1Position_L34, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Ring2Position_L35, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Ring3Position_L36, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Pinky0Position_L37, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Pinky1Position_L38, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Pinky2Position_L39, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Pinky3Position_L40, const RuntimeMethod* method) 
+{
+	{
+		// public RealtimeHandData(int FrameNumber, Vector3 HandPosition,
+		//     Vector3 WristPosition,
+		//     Vector3 ForearmStubPosition,
+		//     Vector3 Index1Position,
+		//     Vector3 Index2Position,
+		//     Vector3 Index3Position,
+		//     Vector3 Thumb0Position,
+		//     Vector3 Thumb1Position,
+		//     Vector3 Thumb2Position,
+		//     Vector3 Thumb3Position,
+		//     Vector3 Middle1Position,
+		//     Vector3 Middle2Position,
+		//     Vector3 Middle3Position,
+		//     Vector3 Ring1Position,
+		//     Vector3 Ring2Position,
+		//     Vector3 Ring3Position,
+		//     Vector3 Pinky0Position,
+		//     Vector3 Pinky1Position,
+		//     Vector3 Pinky2Position,
+		//     Vector3 Pinky3Position,
+		// 
+		//     Vector3 HandPosition_L,
+		//     Vector3 WristPosition_L,
+		//     Vector3 ForearmStubPosition_L,
+		//     Vector3 Index1Position_L,
+		//     Vector3 Index2Position_L,
+		//     Vector3 Index3Position_L,
+		//     Vector3 Thumb0Position_L,
+		//     Vector3 Thumb1Position_L,
+		//     Vector3 Thumb2Position_L,
+		//     Vector3 Thumb3Position_L,
+		//     Vector3 Middle1Position_L,
+		//     Vector3 Middle2Position_L,
+		//     Vector3 Middle3Position_L,
+		//     Vector3 Ring1Position_L,
+		//     Vector3 Ring2Position_L,
+		//     Vector3 Ring3Position_L,
+		//     Vector3 Pinky0Position_L,
+		//     Vector3 Pinky1Position_L,
+		//     Vector3 Pinky2Position_L,
+		//     Vector3 Pinky3Position_L
+		//     )
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		// this.FrameNumber = FrameNumber;
+		int32_t L_0 = ___FrameNumber0;
+		__this->___FrameNumber_0 = L_0;
+		// this.HandPosition = HandPosition;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = ___HandPosition1;
+		__this->___HandPosition_1 = L_1;
+		// this.WristPosition = WristPosition;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = ___WristPosition2;
+		__this->___WristPosition_2 = L_2;
+		// this.ForearmStubPosition = ForearmStubPosition;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3 = ___ForearmStubPosition3;
+		__this->___ForearmStubPosition_3 = L_3;
+		// this.Index1Position = Index1Position;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = ___Index1Position4;
+		__this->___Index1Position_4 = L_4;
+		// this.Index2Position = Index2Position;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5 = ___Index2Position5;
+		__this->___Index2Position_5 = L_5;
+		// this.Index3Position = Index3Position;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___Index3Position6;
+		__this->___Index3Position_6 = L_6;
+		// this.Thumb0Position = Thumb0Position;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7 = ___Thumb0Position7;
+		__this->___Thumb0Position_7 = L_7;
+		// this.Thumb1Position = Thumb1Position;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = ___Thumb1Position8;
+		__this->___Thumb1Position_8 = L_8;
+		// this.Thumb2Position = Thumb2Position;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9 = ___Thumb2Position9;
+		__this->___Thumb2Position_9 = L_9;
+		// this.Thumb3Position = Thumb3Position;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = ___Thumb3Position10;
+		__this->___Thumb3Position_10 = L_10;
+		// this.Middle1Position = Middle1Position;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_11 = ___Middle1Position11;
+		__this->___Middle1Position_11 = L_11;
+		// this.Middle2Position = Middle2Position;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12 = ___Middle2Position12;
+		__this->___Middle2Position_12 = L_12;
+		// this.Middle3Position = Middle3Position;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13 = ___Middle3Position13;
+		__this->___Middle3Position_13 = L_13;
+		// this.Ring1Position = Ring1Position;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14 = ___Ring1Position14;
+		__this->___Ring1Position_14 = L_14;
+		// this.Ring2Position = Ring2Position;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15 = ___Ring2Position15;
+		__this->___Ring2Position_15 = L_15;
+		// this.Ring3Position = Ring3Position;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_16 = ___Ring3Position16;
+		__this->___Ring3Position_16 = L_16;
+		// this.Pinky0Position = Pinky0Position;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_17 = ___Pinky0Position17;
+		__this->___Pinky0Position_17 = L_17;
+		// this.Pinky1Position = Pinky1Position;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_18 = ___Pinky1Position18;
+		__this->___Pinky1Position_18 = L_18;
+		// this.Pinky2Position = Pinky2Position;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19 = ___Pinky2Position19;
+		__this->___Pinky2Position_19 = L_19;
+		// this.Pinky3Position = Pinky3Position;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_20 = ___Pinky3Position20;
+		__this->___Pinky3Position_20 = L_20;
+		// this.HandPosition_L = HandPosition_L;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_21 = ___HandPosition_L21;
+		__this->___HandPosition_L_21 = L_21;
+		// this.WristPosition_L = WristPosition_L;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_22 = ___WristPosition_L22;
+		__this->___WristPosition_L_22 = L_22;
+		// this.ForearmStubPosition_L = ForearmStubPosition_L;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_23 = ___ForearmStubPosition_L23;
+		__this->___ForearmStubPosition_L_23 = L_23;
+		// this.Index1Position_L = Index1Position_L;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_24 = ___Index1Position_L24;
+		__this->___Index1Position_L_24 = L_24;
+		// this.Index2Position_L = Index2Position_L;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_25 = ___Index2Position_L25;
+		__this->___Index2Position_L_25 = L_25;
+		// this.Index3Position_L = Index3Position_L;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_26 = ___Index3Position_L26;
+		__this->___Index3Position_L_26 = L_26;
+		// this.Thumb0Position_L = Thumb0Position_L;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_27 = ___Thumb0Position_L27;
+		__this->___Thumb0Position_L_27 = L_27;
+		// this.Thumb1Position_L = Thumb1Position_L;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_28 = ___Thumb1Position_L28;
+		__this->___Thumb1Position_L_28 = L_28;
+		// this.Thumb2Position_L = Thumb2Position_L;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_29 = ___Thumb2Position_L29;
+		__this->___Thumb2Position_L_29 = L_29;
+		// this.Thumb3Position_L = Thumb3Position_L;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_30 = ___Thumb3Position_L30;
+		__this->___Thumb3Position_L_30 = L_30;
+		// this.Middle1Position_L = Middle1Position_L;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_31 = ___Middle1Position_L31;
+		__this->___Middle1Position_L_31 = L_31;
+		// this.Middle2Position_L = Middle2Position_L;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_32 = ___Middle2Position_L32;
+		__this->___Middle2Position_L_32 = L_32;
+		// this.Middle3Position_L = Middle3Position_L;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_33 = ___Middle3Position_L33;
+		__this->___Middle3Position_L_33 = L_33;
+		// this.Ring1Position_L = Ring1Position_L;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_34 = ___Ring1Position_L34;
+		__this->___Ring1Position_L_34 = L_34;
+		// this.Ring2Position_L = Ring2Position_L;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_35 = ___Ring2Position_L35;
+		__this->___Ring2Position_L_35 = L_35;
+		// this.Ring3Position_L = Ring3Position_L;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_36 = ___Ring3Position_L36;
+		__this->___Ring3Position_L_36 = L_36;
+		// this.Pinky0Position_L = Pinky0Position_L;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_37 = ___Pinky0Position_L37;
+		__this->___Pinky0Position_L_37 = L_37;
+		// this.Pinky1Position_L = Pinky1Position_L;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_38 = ___Pinky1Position_L38;
+		__this->___Pinky1Position_L_38 = L_38;
+		// this.Pinky2Position_L = Pinky2Position_L;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_39 = ___Pinky2Position_L39;
+		__this->___Pinky2Position_L_39 = L_39;
+		// this.Pinky3Position_L = Pinky3Position_L;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_40 = ___Pinky3Position_L40;
+		__this->___Pinky3Position_L_40 = L_40;
+		// }
+		return;
+	}
+}
+// System.Void RealtimeHandData::.ctor(System.Int32,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RealtimeHandData__ctor_m05E276FDF27F5824FCF861CDF819925668F770F7 (RealtimeHandData_tFD533B8C513C097695976A02AF5D5C3E3E9A96DE* __this, int32_t ___FrameNumber0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___HandPosition1, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___WristPosition2, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___ForearmStubPosition3, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Index1Position4, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Index2Position5, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Index3Position6, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Thumb0Position7, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Thumb1Position8, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Thumb2Position9, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Thumb3Position10, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Middle1Position11, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Middle2Position12, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Middle3Position13, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Ring1Position14, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Ring2Position15, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Ring3Position16, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Pinky0Position17, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Pinky1Position18, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Pinky2Position19, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Pinky3Position20, const RuntimeMethod* method) 
+{
+	{
+		// public RealtimeHandData(int FrameNumber, Vector3 HandPosition,
+		//     Vector3 WristPosition,
+		//     Vector3 ForearmStubPosition,
+		//     Vector3 Index1Position,
+		//     Vector3 Index2Position,
+		//     Vector3 Index3Position,
+		//     Vector3 Thumb0Position,
+		//     Vector3 Thumb1Position,
+		//     Vector3 Thumb2Position,
+		//     Vector3 Thumb3Position,
+		//     Vector3 Middle1Position,
+		//     Vector3 Middle2Position,
+		//     Vector3 Middle3Position,
+		//     Vector3 Ring1Position,
+		//     Vector3 Ring2Position,
+		//     Vector3 Ring3Position,
+		//     Vector3 Pinky0Position,
+		//     Vector3 Pinky1Position,
+		//     Vector3 Pinky2Position,
+		//     Vector3 Pinky3Position)
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		// this.FrameNumber = FrameNumber;
+		int32_t L_0 = ___FrameNumber0;
+		__this->___FrameNumber_0 = L_0;
+		// this.HandPosition = HandPosition;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = ___HandPosition1;
+		__this->___HandPosition_1 = L_1;
+		// this.WristPosition = WristPosition;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = ___WristPosition2;
+		__this->___WristPosition_2 = L_2;
+		// this.ForearmStubPosition = ForearmStubPosition;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3 = ___ForearmStubPosition3;
+		__this->___ForearmStubPosition_3 = L_3;
+		// this.Index1Position = Index1Position;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = ___Index1Position4;
+		__this->___Index1Position_4 = L_4;
+		// this.Index2Position = Index2Position;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5 = ___Index2Position5;
+		__this->___Index2Position_5 = L_5;
+		// this.Index3Position = Index3Position;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___Index3Position6;
+		__this->___Index3Position_6 = L_6;
+		// this.Thumb0Position = Thumb0Position;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7 = ___Thumb0Position7;
+		__this->___Thumb0Position_7 = L_7;
+		// this.Thumb1Position = Thumb1Position;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = ___Thumb1Position8;
+		__this->___Thumb1Position_8 = L_8;
+		// this.Thumb2Position = Thumb2Position;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9 = ___Thumb2Position9;
+		__this->___Thumb2Position_9 = L_9;
+		// this.Thumb3Position = Thumb3Position;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = ___Thumb3Position10;
+		__this->___Thumb3Position_10 = L_10;
+		// this.Middle1Position = Middle1Position;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_11 = ___Middle1Position11;
+		__this->___Middle1Position_11 = L_11;
+		// this.Middle2Position = Middle2Position;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12 = ___Middle2Position12;
+		__this->___Middle2Position_12 = L_12;
+		// this.Middle3Position = Middle3Position;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13 = ___Middle3Position13;
+		__this->___Middle3Position_13 = L_13;
+		// this.Ring1Position = Ring1Position;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14 = ___Ring1Position14;
+		__this->___Ring1Position_14 = L_14;
+		// this.Ring2Position = Ring2Position;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15 = ___Ring2Position15;
+		__this->___Ring2Position_15 = L_15;
+		// this.Ring3Position = Ring3Position;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_16 = ___Ring3Position16;
+		__this->___Ring3Position_16 = L_16;
+		// this.Pinky0Position = Pinky0Position;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_17 = ___Pinky0Position17;
+		__this->___Pinky0Position_17 = L_17;
+		// this.Pinky1Position = Pinky1Position;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_18 = ___Pinky1Position18;
+		__this->___Pinky1Position_18 = L_18;
+		// this.Pinky2Position = Pinky2Position;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19 = ___Pinky2Position19;
+		__this->___Pinky2Position_19 = L_19;
+		// this.Pinky3Position = Pinky3Position;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_20 = ___Pinky3Position20;
+		__this->___Pinky3Position_20 = L_20;
 		// }
 		return;
 	}
