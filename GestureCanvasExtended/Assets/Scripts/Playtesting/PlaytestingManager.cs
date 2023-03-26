@@ -10,7 +10,7 @@ public class PlaytestingManager : MonoBehaviour
     [SerializeField] GestureRecognizer gestureRecognizer;
 
     public static List<GameObject> Recognizers = new List<GameObject>();
-    [SerializeField] AssetManager assetManager;
+    [SerializeField] AssetsManager assetManager;
     [SerializeField] GameObject recognizerObject;
     [SerializeField] PoseRecognizer poseRecognizer;
 

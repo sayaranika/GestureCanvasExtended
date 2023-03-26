@@ -4,25 +4,25 @@ using UnityEngine;
 
 public class HandObject : MonoBehaviour
 {
-    [SerializeField] private GameObject HandModel;
+    [SerializeField] public GameObject HandModel;
 
     [SerializeField]
-    private GameObject Index1, Index2, Index3;
+    public GameObject Index1, Index2, Index3;
 
     [SerializeField]
-    private GameObject Thumb0, Thumb1, Thumb2, Thumb3;
+    public GameObject Thumb0, Thumb1, Thumb2, Thumb3;
 
     [SerializeField]
-    private GameObject Middle1, Middle2, Middle3;
+    public GameObject Middle1, Middle2, Middle3;
 
     [SerializeField]
-    private GameObject Ring1, Ring2, Ring3;
+    public GameObject Ring1, Ring2, Ring3;
 
     [SerializeField]
-    private GameObject Pinky0, Pinky1, Pinky2, Pinky3;
+    public GameObject Pinky0, Pinky1, Pinky2, Pinky3;
 
     [SerializeField]
-    private GameObject Wrist,  ForearmStub;
+    public GameObject Wrist,  ForearmStub;
 
 
     

@@ -7,6 +7,8 @@ public class AssetLoader : MonoBehaviour
     [SerializeField] GameObject Shield;
     [SerializeField] GameObject Crate;
     [SerializeField] GameObject Spike;
+    [SerializeField] GameObject Bow;
+    [SerializeField] GameObject Arrow;
 
     [SerializeField] GameObject DragonPunch;
     [SerializeField] GameObject IceWall;
@@ -117,6 +119,24 @@ public class AssetLoader : MonoBehaviour
                     if (virtualObject.objectName == "Spike")
                     {
                         GameObject obj = Instantiate(Spike, virtualObject.Position, virtualObject.Rotation) as GameObject;
+                        obj.transform.localScale = virtualObject.Scale;
+                        virtualObject.objectRef = obj;
+                        obj.GetComponent<ObjectController>().clipRef = clip;
+                        obj.GetComponent<ObjectController>().objectRef = virtualObject;
+                    }
+
+                    if (virtualObject.objectName == "Bow")
+                    {
+                        GameObject obj = Instantiate(Bow, virtualObject.Position, virtualObject.Rotation) as GameObject;
+                        obj.transform.localScale = virtualObject.Scale;
+                        virtualObject.objectRef = obj;
+                        obj.GetComponent<ObjectController>().clipRef = clip;
+                        obj.GetComponent<ObjectController>().objectRef = virtualObject;
+                    }
+
+                    if (virtualObject.objectName == "Arrow")
+                    {
+                        GameObject obj = Instantiate(Arrow, virtualObject.Position, virtualObject.Rotation) as GameObject;
                         obj.transform.localScale = virtualObject.Scale;
                         virtualObject.objectRef = obj;
                         obj.GetComponent<ObjectController>().clipRef = clip;

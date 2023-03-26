@@ -7,6 +7,8 @@ public class ObjectSpawner : MonoBehaviour
     [SerializeField] GameObject Shield;
     [SerializeField] GameObject Spike;
     [SerializeField] GameObject Crate;
+    [SerializeField] GameObject Bow;
+    [SerializeField] GameObject Arrow;
     [SerializeField] private Transform spawnPoint;
 
     public void spawnObject(string objectName)
@@ -28,6 +30,14 @@ public class ObjectSpawner : MonoBehaviour
                 case "Crate":
                     prefab = Crate;
                     objName = "Crate";
+                    break;
+                case "Bow":
+                    prefab = Bow;
+                    objName = "Bow";
+                    break;
+                case "Arrow":
+                    prefab = Arrow;
+                    objName = "Arrow";
                     break;
             }
             spawnObject(prefab, objName);

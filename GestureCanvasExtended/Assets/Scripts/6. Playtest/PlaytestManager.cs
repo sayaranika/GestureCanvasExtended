@@ -7,7 +7,7 @@ public class PlaytestManager : MonoBehaviour
 {
     [SerializeField] GameObject recognizerObject;
     [SerializeField] PoseRecognizer poseRecognizer;
-    [SerializeField] AssetManager assetManager;
+    [SerializeField] AssetController assetManager;
     [SerializeField] Text msg;
     public static Clip currentClip = null;
 

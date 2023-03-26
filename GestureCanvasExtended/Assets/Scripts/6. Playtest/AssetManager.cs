@@ -18,6 +18,8 @@ public class AssetManager : MonoBehaviour
     [SerializeField] GameObject Shield;
     [SerializeField] GameObject Crate;
     [SerializeField] GameObject Spike;
+    [SerializeField] GameObject Bow;
+    [SerializeField] GameObject Arrow;
 
     [Header("VFX")]
     [SerializeField] GameObject DragonPunch;
@@ -45,7 +47,18 @@ public class AssetManager : MonoBehaviour
                     forward.y = 0.0f;
                     followObject.obj.transform.forward = forward;
                 }
+
+                if (followObject.obj.tag == "SpawnedObject")
+                {
+
+                    Vector3 directionVector = CenterCamera.transform.position - followObject.obj.transform.position;
+                    var rotation = Quaternion.LookRotation(directionVector.normalized);
+                    rotation *= followObject.obj.transform.rotation;
+                    transform.rotation = rotation;
+                }
             }
+
+            
         }
     }
 
@@ -78,32 +91,37 @@ public class AssetManager : MonoBehaviour
 
     public void AttachToHand(VirtualObject obj, GameObject ob, OVRSkeleton ovrSkeleton, Transform hand)
     {
-        if (obj.AttachedBone == "wrist") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_WristRoot].Transform.position;
-        if (obj.AttachedBone == "index1") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Index1].Transform.position;
-        if (obj.AttachedBone == "index2") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Index2].Transform.position;
-        if (obj.AttachedBone == "index3") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Index3].Transform.position;
-        if (obj.AttachedBone == "middle1") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Middle1].Transform.position;
-        if (obj.AttachedBone == "middle2") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Middle2].Transform.position;
-        if (obj.AttachedBone == "middle3") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Middle3].Transform.position;
-        if (obj.AttachedBone == "pinky0") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Pinky0].Transform.position;
-        if (obj.AttachedBone == "pinky1") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Pinky1].Transform.position;
-        if (obj.AttachedBone == "pinky2") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Pinky2].Transform.position;
-        if (obj.AttachedBone == "pinky3") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Pinky3].Transform.position;
-        if (obj.AttachedBone == "ring1") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Ring1].Transform.position;
-        if (obj.AttachedBone == "ring2") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Ring2].Transform.position;
-        if (obj.AttachedBone == "ring3") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Ring3].Transform.position;
-        if (obj.AttachedBone == "thumb0") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Thumb0].Transform.position;
-        if (obj.AttachedBone == "thumb1") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Thumb1].Transform.position;
-        if (obj.AttachedBone == "thumb2") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Thumb2].Transform.position;
-        if (obj.AttachedBone == "thumb3") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Thumb3].Transform.position;
 
         ob.transform.rotation = obj.Rotation;
+
+        if (obj.AttachedBone == "wrist") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_WristRoot].Transform.position;
+        else if (obj.AttachedBone == "index1") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Index1].Transform.position;
+        else if (obj.AttachedBone == "index2") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Index2].Transform.position;
+        else if (obj.AttachedBone == "index3") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Index3].Transform.position;
+        else if (obj.AttachedBone == "middle1") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Middle1].Transform.position;
+        else if (obj.AttachedBone == "middle2") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Middle2].Transform.position;
+        else if (obj.AttachedBone == "middle3") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Middle3].Transform.position;
+        else if (obj.AttachedBone == "pinky0") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Pinky0].Transform.position;
+        else if (obj.AttachedBone == "pinky1") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Pinky1].Transform.position;
+        else if (obj.AttachedBone == "pinky2") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Pinky2].Transform.position;
+        else if (obj.AttachedBone == "pinky3") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Pinky3].Transform.position;
+        else if (obj.AttachedBone == "ring1") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Ring1].Transform.position;
+        else if (obj.AttachedBone == "ring2") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Ring2].Transform.position;
+        else if (obj.AttachedBone == "ring3") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Ring3].Transform.position;
+        else if (obj.AttachedBone == "thumb0") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Thumb0].Transform.position;
+        else if (obj.AttachedBone == "thumb1") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Thumb1].Transform.position;
+        else if (obj.AttachedBone == "thumb2") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Thumb2].Transform.position;
+        else if (obj.AttachedBone == "thumb3") ob.transform.position = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_Thumb3].Transform.position;
+
+
+
         ob.transform.parent = hand;
+
     }
 
     public void SpawnVirtualObjects()
     {
-        foreach(VirtualObject obj in PlaytestingManager.currentClip.virtualObjects)
+        foreach (VirtualObject obj in PlaytestingManager.currentClip.virtualObjects)
         {
             Debug.Log("3000: " + obj.objectName);
             if (obj.isAttached == true)
@@ -112,6 +130,8 @@ public class AssetManager : MonoBehaviour
                 if (obj.objectName == "Spike") ob = Instantiate(Spike) as GameObject;
                 if (obj.objectName == "Shield") ob = Instantiate(Shield) as GameObject;
                 if (obj.objectName == "Crate") ob = Instantiate(Crate) as GameObject;
+                if (obj.objectName == "Bow") ob = Instantiate(Bow) as GameObject;
+                if (obj.objectName == "Arrow") ob = Instantiate(Arrow) as GameObject;
                 if (obj.isAttachedToRight == true && ob != null) AttachToHand(obj, ob, ovrSkeleton_R, RightHand);
                 else AttachToHand(obj, ob, ovrSkeleton_L, LeftHand);
             }
@@ -120,17 +140,19 @@ public class AssetManager : MonoBehaviour
                 if (obj.objectName == "Spike") Instantiate(Spike, obj.Position, obj.Rotation);
                 if (obj.objectName == "Shield") Instantiate(Shield, obj.Position, obj.Rotation);
                 if (obj.objectName == "Crate") Instantiate(Crate, obj.Position, obj.Rotation);
+                if (obj.objectName == "Bow") Instantiate(Bow, obj.Position, obj.Rotation);
+                if (obj.objectName == "Arrow") Instantiate(Arrow, obj.Position, obj.Rotation);
             }
-            
 
-            
+
+
 
         }
     }
 
     public void SpawnVFXObjects()
     {
-        foreach(VFXObject obj in PlaytestingManager.currentClip.vfxObjects)
+        foreach (VFXObject obj in PlaytestingManager.currentClip.vfxObjects)
         {
             if (obj.objectName == "DragonPunch")
             {
@@ -197,16 +219,3 @@ public class AssetManager : MonoBehaviour
     }
 }
 
-public class ObjectsThatFollowHand
-{
-    public GameObject obj;
-    public bool isRight;
-    public string AttachedPoint;
-
-    public ObjectsThatFollowHand(GameObject obj, bool isRight, string AttachedPoint)
-    {
-        this.obj = obj;
-        this.isRight = isRight;
-        this.AttachedPoint = AttachedPoint;
-    }
-}

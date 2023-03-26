@@ -23,7 +23,7 @@ public class AnchorObjects : MonoBehaviour
             }
         }
 
-        if (other.tag == "SpawnedObject")
+        if (other.tag == "SpawnedObject" || other.transform.parent.tag == "SpawnedObject")
         {
             Debug.Log("300: spawned");
 
@@ -63,7 +63,7 @@ public class AnchorObjects : MonoBehaviour
             }
         }
 
-        if (other.tag == "SpawnedObject")
+        if (other.tag == "SpawnedObject" || other.transform.parent.tag == "SpawnedObject")
         {
             Debug.Log("400: spawned");
 

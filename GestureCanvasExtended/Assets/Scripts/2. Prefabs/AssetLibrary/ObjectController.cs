@@ -11,7 +11,7 @@ public class ObjectController : MonoBehaviour
     public bool isAttachable = true;
     //List<CustomAnimation> customAnimations = new List<CustomAnimation>();
 
-    public bool isGravity = true;
+    public bool isGravity = false;
     public bool isInReplay = false;
     public bool isInRecord = false;
     Vector3 startPos;
@@ -19,6 +19,7 @@ public class ObjectController : MonoBehaviour
 
     private void Update()
     {
+
         if (isInReplay == false)
         {
             /*if (objectRef.animation.Count > 0)
@@ -47,9 +48,8 @@ public class ObjectController : MonoBehaviour
 
             if (objectRef.isAttachedToRight == true)
             {
+                //ob.transform.parent = hand;
                 AvatarManager avatarManager = GameObject.Find("AvatarManager").GetComponent<AvatarManager>();
-
-
                 if (objectRef.AttachedBone == "wrist") gameObject.transform.position = avatarManager.CurrentAvatar_R().GetComponent<HandObjectGlobalPosition>().wrist();
                 if (objectRef.AttachedBone == "index1") gameObject.transform.position = avatarManager.CurrentAvatar_R().GetComponent<HandObjectGlobalPosition>().index1();
                 if (objectRef.AttachedBone == "index2") gameObject.transform.position = avatarManager.CurrentAvatar_R().GetComponent<HandObjectGlobalPosition>().index2();

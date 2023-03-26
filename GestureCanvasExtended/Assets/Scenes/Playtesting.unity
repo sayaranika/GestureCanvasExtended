@@ -3928,40 +3928,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 427267842}
-  - component: {fileID: 427267841}
+  - component: {fileID: 427267843}
   m_Layer: 0
   m_Name: AssetManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &427267841
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 427267840}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c85a0df1ff693a45a20689ae5123c6c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ovrSkeleton_R: {fileID: 3969958659988665142}
-  ovrSkeleton_L: {fileID: 964850428665112206}
-  RightHand: {fileID: 3927407883829678970}
-  LeftHand: {fileID: 935344290666055362}
-  CenterCamera: {fileID: 8159341325599352136}
-  Shield: {fileID: 5602063274053904892, guid: 2e223802993bd974698845ef6ef87641, type: 3}
-  Crate: {fileID: 2689795100330841512, guid: f3f55abd2d015b44c8a1fc909f897843, type: 3}
-  Spike: {fileID: 100000, guid: 63d18bb507b918f4eb10dba4a8ddb7f2, type: 3}
-  DragonPunch: {fileID: 2431731443025321307, guid: 2fe328361b30f7042821c10e4d1e0d4a, type: 3}
-  IceWall: {fileID: 2784252056716050305, guid: e1b6dc79d3f0c554c98c2c93f23c7e7c, type: 3}
-  AppleBombs: {fileID: 3099765244342820619, guid: 4984dd0c410b00b4eb89561ef8a6f018, type: 3}
-  Chidori: {fileID: 6521049538690606223, guid: cdb0c7750a3b1264988cdb24acfbfbe5, type: 3}
-  FireSpray: {fileID: 3540575674111317651, guid: fbce86b04c49ffd45be9a4438de2caa5, type: 3}
-  SnowStar: {fileID: 8020322840101482282, guid: 98afd1d57b388274b9cb6421ca3f48e7, type: 3}
+  m_IsActive: 0
 --- !u!4 &427267842
 Transform:
   m_ObjectHideFlags: 0
@@ -3977,6 +3951,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &427267843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427267840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f81068e0a98c64c41b8524591e8a8d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ovrSkeleton_R: {fileID: 3969958659988665142}
+  HandModel_R: {fileID: 3929816464201173628}
+  HandModel_L: {fileID: 932937010108882884}
+  ovrSkeleton_L: {fileID: 964850428665112206}
+  Shield: {fileID: 5602063274053904892, guid: 2e223802993bd974698845ef6ef87641, type: 3}
+  Crate: {fileID: 2689795100330841512, guid: f3f55abd2d015b44c8a1fc909f897843, type: 3}
+  Spike: {fileID: 100000, guid: 63d18bb507b918f4eb10dba4a8ddb7f2, type: 3}
+  Bow: {fileID: 7406978773765226390, guid: 34c242a0a46edd240b70b6eff0379b47, type: 3}
+  Arrow: {fileID: 4820522746553127870, guid: a9edd5d9b024b454d82e0df1b57bf5c5, type: 3}
+  DragonPunch: {fileID: 2431731443025321307, guid: 2fe328361b30f7042821c10e4d1e0d4a, type: 3}
+  IceWall: {fileID: 2784252056716050305, guid: e1b6dc79d3f0c554c98c2c93f23c7e7c, type: 3}
+  AppleBombs: {fileID: 3099765244342820619, guid: 4984dd0c410b00b4eb89561ef8a6f018, type: 3}
+  Chidori: {fileID: 6517243283186081564, guid: e0951ab6eb69f354ea7aeed195cffe00, type: 3}
+  FireSpray: {fileID: 3540575674111317651, guid: fbce86b04c49ffd45be9a4438de2caa5, type: 3}
+  SnowStar: {fileID: 6427013809098057004, guid: 475908df6e36db74cb7d91a8ab278dad, type: 3}
+  smoothness: 0.5
+  speed: 10
 --- !u!1 &452732407
 GameObject:
   m_ObjectHideFlags: 0
@@ -5127,6 +5130,59 @@ MonoBehaviour:
   _hand: {fileID: 579484250}
   _shapes:
   - {fileID: 11400000, guid: 94a8005ca38f464428019651105ea8ef, type: 2}
+--- !u!1 &606298865
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 606298867}
+  - component: {fileID: 606298866}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &606298866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606298865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d819471f8c043064bb443a144637f3eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bow: {fileID: 7406978773765226390, guid: 34c242a0a46edd240b70b6eff0379b47, type: 3}
+  Arrow: {fileID: 8562932363783977964, guid: a9edd5d9b024b454d82e0df1b57bf5c5, type: 3}
+  ovrSkeleton_L: {fileID: 964850428665112206}
+  HandModel_L: {fileID: 932937010108882884}
+  ovrSkeleton_R: {fileID: 0}
+  HandModel_R: {fileID: 0}
+  smoothness: 0.5
+  distanceFactor: 0.1
+  speed: 10
+--- !u!4 &606298867
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606298865}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &628120776
 GameObject:
   m_ObjectHideFlags: 0
@@ -14122,7 +14178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   msg: {fileID: 6569554188665745134}
   gestureRecognizer: {fileID: 1829616038}
-  assetManager: {fileID: 427267841}
+  assetManager: {fileID: 606298866}
   recognizerObject: {fileID: 7581233022009104812, guid: d31a52a6517f9b1478dc53f5b53a80d1, type: 3}
   poseRecognizer: {fileID: 1829616036}
 --- !u!114 &1829616038
@@ -14161,9 +14217,24 @@ MonoBehaviour:
       LowerBound: 0
       CFAbsDistance: 0
       CFBbWidths: 0
+  jackknife_B:
+    cost: []
+    templates: []
+    Blades:
+      ResampleCnt: 0
+      Radius: 0
+      EuclideanDistance: 0
+      ZNormalize: 0
+      InnerProduct: 0
+      LowerBound: 0
+      CFAbsDistance: 0
+      CFBbWidths: 0
   gestureRecognizer_R: {fileID: 0}
+  gestureRecognizer_L: {fileID: 0}
+  gestureRecognizer_B: {fileID: 0}
   trained_R: 1
   trained_L: 1
+  trained_B: 0
 --- !u!1 &1862855104
 GameObject:
   m_ObjectHideFlags: 0
