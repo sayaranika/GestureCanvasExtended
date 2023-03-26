@@ -39,7 +39,7 @@ public class PlaybackObjectHandler : MonoBehaviour
                                                       MasterRecording.HMDMotion[0].HMDRotation, prefabHolderTransform).GetComponent<HMDObject>();
 
         //reset player position
-        UI.transform.position = CenterEye.transform.position + new Vector3(0,0.4f,0.25f);
+        UI.transform.position = CenterEye.transform.position + new Vector3(0,1.0f,0.25f);
 
     }
 

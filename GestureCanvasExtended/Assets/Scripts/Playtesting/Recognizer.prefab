@@ -1,0 +1,247 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1395795949290518701
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6682038960504794213}
+  - component: {fileID: 1887762560855221093}
+  m_Layer: 0
+  m_Name: BimanualGesture
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6682038960504794213
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395795949290518701}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7581233022009104814}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1887762560855221093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395795949290518701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92ea0e9efffb68a4ca6ca05adaffc6b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frameNumber: 0
+  RealtimeDataStreamLength: 0
+  ReadDataFrame: 0
+  detectedId: -1
+  window: -1
+  active: 0
+--- !u!1 &4844613353353004243
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5054999236480408411}
+  - component: {fileID: 5175345139583366492}
+  - component: {fileID: 2602855941396024975}
+  m_Layer: 0
+  m_Name: Unimanual Gesture
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5054999236480408411
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4844613353353004243}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7581233022009104814}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5175345139583366492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4844613353353004243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76838485951203f43bd834cdf3c17362, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frameNumber: 0
+  RealtimeDataStreamLength: 0
+  ReadDataFrame: 0
+  detectedId: -1
+  window: -1
+  active: 0
+--- !u!114 &2602855941396024975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4844613353353004243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c43c286de83587e47b203d4f1c1bb21e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frameNumber: 0
+  RealtimeDataStreamLength: 0
+  ReadDataFrame: 0
+  detectedId: -1
+  window: -1
+  active: 0
+--- !u!1 &7581233022009104812
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7581233022009104814}
+  - component: {fileID: 7581233022009104815}
+  - component: {fileID: 1033373153017834513}
+  m_Layer: 0
+  m_Name: Recognizer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7581233022009104814
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7581233022009104812}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.3942585, y: 1.5569332, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5054999236480408411}
+  - {fileID: 6682038960504794213}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7581233022009104815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7581233022009104812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 820ec96129b5b964a8af757f5742885d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interaction:
+    Id: 0
+    isGesture_R: 0
+    isGesture_L: 0
+    isPose_R: 0
+    isPose_L: 0
+    isTransformConstraint_R: 0
+    isTransformConstraint_L: 0
+    GestureSamples_R: []
+    GestureSamples_L: []
+    GestureSamples_B: []
+    expectedGestureId_R: 0
+    expectedGestureId_L: 0
+    expectedGestureId_B: 0
+    rightHandGestureStartIndex: 0
+    leftHandGestureStartIndex: 0
+    rightHandGestureEndIndex: 0
+    leftHandGestureEndIndex: 0
+    isConditionSetToTrue: 0
+    GestureLength_L: 0
+    GestureLength_R: 0
+    GestureLength_B: 0
+  poseRecognizer: {fileID: 0}
+  gestureRecognizer: {fileID: 1033373153017834513}
+  playtestManager: {fileID: 0}
+--- !u!114 &1033373153017834513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7581233022009104812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ad49ecd978715c4392170af1bdce5c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jackknife_R:
+    cost: []
+    templates: []
+    Blades:
+      ResampleCnt: 0
+      Radius: 0
+      EuclideanDistance: 0
+      ZNormalize: 0
+      InnerProduct: 0
+      LowerBound: 0
+      CFAbsDistance: 0
+      CFBbWidths: 0
+  jackknife_L:
+    cost: []
+    templates: []
+    Blades:
+      ResampleCnt: 0
+      Radius: 0
+      EuclideanDistance: 0
+      ZNormalize: 0
+      InnerProduct: 0
+      LowerBound: 0
+      CFAbsDistance: 0
+      CFBbWidths: 0
+  jackknife_B:
+    cost: []
+    templates: []
+    Blades:
+      ResampleCnt: 0
+      Radius: 0
+      EuclideanDistance: 0
+      ZNormalize: 0
+      InnerProduct: 0
+      LowerBound: 0
+      CFAbsDistance: 0
+      CFBbWidths: 0
+  gestureRecognizer_R: {fileID: 5175345139583366492}
+  gestureRecognizer_L: {fileID: 2602855941396024975}
+  gestureRecognizer_B: {fileID: 1887762560855221093}
+  trained_R: 1
+  trained_L: 1
+  trained_B: 1

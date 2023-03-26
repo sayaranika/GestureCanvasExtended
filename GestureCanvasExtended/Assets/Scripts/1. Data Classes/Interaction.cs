@@ -25,10 +25,12 @@ public class Interaction
 
     public List<GestureSamplesWrapper> GestureSamples_R = new List<GestureSamplesWrapper>();
     public List<GestureSamplesWrapper> GestureSamples_L = new List<GestureSamplesWrapper>();
+    public List<GestureSamplesWrapper> GestureSamples_B = new List<GestureSamplesWrapper>();
     //public List<List<HandSkeleton>> GestureSamples_L = new List<List<HandSkeleton>>();
 
     public int expectedGestureId_R;
     public int expectedGestureId_L;
+    public int expectedGestureId_B;
 
 
     [JsonIgnore] public int rightHandGestureStartIndex;
@@ -41,6 +43,7 @@ public class Interaction
 
     public int GestureLength_L;
     public int GestureLength_R;
+    public int GestureLength_B;
 
     public Interaction(int interactionId)
     {

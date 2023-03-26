@@ -20,4 +20,11 @@ public class SceneLauncher : MonoBehaviour
         PlaytestManager.Recognizers.Clear();
         SceneManager.LoadScene("Playtest");
     }
+
+    public void StartPlaytesting()
+    {
+        PlaytestingManager.currentClip = null;
+        PlaytestingManager.Recognizers.Clear();
+        SceneManager.LoadScene("Playtesting");
+    }
 }

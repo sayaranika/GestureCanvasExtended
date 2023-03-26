@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "1WMHH814SX0443",
         "name": "com.sayanika.GestureCanvasExtended",
-        "processId": 13810,
+        "processId": 6482,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -192,6 +192,78 @@
             "deviceId": "1WMHH814SX0443",
             "name": "com.sayanika.GestureCanvasExtended",
             "processId": 13810,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH814SX0443",
+            "name": "com.sayanika.GestureCanvasExtended",
+            "processId": 25016,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH814SX0443",
+            "name": "com.sayanika.GestureCanvasExtended",
+            "processId": 25599,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH814SX0443",
+            "name": "com.sayanika.GestureCanvasExtended",
+            "processId": 26084,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH814SX0443",
+            "name": "com.sayanika.GestureCanvasExtended",
+            "processId": 28082,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH814SX0443",
+            "name": "com.sayanika.GestureCanvasExtended",
+            "processId": 30512,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH814SX0443",
+            "name": "com.sayanika.GestureCanvasExtended",
+            "processId": 31314,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH814SX0443",
+            "name": "com.sayanika.GestureCanvasExtended",
+            "processId": 1752,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH814SX0443",
+            "name": "com.sayanika.GestureCanvasExtended",
+            "processId": 3112,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH814SX0443",
+            "name": "com.sayanika.GestureCanvasExtended",
+            "processId": 4437,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH814SX0443",
+            "name": "com.sayanika.GestureCanvasExtended",
+            "processId": 5114,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH814SX0443",
+            "name": "com.sayanika.GestureCanvasExtended",
+            "processId": 5868,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH814SX0443",
+            "name": "com.sayanika.GestureCanvasExtended",
+            "processId": 6482,
             "exited": false
         }
     ],

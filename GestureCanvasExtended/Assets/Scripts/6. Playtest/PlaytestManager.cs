@@ -13,6 +13,12 @@ public class PlaytestManager : MonoBehaviour
 
     public static List<GameObject> Recognizers = new List<GameObject>();
 
+
+    private void Awake()
+    {
+        GestureDataset.Load();
+    }
+
     private void Start()
     {
         msg.text = "Testing";

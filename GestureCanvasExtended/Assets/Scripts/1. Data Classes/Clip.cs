@@ -14,6 +14,7 @@ public class Clip
 
     [JsonIgnore] public Jackknife GestureRecognizer_R;
     [JsonIgnore] public Jackknife GestureRecognizer_L;
+    [JsonIgnore] public Jackknife GestureRecognizer_B;
 
     [JsonIgnore] public List<HandPoseInstance> HandPoses_R = new List<HandPoseInstance>();
     [JsonIgnore] public List<HandPoseInstance> HandPoses_L = new List<HandPoseInstance>();

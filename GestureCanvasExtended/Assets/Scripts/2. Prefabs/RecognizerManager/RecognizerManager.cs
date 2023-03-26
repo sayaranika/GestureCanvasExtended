@@ -9,6 +9,8 @@ public class RecognizerManager : MonoBehaviour
     public GestureRecognizer gestureRecognizer;
     public PlaytestManager playtestManager;
 
+
+
     private void Update()
     {
         bool isRecognized = false;
@@ -21,19 +23,25 @@ public class RecognizerManager : MonoBehaviour
         {
             isRecognized = poseRecognizer.Recognize(Handedness.Left, null, interaction.expectedPose_L, interaction.isTransformConstraint_L, interaction.isConditionSetToTrue);
         }
-        else if(interaction.isPose_L == true && interaction.isPose_R == true)
+        else if (interaction.isPose_L == true && interaction.isPose_R == true)
         {
             isRecognized = poseRecognizer.Recognize(Handedness.Right, interaction.expectedPose_R, null, interaction.isTransformConstraint_R, interaction.isConditionSetToTrue)
                     && poseRecognizer.Recognize(Handedness.Left, null, interaction.expectedPose_L, interaction.isTransformConstraint_L, interaction.isConditionSetToTrue);
         }
-        else if(interaction.isGesture_R == true)
-        {
-            
-        }
-
         if (isRecognized == true)
         {
             playtestManager.Load(interaction.transitionClip);
         }
     }
+}
+
+public class RecognizerResult
+{
+    public bool Pose_R;
+    public bool Pose_L;
+    public bool Gesture_R;
+    public bool Gesture_L;
+    public List<bool> Proximity = new List<bool>();
+
+    RecognizerResult() { }
 }

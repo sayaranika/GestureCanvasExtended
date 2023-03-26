@@ -6,21 +6,88 @@ using System.Collections;
 
 public class GestureRecognizer : MonoBehaviour
 {
-    [SerializeField] RealtimeData realtimeData;
+    //[SerializeField] RealtimeData realtimeData;
     configuartion_parameters_t parameters;
     public Jackknife jackknife_R;
     public Jackknife jackknife_L;
+    public Jackknife jackknife_B;
+
+    [SerializeField] GestureRecognizer_R gestureRecognizer_R;
+    [SerializeField] GestureRecognizer_L gestureRecognizer_L;
+    [SerializeField] GestureRecognizer_B gestureRecognizer_B;
+
+    public void Recognize(Interaction i, Handedness handedness, PoseRecognizer poseRecognizer, PlaytestingManager playtestManager)
+    {
+        Debug.Log("4000I");
+        Debug.Log("4000 : activeness " + gestureRecognizer_B.active);
+        Debug.Log("4000 : Handedness " + handedness.ToString());
+        
+
+        if (handedness == Handedness.Right && gestureRecognizer_R.active == false)
+        {
+            Debug.Log("4000J");
+
+            gestureRecognizer_R.Initialize(i, poseRecognizer, playtestManager);
+            Debug.Log("4000K");
+
+        }
+
+        if (handedness == Handedness.Left && gestureRecognizer_L.active == false)
+        {
+            Debug.Log("4000J");
+
+            gestureRecognizer_L.Initialize(i, poseRecognizer, playtestManager);
+            Debug.Log("4000K");
+
+        }
+
+        if (handedness == Handedness.Both && gestureRecognizer_B.active == false)
+        {
+            Debug.Log("4000JJ");
+
+            gestureRecognizer_B.Initialize(i, poseRecognizer, playtestManager);
+            Debug.Log("4000KK");
+
+        }
+    }
+
 
     #region TRAIN
-    public bool trained_R = true;
-    public bool trained_L = true;
+    public bool trained_R = false;
+    public bool trained_L = false;
+    public bool trained_B = false;
+    public void Train()
+    {
+        Train(Handedness.Right);
+        Train(Handedness.Left);
+        Train(Handedness.Both);
+    }
     public void Train(Handedness handedness)
     {
-        if (handedness == Handedness.Right)
+        if (handedness == Handedness.Right && GestureDataset.GestureDataset_R.Gestures.Count > 0)
         {
+            Debug.Log("4000R");
+
+            trained_R = false;
             StartCoroutine(StartTraining(GestureDataset.GestureDataset_R, jackknife_R, handedness));
         }
-        if (handedness == Handedness.Left) StartCoroutine(StartTraining(GestureDataset.GestureDataset_L, jackknife_L, handedness));
+        else trained_R = true;
+        if (handedness == Handedness.Left && GestureDataset.GestureDataset_L.Gestures.Count > 0)
+        {
+            Debug.Log("4000S");
+
+            trained_L = false;
+            StartCoroutine(StartTraining(GestureDataset.GestureDataset_L, jackknife_L, handedness));
+        }
+        else trained_L = true;
+        if (handedness == Handedness.Both && GestureDataset.GestureDataset_B.Gestures.Count > 0)
+        {
+            Debug.Log("4000S");
+
+            trained_B = false;
+            StartCoroutine(StartTraining(GestureDataset.GestureDataset_B, jackknife_B, handedness));
+        }
+        else trained_B = true;
 
     }
 
@@ -47,12 +114,24 @@ public class GestureRecognizer : MonoBehaviour
         {
             ClipHandler.ClipList[0].GestureRecognizer_R = jackknife;
             trained_R = true;
+            Debug.Log("4000T");
+
         }
 
         if (handedness == Handedness.Left)
         {
             ClipHandler.ClipList[0].GestureRecognizer_L = jackknife;
             trained_L = true;
+            Debug.Log("4000U");
+
+        }
+
+        if (handedness == Handedness.Both)
+        {
+            ClipHandler.ClipList[0].GestureRecognizer_B = jackknife;
+            trained_B = true;
+            Debug.Log("4000U");
+
         }
         yield return null;
     }

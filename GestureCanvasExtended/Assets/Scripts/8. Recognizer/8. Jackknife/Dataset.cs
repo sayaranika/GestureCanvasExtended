@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System;
 using UnityEngine;
 
+
 public class Dataset 
 {
     public List<int> Gestures { get; set; }
@@ -141,117 +142,16 @@ public class Dataset
 
         return ret;
     }
-    public static Sample LoadSampleFile(int gesture_id, int example_id, int start, int end, List<HandSkeleton> dataList)
+
+    public static Sample LoadSampleFile(int gesture_id, int example_id, List<HandSkeleton> dataList_R, List<HandSkeleton> dataList_L)
     {
         Sample ret;
         ret = new Sample(gesture_id, example_id);
 
         List<double> pt = new List<double>();
         List<Vector> points = new List<Vector>();
-
-        for (int i = start; i < end; i++)
-        {
-            pt.Add(dataList[i].HandPosition.x);
-            pt.Add(dataList[i].HandPosition.y);
-            pt.Add(dataList[i].HandPosition.z);
-
-            pt.Add(dataList[i].WristPosition.x);
-            pt.Add(dataList[i].WristPosition.y);
-            pt.Add(dataList[i].WristPosition.z);
-                               
-            pt.Add(dataList[i].ForearmStubPosition.x);
-            pt.Add(dataList[i].ForearmStubPosition.y);
-            pt.Add(dataList[i].ForearmStubPosition.z);
-                               
-            pt.Add(dataList[i].Index1Position.x);
-            pt.Add(dataList[i].Index1Position.y);
-            pt.Add(dataList[i].Index1Position.z);
-                               
-            pt.Add(dataList[i].Index2Position.x);
-            pt.Add(dataList[i].Index2Position.y);
-            pt.Add(dataList[i].Index2Position.z);
-                               
-            pt.Add(dataList[i].Index3Position.x);
-            pt.Add(dataList[i].Index3Position.y);
-            pt.Add(dataList[i].Index3Position.z);
-                               
-            pt.Add(dataList[i].Thumb0Position.x);
-            pt.Add(dataList[i].Thumb0Position.y);
-            pt.Add(dataList[i].Thumb0Position.z);
-                               
-            pt.Add(dataList[i].Thumb1Position.x);
-            pt.Add(dataList[i].Thumb1Position.y);
-            pt.Add(dataList[i].Thumb1Position.z);
-                               
-            pt.Add(dataList[i].Thumb2Position.x);
-            pt.Add(dataList[i].Thumb2Position.y);
-            pt.Add(dataList[i].Thumb2Position.z);
-                               
-            pt.Add(dataList[i].Thumb3Position.x);
-            pt.Add(dataList[i].Thumb3Position.y);
-            pt.Add(dataList[i].Thumb3Position.z);
-                               
-            pt.Add(dataList[i].Middle1Position.x);
-            pt.Add(dataList[i].Middle1Position.y);
-            pt.Add(dataList[i].Middle1Position.z);
-                               
-            pt.Add(dataList[i].Middle2Position.x);
-            pt.Add(dataList[i].Middle2Position.y);
-            pt.Add(dataList[i].Middle2Position.z);
-                               
-            pt.Add(dataList[i].Middle3Position.x);
-            pt.Add(dataList[i].Middle3Position.y);
-            pt.Add(dataList[i].Middle3Position.z);
-                               
-            pt.Add(dataList[i].Ring1Position.x);
-            pt.Add(dataList[i].Ring1Position.y);
-            pt.Add(dataList[i].Ring1Position.z);
-                               
-            pt.Add(dataList[i].Ring2Position.x);
-            pt.Add(dataList[i].Ring2Position.y);
-            pt.Add(dataList[i].Ring2Position.z);
-                               
-            pt.Add(dataList[i].Ring3Position.x);
-            pt.Add(dataList[i].Ring3Position.y);
-            pt.Add(dataList[i].Ring3Position.z);
-                               
-            pt.Add(dataList[i].Pinky0Position.x);
-            pt.Add(dataList[i].Pinky0Position.y);
-            pt.Add(dataList[i].Pinky0Position.z);
-                               
-            pt.Add(dataList[i].Pinky1Position.x);
-            pt.Add(dataList[i].Pinky1Position.y);
-            pt.Add(dataList[i].Pinky1Position.z);
-                               
-            pt.Add(dataList[i].Pinky2Position.x);
-            pt.Add(dataList[i].Pinky2Position.y);
-            pt.Add(dataList[i].Pinky2Position.z);
-                               
-            pt.Add(dataList[i].Pinky3Position.x);
-            pt.Add(dataList[i].Pinky3Position.y);
-            pt.Add(dataList[i].Pinky3Position.z);
-
-
-
-            points.Add(new Vector(pt));
-
-            pt.Clear();
-        }
-
-        ret.AddTrajectory(points);
-
-        return ret;
-    }
-
-    public static Sample LoadSampleFile(int gesture_id, int example_id, int start, int end, List<HandSkeleton> dataList_R, List<HandSkeleton> dataList_L)
-    {
-        Sample ret;
-        ret = new Sample(gesture_id, example_id);
-
-        List<double> pt = new List<double>();
-        List<Vector> points = new List<Vector>();
-
-        for (int i = start; i < end; i++)
+        int end = dataList_R.Count - 1;
+        for (int i = 0; i < end; i++)
         {
             pt.Add(dataList_R[i].HandPosition.x);
             pt.Add(dataList_R[i].HandPosition.y);
@@ -387,7 +287,110 @@ public class Dataset
         return ret;
     }
 
-    public static int LoadGestureEntry(Dataset dataset, int start, int end, List<HandSkeleton> dataList)
+    public static Sample LoadSampleFile(int gesture_id, int example_id, int start, int end, List<HandSkeleton> dataList)
+    {
+        Sample ret;
+        ret = new Sample(gesture_id, example_id);
+
+        List<double> pt = new List<double>();
+        List<Vector> points = new List<Vector>();
+
+        for (int i = start; i < end; i++)
+        {
+            pt.Add(dataList[i].HandPosition.x);
+            pt.Add(dataList[i].HandPosition.y);
+            pt.Add(dataList[i].HandPosition.z);
+
+            pt.Add(dataList[i].WristPosition.x);
+            pt.Add(dataList[i].WristPosition.y);
+            pt.Add(dataList[i].WristPosition.z);
+                               
+            pt.Add(dataList[i].ForearmStubPosition.x);
+            pt.Add(dataList[i].ForearmStubPosition.y);
+            pt.Add(dataList[i].ForearmStubPosition.z);
+                               
+            pt.Add(dataList[i].Index1Position.x);
+            pt.Add(dataList[i].Index1Position.y);
+            pt.Add(dataList[i].Index1Position.z);
+                               
+            pt.Add(dataList[i].Index2Position.x);
+            pt.Add(dataList[i].Index2Position.y);
+            pt.Add(dataList[i].Index2Position.z);
+                               
+            pt.Add(dataList[i].Index3Position.x);
+            pt.Add(dataList[i].Index3Position.y);
+            pt.Add(dataList[i].Index3Position.z);
+                               
+            pt.Add(dataList[i].Thumb0Position.x);
+            pt.Add(dataList[i].Thumb0Position.y);
+            pt.Add(dataList[i].Thumb0Position.z);
+                               
+            pt.Add(dataList[i].Thumb1Position.x);
+            pt.Add(dataList[i].Thumb1Position.y);
+            pt.Add(dataList[i].Thumb1Position.z);
+                               
+            pt.Add(dataList[i].Thumb2Position.x);
+            pt.Add(dataList[i].Thumb2Position.y);
+            pt.Add(dataList[i].Thumb2Position.z);
+                               
+            pt.Add(dataList[i].Thumb3Position.x);
+            pt.Add(dataList[i].Thumb3Position.y);
+            pt.Add(dataList[i].Thumb3Position.z);
+                               
+            pt.Add(dataList[i].Middle1Position.x);
+            pt.Add(dataList[i].Middle1Position.y);
+            pt.Add(dataList[i].Middle1Position.z);
+                               
+            pt.Add(dataList[i].Middle2Position.x);
+            pt.Add(dataList[i].Middle2Position.y);
+            pt.Add(dataList[i].Middle2Position.z);
+                               
+            pt.Add(dataList[i].Middle3Position.x);
+            pt.Add(dataList[i].Middle3Position.y);
+            pt.Add(dataList[i].Middle3Position.z);
+                               
+            pt.Add(dataList[i].Ring1Position.x);
+            pt.Add(dataList[i].Ring1Position.y);
+            pt.Add(dataList[i].Ring1Position.z);
+                               
+            pt.Add(dataList[i].Ring2Position.x);
+            pt.Add(dataList[i].Ring2Position.y);
+            pt.Add(dataList[i].Ring2Position.z);
+                               
+            pt.Add(dataList[i].Ring3Position.x);
+            pt.Add(dataList[i].Ring3Position.y);
+            pt.Add(dataList[i].Ring3Position.z);
+                               
+            pt.Add(dataList[i].Pinky0Position.x);
+            pt.Add(dataList[i].Pinky0Position.y);
+            pt.Add(dataList[i].Pinky0Position.z);
+                               
+            pt.Add(dataList[i].Pinky1Position.x);
+            pt.Add(dataList[i].Pinky1Position.y);
+            pt.Add(dataList[i].Pinky1Position.z);
+                               
+            pt.Add(dataList[i].Pinky2Position.x);
+            pt.Add(dataList[i].Pinky2Position.y);
+            pt.Add(dataList[i].Pinky2Position.z);
+                               
+            pt.Add(dataList[i].Pinky3Position.x);
+            pt.Add(dataList[i].Pinky3Position.y);
+            pt.Add(dataList[i].Pinky3Position.z);
+
+
+
+            points.Add(new Vector(pt));
+
+            pt.Clear();
+        }
+
+        ret.AddTrajectory(points);
+
+        return ret;
+    }
+
+
+    public static int LoadGestureEntry(Dataset dataset, List<HandSkeleton> dataList_R, List<HandSkeleton> dataList_L)
     {
         if (dataset == null)
         {
@@ -395,36 +398,14 @@ public class Dataset
         }
 
         int gestureId = dataset.AddGestureId();
-        //eventually when the system has more than one sample per gesture, loop through each sample and load them
-        //for now I am just loading the single sample per sample;
-        Sample sample = LoadSampleFile(gestureId, 0, start, end, dataList);
-        dataset.AddSample(sample, gestureId);
 
-        //return dataset;
-
-        return gestureId;
-    }
-
-    /*public static int LoadGesture()
-    {
-
-    }*/
-
-    public static int LoadGestureEntry(Dataset dataset, int start, int end, List<HandSkeleton> dataList_R, List<HandSkeleton> dataList_L)
-    {
-        if (dataset == null)
-        {
-            dataset = new Dataset();
-        }
-
-        int gestureId = dataset.AddGestureId();
-        
-        Sample sample = LoadSampleFile(gestureId, 0, start, end, dataList_R, dataList_L);
+        Sample sample = LoadSampleFile(gestureId, 0, dataList_R, dataList_L);
         dataset.AddSample(sample, gestureId);
 
         //return dataset;
         return gestureId;
     }
+
 
     public void PrintDataset()
     {
@@ -473,11 +454,21 @@ public class Dataset
         return gestureId;
     }
 
+    
+
     public static void LoadSample(Dataset dataset, int gesture_id, int example_id, List<HandSkeleton> dataList)
     {
         Sample sample = LoadSampleFile(gesture_id, example_id, dataList);
         dataset.AddSample(sample, gesture_id);
     }
+
+    public static void LoadSample(Dataset dataset, int gesture_id, int example_id, List<HandSkeleton> dataList_R, List<HandSkeleton> dataList_L)
+    {
+        Sample sample = LoadSampleFile(gesture_id, example_id, dataList_R, dataList_L);
+        dataset.AddSample(sample, gesture_id);
+    }
+
+
 
 
 

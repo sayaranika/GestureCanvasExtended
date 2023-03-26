@@ -364,6 +364,8 @@ struct FontData_tB8E562846C6CB59C43260F69AE346B9BF3157224;
 struct FurnitureSpawner_tC3C532786588E281CD80DCB11C39A15F78B6DC2B;
 // UnityEngine.GameObject
 struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F;
+// GestureRecognizer
+struct GestureRecognizer_t53E6958CB4CE052E65C86A6FF1CB31B378311701;
 // GestureSamplesWrapper
 struct GestureSamplesWrapper_t871E2AC21C26555E3B89A32F7192F21FEED13B03;
 // GrabObject
@@ -682,6 +684,7 @@ IL2CPP_EXTERN_C RuntimeClass* OnClick_tE915BFC88D1C91D68F96A97D675ECCCF91B8D46A_
 IL2CPP_EXTERN_C RuntimeClass* OnTheFlyTest_t7CD3D02FD77F57D4AA47044E0737085108BB856E_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Path_t8A38A801D0219E8209C1B1D90D82D4D755D998BC_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* PlaytestManager_t2536ABEEACA1FCB05D8A4CEA27055E8999416737_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* PlaytestingManager_tCB1FA49695286634FE7877F22B973513198EAE23_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* PrimaryPressDelegate_tED364AEF243F75F45C071DA3E1B596D16F2C9123_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ReleasedObject_t03C81AEEB8828CDCAD8F6B13F9816FEA331DBAF3_il2cpp_TypeInfo_var;
@@ -710,6 +713,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral2D1C7911E8F5D6C69E290F82D6293DF05B36A941
 IL2CPP_EXTERN_C String_t* _stringLiteral2D87613611FDE080EFDF130A0CD55DC6C291607A;
 IL2CPP_EXTERN_C String_t* _stringLiteral2E3D8376A2AF9873C3CE7D5139856AE599C8F0F1;
 IL2CPP_EXTERN_C String_t* _stringLiteral3356214D501D9273DB4022DE33B10D82F6557224;
+IL2CPP_EXTERN_C String_t* _stringLiteral36059A54256E17DA79B93168D426558FF2142619;
 IL2CPP_EXTERN_C String_t* _stringLiteral362F6C49457218D1AD9C8F28CDEBFED6FE4E0445;
 IL2CPP_EXTERN_C String_t* _stringLiteral379CC4B154D8E67B03C1F23F19193BED9D5E3FF5;
 IL2CPP_EXTERN_C String_t* _stringLiteral382BF78E08260DE1DA14563F3987282174498879;
@@ -1156,14 +1160,16 @@ struct Clip_t5B493D4729396BB82DD0E7ED754916E180EC23BD  : public RuntimeObject
 	Jackknife_tA43E4C18A9C28EBB8B33854DF6D299F1071A9EDF* ___GestureRecognizer_R_6;
 	// Jackknife Clip::GestureRecognizer_L
 	Jackknife_tA43E4C18A9C28EBB8B33854DF6D299F1071A9EDF* ___GestureRecognizer_L_7;
+	// Jackknife Clip::GestureRecognizer_B
+	Jackknife_tA43E4C18A9C28EBB8B33854DF6D299F1071A9EDF* ___GestureRecognizer_B_8;
 	// System.Collections.Generic.List`1<HandPoseInstance> Clip::HandPoses_R
-	List_1_tFC65151E0EDAF92F2A613E1C5960DFB3B439910F* ___HandPoses_R_8;
+	List_1_tFC65151E0EDAF92F2A613E1C5960DFB3B439910F* ___HandPoses_R_9;
 	// System.Collections.Generic.List`1<HandPoseInstance> Clip::HandPoses_L
-	List_1_tFC65151E0EDAF92F2A613E1C5960DFB3B439910F* ___HandPoses_L_9;
+	List_1_tFC65151E0EDAF92F2A613E1C5960DFB3B439910F* ___HandPoses_L_10;
 	// ClipValidity Clip::clipValidity
-	ClipValidity_t50F2680512F87093AF0314D9FC8755326B12134F* ___clipValidity_10;
+	ClipValidity_t50F2680512F87093AF0314D9FC8755326B12134F* ___clipValidity_11;
 	// Interaction Clip::DefaultInteraction
-	Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* ___DefaultInteraction_11;
+	Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* ___DefaultInteraction_12;
 };
 
 // ClipButton
@@ -1349,24 +1355,30 @@ struct Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295  : public RuntimeOb
 	List_1_tAF36B554687AF8325550F43F20C555E04B757503* ___GestureSamples_R_10;
 	// System.Collections.Generic.List`1<GestureSamplesWrapper> Interaction::GestureSamples_L
 	List_1_tAF36B554687AF8325550F43F20C555E04B757503* ___GestureSamples_L_11;
+	// System.Collections.Generic.List`1<GestureSamplesWrapper> Interaction::GestureSamples_B
+	List_1_tAF36B554687AF8325550F43F20C555E04B757503* ___GestureSamples_B_12;
 	// System.Int32 Interaction::expectedGestureId_R
-	int32_t ___expectedGestureId_R_12;
+	int32_t ___expectedGestureId_R_13;
 	// System.Int32 Interaction::expectedGestureId_L
-	int32_t ___expectedGestureId_L_13;
+	int32_t ___expectedGestureId_L_14;
+	// System.Int32 Interaction::expectedGestureId_B
+	int32_t ___expectedGestureId_B_15;
 	// System.Int32 Interaction::rightHandGestureStartIndex
-	int32_t ___rightHandGestureStartIndex_14;
+	int32_t ___rightHandGestureStartIndex_16;
 	// System.Int32 Interaction::leftHandGestureStartIndex
-	int32_t ___leftHandGestureStartIndex_15;
+	int32_t ___leftHandGestureStartIndex_17;
 	// System.Int32 Interaction::rightHandGestureEndIndex
-	int32_t ___rightHandGestureEndIndex_16;
+	int32_t ___rightHandGestureEndIndex_18;
 	// System.Int32 Interaction::leftHandGestureEndIndex
-	int32_t ___leftHandGestureEndIndex_17;
+	int32_t ___leftHandGestureEndIndex_19;
 	// System.Boolean Interaction::isConditionSetToTrue
-	bool ___isConditionSetToTrue_18;
+	bool ___isConditionSetToTrue_20;
 	// System.Int32 Interaction::GestureLength_L
-	int32_t ___GestureLength_L_19;
+	int32_t ___GestureLength_L_21;
 	// System.Int32 Interaction::GestureLength_R
-	int32_t ___GestureLength_R_20;
+	int32_t ___GestureLength_R_22;
+	// System.Int32 Interaction::GestureLength_B
+	int32_t ___GestureLength_B_23;
 };
 
 // ProducerData
@@ -5186,6 +5198,29 @@ struct PlaytestManager_t2536ABEEACA1FCB05D8A4CEA27055E8999416737_StaticFields
 	Clip_t5B493D4729396BB82DD0E7ED754916E180EC23BD* ___currentClip_8;
 	// System.Collections.Generic.List`1<UnityEngine.GameObject> PlaytestManager::Recognizers
 	List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* ___Recognizers_9;
+};
+
+// PlaytestingManager
+struct PlaytestingManager_tCB1FA49695286634FE7877F22B973513198EAE23  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// UnityEngine.UI.Text PlaytestingManager::msg
+	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___msg_4;
+	// GestureRecognizer PlaytestingManager::gestureRecognizer
+	GestureRecognizer_t53E6958CB4CE052E65C86A6FF1CB31B378311701* ___gestureRecognizer_6;
+	// AssetManager PlaytestingManager::assetManager
+	AssetManager_t3DB5AC465001740828A1B11E636EC7542DFA9E8D* ___assetManager_8;
+	// UnityEngine.GameObject PlaytestingManager::recognizerObject
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___recognizerObject_9;
+	// PoseRecognizer PlaytestingManager::poseRecognizer
+	PoseRecognizer_t7E2392814517130FD64A57E16671267462AE9329* ___poseRecognizer_10;
+};
+
+struct PlaytestingManager_tCB1FA49695286634FE7877F22B973513198EAE23_StaticFields
+{
+	// Clip PlaytestingManager::currentClip
+	Clip_t5B493D4729396BB82DD0E7ED754916E180EC23BD* ___currentClip_5;
+	// System.Collections.Generic.List`1<UnityEngine.GameObject> PlaytestingManager::Recognizers
+	List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* ___Recognizers_7;
 };
 
 // RealtimeData
@@ -15227,6 +15262,34 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneLauncher_StartPlaytest_mD52F7F307AD
 		return;
 	}
 }
+// System.Void SceneLauncher::StartPlaytesting()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneLauncher_StartPlaytesting_m55F52B9C275653EC16B2EAC8068C4BA74A16192F (SceneLauncher_tD0CB6527B24A24DFB148588B51A164188AB31952* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Clear_m32D399BDD753B5BD6CE27560249096418F3F0867_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlaytestingManager_tCB1FA49695286634FE7877F22B973513198EAE23_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral36059A54256E17DA79B93168D426558FF2142619);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// PlaytestingManager.currentClip = null;
+		il2cpp_codegen_runtime_class_init_inline(PlaytestingManager_tCB1FA49695286634FE7877F22B973513198EAE23_il2cpp_TypeInfo_var);
+		((PlaytestingManager_tCB1FA49695286634FE7877F22B973513198EAE23_StaticFields*)il2cpp_codegen_static_fields_for(PlaytestingManager_tCB1FA49695286634FE7877F22B973513198EAE23_il2cpp_TypeInfo_var))->___currentClip_5 = (Clip_t5B493D4729396BB82DD0E7ED754916E180EC23BD*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&((PlaytestingManager_tCB1FA49695286634FE7877F22B973513198EAE23_StaticFields*)il2cpp_codegen_static_fields_for(PlaytestingManager_tCB1FA49695286634FE7877F22B973513198EAE23_il2cpp_TypeInfo_var))->___currentClip_5), (void*)(Clip_t5B493D4729396BB82DD0E7ED754916E180EC23BD*)NULL);
+		// PlaytestingManager.Recognizers.Clear();
+		List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* L_0 = ((PlaytestingManager_tCB1FA49695286634FE7877F22B973513198EAE23_StaticFields*)il2cpp_codegen_static_fields_for(PlaytestingManager_tCB1FA49695286634FE7877F22B973513198EAE23_il2cpp_TypeInfo_var))->___Recognizers_7;
+		NullCheck(L_0);
+		List_1_Clear_m32D399BDD753B5BD6CE27560249096418F3F0867_inline(L_0, List_1_Clear_m32D399BDD753B5BD6CE27560249096418F3F0867_RuntimeMethod_var);
+		// SceneManager.LoadScene("Playtesting");
+		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
+		SceneManager_LoadScene_mBB3DBC1601A21F8F4E8A5D68FED30EA9412F218E(_stringLiteral36059A54256E17DA79B93168D426558FF2142619, NULL);
+		// }
+		return;
+	}
+}
 // System.Void SceneLauncher::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneLauncher__ctor_m65A55A83CB9D6F7534643C30FE04748F2C3E4856 (SceneLauncher_tD0CB6527B24A24DFB148588B51A164188AB31952* __this, const RuntimeMethod* method) 
 {
@@ -15282,14 +15345,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clip__ctor_m4B4DF1147FBBEB13A4B72FFCD4E0
 		List_1_tFC65151E0EDAF92F2A613E1C5960DFB3B439910F* L_3 = (List_1_tFC65151E0EDAF92F2A613E1C5960DFB3B439910F*)il2cpp_codegen_object_new(List_1_tFC65151E0EDAF92F2A613E1C5960DFB3B439910F_il2cpp_TypeInfo_var);
 		NullCheck(L_3);
 		List_1__ctor_m771AE69DB8690B2511FB41CCF23EF21B5B3967AD(L_3, List_1__ctor_m771AE69DB8690B2511FB41CCF23EF21B5B3967AD_RuntimeMethod_var);
-		__this->___HandPoses_R_8 = L_3;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___HandPoses_R_8), (void*)L_3);
+		__this->___HandPoses_R_9 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___HandPoses_R_9), (void*)L_3);
 		// [JsonIgnore] public List<HandPoseInstance> HandPoses_L = new List<HandPoseInstance>();
 		List_1_tFC65151E0EDAF92F2A613E1C5960DFB3B439910F* L_4 = (List_1_tFC65151E0EDAF92F2A613E1C5960DFB3B439910F*)il2cpp_codegen_object_new(List_1_tFC65151E0EDAF92F2A613E1C5960DFB3B439910F_il2cpp_TypeInfo_var);
 		NullCheck(L_4);
 		List_1__ctor_m771AE69DB8690B2511FB41CCF23EF21B5B3967AD(L_4, List_1__ctor_m771AE69DB8690B2511FB41CCF23EF21B5B3967AD_RuntimeMethod_var);
-		__this->___HandPoses_L_9 = L_4;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___HandPoses_L_9), (void*)L_4);
+		__this->___HandPoses_L_10 = L_4;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___HandPoses_L_10), (void*)L_4);
 		// public Clip(int Id, int startIndex, int endIndex)
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		// this.Id = Id;
@@ -20906,11 +20969,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Interaction__ctor_mB84422480201839B3038E
 		List_1__ctor_m375C720C0C18D05104EF91135123F77E3FA6DE0E(L_1, List_1__ctor_m375C720C0C18D05104EF91135123F77E3FA6DE0E_RuntimeMethod_var);
 		__this->___GestureSamples_L_11 = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___GestureSamples_L_11), (void*)L_1);
+		// public List<GestureSamplesWrapper> GestureSamples_B = new List<GestureSamplesWrapper>();
+		List_1_tAF36B554687AF8325550F43F20C555E04B757503* L_2 = (List_1_tAF36B554687AF8325550F43F20C555E04B757503*)il2cpp_codegen_object_new(List_1_tAF36B554687AF8325550F43F20C555E04B757503_il2cpp_TypeInfo_var);
+		NullCheck(L_2);
+		List_1__ctor_m375C720C0C18D05104EF91135123F77E3FA6DE0E(L_2, List_1__ctor_m375C720C0C18D05104EF91135123F77E3FA6DE0E_RuntimeMethod_var);
+		__this->___GestureSamples_B_12 = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___GestureSamples_B_12), (void*)L_2);
 		// public Interaction(int interactionId)
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		// this.Id = interactionId;
-		int32_t L_2 = ___interactionId0;
-		__this->___Id_0 = L_2;
+		int32_t L_3 = ___interactionId0;
+		__this->___Id_0 = L_3;
 		// isGesture_L = false;
 		__this->___isGesture_L_3 = (bool)0;
 		// isGesture_R = false;
@@ -20927,7 +20996,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Interaction__ctor_mB84422480201839B3038E
 		__this->___transitionClip_1 = (Clip_t5B493D4729396BB82DD0E7ED754916E180EC23BD*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___transitionClip_1), (void*)(Clip_t5B493D4729396BB82DD0E7ED754916E180EC23BD*)NULL);
 		// isConditionSetToTrue = true;
-		__this->___isConditionSetToTrue_18 = (bool)1;
+		__this->___isConditionSetToTrue_20 = (bool)1;
 		// }
 		return;
 	}
@@ -20980,7 +21049,7 @@ IL_0010:
 		// isPose_R = false;
 		__this->___isPose_R_4 = (bool)0;
 		// expectedGestureId_R = -1;
-		__this->___expectedGestureId_R_12 = (-1);
+		__this->___expectedGestureId_R_13 = (-1);
 		// GestureSamples_R.Add(new GestureSamplesWrapper(handData));
 		List_1_tAF36B554687AF8325550F43F20C555E04B757503* L_4 = __this->___GestureSamples_R_10;
 		List_1_t090E4A4DB594DA67CF08DA78F73A3594DCCCEC6C* L_5 = ___handData1;
@@ -20994,7 +21063,7 @@ IL_0010:
 		NullCheck(L_7);
 		int32_t L_8;
 		L_8 = List_1_get_Count_m12F639714BADBAFD2CA33DD0FFB6FB2AC71A8546_inline(L_7, List_1_get_Count_m12F639714BADBAFD2CA33DD0FFB6FB2AC71A8546_RuntimeMethod_var);
-		__this->___GestureLength_R_20 = L_8;
+		__this->___GestureLength_R_22 = L_8;
 		// break;
 		goto IL_007a;
 	}
@@ -21006,7 +21075,7 @@ IL_0045:
 		// isPose_R = false;
 		__this->___isPose_R_4 = (bool)0;
 		// expectedGestureId_L = -1;
-		__this->___expectedGestureId_L_13 = (-1);
+		__this->___expectedGestureId_L_14 = (-1);
 		// GestureSamples_L.Add(new GestureSamplesWrapper(handData));
 		List_1_tAF36B554687AF8325550F43F20C555E04B757503* L_9 = __this->___GestureSamples_L_11;
 		List_1_t090E4A4DB594DA67CF08DA78F73A3594DCCCEC6C* L_10 = ___handData1;
@@ -21020,7 +21089,7 @@ IL_0045:
 		NullCheck(L_12);
 		int32_t L_13;
 		L_13 = List_1_get_Count_m12F639714BADBAFD2CA33DD0FFB6FB2AC71A8546_inline(L_12, List_1_get_Count_m12F639714BADBAFD2CA33DD0FFB6FB2AC71A8546_RuntimeMethod_var);
-		__this->___GestureLength_L_19 = L_13;
+		__this->___GestureLength_L_21 = L_13;
 		// break;
 		goto IL_007a;
 	}
@@ -26632,7 +26701,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AddInteractionManager_AddInteraction_m3C
 		// Interaction defaultInt = clipRef.DefaultInteraction;
 		Clip_t5B493D4729396BB82DD0E7ED754916E180EC23BD* L_4 = __this->___clipRef_4;
 		NullCheck(L_4);
-		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_5 = L_4->___DefaultInteraction_11;
+		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_5 = L_4->___DefaultInteraction_12;
 		V_1 = L_5;
 		// i.isGesture_R = defaultInt.isGesture_R;
 		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_6 = V_0;
@@ -26766,9 +26835,9 @@ IL_00bf:
 		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_51 = V_0;
 		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_52 = V_1;
 		NullCheck(L_52);
-		bool L_53 = L_52->___isConditionSetToTrue_18;
+		bool L_53 = L_52->___isConditionSetToTrue_20;
 		NullCheck(L_51);
-		L_51->___isConditionSetToTrue_18 = L_53;
+		L_51->___isConditionSetToTrue_20 = L_53;
 		// clipRef.interactions.Add(i);
 		Clip_t5B493D4729396BB82DD0E7ED754916E180EC23BD* L_54 = __this->___clipRef_4;
 		NullCheck(L_54);
@@ -27737,7 +27806,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InteractionPanelManager_AddInputOption_m
 		// if (clipRef.clipValidity.isDataValid_R == true)
 		Clip_t5B493D4729396BB82DD0E7ED754916E180EC23BD* L_0 = __this->___clipRef_33;
 		NullCheck(L_0);
-		ClipValidity_t50F2680512F87093AF0314D9FC8755326B12134F* L_1 = L_0->___clipValidity_10;
+		ClipValidity_t50F2680512F87093AF0314D9FC8755326B12134F* L_1 = L_0->___clipValidity_11;
 		NullCheck(L_1);
 		bool L_2 = L_1->___isDataValid_R_2;
 		V_1 = L_2;
@@ -27793,7 +27862,7 @@ IL_003d:
 		// if (clipRef.clipValidity.isDataValid_L == true)
 		Clip_t5B493D4729396BB82DD0E7ED754916E180EC23BD* L_9 = __this->___clipRef_33;
 		NullCheck(L_9);
-		ClipValidity_t50F2680512F87093AF0314D9FC8755326B12134F* L_10 = L_9->___clipValidity_10;
+		ClipValidity_t50F2680512F87093AF0314D9FC8755326B12134F* L_10 = L_9->___clipValidity_11;
 		NullCheck(L_10);
 		bool L_11 = L_10->___isDataValid_L_3;
 		V_3 = L_11;
@@ -27887,7 +27956,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InteractionPanelManager_SetResponses_m0A
 		// if (interactionRef.isConditionSetToTrue == true)
 		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_0 = __this->___interactionRef_34;
 		NullCheck(L_0);
-		bool L_1 = L_0->___isConditionSetToTrue_18;
+		bool L_1 = L_0->___isConditionSetToTrue_20;
 		V_0 = L_1;
 		bool L_2 = V_0;
 		if (!L_2)
@@ -28602,7 +28671,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InteractionPanelManager_AddInput_m46195B
 		// if (clipRef.clipValidity.isDataValid_R == true)
 		Clip_t5B493D4729396BB82DD0E7ED754916E180EC23BD* L_0 = __this->___clipRef_33;
 		NullCheck(L_0);
-		ClipValidity_t50F2680512F87093AF0314D9FC8755326B12134F* L_1 = L_0->___clipValidity_10;
+		ClipValidity_t50F2680512F87093AF0314D9FC8755326B12134F* L_1 = L_0->___clipValidity_11;
 		NullCheck(L_1);
 		bool L_2 = L_1->___isDataValid_R_2;
 		V_0 = L_2;
@@ -28648,7 +28717,7 @@ IL_0034:
 		// if (clipRef.DefaultInteraction.isGesture_R == true)
 		Clip_t5B493D4729396BB82DD0E7ED754916E180EC23BD* L_9 = __this->___clipRef_33;
 		NullCheck(L_9);
-		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_10 = L_9->___DefaultInteraction_11;
+		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_10 = L_9->___DefaultInteraction_12;
 		NullCheck(L_10);
 		bool L_11 = L_10->___isGesture_R_2;
 		V_2 = L_11;
@@ -28671,7 +28740,7 @@ IL_005b:
 		// else if (clipRef.DefaultInteraction.isPose_R == true)
 		Clip_t5B493D4729396BB82DD0E7ED754916E180EC23BD* L_14 = __this->___clipRef_33;
 		NullCheck(L_14);
-		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_15 = L_14->___DefaultInteraction_11;
+		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_15 = L_14->___DefaultInteraction_12;
 		NullCheck(L_15);
 		bool L_16 = L_15->___isPose_R_4;
 		V_3 = L_16;
@@ -28710,7 +28779,7 @@ IL_008b:
 		// if (clipRef.clipValidity.isDataValid_L == true)
 		Clip_t5B493D4729396BB82DD0E7ED754916E180EC23BD* L_20 = __this->___clipRef_33;
 		NullCheck(L_20);
-		ClipValidity_t50F2680512F87093AF0314D9FC8755326B12134F* L_21 = L_20->___clipValidity_10;
+		ClipValidity_t50F2680512F87093AF0314D9FC8755326B12134F* L_21 = L_20->___clipValidity_11;
 		NullCheck(L_21);
 		bool L_22 = L_21->___isDataValid_L_3;
 		V_4 = L_22;
@@ -28756,7 +28825,7 @@ IL_00c0:
 		// if (clipRef.DefaultInteraction.isGesture_L == true)
 		Clip_t5B493D4729396BB82DD0E7ED754916E180EC23BD* L_29 = __this->___clipRef_33;
 		NullCheck(L_29);
-		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_30 = L_29->___DefaultInteraction_11;
+		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_30 = L_29->___DefaultInteraction_12;
 		NullCheck(L_30);
 		bool L_31 = L_30->___isGesture_L_3;
 		V_6 = L_31;
@@ -28779,7 +28848,7 @@ IL_00eb:
 		// else if (clipRef.DefaultInteraction.isPose_R == true)
 		Clip_t5B493D4729396BB82DD0E7ED754916E180EC23BD* L_34 = __this->___clipRef_33;
 		NullCheck(L_34);
-		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_35 = L_34->___DefaultInteraction_11;
+		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_35 = L_34->___DefaultInteraction_12;
 		NullCheck(L_35);
 		bool L_36 = L_35->___isPose_R_4;
 		V_7 = L_36;
@@ -29809,7 +29878,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InteractionPanelManager_TruePressed_m2E2
 		// interactionRef.isConditionSetToTrue = false;
 		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_0 = __this->___interactionRef_34;
 		NullCheck(L_0);
-		L_0->___isConditionSetToTrue_18 = (bool)0;
+		L_0->___isConditionSetToTrue_20 = (bool)0;
 		// InteractionBuilderContent.refresh = true;
 		il2cpp_codegen_runtime_class_init_inline(InteractionBuilderContent_t897BE95AE77A62A37ADA358F50D86E166AEFDE60_il2cpp_TypeInfo_var);
 		((InteractionBuilderContent_t897BE95AE77A62A37ADA358F50D86E166AEFDE60_StaticFields*)il2cpp_codegen_static_fields_for(InteractionBuilderContent_t897BE95AE77A62A37ADA358F50D86E166AEFDE60_il2cpp_TypeInfo_var))->___refresh_8 = (bool)1;
@@ -29830,7 +29899,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InteractionPanelManager_FalsePressed_m21
 		// interactionRef.isConditionSetToTrue = true;
 		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_0 = __this->___interactionRef_34;
 		NullCheck(L_0);
-		L_0->___isConditionSetToTrue_18 = (bool)1;
+		L_0->___isConditionSetToTrue_20 = (bool)1;
 		// InteractionBuilderContent.refresh = true;
 		il2cpp_codegen_runtime_class_init_inline(InteractionBuilderContent_t897BE95AE77A62A37ADA358F50D86E166AEFDE60_il2cpp_TypeInfo_var);
 		((InteractionBuilderContent_t897BE95AE77A62A37ADA358F50D86E166AEFDE60_StaticFields*)il2cpp_codegen_static_fields_for(InteractionBuilderContent_t897BE95AE77A62A37ADA358F50D86E166AEFDE60_il2cpp_TypeInfo_var))->___refresh_8 = (bool)1;
@@ -30455,7 +30524,7 @@ IL_0018:
 		// foreach (HandPoseInstance hp in clipRef.HandPoses_R)
 		Clip_t5B493D4729396BB82DD0E7ED754916E180EC23BD* L_4 = __this->___clipRef_33;
 		NullCheck(L_4);
-		List_1_tFC65151E0EDAF92F2A613E1C5960DFB3B439910F* L_5 = L_4->___HandPoses_R_8;
+		List_1_tFC65151E0EDAF92F2A613E1C5960DFB3B439910F* L_5 = L_4->___HandPoses_R_9;
 		NullCheck(L_5);
 		Enumerator_t0F5054F026FDEDB511FF18451F2C5C70C4111D77 L_6;
 		L_6 = List_1_GetEnumerator_m8035FFDB3B96FA3E2A5FCD137ED33FA133FE3F7C(L_5, List_1_GetEnumerator_m8035FFDB3B96FA3E2A5FCD137ED33FA133FE3F7C_RuntimeMethod_var);
@@ -30567,7 +30636,7 @@ IL_0092:
 		// foreach (HandPoseInstance hp in clipRef.HandPoses_L)
 		Clip_t5B493D4729396BB82DD0E7ED754916E180EC23BD* L_21 = __this->___clipRef_33;
 		NullCheck(L_21);
-		List_1_tFC65151E0EDAF92F2A613E1C5960DFB3B439910F* L_22 = L_21->___HandPoses_L_9;
+		List_1_tFC65151E0EDAF92F2A613E1C5960DFB3B439910F* L_22 = L_21->___HandPoses_L_10;
 		NullCheck(L_22);
 		Enumerator_t0F5054F026FDEDB511FF18451F2C5C70C4111D77 L_23;
 		L_23 = List_1_GetEnumerator_m8035FFDB3B96FA3E2A5FCD137ED33FA133FE3F7C(L_22, List_1_GetEnumerator_m8035FFDB3B96FA3E2A5FCD137ED33FA133FE3F7C_RuntimeMethod_var);

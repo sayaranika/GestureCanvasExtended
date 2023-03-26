@@ -103,7 +103,7 @@ public class AssetManager : MonoBehaviour
 
     public void SpawnVirtualObjects()
     {
-        foreach(VirtualObject obj in PlaytestManager.currentClip.virtualObjects)
+        foreach(VirtualObject obj in PlaytestingManager.currentClip.virtualObjects)
         {
             Debug.Log("3000: " + obj.objectName);
             if (obj.isAttached == true)
@@ -130,7 +130,7 @@ public class AssetManager : MonoBehaviour
 
     public void SpawnVFXObjects()
     {
-        foreach(VFXObject obj in PlaytestManager.currentClip.vfxObjects)
+        foreach(VFXObject obj in PlaytestingManager.currentClip.vfxObjects)
         {
             if (obj.objectName == "DragonPunch")
             {
