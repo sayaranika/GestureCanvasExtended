@@ -13,12 +13,12 @@ GameObject:
   - component: {fileID: 2559166169711027023}
   - component: {fileID: 2559166169711027016}
   - component: {fileID: 2559166169711027017}
-  - component: {fileID: 2559166169711027018}
   - component: {fileID: 2559166169711027012}
   - component: {fileID: 2559166169711027013}
+  - component: {fileID: 3399272140834697021}
   m_Layer: 0
   m_Name: ArrowAuthored
-  m_TagString: SpawnedObject
+  m_TagString: Trouble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -118,24 +118,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
---- !u!114 &2559166169711027018
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2559166169711027009}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _transferOnSecondSelection: 0
-  _addNewPointsToFront: 0
-  _forwardElement: {fileID: 0}
-  _oneGrabTransformer: {fileID: 0}
-  _twoGrabTransformer: {fileID: 0}
-  _maxGrabPoints: -1
 --- !u!65 &2559166169711027012
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -161,9 +143,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bedaac29a943f844a7074b53c8bdf9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _grabbable: {fileID: 2559166169711027018}
+  _grabbable: {fileID: 0}
   _rigidbody: {fileID: 2559166169711027017}
   _scaleMassWithSize: 1
+--- !u!114 &3399272140834697021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2559166169711027009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91117cc3eeb57f14ea8f01fcce810386, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4820522746553127870
 GameObject:
   m_ObjectHideFlags: 0
@@ -175,6 +169,8 @@ GameObject:
   - component: {fileID: 4820522746553127869}
   - component: {fileID: 6992607793405215660}
   - component: {fileID: 3974968042193803275}
+  - component: {fileID: 1498134558047517319}
+  - component: {fileID: 2547714642555778021}
   m_Layer: 0
   m_Name: ArrowPivot
   m_TagString: SpawnedObject
@@ -213,7 +209,7 @@ MonoBehaviour:
   _interactorFilters: []
   _maxInteractors: -1
   _maxSelectingInteractors: -1
-  _pointableElement: {fileID: 2559166169711027018}
+  _pointableElement: {fileID: 2547714642555778021}
   _rigidbody: {fileID: 2559166169711027017}
   _resetGrabOnGrabsUpdated: 1
   _physicsGrabbable: {fileID: 0}
@@ -263,3 +259,33 @@ MonoBehaviour:
   isGravity: 0
   isInReplay: 0
   isInRecord: 0
+--- !u!114 &1498134558047517319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4820522746553127870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91117cc3eeb57f14ea8f01fcce810386, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2547714642555778021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4820522746553127870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _transferOnSecondSelection: 0
+  _addNewPointsToFront: 0
+  _forwardElement: {fileID: 0}
+  _oneGrabTransformer: {fileID: 0}
+  _twoGrabTransformer: {fileID: 0}
+  _maxGrabPoints: -1

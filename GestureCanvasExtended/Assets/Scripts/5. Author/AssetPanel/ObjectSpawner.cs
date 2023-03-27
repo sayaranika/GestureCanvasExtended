@@ -47,6 +47,8 @@ public class ObjectSpawner : MonoBehaviour
     public void spawnObject(GameObject prefab, string objName)
     {
         GameObject obj = Instantiate(prefab) as GameObject;
+
+
         obj.transform.position = spawnPoint.transform.position;
         VirtualObject ob = new VirtualObject(obj, objName, obj.transform.position, obj.transform.rotation, obj.transform.localScale);
 

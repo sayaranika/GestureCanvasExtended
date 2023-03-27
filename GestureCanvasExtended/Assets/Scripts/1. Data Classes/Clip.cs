@@ -11,6 +11,8 @@ public class Clip
     public List<Interaction> interactions = new List<Interaction>();
     public List<VirtualObject> virtualObjects = new List<VirtualObject>();
     public List<VFXObject> vfxObjects = new List<VFXObject>();
+    public List<ProximityObject> proximityObjects = new List<ProximityObject>();
+    //[JsonIgnore] public List<GameObject> proximityGameObjects = new List<GameObject>();
 
     [JsonIgnore] public Jackknife GestureRecognizer_R;
     [JsonIgnore] public Jackknife GestureRecognizer_L;

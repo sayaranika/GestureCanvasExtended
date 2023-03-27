@@ -118,8 +118,13 @@ public class ObjectController : MonoBehaviour
 
     private void OnDestroy()
     {
-        objectRef.Position = gameObject.transform.position;
-        objectRef.Rotation = gameObject.transform.rotation;
+        Debug.Log("5000: Object Ref Name: " + objectRef.objectRef.name + " Position: " + objectRef.objectRef.transform.position + " local Position: " + objectRef.objectRef.transform.localRotation);
+        Debug.Log("5000: This object: " + gameObject.name + " position: " + gameObject.transform.position + " local position: " + gameObject.transform.localRotation);
+
+        objectRef.Position = gameObject.transform.localPosition;
+        objectRef.Rotation = gameObject.transform.localRotation;
+
+
     }
 
     private void OnTriggerEnter(Collider other)

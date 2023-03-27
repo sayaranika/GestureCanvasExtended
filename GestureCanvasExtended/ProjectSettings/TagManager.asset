@@ -11,6 +11,7 @@ TagManager:
   - VRUIButton
   - SpawnedObject
   - SpawnedVFX
+  - Trouble
   layers:
   - Default
   - TransparentFX

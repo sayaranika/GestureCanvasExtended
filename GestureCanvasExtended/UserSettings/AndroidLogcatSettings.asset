@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "1WMHH814SX0443",
         "name": "com.sayanika.GestureCanvasExtended",
-        "processId": 12013,
+        "processId": 19182,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -11,337 +11,61 @@
         {
             "deviceId": "1WMHH814SX0443",
             "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 9374,
+            "processId": 23699,
+            "exited": true
+        },
+        {
+            "deviceId": "1WMHH814SX0443",
+            "name": "com.sayanika.GestureCanvasExtended",
+            "processId": 31589,
+            "exited": true
+        },
+        {
+            "deviceId": "1WMHH814SX0443",
+            "name": "com.sayanika.GestureCanvasExtended",
+            "processId": 3593,
+            "exited": true
+        },
+        {
+            "deviceId": "1WMHH814SX0443",
+            "name": "com.sayanika.GestureCanvasExtended",
+            "processId": 18773,
+            "exited": true
+        },
+        {
+            "deviceId": "1WMHH814SX0443",
+            "name": "com.oculus.os.vrusb",
+            "processId": 12427,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH814SX0443",
+            "name": "com.oculus.shellenv",
+            "processId": 1879,
             "exited": false
         },
         {
             "deviceId": "1WMHH814SX0443",
             "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 10140,
+            "processId": 14830,
             "exited": false
         },
         {
             "deviceId": "1WMHH814SX0443",
             "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 22188,
+            "processId": 16443,
             "exited": false
         },
         {
             "deviceId": "1WMHH814SX0443",
             "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 8650,
+            "processId": 18055,
             "exited": false
         },
         {
             "deviceId": "1WMHH814SX0443",
             "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 10034,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 14237,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 15362,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 16543,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 6106,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 6968,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 7621,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 6677,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 9626,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 13866,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 18504,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 8532,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 9105,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 11113,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 14857,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 11566,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 14974,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 17170,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 17989,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 25118,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 26576,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 30224,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 1474,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 2258,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 3206,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 5100,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 13810,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 25016,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 25599,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 26084,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 28082,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 30512,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 31314,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 1752,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 3112,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 4437,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 5114,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 5868,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 6482,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 7194,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 17216,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 27181,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 28696,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 1625,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 2767,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 3846,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 4807,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 5495,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 6266,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 9814,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 10544,
-            "exited": false
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 12013,
+            "processId": 19182,
             "exited": false
         }
     ],

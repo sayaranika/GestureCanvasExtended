@@ -14,12 +14,7 @@ public class SceneLauncher : MonoBehaviour
         SceneManager.LoadScene("Record");
     }
 
-    public void StartPlaytest()
-    {
-        PlaytestManager.currentClip = null;
-        PlaytestManager.Recognizers.Clear();
-        SceneManager.LoadScene("Playtest");
-    }
+    
 
     public void StartPlaytesting()
     {

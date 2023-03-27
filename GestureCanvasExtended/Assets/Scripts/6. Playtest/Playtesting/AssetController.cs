@@ -220,13 +220,9 @@ public class AssetController : MonoBehaviour
 
     public void LoadObjects()
     {
-        Debug.Log("3000A");
         ClearScene();
-        Debug.Log("3000B");
         SpawnVirtualObjects();
-        Debug.Log("3000C");
         //SpawnVFXObjects();
-        Debug.Log("3000D");
 
 
     }

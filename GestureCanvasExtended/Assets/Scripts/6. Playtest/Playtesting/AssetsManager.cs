@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class AssetsManager : MonoBehaviour
@@ -7,6 +8,9 @@ public class AssetsManager : MonoBehaviour
     [Header("GameObjects")]
     [SerializeField] GameObject Bow;
     [SerializeField] GameObject Arrow;
+
+    [Header("Triggers")]
+    [SerializeField] GameObject TouchTrigger;
 
     [Header("Left Hand")]
     [SerializeField] OVRSkeleton ovrSkeleton_L;
@@ -28,6 +32,7 @@ public class AssetsManager : MonoBehaviour
         ClearScene();
         SpawnVirtualObjects();
         SpawnVFXObjects();
+        SpawnTouchTriggers();
     }
 
     private void Update()
@@ -92,11 +97,51 @@ public class AssetsManager : MonoBehaviour
                 Destroy(obj);
         }
 
-        GameObject[] c = GameObject.FindGameObjectsWithTag("SpawnedObject");
+        GameObject[] c = GameObject.FindGameObjectsWithTag("ProximityObject");
         if (c.Length > 0)
         {
             foreach (var obj in c)
                 Destroy(obj);
+        }
+
+        GameObject[] d = GameObject.FindGameObjectsWithTag("SpawnedObject");
+        if (d.Length > 0)
+        {
+            foreach (var obj in d)
+                Destroy(obj);
+        }
+    }
+
+    public void SpawnTouchTriggers()
+    {
+        foreach(Interaction i in PlaytestingManager.currentClip.interactions)
+        {
+            if(i.isTouch_L == true || i.isTouch_R == true)
+            {
+                if(i.triggerParent == "ArrowPivot(Clone)")
+                {
+                    GameObject obj = GameObject.Find("ArrowPlay(Clone)");
+                    Debug.Log("3000A: Found object " + obj.name);
+                    GameObject touch = Instantiate(TouchTrigger, obj.transform);
+                    Debug.Log("3000B: instantiated");
+                    touch.transform.localPosition = i.triggerPosition;
+                    Debug.Log("3000C: stored " + i.triggerPosition + " obtained: " + touch.transform.localPosition + " global: " + touch.transform.position);
+                    touch.transform.localRotation = i.triggerRotation;
+                    Debug.Log("3000D: stored " + i.triggerRotation + " obtained: " + touch.transform.localRotation + " global: " + touch.transform.rotation);
+                    touch.transform.localScale = i.triggerScale;
+                    Debug.Log("3000E: stored " + i.triggerScale + " obtained: " + touch.transform.localScale + " global: " + touch.transform.lossyScale);
+                }
+                else
+                {
+                    Debug.Log("3000F: no obj");
+
+                    GameObject touch = Instantiate(TouchTrigger);
+                    touch.transform.position = i.triggerPosition;
+                    touch.transform.rotation = i.triggerRotation;
+                    touch.transform.localScale = i.triggerScale;
+                    Debug.Log("3000G: no obj");
+                }
+            }
         }
     }
 
@@ -134,8 +179,17 @@ public class AssetsManager : MonoBehaviour
                 //if (obj.objectName == "Spike") Instantiate(Spike, obj.Position, obj.Rotation);
                 //if (obj.objectName == "Shield") Instantiate(Shield, obj.Position, obj.Rotation);
                 //if (obj.objectName == "Crate") Instantiate(Crate, obj.Position, obj.Rotation);
-                if (obj.objectName == "Bow") Instantiate(Bow, obj.Position, obj.Rotation);
-                if (obj.objectName == "Arrow") Instantiate(Arrow, obj.Position, obj.Rotation);
+                if (obj.objectName == "Bow")
+                {
+                    Debug.Log("5000: Instantiating Bow at " + obj.Position + " " + obj.Rotation);
+                    Instantiate(Bow, obj.Position, obj.Rotation);
+                }
+                if (obj.objectName == "Arrow")
+                {
+                    Debug.Log("5000: Instantiating Arrow at " + obj.Position + " " + obj.Rotation);
+
+                    Instantiate(Arrow, obj.Position, obj.Rotation);
+                }
             }
         }
 

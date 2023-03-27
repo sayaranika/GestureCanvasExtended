@@ -13,20 +13,17 @@ public class Interaction
     public bool isGesture_L;
     public bool isPose_R;
     public bool isPose_L;
+    public bool isTouch_L;
+    public bool isTouch_R;
 
     public HandPose expectedPose_R;
     public HandPose expectedPose_L;
     public bool isTransformConstraint_R;
     public bool isTransformConstraint_L;
 
-    //public List<HandSkeleton> expectedGesture_R = new List<HandSkeleton>();
-    //public List<HandSkeleton> expectedGesture_L = new List<HandSkeleton>();
-    //public List<HandSkeleton> expectedGesture = new List<HandSkeleton>();
-
     public List<GestureSamplesWrapper> GestureSamples_R = new List<GestureSamplesWrapper>();
     public List<GestureSamplesWrapper> GestureSamples_L = new List<GestureSamplesWrapper>();
     public List<GestureSamplesWrapper> GestureSamples_B = new List<GestureSamplesWrapper>();
-    //public List<List<HandSkeleton>> GestureSamples_L = new List<List<HandSkeleton>>();
 
     public int expectedGestureId_R;
     public int expectedGestureId_L;
@@ -44,6 +41,17 @@ public class Interaction
     public int GestureLength_L;
     public int GestureLength_R;
     public int GestureLength_B;
+
+    //touch conditions
+    public List<string> TouchPoints_L = new List<string>();
+    public List<string> TouchPoints_R = new List<string>();
+    public Vector3 triggerPosition;
+    public Quaternion triggerRotation;
+    public Vector3 triggerScale;
+    //public Vector3 triggerOffset;
+    public string triggerParent;
+    
+
 
     public Interaction(int interactionId)
     {

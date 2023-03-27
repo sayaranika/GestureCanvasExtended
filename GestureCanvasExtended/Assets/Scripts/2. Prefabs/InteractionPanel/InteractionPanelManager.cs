@@ -13,6 +13,8 @@ public class InteractionPanelManager : MonoBehaviour
     [SerializeField] private TMPro.TextMeshProUGUI InteractionTitle;
     [SerializeField] GameObject HandCondition_R;
     [SerializeField] GameObject HandCondition_L;
+    [SerializeField] GameObject Touch;
+    [SerializeField] Text TouchLabel;
     [SerializeField] GameObject AddInputParent;
     [SerializeField] GameObject AddInputBtn;
     [SerializeField] GameObject DeleteInteractionButton;
@@ -121,11 +123,43 @@ public class InteractionPanelManager : MonoBehaviour
         if (interactionRef.isGesture_L == true || interactionRef.isPose_L == true) SetHandCondition(Handedness.Left);
         else HandCondition_L.SetActive(false);
 
+        if (interactionRef.isTouch_R == true || interactionRef.isTouch_L == true) SetTouchCondition();
+        else Touch.SetActive(false);
+
         AddInputOption();
 
         SetResponses();
 
 
+    }
+
+    private void SetTouchCondition()
+    {
+        string touch = "";
+        if (interactionRef.triggerParent != "")
+            touch = interactionRef.triggerParent + ",";
+        if(interactionRef.TouchPoints_R.Count > 0)
+        {
+            touch = touch + "Right[";
+            foreach(string item in interactionRef.TouchPoints_R)
+            {
+                touch = touch + item + ",";
+            }
+            touch = touch.Remove(touch.Length - 1, 1);
+            touch = touch + "],";
+        }
+        if (interactionRef.TouchPoints_L.Count > 0)
+        {
+            touch = touch + "Left[";
+            foreach (string item in interactionRef.TouchPoints_L)
+            {
+                touch = touch + item + ",";
+            }
+            touch = touch.Remove(touch.Length - 1, 1);
+            touch = touch + "],";
+        }
+        touch = touch.Remove(touch.Length - 1, 1);
+        TouchLabel.text = touch;
     }
 
     private void SetHandCondition(Handedness handedness)
@@ -280,6 +314,14 @@ public class InteractionPanelManager : MonoBehaviour
         InteractionBuilderContent.refresh = true;
     }
 
+    public void RemoveTouchCondition()
+    {
+        interactionRef.isTouch_L = false;
+        interactionRef.isTouch_R = false;
+
+        InteractionBuilderContent.refresh = true;
+    }
+
     public void HandConditionChanged_R()
     {
         int i = GestureOrPoseDropdown_R.value;
@@ -407,6 +449,9 @@ public class InteractionPanelManager : MonoBehaviour
                     interactionRef.isGesture_L = true;
             }
         }
+
+        if (interactionRef.TouchPoints_L.Count > 0 && interactionRef.isTouch_L == false) interactionRef.isTouch_L = true;
+        if (interactionRef.TouchPoints_R.Count > 0 && interactionRef.isTouch_R == false) interactionRef.isTouch_R = true;
 
         InteractionBuilderContent.refresh = true;
     }

@@ -1400,9 +1400,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ProximityType, Assembly-CSharp
-        m_MethodName: ActivateTouch
+      - m_Target: {fileID: 1931027814668502095}
+        m_TargetAssemblyTypeName: ProximityController, Assembly-CSharp
+        m_MethodName: ActivateDistance
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1892,7 +1892,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1931027814668502095}
         m_TargetAssemblyTypeName: ProximityController, Assembly-CSharp
         m_MethodName: RecordProximity
         m_Mode: 1
@@ -2298,6 +2298,9 @@ GameObject:
   - component: {fileID: 939650361532184215}
   - component: {fileID: 939650361532184214}
   - component: {fileID: 939650361532184217}
+  - component: {fileID: 1931027814668502095}
+  - component: {fileID: 2623165140741674857}
+  - component: {fileID: 2878854722725249610}
   m_Layer: 0
   m_Name: Proximity
   m_TagString: ProximityObject
@@ -2457,7 +2460,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!114 &939650361532184212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2465,7 +2468,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 939650361532184216}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 888380afc233049ce9e618f9f36c8ba8, type: 3}
   m_Name: 
@@ -2636,6 +2639,57 @@ MonoBehaviour:
     MaxScale:
       Constrain: 0
       Value: 0
+--- !u!114 &1931027814668502095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939650361532184216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2db3a18ad1187064c95109f4c9fc509a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TouchButton: {fileID: 3774423167073839388}
+  DistanceButton: {fileID: 939650360659048698}
+  touchRadar: {fileID: 2623165140741674857}
+  visualizer: {fileID: 939650361532184216, guid: 9a62e02616b79b44f909699d62726cdb, type: 3}
+  handGrabInteractable: {fileID: 939650361532184210}
+  grabbable: {fileID: 939650361532184211}
+  physicsGrabbable: {fileID: 939650361532184215}
+  oneGrabFreeTransformer: {fileID: 939650361532184214}
+  twoGrabFreeTransformer: {fileID: 939650361532184217}
+--- !u!114 &2623165140741674857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939650361532184216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f142a3099a146648af4330384cdc722, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TriggerObjectsList: []
+--- !u!114 &2878854722725249610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939650361532184216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f75d035aec40b3443be2656f50795e52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UI: {fileID: 939650359784524169}
+  proximityController: {fileID: 1931027814668502095}
+  isUIActive: 1
+  previousScale: {x: 0, y: 0, z: 0}
+  currentScale: {x: 0, y: 0, z: 0}
 --- !u!1 &1796680171578012530
 GameObject:
   m_ObjectHideFlags: 0
@@ -3203,9 +3257,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ProximityType, Assembly-CSharp
-        m_MethodName: ActivateDistance
+      - m_Target: {fileID: 1931027814668502095}
+        m_TargetAssemblyTypeName: ProximityController, Assembly-CSharp
+        m_MethodName: ActivateTouch
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

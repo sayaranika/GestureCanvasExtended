@@ -27,6 +27,7 @@ public class RecognitionManager : MonoBehaviour
         {
             gestureRecognizer.Recognize(interaction, Handedness.Both, poseRecognizer, playtestManager);
         }
+        
 
 
         bool isRecognized = false;

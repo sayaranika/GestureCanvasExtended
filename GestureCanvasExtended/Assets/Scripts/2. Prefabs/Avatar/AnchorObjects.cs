@@ -23,20 +23,26 @@ public class AnchorObjects : MonoBehaviour
             }
         }
 
-        if (other.tag == "SpawnedObject" || other.transform.parent.tag == "SpawnedObject")
+        if (other.tag == "SpawnedObject")
         {
             Debug.Log("300: spawned");
 
             ObjectController objectController = other.GetComponent<ObjectController>();
-            if(objectController == null)
+            if (objectController.isAttachable == true && objectController.objectRef.isAttached == false)
             {
-                objectController = other.GetComponentInParent<ObjectController>();
-                if(objectController == null)
-                {
-                    objectController = other.GetComponentInChildren<ObjectController>();
-                }
-            }
+                Debug.Log("300: attached");
+                objectController.objectRef.isAttached = true;
+                objectController.objectRef.AttachedBone = anchorName;
 
+            }
+        }
+
+        if (other.tag == "Trouble")
+        {
+            Debug.Log("300: trouble detected");
+
+            ObjectController objectController = other.transform.parent.GetComponent<ObjectController>();
+            
             if (objectController.isAttachable == true && objectController.objectRef.isAttached == false)
             {
                 Debug.Log("300: attached");
@@ -63,23 +69,38 @@ public class AnchorObjects : MonoBehaviour
             }
         }
 
-        if (other.tag == "SpawnedObject" || other.transform.parent.tag == "SpawnedObject")
+        if (other.tag == "SpawnedObject")
         {
             Debug.Log("400: spawned");
 
             ObjectController objectController = other.GetComponent<ObjectController>();
-            if (objectController == null)
+            /*if (objectController == null)
             {
                 objectController = other.GetComponentInParent<ObjectController>();
                 if (objectController == null)
                 {
                     objectController = other.GetComponentInChildren<ObjectController>();
                 }
-            }
+            }*/
 
             if (objectController.isAttachable == true && objectController.objectRef.isAttached == false)
             {
                 Debug.Log("400: attached");
+                objectController.objectRef.isAttached = true;
+                objectController.objectRef.isAttachedToRight = isRight;
+                objectController.objectRef.AttachedBone = anchorName;
+
+            }
+        }
+        if (other.tag == "Trouble")
+        {
+            Debug.Log("300: trouble detected");
+
+            ObjectController objectController = other.transform.parent.GetComponent<ObjectController>();
+
+            if (objectController.isAttachable == true && objectController.objectRef.isAttached == false)
+            {
+                Debug.Log("300: attached");
                 objectController.objectRef.isAttached = true;
                 objectController.objectRef.isAttachedToRight = isRight;
                 objectController.objectRef.AttachedBone = anchorName;

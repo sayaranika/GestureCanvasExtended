@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5542391456539357832}
   - component: {fileID: 7134311810125479755}
   m_Layer: 0
-  m_Name: pivot
+  m_Name: NotInUse3
   m_TagString: SpawnedObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

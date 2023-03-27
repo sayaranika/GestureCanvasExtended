@@ -48,25 +48,27 @@ public class AssetPlayback : MonoBehaviour
         GameObject[] b = GameObject.FindGameObjectsWithTag("SpawnedVFX");
         if (b.Length > 0)
         {
-            //deactivate
             foreach (var obj in b)
-            {
                 obj.SetActive(false);
-            }
+        }
 
+        GameObject[] c = GameObject.FindGameObjectsWithTag("ProximityObject");
+        if (c.Length > 0)
+        {
+            foreach (var obj in c)
+                obj.SetActive(false);
         }
 
 
         GameObject[] a = GameObject.FindGameObjectsWithTag("SpawnedObject");
         if (a.Length > 0)
         {
-            //deactivate
             foreach (var obj in a)
-            {
                 obj.SetActive(false);
-            }
-
         }
+
+        
+
     }
 
     public void RefreshVirtualObjectList()
@@ -95,6 +97,16 @@ public class AssetPlayback : MonoBehaviour
             {
                 obj.objectRef.SetActive(true);
             }
+            foreach (ProximityObject p in selectedClip.proximityObjects)
+            {
+                foreach (GameObject obj in p.visualizers)
+                    obj.SetActive(true);
+            }
+            foreach (ProximityObject p in selectedClip.proximityObjects)
+            {
+                p.proximityRef.SetActive(true);
+            }
+
         }
 
 

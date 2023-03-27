@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class AssetLoader : MonoBehaviour
 {
+    [SerializeField] GameObject ProximityTrigger;
     [SerializeField] GameObject Shield;
     [SerializeField] GameObject Crate;
     [SerializeField] GameObject Spike;
@@ -142,6 +143,37 @@ public class AssetLoader : MonoBehaviour
                         obj.GetComponent<ObjectController>().clipRef = clip;
                         obj.GetComponent<ObjectController>().objectRef = virtualObject;
                     }
+                }
+            }
+            #endregion
+
+            #region TRIGGERS
+            if(clip.proximityObjects.Count > 0)
+            {
+                foreach(ProximityObject p in clip.proximityObjects)
+                {
+                    GameObject obj = Instantiate(ProximityTrigger) as GameObject;
+                    p.proximityRef = obj;
+
+                    obj.GetComponent<ProximityController>().clip = clip;
+                    obj.GetComponent<ProximityController>().proximityObject = p;
+                    
+                    
+
+                    if(p.AttachedGameObjectName == "")
+                    {
+                        obj.transform.position = p.Position;
+                        obj.transform.rotation = p.Rotation;
+                        obj.transform.localScale = p.Scale;
+                    }
+                    else
+                    {
+                        obj.transform.parent = GameObject.Find(p.AttachedGameObjectName).transform;
+                        obj.transform.localPosition = p.Position;
+                        obj.transform.localRotation = p.Rotation;
+                        obj.transform.localScale = p.Scale;
+                    }
+                    
                 }
             }
             #endregion

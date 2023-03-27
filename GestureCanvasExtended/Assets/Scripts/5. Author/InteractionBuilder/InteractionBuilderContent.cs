@@ -49,7 +49,7 @@ public class InteractionBuilderContent : MonoBehaviour
             if (AvatarPlayback.currentClip != null)
             {
                 List<Interaction> interactions = AvatarPlayback.currentClip.interactions;
-
+                Debug.Log("4000A: Clip " + AvatarPlayback.currentClip.Id + " Interactions: " + AvatarPlayback.currentClip.interactions.Count);
                 if (interactions.Count > 0)
                 {
                     //add interaction panel for each interaction in the list
