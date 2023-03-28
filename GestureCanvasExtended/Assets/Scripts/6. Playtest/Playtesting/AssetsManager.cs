@@ -59,7 +59,7 @@ public class AssetsManager : MonoBehaviour
                     targetRotation = HandModel_L.transform.rotation;
                 }
                 ob.obj.transform.position = Vector3.MoveTowards(ob.obj.transform.position, targetPosition, speed * Time.deltaTime);
-                ob.obj.transform.rotation = Quaternion.Slerp(ob.obj.transform.rotation, targetRotation, smoothness * speed * Time.deltaTime);
+                ob.obj.transform.rotation = Quaternion.RotateTowards(ob.obj.transform.rotation, targetRotation, smoothness * speed * Time.deltaTime);
             }
         }
     }
