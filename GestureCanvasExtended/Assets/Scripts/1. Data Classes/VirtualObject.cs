@@ -16,6 +16,10 @@ public class VirtualObject
     public bool isAttachedToRight = false;
     public string AttachedBone = "";
 
+    public bool isRigAttached = false;
+    public string rigAttachedName = "";
+    public bool isRigAttachedToRight = false;
+
      [JsonIgnore] public GameObject objectRef;
     //public List<CustomAnimation> animation;
 

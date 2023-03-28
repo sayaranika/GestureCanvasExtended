@@ -174,6 +174,28 @@ public class AssetsManager : MonoBehaviour
                 ob.transform.forward = forward;
                 if (obj.isAttachedToRight == true) FollowObjects.Add(new ObjectsThatFollowHand(ob, true, obj.AttachedBone));
                 else FollowObjects.Add(new ObjectsThatFollowHand(ob, false, obj.AttachedBone));
+
+                if(obj.isRigAttached == true)
+                {
+                    Debug.Log("8000: Inside for gameObject " + ob.name);
+
+                    GameObject rig = ob.transform.GetChild(0).transform.GetChild(3).gameObject;
+
+                    if(rig == null)
+                    {
+                        Debug.Log("8000: Rig not found");
+                    }
+                    else
+                    {
+                        Debug.Log("8000: Found");
+                        if (obj.isRigAttachedToRight == true) FollowObjects.Add(new ObjectsThatFollowHand(rig, true, obj.rigAttachedName));
+                        else FollowObjects.Add(new ObjectsThatFollowHand(rig, true, obj.rigAttachedName));
+                        Debug.Log("8000: Attached");
+                    }
+
+                    
+                }
+
             }
             else
             {

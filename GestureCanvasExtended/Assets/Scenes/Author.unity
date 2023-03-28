@@ -3565,9 +3565,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 983477560}
-        m_TargetAssemblyTypeName: InteractionVisibilityHandler, Assembly-CSharp
-        m_MethodName: HideInteractionBuilder
+      - m_Target: {fileID: 626671565}
+        m_TargetAssemblyTypeName: RigsVisibility, Assembly-CSharp
+        m_MethodName: HideRigs
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6895,6 +6895,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 611564725}
   m_CullTransparentMesh: 1
+--- !u!1 &626671564
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 626671566}
+  - component: {fileID: 626671565}
+  m_Layer: 0
+  m_Name: RigsManipulationManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &626671565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 626671564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 381d4948867ee2e43ba974f950b7f8c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowRigsButton: {fileID: 1634772081}
+  HideRigsButton: {fileID: 334611023}
+  manipulableRigs: {fileID: 9079578850085793488, guid: 804da599209188943a43a8a305f8d972, type: 3}
+--- !u!4 &626671566
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 626671564}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &628120776
 GameObject:
   m_ObjectHideFlags: 0
@@ -16799,6 +16846,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be0c41233dbb3e440921c518122c6a5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rigsVisibility: {fileID: 626671565}
   Shield: {fileID: 5602063274053904892, guid: 5631f9009dd98a04d8aa0288a50626e3, type: 3}
   Spike: {fileID: 100000, guid: 475cd49416b989b4c9cb5ad0549a3ac8, type: 3}
   Crate: {fileID: 2689795100330841512, guid: fd970fb1f0490624885122b237112f0e, type: 3}
@@ -17677,9 +17725,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1382879449}
-        m_TargetAssemblyTypeName: ExportManager, Assembly-CSharp
-        m_MethodName: Export
+      - m_Target: {fileID: 626671565}
+        m_TargetAssemblyTypeName: RigsVisibility, Assembly-CSharp
+        m_MethodName: ShowRigs
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -29510,7 +29558,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &2905994803942324456
 BoxCollider:
@@ -52505,7 +52553,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &5285733984209527487
 Transform:

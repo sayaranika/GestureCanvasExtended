@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ObjectSpawner : MonoBehaviour
 {
+    [SerializeField] RigsVisibility rigsVisibility;
     [SerializeField] GameObject Shield;
     [SerializeField] GameObject Spike;
     [SerializeField] GameObject Crate;
@@ -57,5 +58,6 @@ public class ObjectSpawner : MonoBehaviour
         obj.GetComponent<ObjectController>().objectRef = ob;
 
         AvatarPlayback.currentClip.virtualObjects.Add(ob);
+        rigsVisibility.HideRigs();
     }
 }

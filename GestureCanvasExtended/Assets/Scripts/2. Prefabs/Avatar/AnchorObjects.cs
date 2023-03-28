@@ -19,7 +19,6 @@ public class AnchorObjects : MonoBehaviour
                 Debug.Log("300: attached");
                 other.GetComponent<VFXController>().vfxObjectRef.isAttached = true;
                 other.GetComponent<VFXController>().vfxObjectRef.AttachedBone = anchorName;
-
             }
         }
 
@@ -49,6 +48,20 @@ public class AnchorObjects : MonoBehaviour
                 objectController.objectRef.isAttached = true;
                 objectController.objectRef.AttachedBone = anchorName;
 
+            }
+        }
+
+        if (other.tag == "RigPoint")
+        {
+            Debug.Log("300: spawned");
+            if (other.GetComponent<RigsManipulation>().isAttachable == true && other.GetComponent<RigsManipulation>().isAttached == false)
+            {
+                other.GetComponent<RigsManipulation>().isAttached = true;
+                other.GetComponent<RigsManipulation>().AttachedBone = anchorName;
+
+                VirtualObject rootObj = other.transform.root.gameObject.GetComponent<ObjectController>().objectRef;
+                rootObj.rigAttachedName = anchorName;
+                rootObj.isRigAttachedToRight = isRight;
             }
         }
     }
@@ -104,6 +117,25 @@ public class AnchorObjects : MonoBehaviour
                 objectController.objectRef.isAttached = true;
                 objectController.objectRef.isAttachedToRight = isRight;
                 objectController.objectRef.AttachedBone = anchorName;
+
+            }
+        }
+
+        if (other.tag == "RigPoint")
+        {
+            if (other.GetComponent<MeshRenderer>().enabled == true && other.GetComponent<RigsManipulation>().isAttachable == true && other.GetComponent<RigsManipulation>().isAttached == false)
+            {
+                other.GetComponent<RigsManipulation>().isAttached = true;
+                other.GetComponent<RigsManipulation>().isAttachedToRight = isRight;
+                other.GetComponent<RigsManipulation>().AttachedBone = anchorName;
+
+                if(other.transform.root.name.StartsWith("Bow"))
+                {
+                    VirtualObject rootObj = other.transform.root.gameObject.GetComponent<ObjectController>().objectRef;
+                    rootObj.rigAttachedName = anchorName;
+                    rootObj.isRigAttached = true;
+                    rootObj.isRigAttachedToRight = isRight;
+                }
 
             }
         }

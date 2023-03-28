@@ -485,6 +485,8 @@ struct RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5;
 struct RightGestureRecognizer_t499CA057AA14412113F3750862CE9B4C5B257CAE;
 // UnityEngine.Rigidbody
 struct Rigidbody_t268697F5A994213ED97393309870968BC1C7393C;
+// RigsVisibility
+struct RigsVisibility_t9D94EF0E14561691113EE197E348BB9F4BA6F3C2;
 // System.Runtime.Serialization.SafeSerializationManager
 struct SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6;
 // UnityEngine.UI.Selectable
@@ -3127,8 +3129,14 @@ struct VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136  : public Runtime
 	bool ___isAttachedToRight_5;
 	// System.String VirtualObject::AttachedBone
 	String_t* ___AttachedBone_6;
+	// System.Boolean VirtualObject::isRigAttached
+	bool ___isRigAttached_7;
+	// System.String VirtualObject::rigAttachedName
+	String_t* ___rigAttachedName_8;
+	// System.Boolean VirtualObject::isRigAttachedToRight
+	bool ___isRigAttachedToRight_9;
 	// UnityEngine.GameObject VirtualObject::objectRef
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___objectRef_7;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___objectRef_10;
 };
 
 // OVRPlugin/Posef
@@ -5336,18 +5344,20 @@ struct ObjectController_tC7C3CD5CDC9519FAA82AEE4489D5319439D254BC_StaticFields
 // ObjectSpawner
 struct ObjectSpawner_t9B3FA5E78DB1643F987ECBB18E069FCE64FD0007  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
+	// RigsVisibility ObjectSpawner::rigsVisibility
+	RigsVisibility_t9D94EF0E14561691113EE197E348BB9F4BA6F3C2* ___rigsVisibility_4;
 	// UnityEngine.GameObject ObjectSpawner::Shield
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Shield_4;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Shield_5;
 	// UnityEngine.GameObject ObjectSpawner::Spike
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Spike_5;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Spike_6;
 	// UnityEngine.GameObject ObjectSpawner::Crate
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Crate_6;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Crate_7;
 	// UnityEngine.GameObject ObjectSpawner::Bow
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Bow_7;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Bow_8;
 	// UnityEngine.GameObject ObjectSpawner::Arrow
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Arrow_8;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Arrow_9;
 	// UnityEngine.Transform ObjectSpawner::spawnPoint
-	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___spawnPoint_9;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___spawnPoint_10;
 };
 
 // OnTheFlyTest
@@ -5645,6 +5655,23 @@ struct RightGestureRecognizer_t499CA057AA14412113F3750862CE9B4C5B257CAE_StaticFi
 	Clip_t5B493D4729396BB82DD0E7ED754916E180EC23BD* ___TransitionClip_18;
 	// Interaction RightGestureRecognizer::Target
 	Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* ___Target_23;
+};
+
+// RigsVisibility
+struct RigsVisibility_t9D94EF0E14561691113EE197E348BB9F4BA6F3C2  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// UnityEngine.GameObject RigsVisibility::ShowRigsButton
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___ShowRigsButton_5;
+	// UnityEngine.GameObject RigsVisibility::HideRigsButton
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___HideRigsButton_6;
+	// UnityEngine.GameObject RigsVisibility::manipulableRigs
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___manipulableRigs_7;
+};
+
+struct RigsVisibility_t9D94EF0E14561691113EE197E348BB9F4BA6F3C2_StaticFields
+{
+	// System.Boolean RigsVisibility::hideRigs
+	bool ___hideRigs_4;
 };
 
 // TouchRadar
@@ -7289,6 +7316,8 @@ inline void List_1_Add_mF20C25C13871ED4C98CAE5832CC8346E2FC6F741_inline (List_1_
 {
 	((  void (*) (List_1_t845A527FBE0C057FF526F5FCD51CA86956E31101*, VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___item0, method);
 }
+// System.Void RigsVisibility::HideRigs()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RigsVisibility_HideRigs_m38884A6811EB1741AACE3AA078F0F707DB959365 (RigsVisibility_t9D94EF0E14561691113EE197E348BB9F4BA6F3C2* __this, const RuntimeMethod* method) ;
 // System.Void VFXSpawner::spawnVFX(UnityEngine.GameObject,System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VFXSpawner_spawnVFX_m1F420DF725B5672025B91B8561FF01280419A6C6 (VFXSpawner_t1F3F2DEAD545A1F08C965692A4EA68297EDB0579* __this, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___prefab0, String_t* ___objName1, const RuntimeMethod* method) ;
 // System.Void VFXObject::.ctor(UnityEngine.GameObject,System.String,UnityEngine.Vector3,UnityEngine.Quaternion)
@@ -15488,8 +15517,8 @@ IL_02a7_2:
 						VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_142 = V_19;
 						GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_143 = V_21;
 						NullCheck(L_142);
-						L_142->___objectRef_7 = L_143;
-						Il2CppCodeGenWriteBarrier((void**)(&L_142->___objectRef_7), (void*)L_143);
+						L_142->___objectRef_10 = L_143;
+						Il2CppCodeGenWriteBarrier((void**)(&L_142->___objectRef_10), (void*)L_143);
 						// obj.GetComponent<ObjectController>().clipRef = clip;
 						GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_144 = V_21;
 						NullCheck(L_144);
@@ -15552,8 +15581,8 @@ IL_031d_2:
 						VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_164 = V_19;
 						GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_165 = V_23;
 						NullCheck(L_164);
-						L_164->___objectRef_7 = L_165;
-						Il2CppCodeGenWriteBarrier((void**)(&L_164->___objectRef_7), (void*)L_165);
+						L_164->___objectRef_10 = L_165;
+						Il2CppCodeGenWriteBarrier((void**)(&L_164->___objectRef_10), (void*)L_165);
 						// obj.GetComponent<ObjectController>().clipRef = clip;
 						GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_166 = V_23;
 						NullCheck(L_166);
@@ -15616,8 +15645,8 @@ IL_0389_2:
 						VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_186 = V_19;
 						GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_187 = V_25;
 						NullCheck(L_186);
-						L_186->___objectRef_7 = L_187;
-						Il2CppCodeGenWriteBarrier((void**)(&L_186->___objectRef_7), (void*)L_187);
+						L_186->___objectRef_10 = L_187;
+						Il2CppCodeGenWriteBarrier((void**)(&L_186->___objectRef_10), (void*)L_187);
 						// obj.GetComponent<ObjectController>().clipRef = clip;
 						GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_188 = V_25;
 						NullCheck(L_188);
@@ -15680,8 +15709,8 @@ IL_03f5_2:
 						VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_208 = V_19;
 						GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_209 = V_27;
 						NullCheck(L_208);
-						L_208->___objectRef_7 = L_209;
-						Il2CppCodeGenWriteBarrier((void**)(&L_208->___objectRef_7), (void*)L_209);
+						L_208->___objectRef_10 = L_209;
+						Il2CppCodeGenWriteBarrier((void**)(&L_208->___objectRef_10), (void*)L_209);
 						// obj.GetComponent<ObjectController>().clipRef = clip;
 						GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_210 = V_27;
 						NullCheck(L_210);
@@ -15744,8 +15773,8 @@ IL_0461_2:
 						VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_230 = V_19;
 						GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_231 = V_29;
 						NullCheck(L_230);
-						L_230->___objectRef_7 = L_231;
-						Il2CppCodeGenWriteBarrier((void**)(&L_230->___objectRef_7), (void*)L_231);
+						L_230->___objectRef_10 = L_231;
+						Il2CppCodeGenWriteBarrier((void**)(&L_230->___objectRef_10), (void*)L_231);
 						// obj.GetComponent<ObjectController>().clipRef = clip;
 						GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_232 = V_29;
 						NullCheck(L_232);
@@ -16927,7 +16956,7 @@ IL_00c3_1:
 				// obj.objectRef.SetActive(true);
 				VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_25 = V_8;
 				NullCheck(L_25);
-				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_26 = L_25->___objectRef_7;
+				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_26 = L_25->___objectRef_10;
 				NullCheck(L_26);
 				GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_26, (bool)1, NULL);
 			}
@@ -17245,7 +17274,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectSpawner_spawnObject_mF849B3F066100
 IL_0062:
 	{
 		// prefab = Shield;
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_14 = __this->___Shield_4;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_14 = __this->___Shield_5;
 		V_1 = L_14;
 		// objName = "Shield";
 		V_2 = _stringLiteral51452628837BAB7C283227D4421383559F8F9A27;
@@ -17256,7 +17285,7 @@ IL_0062:
 IL_0071:
 	{
 		// prefab = Spike;
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_15 = __this->___Spike_5;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_15 = __this->___Spike_6;
 		V_1 = L_15;
 		// objName = "Spike";
 		V_2 = _stringLiteral4F89AE018EEEDD1D7C63B22D4B33D9A07283F52A;
@@ -17267,7 +17296,7 @@ IL_0071:
 IL_0080:
 	{
 		// prefab = Crate;
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_16 = __this->___Crate_6;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_16 = __this->___Crate_7;
 		V_1 = L_16;
 		// objName = "Crate";
 		V_2 = _stringLiteral70AB26ACFEB28806E84FB5D8F7DC2BAB0EDA4B15;
@@ -17278,7 +17307,7 @@ IL_0080:
 IL_008f:
 	{
 		// prefab = Bow;
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_17 = __this->___Bow_7;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_17 = __this->___Bow_8;
 		V_1 = L_17;
 		// objName = "Bow";
 		V_2 = _stringLiteral2AEE75FD319B3EC8521E6C769467B49C1888A5D6;
@@ -17289,7 +17318,7 @@ IL_008f:
 IL_009e:
 	{
 		// prefab = Arrow;
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_18 = __this->___Arrow_8;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_18 = __this->___Arrow_9;
 		V_1 = L_18;
 		// objName = "Arrow";
 		V_2 = _stringLiteral40F5431A5203B1B661E92C45EF446F7D326E2C50;
@@ -17339,7 +17368,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectSpawner_spawnObject_m690EC815F644B
 		NullCheck(L_2);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3;
 		L_3 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_2, NULL);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4 = __this->___spawnPoint_9;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4 = __this->___spawnPoint_10;
 		NullCheck(L_4);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5;
 		L_5 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_4, NULL);
@@ -17402,6 +17431,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectSpawner_spawnObject_m690EC815F644B
 		VirtualObject_t109DF8E24E5F56A627189879FE30D33BF5EA6136* L_27 = V_1;
 		NullCheck(L_26);
 		List_1_Add_mF20C25C13871ED4C98CAE5832CC8346E2FC6F741_inline(L_26, L_27, List_1_Add_mF20C25C13871ED4C98CAE5832CC8346E2FC6F741_RuntimeMethod_var);
+		// rigsVisibility.HideRigs();
+		RigsVisibility_t9D94EF0E14561691113EE197E348BB9F4BA6F3C2* L_28 = __this->___rigsVisibility_4;
+		NullCheck(L_28);
+		RigsVisibility_HideRigs_m38884A6811EB1741AACE3AA078F0F707DB959365(L_28, NULL);
 		// }
 		return;
 	}

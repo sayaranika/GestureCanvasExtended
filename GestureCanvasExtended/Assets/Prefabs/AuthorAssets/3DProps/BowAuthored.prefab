@@ -720,9 +720,10 @@ GameObject:
   - component: {fileID: 6044992403928893361}
   - component: {fileID: 6008607816783363643}
   - component: {fileID: 8436699501868192800}
+  - component: {fileID: 7903033415220523944}
   m_Layer: 0
   m_Name: Sphere
-  m_TagString: Untagged
+  m_TagString: RigPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -880,6 +881,22 @@ MonoBehaviour:
   _movementProvider: {fileID: 0}
   _handAligment: 1
   _handGrabPoses: []
+--- !u!114 &7903033415220523944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1068490194348811159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b495068599bc87144813d608793e99a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isAttachable: 1
+  isAttached: 0
+  AttachedBone: 
+  isAttachedToRight: 0
 --- !u!1 &1159897344806961617
 GameObject:
   m_ObjectHideFlags: 0
@@ -4907,8 +4924,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7197456705523719386}
   m_LocalRotation: {x: 0.0023556054, y: 0.0023555756, z: 0.70710284, w: 0.7071029}
-  m_LocalPosition: {x: -0.007366063, y: 0, z: 0}
-  m_LocalScale: {x: 1999.9998, y: 1999.9998, z: 1999.9998}
+  m_LocalPosition: {x: -0.0073661795, y: 0, z: 0}
+  m_LocalScale: {x: 1999.9998, y: 2000.0002, z: 1999.9998}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1958364240244811690}
