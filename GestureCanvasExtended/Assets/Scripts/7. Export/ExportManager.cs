@@ -14,6 +14,7 @@ public class ExportManager : MonoBehaviour
         Root entry = new Root(ClipHandler.ClipList);
         entry.GestureRecognizer_R = ClipHandler.ClipList[0].GestureRecognizer_R;
         entry.GestureRecognizer_L = ClipHandler.ClipList[0].GestureRecognizer_L;
+        entry.GestureRecognizer_B = ClipHandler.ClipList[0].GestureRecognizer_B;
 
         root.Add(entry);
         FileHandler.SaveToJSON<Root>(root, "final.json");
@@ -27,7 +28,7 @@ public class Root
     public List<Clip> clips = new List<Clip>();
     public Jackknife GestureRecognizer_R;
     public Jackknife GestureRecognizer_L;
-
+    public Jackknife GestureRecognizer_B;
 
     public Root(List<Clip> clips)
     {

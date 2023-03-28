@@ -3,41 +3,11 @@
     "m_SelectedPackage": {
         "deviceId": "1WMHH814SX0443",
         "name": "com.sayanika.GestureCanvasExtended",
-        "processId": 19182,
+        "processId": 16669,
         "exited": false
     },
     "m_SelectedPriority": 0,
     "m_KnownPackagesForSerialization": [
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 23699,
-            "exited": true
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 31589,
-            "exited": true
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 3593,
-            "exited": true
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.sayanika.GestureCanvasExtended",
-            "processId": 18773,
-            "exited": true
-        },
-        {
-            "deviceId": "1WMHH814SX0443",
-            "name": "com.oculus.os.vrusb",
-            "processId": 12427,
-            "exited": false
-        },
         {
             "deviceId": "1WMHH814SX0443",
             "name": "com.oculus.shellenv",
@@ -48,24 +18,48 @@
             "deviceId": "1WMHH814SX0443",
             "name": "com.sayanika.GestureCanvasExtended",
             "processId": 14830,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "1WMHH814SX0443",
             "name": "com.sayanika.GestureCanvasExtended",
             "processId": 16443,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "1WMHH814SX0443",
             "name": "com.sayanika.GestureCanvasExtended",
             "processId": 18055,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "1WMHH814SX0443",
             "name": "com.sayanika.GestureCanvasExtended",
             "processId": 19182,
+            "exited": true
+        },
+        {
+            "deviceId": "1WMHH814SX0443",
+            "name": "com.oculus.os.vrusb",
+            "processId": 25297,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH814SX0443",
+            "name": "com.sayanika.GestureCanvasExtended",
+            "processId": 28272,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH814SX0443",
+            "name": "com.sayanika.GestureCanvasExtended",
+            "processId": 14001,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH814SX0443",
+            "name": "com.sayanika.GestureCanvasExtended",
+            "processId": 16669,
             "exited": false
         }
     ],

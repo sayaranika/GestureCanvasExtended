@@ -20,6 +20,9 @@ public class AssetsManager : MonoBehaviour
     [SerializeField] OVRSkeleton ovrSkeleton_R;
     [SerializeField] GameObject HandModel_R;
 
+    [SerializeField] PlaytestingManager playtestManager;
+    [SerializeField] PoseRecognizer poseRecognizer;
+
     public float smoothness = 0.5f; // Controls the speed of interpolation
     public float distanceFactor = 0.1f; // Controls the distance factor
     public float speed = 10.0f;
@@ -46,16 +49,15 @@ public class AssetsManager : MonoBehaviour
                 if(ob.isRight == true)
                 {
                     targetPosition = GetPosition(ob.AttachedPoint, ovrSkeleton_R);
-                    targetRotation = HandModel_R.transform.rotation;
+                    //targetRotation = HandModel_R.transform.rotation;
+                    //targetRotation = Quaternion.LookRotation(HandModel_L.transform.position, Vector3.up);
+                    targetRotation = HandModel_R.transform.rotation * Quaternion.Euler(90, 0, 180);
                 }
                 else
                 {
                     targetPosition = GetPosition(ob.AttachedPoint, ovrSkeleton_L);
                     targetRotation = HandModel_L.transform.rotation;
                 }
-                //Vector3 targetPosition = ovrSkeleton_L.Bones[(int)OVRPlugin.BoneId.Hand_Middle2].Transform.position;
-                //Quaternion targetRotation = HandModel_L.transform.rotation;
-
                 ob.obj.transform.position = Vector3.MoveTowards(ob.obj.transform.position, targetPosition, speed * Time.deltaTime);
                 ob.obj.transform.rotation = Quaternion.Slerp(ob.obj.transform.rotation, targetRotation, smoothness * speed * Time.deltaTime);
             }
@@ -121,25 +123,24 @@ public class AssetsManager : MonoBehaviour
                 if(i.triggerParent == "ArrowPivot(Clone)")
                 {
                     GameObject obj = GameObject.Find("ArrowPlay(Clone)");
-                    Debug.Log("3000A: Found object " + obj.name);
                     GameObject touch = Instantiate(TouchTrigger, obj.transform);
-                    Debug.Log("3000B: instantiated");
                     touch.transform.localPosition = i.triggerPosition;
-                    Debug.Log("3000C: stored " + i.triggerPosition + " obtained: " + touch.transform.localPosition + " global: " + touch.transform.position);
                     touch.transform.localRotation = i.triggerRotation;
-                    Debug.Log("3000D: stored " + i.triggerRotation + " obtained: " + touch.transform.localRotation + " global: " + touch.transform.rotation);
                     touch.transform.localScale = i.triggerScale;
-                    Debug.Log("3000E: stored " + i.triggerScale + " obtained: " + touch.transform.localScale + " global: " + touch.transform.lossyScale);
+                    touch.GetComponent<TouchTrigger>().interaction = i;
+                    touch.GetComponent<TouchTrigger>().playtestManager = playtestManager;
+                    touch.GetComponent<TouchTrigger>().poseRecognizer = poseRecognizer;
+
                 }
                 else
                 {
-                    Debug.Log("3000F: no obj");
-
                     GameObject touch = Instantiate(TouchTrigger);
                     touch.transform.position = i.triggerPosition;
                     touch.transform.rotation = i.triggerRotation;
                     touch.transform.localScale = i.triggerScale;
-                    Debug.Log("3000G: no obj");
+                    touch.GetComponent<TouchTrigger>().interaction = i;
+                    touch.GetComponent<TouchTrigger>().poseRecognizer = poseRecognizer;
+                    touch.GetComponent<TouchTrigger>().playtestManager = playtestManager;
                 }
             }
         }
@@ -192,16 +193,6 @@ public class AssetsManager : MonoBehaviour
                 }
             }
         }
-
-            /*GameObject ob = null;
-        ob = Instantiate(Bow) as GameObject;
-
-        ob.transform.parent = null;
-        ob.transform.position = new Vector3(0, 1, 3);
-        Vector3 forward = HandModel_L.transform.forward;
-        forward.y = 0.0f;
-        ob.transform.forward = forward;
-        FollowObjects.Add(new ObjectsThatFollowHand(ob, false, "index1"));*/
     }
     #endregion
 }

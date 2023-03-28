@@ -155,6 +155,9 @@ public class ProximityController : MonoBehaviour
 
         i.triggerParent = proximityObject.AttachedGameObjectName;
 
+        i.transitionClip = clip.DefaultInteraction.transitionClip;
+        i.isConditionSetToTrue = true;
+
         clip.interactions.Add(i);
         InteractionBuilderContent.refresh = true;
 

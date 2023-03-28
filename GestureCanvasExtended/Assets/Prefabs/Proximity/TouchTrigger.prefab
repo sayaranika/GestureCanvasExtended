@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 939650361532184208}
   - component: {fileID: 939650361532184213}
   - component: {fileID: 939650361532184212}
+  - component: {fileID: 9135512568109438159}
+  - component: {fileID: 6734805593899954478}
   m_Layer: 0
   m_Name: TouchTrigger
   m_TagString: ProximityObject
@@ -114,7 +116,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!114 &939650361532184212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -246,3 +248,59 @@ MonoBehaviour:
   hitFxFadeOutDuration: 0.25
   hitFxColor: {r: 1, g: 1, b: 1, a: 1}
   hitFxRadius: 0.5
+--- !u!114 &9135512568109438159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939650361532184216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 484870ca27c176742b5f696d83de7513, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interaction:
+    Id: 0
+    isGesture_R: 0
+    isGesture_L: 0
+    isPose_R: 0
+    isPose_L: 0
+    isTouch_L: 0
+    isTouch_R: 0
+    isTransformConstraint_R: 0
+    isTransformConstraint_L: 0
+    GestureSamples_R: []
+    GestureSamples_L: []
+    GestureSamples_B: []
+    expectedGestureId_R: 0
+    expectedGestureId_L: 0
+    expectedGestureId_B: 0
+    rightHandGestureStartIndex: 0
+    leftHandGestureStartIndex: 0
+    rightHandGestureEndIndex: 0
+    leftHandGestureEndIndex: 0
+    isConditionSetToTrue: 0
+    GestureLength_L: 0
+    GestureLength_R: 0
+    GestureLength_B: 0
+    TouchPoints_L: []
+    TouchPoints_R: []
+    triggerPosition: {x: 0, y: 0, z: 0}
+    triggerRotation: {x: 0, y: 0, z: 0, w: 0}
+    triggerScale: {x: 0, y: 0, z: 0}
+    triggerParent: 
+  touchRadar: {fileID: 6734805593899954478}
+--- !u!114 &6734805593899954478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939650361532184216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f142a3099a146648af4330384cdc722, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TriggerObjectsList: []

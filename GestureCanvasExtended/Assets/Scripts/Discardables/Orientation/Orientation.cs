@@ -6,7 +6,9 @@ public class Orientation : MonoBehaviour
 {
     [SerializeField] GameObject SpawnedObject;
     [SerializeField] GameObject HandModel;
+    [SerializeField] GameObject HandModel_L;
     [SerializeField] OVRSkeleton ovrSkeleton;
+    [SerializeField] OVRHand ovrHand;
     GameObject ob;
     [SerializeField] GameObject bow;
 
@@ -29,8 +31,11 @@ public class Orientation : MonoBehaviour
 
     private void Update()
     {
+        //Vector3 targetPosition = ovrSkeleton.Bones[(int)OVRPlugin.BoneId.Hand_ThumbTip].Transform.position;
+
         Vector3 targetPosition = HandModel.transform.position;
-        Quaternion targetRotation = HandModel.transform.rotation;
+        Quaternion targetRotation = HandModel.transform.rotation * Quaternion.Euler(90,0,180);
+
 
         ob.transform.position = Vector3.MoveTowards(ob.transform.position, targetPosition, speed * Time.deltaTime);
         

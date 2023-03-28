@@ -12,6 +12,8 @@ TagManager:
   - SpawnedObject
   - SpawnedVFX
   - Trouble
+  - ProximityObject
+  - RigPoint
   layers:
   - Default
   - TransparentFX
