@@ -23,7 +23,7 @@ public class Interaction
 
     public List<GestureSamplesWrapper> GestureSamples_R = new List<GestureSamplesWrapper>();
     public List<GestureSamplesWrapper> GestureSamples_L = new List<GestureSamplesWrapper>();
-    public List<GestureSamplesWrapper> GestureSamples_B = new List<GestureSamplesWrapper>();
+    //public List<GestureSamplesWrapper> GestureSamples_B = new List<GestureSamplesWrapper>();
 
     public int expectedGestureId_R;
     public int expectedGestureId_L;

@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
+using UnityEngine.SceneManagement;
 
 public class InteractionPanelManager : MonoBehaviour
 {
@@ -543,15 +544,14 @@ public class InteractionPanelManager : MonoBehaviour
         OnTheFlyTest.StopTest = true;
     }
 
-    public void AddGestureSample_R()
+    public void AddGestureSample()
     {
+        SampleRecording.interaction = interactionRef;
+        SampleRecording.clip = clipRef;
 
+        SceneManager.LoadScene("RecordSample");
     }
 
-    public void AddGestureSample_L()
-    {
-
-    }
 
 
 
@@ -719,5 +719,7 @@ public class InteractionPanelManager : MonoBehaviour
         }
     }
 
+
+   
     #endregion
 }

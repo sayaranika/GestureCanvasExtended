@@ -2911,42 +2911,40 @@ struct Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295  : public RuntimeOb
 	List_1_tAF36B554687AF8325550F43F20C555E04B757503* ___GestureSamples_R_12;
 	// System.Collections.Generic.List`1<GestureSamplesWrapper> Interaction::GestureSamples_L
 	List_1_tAF36B554687AF8325550F43F20C555E04B757503* ___GestureSamples_L_13;
-	// System.Collections.Generic.List`1<GestureSamplesWrapper> Interaction::GestureSamples_B
-	List_1_tAF36B554687AF8325550F43F20C555E04B757503* ___GestureSamples_B_14;
 	// System.Int32 Interaction::expectedGestureId_R
-	int32_t ___expectedGestureId_R_15;
+	int32_t ___expectedGestureId_R_14;
 	// System.Int32 Interaction::expectedGestureId_L
-	int32_t ___expectedGestureId_L_16;
+	int32_t ___expectedGestureId_L_15;
 	// System.Int32 Interaction::expectedGestureId_B
-	int32_t ___expectedGestureId_B_17;
+	int32_t ___expectedGestureId_B_16;
 	// System.Int32 Interaction::rightHandGestureStartIndex
-	int32_t ___rightHandGestureStartIndex_18;
+	int32_t ___rightHandGestureStartIndex_17;
 	// System.Int32 Interaction::leftHandGestureStartIndex
-	int32_t ___leftHandGestureStartIndex_19;
+	int32_t ___leftHandGestureStartIndex_18;
 	// System.Int32 Interaction::rightHandGestureEndIndex
-	int32_t ___rightHandGestureEndIndex_20;
+	int32_t ___rightHandGestureEndIndex_19;
 	// System.Int32 Interaction::leftHandGestureEndIndex
-	int32_t ___leftHandGestureEndIndex_21;
+	int32_t ___leftHandGestureEndIndex_20;
 	// System.Boolean Interaction::isConditionSetToTrue
-	bool ___isConditionSetToTrue_22;
+	bool ___isConditionSetToTrue_21;
 	// System.Int32 Interaction::GestureLength_L
-	int32_t ___GestureLength_L_23;
+	int32_t ___GestureLength_L_22;
 	// System.Int32 Interaction::GestureLength_R
-	int32_t ___GestureLength_R_24;
+	int32_t ___GestureLength_R_23;
 	// System.Int32 Interaction::GestureLength_B
-	int32_t ___GestureLength_B_25;
+	int32_t ___GestureLength_B_24;
 	// System.Collections.Generic.List`1<System.String> Interaction::TouchPoints_L
-	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___TouchPoints_L_26;
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___TouchPoints_L_25;
 	// System.Collections.Generic.List`1<System.String> Interaction::TouchPoints_R
-	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___TouchPoints_R_27;
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___TouchPoints_R_26;
 	// UnityEngine.Vector3 Interaction::triggerPosition
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___triggerPosition_28;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___triggerPosition_27;
 	// UnityEngine.Quaternion Interaction::triggerRotation
-	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___triggerRotation_29;
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___triggerRotation_28;
 	// UnityEngine.Vector3 Interaction::triggerScale
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___triggerScale_30;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___triggerScale_29;
 	// System.String Interaction::triggerParent
-	String_t* ___triggerParent_31;
+	String_t* ___triggerParent_30;
 };
 
 // UnityEngine.Object
@@ -7725,7 +7723,7 @@ IL_0021:
 		bool L_9 = L_8->___isTransformConstraint_R_10;
 		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_10 = __this->___interaction_4;
 		NullCheck(L_10);
-		bool L_11 = L_10->___isConditionSetToTrue_22;
+		bool L_11 = L_10->___isConditionSetToTrue_21;
 		NullCheck(L_5);
 		bool L_12;
 		L_12 = PoseRecognizer_Recognize_m81C8BA8E54312FDA9F69FE084946325D79C213F6(L_5, 0, L_7, (HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D*)NULL, L_9, L_11, NULL);
@@ -7777,7 +7775,7 @@ IL_0076:
 		bool L_22 = L_21->___isTransformConstraint_L_11;
 		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_23 = __this->___interaction_4;
 		NullCheck(L_23);
-		bool L_24 = L_23->___isConditionSetToTrue_22;
+		bool L_24 = L_23->___isConditionSetToTrue_21;
 		NullCheck(L_18);
 		bool L_25;
 		L_25 = PoseRecognizer_Recognize_m81C8BA8E54312FDA9F69FE084946325D79C213F6(L_18, 1, (HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D*)NULL, L_20, L_22, L_24, NULL);
@@ -7830,7 +7828,7 @@ IL_00cb:
 		bool L_35 = L_34->___isTransformConstraint_R_10;
 		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_36 = __this->___interaction_4;
 		NullCheck(L_36);
-		bool L_37 = L_36->___isConditionSetToTrue_22;
+		bool L_37 = L_36->___isConditionSetToTrue_21;
 		NullCheck(L_31);
 		bool L_38;
 		L_38 = PoseRecognizer_Recognize_m81C8BA8E54312FDA9F69FE084946325D79C213F6(L_31, 0, L_33, (HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D*)NULL, L_35, L_37, NULL);
@@ -7849,7 +7847,7 @@ IL_00cb:
 		bool L_43 = L_42->___isTransformConstraint_L_11;
 		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_44 = __this->___interaction_4;
 		NullCheck(L_44);
-		bool L_45 = L_44->___isConditionSetToTrue_22;
+		bool L_45 = L_44->___isConditionSetToTrue_21;
 		NullCheck(L_39);
 		bool L_46;
 		L_46 = PoseRecognizer_Recognize_m81C8BA8E54312FDA9F69FE084946325D79C213F6(L_39, 1, (HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D*)NULL, L_41, L_43, L_45, NULL);
@@ -25007,7 +25005,7 @@ IL_0013:
 		bool L_10 = L_9->___isTransformConstraint_R_10;
 		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_11 = ((OnTheFlyTest_t7CD3D02FD77F57D4AA47044E0737085108BB856E_StaticFields*)il2cpp_codegen_static_fields_for(OnTheFlyTest_t7CD3D02FD77F57D4AA47044E0737085108BB856E_il2cpp_TypeInfo_var))->___interaction_11;
 		NullCheck(L_11);
-		bool L_12 = L_11->___isConditionSetToTrue_22;
+		bool L_12 = L_11->___isConditionSetToTrue_21;
 		NullCheck(L_6);
 		bool L_13;
 		L_13 = PoseRecognizer_Recognize_m81C8BA8E54312FDA9F69FE084946325D79C213F6(L_6, 0, L_8, (HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D*)NULL, L_10, L_12, NULL);
@@ -25063,7 +25061,7 @@ IL_007a:
 		bool L_25 = L_24->___isTransformConstraint_L_11;
 		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_26 = ((OnTheFlyTest_t7CD3D02FD77F57D4AA47044E0737085108BB856E_StaticFields*)il2cpp_codegen_static_fields_for(OnTheFlyTest_t7CD3D02FD77F57D4AA47044E0737085108BB856E_il2cpp_TypeInfo_var))->___interaction_11;
 		NullCheck(L_26);
-		bool L_27 = L_26->___isConditionSetToTrue_22;
+		bool L_27 = L_26->___isConditionSetToTrue_21;
 		NullCheck(L_21);
 		bool L_28;
 		L_28 = PoseRecognizer_Recognize_m81C8BA8E54312FDA9F69FE084946325D79C213F6(L_21, 1, (HandPose_t486F51431CBB3F962A9CF2E02E693A16E343414D*)NULL, L_23, L_25, L_27, NULL);
@@ -26550,7 +26548,7 @@ IL_0659_1:
 				// i.TouchPoints_R.Add(item);
 				Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_207 = __this->___U3CiU3E5__1_4;
 				NullCheck(L_207);
-				List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_208 = L_207->___TouchPoints_R_27;
+				List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_208 = L_207->___TouchPoints_R_26;
 				String_t* L_209 = __this->___U3CitemU3E5__8_11;
 				NullCheck(L_208);
 				List_1_Add_mF10DB1D3CBB0B14215F0E4F8AB4934A1955E5351_inline(L_208, L_209, List_1_Add_mF10DB1D3CBB0B14215F0E4F8AB4934A1955E5351_RuntimeMethod_var);
@@ -26664,7 +26662,7 @@ IL_073d_1:
 				// i.TouchPoints_L.Add(item);
 				Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_231 = __this->___U3CiU3E5__1_4;
 				NullCheck(L_231);
-				List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_232 = L_231->___TouchPoints_L_26;
+				List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_232 = L_231->___TouchPoints_L_25;
 				String_t* L_233 = __this->___U3CitemU3E5__11_14;
 				NullCheck(L_232);
 				List_1_Add_mF10DB1D3CBB0B14215F0E4F8AB4934A1955E5351_inline(L_232, L_233, List_1_Add_mF10DB1D3CBB0B14215F0E4F8AB4934A1955E5351_RuntimeMethod_var);
@@ -26712,7 +26710,7 @@ IL_07f4:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_241;
 		L_241 = Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95(L_240, NULL);
 		NullCheck(L_237);
-		L_237->___triggerPosition_28 = L_241;
+		L_237->___triggerPosition_27 = L_241;
 		// i.triggerRotation = gameObject.transform.localRotation;
 		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_242 = __this->___U3CiU3E5__1_4;
 		ProximityController_t204535B63D7C2440BF609FED81C409BDCA64EBD6* L_243 = __this->___U3CU3E4__this_3;
@@ -26726,7 +26724,7 @@ IL_07f4:
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_246;
 		L_246 = Transform_get_localRotation_mD53D37611A5DAE93EC6C7BBCAC337408C5CACA77(L_245, NULL);
 		NullCheck(L_242);
-		L_242->___triggerRotation_29 = L_246;
+		L_242->___triggerRotation_28 = L_246;
 		// i.triggerScale = gameObject.transform.localScale;
 		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_247 = __this->___U3CiU3E5__1_4;
 		ProximityController_t204535B63D7C2440BF609FED81C409BDCA64EBD6* L_248 = __this->___U3CU3E4__this_3;
@@ -26740,7 +26738,7 @@ IL_07f4:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_251;
 		L_251 = Transform_get_localScale_m804A002A53A645CDFCD15BB0F37209162720363F(L_250, NULL);
 		NullCheck(L_247);
-		L_247->___triggerScale_30 = L_251;
+		L_247->___triggerScale_29 = L_251;
 		// i.isGesture_L = false;
 		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_252 = __this->___U3CiU3E5__1_4;
 		NullCheck(L_252);
@@ -26765,8 +26763,8 @@ IL_07f4:
 		NullCheck(L_258);
 		String_t* L_259 = L_258->___AttachedGameObjectName_4;
 		NullCheck(L_256);
-		L_256->___triggerParent_31 = L_259;
-		Il2CppCodeGenWriteBarrier((void**)(&L_256->___triggerParent_31), (void*)L_259);
+		L_256->___triggerParent_30 = L_259;
+		Il2CppCodeGenWriteBarrier((void**)(&L_256->___triggerParent_30), (void*)L_259);
 		// i.transitionClip = clip.DefaultInteraction.transitionClip;
 		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_260 = __this->___U3CiU3E5__1_4;
 		ProximityController_t204535B63D7C2440BF609FED81C409BDCA64EBD6* L_261 = __this->___U3CU3E4__this_3;
@@ -26782,7 +26780,7 @@ IL_07f4:
 		// i.isConditionSetToTrue = true;
 		Interaction_t37B5E5551D5FF5D5363A246D228B88823A490295* L_265 = __this->___U3CiU3E5__1_4;
 		NullCheck(L_265);
-		L_265->___isConditionSetToTrue_22 = (bool)1;
+		L_265->___isConditionSetToTrue_21 = (bool)1;
 		// clip.interactions.Add(i);
 		ProximityController_t204535B63D7C2440BF609FED81C409BDCA64EBD6* L_266 = __this->___U3CU3E4__this_3;
 		NullCheck(L_266);

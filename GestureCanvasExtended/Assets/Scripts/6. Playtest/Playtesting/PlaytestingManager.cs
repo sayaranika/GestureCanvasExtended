@@ -34,32 +34,23 @@ public class PlaytestingManager : MonoBehaviour
 
     public void Load(Clip clip)
     {
-        Debug.Log("4000A: Loading new clip");
         foreach (GameObject recognizerObject in Recognizers)
-        {
             Object.Destroy(recognizerObject);
-        }
         Recognizers.Clear();
-        Debug.Log("4000B");
 
         currentClip = clip;
-        Debug.Log("4000C: Clip ID: " + clip.Id);
         msg.text = "Clip ID: " + clip.Id;
         assetManager.LoadObjects();
         Debug.Log("4000D");
 
         foreach (Interaction i in clip.interactions)
         {
-            Debug.Log("4000E");
-
             GameObject recognizer = Instantiate(recognizerObject);
             Recognizers.Add(recognizer);
             RecognitionManager recognizerManager = recognizer.GetComponent<RecognitionManager>();
             recognizerManager.interaction = i;
             recognizerManager.poseRecognizer = this.poseRecognizer;
             recognizerManager.playtestManager = this.gameObject.GetComponent<PlaytestingManager>();
-            Debug.Log("4000F");
-
         }
     }
 

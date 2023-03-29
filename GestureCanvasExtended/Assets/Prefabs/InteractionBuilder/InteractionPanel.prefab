@@ -7363,7 +7363,6 @@ MonoBehaviour:
     isTransformConstraint_L: 0
     GestureSamples_R: []
     GestureSamples_L: []
-    GestureSamples_B: []
     expectedGestureId_R: 0
     expectedGestureId_L: 0
     expectedGestureId_B: 0
@@ -11213,7 +11212,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2213555012288564388}
         m_TargetAssemblyTypeName: InteractionPanelManager, Assembly-CSharp
-        m_MethodName: LockPressed_R
+        m_MethodName: AddGestureSample
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11368,7 +11367,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2213555012288564388}
         m_TargetAssemblyTypeName: InteractionPanelManager, Assembly-CSharp
-        m_MethodName: LockPressed_R
+        m_MethodName: AddGestureSample
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

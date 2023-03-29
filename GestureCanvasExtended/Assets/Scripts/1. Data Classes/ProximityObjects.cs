@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using System;
+using Newtonsoft.Json;
+[Serializable]
 public class ProximityObject 
 {
     //properties of Proximity GameObject to use when it is not attached to another GameObject
@@ -12,7 +14,7 @@ public class ProximityObject
 
     //if the Proximity GameObject is attached, make it the parent after setting the positional properties
     public string AttachedGameObjectName = "";
-    public GameObject AttachedGameObject;
+    [JsonIgnore] public GameObject AttachedGameObject;
     public AttachmentType attachmentType = AttachmentType.None;
 
     //check if the Proximity condition has been set
